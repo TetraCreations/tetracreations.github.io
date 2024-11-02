@@ -640,7 +640,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/getting-started.html",
-          "hash": "v5+Ub27eMwFQW7Mrn1ZsGvUzogVHhy5OJoyY3822hNo="
+          "hash": "373SEntkJyFILnvJ+B/QzacId+ej3EwFRnrTm7xusxg="
         }
       },
       "is_incremental": false,
@@ -707,7 +707,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/introduction.html",
-          "hash": "J62/QsjJPGPeXTqMBh4V/NzkndcJX99DdWG0jGsQfq8="
+          "hash": "jvME7GiAT1Kp/aaKPgInls7FYSiuRlJYWkz6grL7Sdw="
         }
       },
       "is_incremental": false,
@@ -731,7 +731,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "qEzrLjHs235goEQwzeYVllMddyJynWeef94xmngv+6E="
+          "hash": "OrPlhyN2uyyIXr43NizPCe7sYxfgVgbzgFkUNDpZlq4="
         }
       },
       "is_incremental": false,
@@ -754,11 +754,11 @@
     {
       "status": {
         "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "details": "Cannot build incrementally because config changed.",
         "incrementalPhase": "build",
         "total_file_count": 0,
         "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "full_build_reason_code": "ConfigChanged"
       },
       "processors": {
         "ConceptualDocumentProcessor": {

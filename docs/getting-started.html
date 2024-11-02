@@ -88,10 +88,10 @@
 <p>Which include :</p>
 <ul>
 <li>A generic Singleton pattern implementation.</li>
-<li>A <code>TimerManager</code> to create and run every timer in a single Update method.</li>
-<li>A simple <code>TriggerCollider</code> script to detect Rigidbodies entering/exiting a trigger collider.</li>
-<li>An example how to manage audio settings, using the <code>AudioManager</code> component to generate volume sliders at runtime.</li>
-<li><code>FloatValueCondition</code> to evaluate if a float value is Lower, Greater, Equals or Between other values to trigger methods from different scripts.</li>
+<li>A <code>TimerManager</code> to create and run timer in a single Update method.</li>
+<li>A simple <code>TriggerCollider</code> script to detect Rigidbodies entering/leaving a trigger collider.</li>
+<li>An example of how to manage audio settings, using the <code>AudioManager</code> component to generate volume sliders at runtime.</li>
+<li><code>FloatValueCondition</code> to evaluate whether a float value is lower than, Greater than, equals to or between other values to trigger methods from different listeners.</li>
 </ul>
 <h2 id="editor">Editor</h2>
 <pre><code class="lang-cs">using TetraCreations.Core.Editor;
@@ -101,9 +101,9 @@
 <li>AssetDatabaseExtensions :
 <ul>
 <li>Get assets by their type inside one or multiple folders.</li>
-<li>Verify if an asset exist.</li>
-<li>Create asset at a specific path.</li>
-<li>Verify path and asset name before creation.</li>
+<li>Verify if an asset exists.</li>
+<li>Create an asset at a specific path.</li>
+<li>Verify the path and the asset name before its creation.</li>
 </ul>
 </li>
 <li>AudioMixerExtensions :
@@ -129,16 +129,16 @@
 <hr>
 <h1 id="extensions-examples">Extensions examples</h1>
 <h2 id="1-audiomixer">1. AudioMixer</h2>
-<p>A recurring issue in Unity is managing the audio settings using an <code>AudioMixer</code> we can expose volume parameter. However its a floating number representing the sound level in decibel. To modify it using a slider from the UI, we have to convert the linear value to a decibel value. That's why I've got an audio mixer extension method that does the conversion automatically :</p>
+<p>A recurring issue in Unity is managing the audio settings using an <code>AudioMixer</code> where we expose volume parameters. However, it's a floating number representing the sound level in decibels. To modify it using a slider from the UI, we have to convert the linear value to a decibel value. That's why I've got an audio mixer extension method that does the conversion automatically :</p>
 <pre><code class="lang-cs">AudioMixer.SetLinearVolume(&quot;MusicVolume&quot;, 0.8f);
 </code></pre>
 <p>The first parameter is the name of the Exposed Parameter from the <code>AudioMixer</code>.
 The second parameter is the linear volume value, here 0.8f is equals to -1.94 dB.
-The third parameter determine if we clamp the linear volume to not exceed the safe audio limit in decibel which is defined as -80 dB to +0 dB, it is set to true by default.</p>
+The third parameter determines if we clamp the linear volume to not exceed the safe audio limit in decibel which is defined as -80 dB to +0 dB, it is set to true by default.</p>
 <p>See the <code>AudioManager</code> example scene for more details.</p>
 <hr>
 <h2 id="2-canvas-group">2. Canvas Group</h2>
-<p>There is plenty of extensions methods which makes the code easier to read and avoid repetition, another example is how to show or hide UI elements using <code>CanvasGroup</code>.</p>
+<p>There are plenty of extension methods that makes the code easier to read and avoid repetition, another example is how to show or hide UI elements using <code>CanvasGroup</code>.</p>
 <pre><code class="lang-cs">/// &lt;summary&gt;
 /// Show a canvas group while blocking raycasts
 /// &lt;/summary&gt;
@@ -160,10 +160,10 @@ public static void Hide(this CanvasGroup canvasGroup)
 }
 </code></pre>
 <p>This is something I do all the time in every project.<br>
-Its recommended instead the using <code>CanvasGroup</code> instead of enabling/disabling the entire gameObject which is generally more costly.</p>
+It's recommended using a <code>CanvasGroup</code> instead of enabling/disabling the entire gameObject which is generally more costly.</p>
 <hr>
 <h2 id="3-list">3. List</h2>
-<p>You can find few examples inside the package, a common one is list and collection extensions</p>
+<p>You can find a few examples inside the package, another common one is list and collection's extensions :</p>
 <pre><code class="lang-cs">_numbers = new List&lt;int&gt;{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
 // Shuffle all elements using Fisher-Yates algorithm which produces an unbiased permutation
@@ -199,7 +199,7 @@ withoutDuplicates.Log();
 <h1 id="utilities-examples">Utilities examples</h1>
 <h2 id="1-generic-singleton-pattern">1. Generic Singleton Pattern</h2>
 <p>To change any <code>MonoBehaviour</code> script to a <code>Singleton</code> simply extend from Singleton&lt;T&gt; where T is the type of your script.</p>
-<p>For example I have a Singleton to manage all timers in my game</p>
+<p>For example, I have a Singleton to start/update all timers in my game :</p>
 <pre><code class="lang-cs">public class TimerManager : Singleton&lt;TimerManager&gt;
 {
   [Title(&quot;Active Timer&quot;)]
@@ -215,8 +215,8 @@ withoutDuplicates.Log();
   }
 }
 </code></pre>
-<p>The import thing to notice is the override of the <code>OnAwake()</code> method, by default all <code>MonoBehaviour</code> use <code>Awake()</code> when the scene start.</p>
-<p>However, the generic abstract class Singleton already call <code>Awake()</code> to initialize itself, it checks for duplicates instances in the current scene, then it calls a protected virtual method <code>OnAwake()</code> that you can override, if you call <code>Awake()</code> instead then the Singleton wont be
+<p>The important thing to notice is the override of the <code>OnAwake()</code> method, by default all <code>MonoBehaviour</code> use <code>Awake()</code> when the scene starts.</p>
+<p>However, the generic abstract class Singleton already calls <code>Awake()</code> to initialize itself, it checks for any duplicated instances in the current scene, and then it calls a protected virtual method <code>OnAwake()</code> that you can override. If you call <code>Awake()</code> instead then the Singleton won't be
 initialized and it will not work.</p>
 <p>When using the Singleton pattern, one common issue is trying to call a method from the Singleton inside the Awake method of another Singleton,
 we don't know which one is initialized first. To avoid dealing with script execution order, we can the other script as a dependency inside the inspector.
@@ -224,12 +224,12 @@ In the example screen below it will wait until <code>TimerManager</code> is init
 <p><img src="images/SingletonDependency.png" alt="Singleton dependency example"></p>
 <hr>
 <h2 id="2-assetdatabase">2. AssetDatabase</h2>
-<p>Inside Editors or Scriptable Object I often need to load assets, lets imagine that I have imported 200 Sprites in my project, and I want to create a scriptable object foreach one of them an directly assign the sprite on it.</p>
+<p>Inside Editors or Scriptable Object I often need to load assets, let's imagine that I have imported 200 Sprites in my project, and I want to create a scriptable object for each one of them and directly assign the sprite to it.</p>
 <div class="WARNING">
 <h5>Warning</h5>
 <p>Remember that you need to move all your editor scripts to an Editor folder or to use <strong>#if UNITY_EDITOR / #endif</strong> otherwise your build will not compile !</p>
 </div>
-<p>I can use the <code>AssetDataExtensions</code> to load every sprites from a specific folder:</p>
+<p>I can use the <code>AssetDataExtensions</code> to get every sprite from a specific folder:</p>
 <pre><code class="lang-cs">var spritesPath = &quot;Assets/Example/Sprites&quot;;
 var sprites = AssetDatabaseExtensions.GetAssetsFrom&lt;Sprite&gt;(new string[]{ spritesPath });
 
@@ -252,7 +252,7 @@ void LoadAudioClip()
     }
 }
 </code></pre>
-<p>Without extensions method the code to get assets is not generic and can be difficult to remember :</p>
+<p>Without the extension method the code to get assets is not generic and can be difficult to remember :</p>
 <pre><code class="lang-cs">var assets = AssetDatabase.FindAssets($&quot;t:sprite&quot;, new string[] { folderPath }.ToList()
     .Select(AssetDatabase.GUIDToAssetPath)
     .Select(AssetDatabase.LoadAssetAtPath&lt;Sprite&gt;)
@@ -262,32 +262,32 @@ void LoadAudioClip()
 <p>We can also load an asset by its name, this however will search in the entire AssetDatase as we don't specify a folder.</p>
 <hr>
 <h2 id="3-trigger-collider">3. Trigger Collider</h2>
-<p>Lets start with something very simple and useful in any project, <code>TriggerCollider</code> is a component to detect colliders, depending on their layers. It is used to call methods from other scripts by invoking <code>OnDetectedColliderEnter</code> and <code>OnDetectedColliderExist</code> events.</p>
+<p>Another utility that I use in every project : The <code>TriggerCollider</code> component detects colliders and filters them depending on their layers (See <code>LayerMaskFilter</code>). It is used to call methods from other scripts by invoking <code>OnDetectedColliderEnter</code> and <code>OnDetectedColliderExist</code> events.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Inactive GameObject in the scene are not detected.</p>
+<p>Inactive GameObjects in the scene are not detected.</p>
 </div>
 <p><img src="images/TriggerCollider.png" alt="Trigger Collider"></p>
 <p>In this example, I have setup a <code>GameObject</code> with a <code>Sphere Collider</code> set as a <code>Trigger</code>.
-When other GameObjects with <code>Rigidbody</code> enters it, a method is called using the event <code>OnDetectedColliderEnter</code> to change the local scale of the object use Scaling script. When exiting the <code>Trigger</code> the scale is reset back to 1f.</p>
-<p>You can use <code>Trigger2DCollider</code> for 2D projects, you can also create your own component using <code>TriggerCollider</code> as base class, then overriding the <code>Enter</code> and <code>Exit</code> methods if you need to add your own filtering system.</p>
-<p>I didn't made a <code>Tag</code> filtering system because I personally don't like string comparison.</p>
+When other GameObjects with <code>Rigidbody</code> enter it, a method is called using the event <code>OnDetectedColliderEnter</code> to change the local scale of the object using the <code>Scaling</code> component. When exiting the <code>Trigger</code> the scale is reset back to 1f.</p>
+<p>You can use <code>Trigger2DCollider</code> for 2D projects, you can also create a component inheriting from <code>Trigger2DCollider</code> or <code>TriggerCollider</code> and override the <code>Enter</code> and <code>Exit</code> methods if you need to modify the filtering system.</p>
+<p>I didn't make a <code>Tag</code> filtering system because I personally don't like string comparison.</p>
 <hr>
 <h2 id="4-float-value-condition">4. Float Value Condition</h2>
-<p>Calling multiple methods from different scripts when a float value reach a particular value is very common. For example we may play sound effect and turn the screen overlay to red when the player health drop below a certain percentage.</p>
-<p>This is done using the <code>FloatValueCondition</code> class, which evaluate if the condition is met when the health value change.</p>
-<p>Using events, components are decoupled and we can re-use <code>FloatValueCondition</code> is many scenario.</p>
+<p>It's very common to call several methods from different scripts when a float value reaches a particular value. For example, we can play a sound effect and turn the screen red when the player's health falls below a certain percentage.</p>
+<p>This is done using the <code>FloatValueCondition</code> class, which evaluates whether the condition is met when the health value changes.</p>
+<p>By using events, the components are decoupled and we can reuse the <code>FloatValueCondition</code> class in many scenarios.</p>
 <p><img src="images/FloatValueCondition.png" alt="Trigger Collider"></p>
-<p><code>FloatValueConditionExample</code> will verify if the value is lower or equals than 0.3 which represent the percentage of health of the player.</p>
-<p><code>RaiseEventOnce</code> means that if the condition is already met and the player health drop again below 0.3f, we are not going to raise the event again, because the condition is still true.</p>
-<p>We set <code>ResetEventRaisedWhenNotMet</code> to true, so we the player health percentage goes above 0.3f, we want to raise the event if it drops again below 0.3f.</p>
-<p>By setting the <code>ConditonType</code> to <code>Equals</code>, we can specify the equality precision since we are using floating number for example we may consider 99.96 to be equals to 100.</p>
+<p><code>FloatValueConditionExample</code> will check if the value is lower or equals than 0.3 which represents the player's health percentage.</p>
+<p><code>RaiseEventOnce</code> means that if the condition is already met and the player's health drops below 0.3f, we won't re-raise the event, because the condition is still true.</p>
+<p>We set <code>ResetEventRaisedWhenNotMet</code> to true, so if the player's health percentage exceeds 0.3f, we want to raise the event if it drops below 0.3f.</p>
+<p>By setting the <code>ConditonType</code> to <code>Equals</code>, we can specify the precision of the equality since we're using floating-point numbers, for example we can consider 99.96 to be equal to 100.</p>
 <hr>
 <h2 id="5-timer-manager">5. Timer Manager</h2>
 <p>We often need to raise an event after some time is elapsed by using Coroutine with WaitForSeconds or by incrementing a timer in the Update method of a <code>MonoBehaviour</code>.</p>
 <p>This is why I created two simple class <code>Timer</code> and <code>CountdownTimer</code> responsible for this.
-They are plain C# classes, they depends on the <code>TimerManager</code> to be started and to update their time.</p>
-<p>Here is an example on how to prevent the player from spamming an attack with his character :</p>
+These are simple C# classes, they depend on the <code>TimerManager</code> to be started and to update their time.</p>
+<p>Here's an example to prevent the player from spamming an attack with their character:</p>
 <p><img src="images/AttackController.png" alt="Attack controller component"></p>
 <pre><code class="lang-cs">
 [SerializeField] private Animator _animator;
@@ -338,12 +338,12 @@ private void EnableAttackButton()
     _attackButton.interactable = true;
 }
 </code></pre>
-<p>When the <code>CountdownTimer</code> start we disable the attack button and enable it when the timer stops.</p>
-<p>We call <code>TimerManager.Instance.StartTimer</code> to add our countdown timer has an active timer,
-the <code>TimerManager</code> will update every single timer every frame, its more efficient than using one <code>MonoBehaviour</code> per timer.</p>
-<p>Here the countdown timer start with the initial time 2f (the attack rate) and stops automatically when its time reach 0.</p>
-<p>We can also set the <code>AutoAttack</code> to true so the timer will loop forever, the event <code>OnTimerLooped</code> will be raise and our character will perform the attack animation.</p>
-<p>We have to change the start method to use the AutoAttack system :</p>
+<p>When the <code>CountdownTimer</code> starts, we disable the attack button and enable it when the timer stops.</p>
+<p>We call <code>TimerManager.Instance.StartTimer</code> to add our countdown to as an active timer,
+The <code>TimerManager</code> will update each timer every frame, which is more efficient than using one <code>MonoBehaviour</code> per timer.</p>
+<p>Here, the countdown starts with an initial time of 2 seconds (the attack rate) and stops automatically when its time reaches 0.</p>
+<p>We can also set <code>AutoAttack</code> to true so the timer loops indefinitely, the <code>OnTimerLooped</code> event is raised and our character executes the attack animation.</p>
+<p>We need to change the Start method to use the AutoAttack system:</p>
 <pre><code class="lang-cs">private void Start()
 {
     _countdownTimer = new CountdownTimer(_attackRate, loop: _autoAttack);
@@ -369,7 +369,7 @@ the <code>TimerManager</code> will update every single timer every frame, its mo
 }
 </code></pre>
 <p>We don't need to use the Button, and we start the timer only once, it will stay inside the <code>TimerManager</code> and loop forever.</p>
-<p>Lets see how we update the UI to display the remaining time of the timer and to update the progress bar.</p>
+<p>Let's see how we update the UI to display the remaining time of the timer and to update the progress bar.</p>
 <pre><code class="lang-cs">[Header(&quot;Update Text/Progress Bar&quot;)]
 [SerializeField] private bool _enableTextUpdate = true;
 [SerializeField] private bool _changeTextInUpdateMethod = true;
@@ -442,7 +442,7 @@ private void Update()
     UpdateProgressBar();
 }
 </code></pre>
-<p>Here we can either update the text to display the time left in the update method, however this runs every frame. Instead we can set <code>_changeTextInUpdateMethod</code> to false, to use the <code>OnSecondElapsed</code> event to update it every second.</p>
+<p>Here, we can either update the text to show the time remaining in the update method, but this runs every frame. Instead, we can set <code>_changeTextInUpdateMethod</code> to false, to use the <code>OnSecondElapsed</code> event to update it every second.</p>
 </article>
           </div>
 
