@@ -1,0 +1,393 @@
+### YamlMime:ManagedReference
+items:
+- uid: TetraCreations.Core.ColorExtentions
+  commentId: T:TetraCreations.Core.ColorExtentions
+  id: ColorExtentions
+  parent: TetraCreations.Core
+  children:
+  - TetraCreations.Core.ColorExtentions.GetBrighterColor(Color,System.Single)
+  - TetraCreations.Core.ColorExtentions.GetDarkerColor(Color,System.Single)
+  - TetraCreations.Core.ColorExtentions.HTMLColorSymbol
+  - TetraCreations.Core.ColorExtentions.ToHtmlStringRGB(Color,System.Boolean)
+  - TetraCreations.Core.ColorExtentions.ToHtmlStringRGBA(Color,System.Boolean)
+  - TetraCreations.Core.ColorExtentions.With(Color,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})
+  langs:
+  - csharp
+  - vb
+  name: ColorExtentions
+  nameWithType: ColorExtentions
+  fullName: TetraCreations.Core.ColorExtentions
+  type: Class
+  source:
+    id: ColorExtentions
+    path: ''
+    startLine: 36573
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static class ColorExtentions
+    content.vb: Public Module ColorExtentions
+  inheritance:
+  - System.Object
+- uid: TetraCreations.Core.ColorExtentions.HTMLColorSymbol
+  commentId: F:TetraCreations.Core.ColorExtentions.HTMLColorSymbol
+  id: HTMLColorSymbol
+  parent: TetraCreations.Core.ColorExtentions
+  langs:
+  - csharp
+  - vb
+  name: HTMLColorSymbol
+  nameWithType: ColorExtentions.HTMLColorSymbol
+  fullName: TetraCreations.Core.ColorExtentions.HTMLColorSymbol
+  type: Field
+  source:
+    id: HTMLColorSymbol
+    path: ''
+    startLine: 36575
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public const string HTMLColorSymbol = "#"
+    return:
+      type: System.String
+    content.vb: Public Const HTMLColorSymbol As String = "#"
+- uid: TetraCreations.Core.ColorExtentions.GetBrighterColor(Color,System.Single)
+  commentId: M:TetraCreations.Core.ColorExtentions.GetBrighterColor(Color,System.Single)
+  id: GetBrighterColor(Color,System.Single)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.ColorExtentions
+  langs:
+  - csharp
+  - vb
+  name: GetBrighterColor(Color, float)
+  nameWithType: ColorExtentions.GetBrighterColor(Color, float)
+  fullName: TetraCreations.Core.ColorExtentions.GetBrighterColor(Color, float)
+  type: Method
+  source:
+    id: GetBrighterColor
+    path: ''
+    startLine: 36583
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nReturns a brighter color by lerping to Color.white by a certain percentage\n"
+  example: []
+  syntax:
+    content: public static Color GetBrighterColor(this Color color, float brightnessPercentage = 0.5)
+    parameters:
+    - id: color
+      type: Global.Color
+      description: ''
+    - id: brightnessPercentage
+      type: System.Single
+      description: ''
+    return:
+      type: Global.Color
+      description: ''
+    content.vb: Public Shared Function GetBrighterColor(color As Color, brightnessPercentage As Single = 0.5) As Color
+  overload: TetraCreations.Core.ColorExtentions.GetBrighterColor*
+  nameWithType.vb: ColorExtentions.GetBrighterColor(Color, Single)
+  fullName.vb: TetraCreations.Core.ColorExtentions.GetBrighterColor(Color, Single)
+  name.vb: GetBrighterColor(Color, Single)
+- uid: TetraCreations.Core.ColorExtentions.GetDarkerColor(Color,System.Single)
+  commentId: M:TetraCreations.Core.ColorExtentions.GetDarkerColor(Color,System.Single)
+  id: GetDarkerColor(Color,System.Single)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.ColorExtentions
+  langs:
+  - csharp
+  - vb
+  name: GetDarkerColor(Color, float)
+  nameWithType: ColorExtentions.GetDarkerColor(Color, float)
+  fullName: TetraCreations.Core.ColorExtentions.GetDarkerColor(Color, float)
+  type: Method
+  source:
+    id: GetDarkerColor
+    path: ''
+    startLine: 36594
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nReturns a darker color by lerping to Color.black by a certain percentage\n"
+  example: []
+  syntax:
+    content: public static Color GetDarkerColor(this Color color, float darknessPercentage = 0.5)
+    parameters:
+    - id: color
+      type: Global.Color
+      description: ''
+    - id: darknessPercentage
+      type: System.Single
+      description: ''
+    return:
+      type: Global.Color
+      description: ''
+    content.vb: Public Shared Function GetDarkerColor(color As Color, darknessPercentage As Single = 0.5) As Color
+  overload: TetraCreations.Core.ColorExtentions.GetDarkerColor*
+  nameWithType.vb: ColorExtentions.GetDarkerColor(Color, Single)
+  fullName.vb: TetraCreations.Core.ColorExtentions.GetDarkerColor(Color, Single)
+  name.vb: GetDarkerColor(Color, Single)
+- uid: TetraCreations.Core.ColorExtentions.ToHtmlStringRGBA(Color,System.Boolean)
+  commentId: M:TetraCreations.Core.ColorExtentions.ToHtmlStringRGBA(Color,System.Boolean)
+  id: ToHtmlStringRGBA(Color,System.Boolean)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.ColorExtentions
+  langs:
+  - csharp
+  - vb
+  name: ToHtmlStringRGBA(Color, bool)
+  nameWithType: ColorExtentions.ToHtmlStringRGBA(Color, bool)
+  fullName: TetraCreations.Core.ColorExtentions.ToHtmlStringRGBA(Color, bool)
+  type: Method
+  source:
+    id: ToHtmlStringRGBA
+    path: ''
+    startLine: 36605
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nConverts the Color to it&apos;s hexadecimal representation (&quot;RRGGBBAA&quot;).\n"
+  example: []
+  syntax:
+    content: public static string ToHtmlStringRGBA(this Color color, bool includeSharp = true)
+    parameters:
+    - id: color
+      type: Global.Color
+      description: ''
+    - id: includeSharp
+      type: System.Boolean
+      description: True will return &quot;#RRGGBBAA&quot;
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function ToHtmlStringRGBA(color As Color, includeSharp As Boolean = True) As String
+  overload: TetraCreations.Core.ColorExtentions.ToHtmlStringRGBA*
+  nameWithType.vb: ColorExtentions.ToHtmlStringRGBA(Color, Boolean)
+  fullName.vb: TetraCreations.Core.ColorExtentions.ToHtmlStringRGBA(Color, Boolean)
+  name.vb: ToHtmlStringRGBA(Color, Boolean)
+- uid: TetraCreations.Core.ColorExtentions.ToHtmlStringRGB(Color,System.Boolean)
+  commentId: M:TetraCreations.Core.ColorExtentions.ToHtmlStringRGB(Color,System.Boolean)
+  id: ToHtmlStringRGB(Color,System.Boolean)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.ColorExtentions
+  langs:
+  - csharp
+  - vb
+  name: ToHtmlStringRGB(Color, bool)
+  nameWithType: ColorExtentions.ToHtmlStringRGB(Color, bool)
+  fullName: TetraCreations.Core.ColorExtentions.ToHtmlStringRGB(Color, bool)
+  type: Method
+  source:
+    id: ToHtmlStringRGB
+    path: ''
+    startLine: 36618
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nConverts the Color to it&apos;s hexadecimal representation (&quot;RRGGBB&quot;).\n"
+  example: []
+  syntax:
+    content: public static string ToHtmlStringRGB(this Color color, bool includeSharp = true)
+    parameters:
+    - id: color
+      type: Global.Color
+      description: ''
+    - id: includeSharp
+      type: System.Boolean
+      description: True will return &quot;#RRGGBB&quot;
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function ToHtmlStringRGB(color As Color, includeSharp As Boolean = True) As String
+  overload: TetraCreations.Core.ColorExtentions.ToHtmlStringRGB*
+  nameWithType.vb: ColorExtentions.ToHtmlStringRGB(Color, Boolean)
+  fullName.vb: TetraCreations.Core.ColorExtentions.ToHtmlStringRGB(Color, Boolean)
+  name.vb: ToHtmlStringRGB(Color, Boolean)
+- uid: TetraCreations.Core.ColorExtentions.With(Color,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})
+  commentId: M:TetraCreations.Core.ColorExtentions.With(Color,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})
+  id: With(Color,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})
+  isExtensionMethod: true
+  parent: TetraCreations.Core.ColorExtentions
+  langs:
+  - csharp
+  - vb
+  name: With(Color, float?, float?, float?, float?)
+  nameWithType: ColorExtentions.With(Color, float?, float?, float?, float?)
+  fullName: TetraCreations.Core.ColorExtentions.With(Color, float?, float?, float?, float?)
+  type: Method
+  source:
+    id: With
+    path: ''
+    startLine: 36634
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nReturns a new Color while chaning or keeping any value from the original Color (r, g, b, a).\n"
+  example: []
+  syntax:
+    content: public static Color With(this Color color, float? r = null, float? g = null, float? b = null, float? a = null)
+    parameters:
+    - id: color
+      type: Global.Color
+      description: ''
+    - id: r
+      type: System.Nullable{System.Single}
+      description: ''
+    - id: g
+      type: System.Nullable{System.Single}
+      description: ''
+    - id: b
+      type: System.Nullable{System.Single}
+      description: ''
+    - id: a
+      type: System.Nullable{System.Single}
+      description: ''
+    return:
+      type: Global.Color
+      description: ''
+    content.vb: Public Shared Function [With](color As Color, r As Single? = Nothing, g As Single? = Nothing, b As Single? = Nothing, a As Single? = Nothing) As Color
+  overload: TetraCreations.Core.ColorExtentions.With*
+  nameWithType.vb: ColorExtentions.With(Color, Single?, Single?, Single?, Single?)
+  fullName.vb: TetraCreations.Core.ColorExtentions.With(Color, Single?, Single?, Single?, Single?)
+  name.vb: With(Color, Single?, Single?, Single?, Single?)
+references:
+- uid: TetraCreations.Core
+  commentId: N:TetraCreations.Core
+  name: TetraCreations.Core
+  nameWithType: TetraCreations.Core
+  fullName: TetraCreations.Core
+  spec.csharp:
+  - uid: TetraCreations
+    name: TetraCreations
+  - name: .
+  - uid: TetraCreations.Core
+    name: Core
+  spec.vb:
+  - uid: TetraCreations
+    name: TetraCreations
+  - name: .
+  - uid: TetraCreations.Core
+    name: Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: TetraCreations.Core.ColorExtentions.GetBrighterColor*
+  commentId: Overload:TetraCreations.Core.ColorExtentions.GetBrighterColor
+  name: GetBrighterColor
+  nameWithType: ColorExtentions.GetBrighterColor
+  fullName: TetraCreations.Core.ColorExtentions.GetBrighterColor
+- uid: Global.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Color
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: TetraCreations.Core.ColorExtentions.GetDarkerColor*
+  commentId: Overload:TetraCreations.Core.ColorExtentions.GetDarkerColor
+  name: GetDarkerColor
+  nameWithType: ColorExtentions.GetDarkerColor
+  fullName: TetraCreations.Core.ColorExtentions.GetDarkerColor
+- uid: TetraCreations.Core.ColorExtentions.ToHtmlStringRGBA*
+  commentId: Overload:TetraCreations.Core.ColorExtentions.ToHtmlStringRGBA
+  name: ToHtmlStringRGBA
+  nameWithType: ColorExtentions.ToHtmlStringRGBA
+  fullName: TetraCreations.Core.ColorExtentions.ToHtmlStringRGBA
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: TetraCreations.Core.ColorExtentions.ToHtmlStringRGB*
+  commentId: Overload:TetraCreations.Core.ColorExtentions.ToHtmlStringRGB
+  name: ToHtmlStringRGB
+  nameWithType: ColorExtentions.ToHtmlStringRGB
+  fullName: TetraCreations.Core.ColorExtentions.ToHtmlStringRGB
+- uid: TetraCreations.Core.ColorExtentions.With*
+  commentId: Overload:TetraCreations.Core.ColorExtentions.With
+  name: With
+  nameWithType: ColorExtentions.With
+  fullName: TetraCreations.Core.ColorExtentions.With
+- uid: System.Nullable{System.Single}
+  commentId: T:System.Nullable{System.Single}
+  parent: System
+  definition: System.Nullable`1
+  name: float?
+  nameWithType: float?
+  fullName: float?
+  nameWithType.vb: Single?
+  fullName.vb: Single?
+  name.vb: Single?
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

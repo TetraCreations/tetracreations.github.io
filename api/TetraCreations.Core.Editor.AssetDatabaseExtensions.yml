@@ -1,0 +1,1195 @@
+### YamlMime:ManagedReference
+items:
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  commentId: T:TetraCreations.Core.Editor.AssetDatabaseExtensions
+  id: AssetDatabaseExtensions
+  parent: TetraCreations.Core.Editor
+  children:
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExist(System.String,Type)
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExistIn``1(System.String,System.String[])
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.CanAssetBeCreated(System.String,System.String,Type,System.Boolean)
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.CreateAssetIn(UnityEngine.Object,System.String,System.Boolean)
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAsset``1(System.String)
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom``1(System.String,Func{``0,System.Boolean})
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom``1(System.String,System.String)
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom``1(System.String,System.String[])
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom``1(System.String[],Func{``0,System.Boolean})
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetGUIDs(System.String,Type)
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetNameInvalidCharacters(System.String)
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom``1(System.String,Func{``0,System.Boolean})
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom``1(System.String)
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom``1(System.String[],Func{``0,System.Boolean})
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom``1(System.String[])
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidFilenameCharacters(System.String)
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidPathCharacters(System.String)
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.GetRelativePathWithExtension(System.String,System.String)
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.LoadMonoScriptsFrom(System.String[])
+  - TetraCreations.Core.Editor.AssetDatabaseExtensions.ToForwardSlashes(System.String)
+  langs:
+  - csharp
+  - vb
+  name: AssetDatabaseExtensions
+  nameWithType: AssetDatabaseExtensions
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  type: Class
+  source:
+    id: AssetDatabaseExtensions
+    path: ''
+    startLine: 35155
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nProvides few generic static method to simplify getting a specific asset or a list of assets from one or multiple folders.<br />\nRelative folder path mean this one is valid : &quot;Assets/Game/Data/Sword.asset&quot;, but not this one : &quot;C:\\Unity\\MyProject\\Assets\\Game\\Data\\Sword.asset&quot;.<br />\nWe can search using the asset name or a predicate function.<br />\nIf an asset is not found, it returns null or an empty list depending on the method called.\n"
+  example: []
+  syntax:
+    content: public static class AssetDatabaseExtensions
+    content.vb: Public Module AssetDatabaseExtensions
+  inheritance:
+  - System.Object
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAsset``1(System.String)
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAsset``1(System.String)
+  id: GetAsset``1(System.String)
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsset<T>(string)
+  nameWithType: AssetDatabaseExtensions.GetAsset<T>(string)
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAsset<T>(string)
+  type: Method
+  source:
+    id: GetAsset
+    path: ''
+    startLine: 35173
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nReturns the first asset by it&apos;s name. It will search inside the whole AssetDatabase.\n"
+  example: []
+  syntax:
+    content: 'public static T GetAsset<T>(string assetName) where T : UnityEngine.Object'
+    parameters:
+    - id: assetName
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: T
+      description: Object type
+    return:
+      type: '{T}'
+      description: 'null : Nothing found OR T : Any UnityEngine.Object'
+    content.vb: Public Shared Function GetAsset(Of T As UnityEngine.Object)(assetName As String) As T
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAsset*
+  nameWithType.vb: AssetDatabaseExtensions.GetAsset(Of T)(String)
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAsset(Of T)(String)
+  name.vb: GetAsset(Of T)(String)
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom``1(System.String,System.String)
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom``1(System.String,System.String)
+  id: GetAssetFrom``1(System.String,System.String)
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAssetFrom<T>(string, string)
+  nameWithType: AssetDatabaseExtensions.GetAssetFrom<T>(string, string)
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom<T>(string, string)
+  type: Method
+  source:
+    id: GetAssetFrom
+    path: ''
+    startLine: 35186
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nReturns the first asset by it&apos;s name, from the given relative folder path.\n"
+  example: []
+  syntax:
+    content: 'public static T GetAssetFrom<T>(string assetName, string folderPath) where T : UnityEngine.Object'
+    parameters:
+    - id: assetName
+      type: System.String
+      description: ''
+    - id: folderPath
+      type: System.String
+      description: Relative folder path to search from
+    typeParameters:
+    - id: T
+      description: Object type
+    return:
+      type: '{T}'
+      description: 'null : Nothing found OR T : Any UnityEngine.Object'
+    content.vb: Public Shared Function GetAssetFrom(Of T As UnityEngine.Object)(assetName As String, folderPath As String) As T
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom*
+  nameWithType.vb: AssetDatabaseExtensions.GetAssetFrom(Of T)(String, String)
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom(Of T)(String, String)
+  name.vb: GetAssetFrom(Of T)(String, String)
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom``1(System.String,System.String[])
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom``1(System.String,System.String[])
+  id: GetAssetFrom``1(System.String,System.String[])
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAssetFrom<T>(string, string[])
+  nameWithType: AssetDatabaseExtensions.GetAssetFrom<T>(string, string[])
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom<T>(string, string[])
+  type: Method
+  source:
+    id: GetAssetFrom
+    path: ''
+    startLine: 35199
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nReturns the first asset by it&apos;s name, from the given folders paths.\n"
+  example: []
+  syntax:
+    content: 'public static T GetAssetFrom<T>(string assetName, string[] foldersPath) where T : UnityEngine.Object'
+    parameters:
+    - id: assetName
+      type: System.String
+      description: ''
+    - id: foldersPath
+      type: System.String[]
+    typeParameters:
+    - id: T
+      description: Object type
+    return:
+      type: '{T}'
+      description: 'null : Nothing found OR T : Any UnityEngine.Object'
+    content.vb: Public Shared Function GetAssetFrom(Of T As UnityEngine.Object)(assetName As String, foldersPath As String()) As T
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom*
+  nameWithType.vb: AssetDatabaseExtensions.GetAssetFrom(Of T)(String, String())
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom(Of T)(String, String())
+  name.vb: GetAssetFrom(Of T)(String, String())
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom``1(System.String,Func{``0,System.Boolean})
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom``1(System.String,Func{``0,System.Boolean})
+  id: GetAssetFrom``1(System.String,Func{``0,System.Boolean})
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAssetFrom<T>(string, Func<T, bool>)
+  nameWithType: AssetDatabaseExtensions.GetAssetFrom<T>(string, Func<T, bool>)
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom<T>(string, Func<T, bool>)
+  type: Method
+  source:
+    id: GetAssetFrom
+    path: ''
+    startLine: 35212
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nReturns the first asset matching the predicate from the given folder path.\n"
+  example: []
+  syntax:
+    content: 'public static T GetAssetFrom<T>(string folderPath, Func<T, bool> predicate) where T : UnityEngine.Object'
+    parameters:
+    - id: folderPath
+      type: System.String
+      description: Relative folder path to search from
+    - id: predicate
+      type: Global.Func{{T},System.Boolean}
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: '{T}'
+      description: ''
+    content.vb: Public Shared Function GetAssetFrom(Of T As UnityEngine.Object)(folderPath As String, predicate As Func(Of T, Boolean)) As T
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom*
+  nameWithType.vb: AssetDatabaseExtensions.GetAssetFrom(Of T)(String, Func(Of T, Boolean))
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom(Of T)(String, Func(Of T, Boolean))
+  name.vb: GetAssetFrom(Of T)(String, Func(Of T, Boolean))
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom``1(System.String[],Func{``0,System.Boolean})
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom``1(System.String[],Func{``0,System.Boolean})
+  id: GetAssetFrom``1(System.String[],Func{``0,System.Boolean})
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAssetFrom<T>(string[], Func<T, bool>)
+  nameWithType: AssetDatabaseExtensions.GetAssetFrom<T>(string[], Func<T, bool>)
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom<T>(string[], Func<T, bool>)
+  type: Method
+  source:
+    id: GetAssetFrom
+    path: ''
+    startLine: 35225
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nReturns the first asset matching the predicate from the given folders paths.\n"
+  example: []
+  syntax:
+    content: 'public static T GetAssetFrom<T>(string[] foldersPath, Func<T, bool> predicate) where T : UnityEngine.Object'
+    parameters:
+    - id: foldersPath
+      type: System.String[]
+      description: Folders paths to search from
+    - id: predicate
+      type: Global.Func{{T},System.Boolean}
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: '{T}'
+      description: ''
+    content.vb: Public Shared Function GetAssetFrom(Of T As UnityEngine.Object)(foldersPath As String(), predicate As Func(Of T, Boolean)) As T
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom*
+  nameWithType.vb: AssetDatabaseExtensions.GetAssetFrom(Of T)(String(), Func(Of T, Boolean))
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom(Of T)(String(), Func(Of T, Boolean))
+  name.vb: GetAssetFrom(Of T)(String(), Func(Of T, Boolean))
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom``1(System.String)
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom``1(System.String)
+  id: GetAssetsFrom``1(System.String)
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAssetsFrom<T>(string)
+  nameWithType: AssetDatabaseExtensions.GetAssetsFrom<T>(string)
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom<T>(string)
+  type: Method
+  source:
+    id: GetAssetsFrom
+    path: ''
+    startLine: 35239
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nReturns the list of assets from the given folder path.\n"
+  example: []
+  syntax:
+    content: 'public static List<T> GetAssetsFrom<T>(string folderPath) where T : UnityEngine.Object'
+    parameters:
+    - id: folderPath
+      type: System.String
+      description: Folder path to search from
+    typeParameters:
+    - id: T
+      description: Type of the asset
+    return:
+      type: Global.List{{T}}
+      description: ''
+    content.vb: Public Shared Function GetAssetsFrom(Of T As UnityEngine.Object)(folderPath As String) As List(Of T)
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom*
+  nameWithType.vb: AssetDatabaseExtensions.GetAssetsFrom(Of T)(String)
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom(Of T)(String)
+  name.vb: GetAssetsFrom(Of T)(String)
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom``1(System.String,Func{``0,System.Boolean})
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom``1(System.String,Func{``0,System.Boolean})
+  id: GetAssetsFrom``1(System.String,Func{``0,System.Boolean})
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAssetsFrom<T>(string, Func<T, bool>)
+  nameWithType: AssetDatabaseExtensions.GetAssetsFrom<T>(string, Func<T, bool>)
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom<T>(string, Func<T, bool>)
+  type: Method
+  source:
+    id: GetAssetsFrom
+    path: ''
+    startLine: 35251
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nReturns the list of assets matching the predicate from the given folder path.\n"
+  example: []
+  syntax:
+    content: 'public static List<T> GetAssetsFrom<T>(string folderPath, Func<T, bool> predicate) where T : UnityEngine.Object'
+    parameters:
+    - id: folderPath
+      type: System.String
+      description: Folder path to search from
+    - id: predicate
+      type: Global.Func{{T},System.Boolean}
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: Global.List{{T}}
+      description: ''
+    content.vb: Public Shared Function GetAssetsFrom(Of T As UnityEngine.Object)(folderPath As String, predicate As Func(Of T, Boolean)) As List(Of T)
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom*
+  nameWithType.vb: AssetDatabaseExtensions.GetAssetsFrom(Of T)(String, Func(Of T, Boolean))
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom(Of T)(String, Func(Of T, Boolean))
+  name.vb: GetAssetsFrom(Of T)(String, Func(Of T, Boolean))
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom``1(System.String[])
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom``1(System.String[])
+  id: GetAssetsFrom``1(System.String[])
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAssetsFrom<T>(string[])
+  nameWithType: AssetDatabaseExtensions.GetAssetsFrom<T>(string[])
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom<T>(string[])
+  type: Method
+  source:
+    id: GetAssetsFrom
+    path: ''
+    startLine: 35264
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nReturns the list of assets from the given folders path.\n"
+  example: []
+  syntax:
+    content: 'public static List<T> GetAssetsFrom<T>(string[] foldersPath) where T : UnityEngine.Object'
+    parameters:
+    - id: foldersPath
+      type: System.String[]
+      description: Folders paths to search from
+    typeParameters:
+    - id: T
+      description: Type of the asset
+    return:
+      type: Global.List{{T}}
+      description: ''
+    content.vb: Public Shared Function GetAssetsFrom(Of T As UnityEngine.Object)(foldersPath As String()) As List(Of T)
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom*
+  nameWithType.vb: AssetDatabaseExtensions.GetAssetsFrom(Of T)(String())
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom(Of T)(String())
+  name.vb: GetAssetsFrom(Of T)(String())
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom``1(System.String[],Func{``0,System.Boolean})
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom``1(System.String[],Func{``0,System.Boolean})
+  id: GetAssetsFrom``1(System.String[],Func{``0,System.Boolean})
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAssetsFrom<T>(string[], Func<T, bool>)
+  nameWithType: AssetDatabaseExtensions.GetAssetsFrom<T>(string[], Func<T, bool>)
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom<T>(string[], Func<T, bool>)
+  type: Method
+  source:
+    id: GetAssetsFrom
+    path: ''
+    startLine: 35276
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nReturns the list of assets matching the predicate from the given folders path.\n"
+  example: []
+  syntax:
+    content: 'public static List<T> GetAssetsFrom<T>(string[] foldersPath, Func<T, bool> predicate) where T : UnityEngine.Object'
+    parameters:
+    - id: foldersPath
+      type: System.String[]
+      description: Folders path to search from
+    - id: predicate
+      type: Global.Func{{T},System.Boolean}
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: Global.List{{T}}
+      description: ''
+    content.vb: Public Shared Function GetAssetsFrom(Of T As UnityEngine.Object)(foldersPath As String(), predicate As Func(Of T, Boolean)) As List(Of T)
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom*
+  nameWithType.vb: AssetDatabaseExtensions.GetAssetsFrom(Of T)(String(), Func(Of T, Boolean))
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom(Of T)(String(), Func(Of T, Boolean))
+  name.vb: GetAssetsFrom(Of T)(String(), Func(Of T, Boolean))
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExistIn``1(System.String,System.String[])
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExistIn``1(System.String,System.String[])
+  id: AssetExistIn``1(System.String,System.String[])
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: AssetExistIn<T>(string, string[])
+  nameWithType: AssetDatabaseExtensions.AssetExistIn<T>(string, string[])
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExistIn<T>(string, string[])
+  type: Method
+  source:
+    id: AssetExistIn
+    path: ''
+    startLine: 35303
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nDetermine if an asset exist inside any given folders path.\n"
+  example: []
+  syntax:
+    content: 'public static bool AssetExistIn<T>(string assetName, string[] folders) where T : UnityEngine.Object'
+    parameters:
+    - id: assetName
+      type: System.String
+      description: The asset name to search
+    - id: folders
+      type: System.String[]
+    typeParameters:
+    - id: T
+      description: Object type
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function AssetExistIn(Of T As UnityEngine.Object)(assetName As String, folders As String()) As Boolean
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExistIn*
+  nameWithType.vb: AssetDatabaseExtensions.AssetExistIn(Of T)(String, String())
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExistIn(Of T)(String, String())
+  name.vb: AssetExistIn(Of T)(String, String())
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.LoadMonoScriptsFrom(System.String[])
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.LoadMonoScriptsFrom(System.String[])
+  id: LoadMonoScriptsFrom(System.String[])
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: LoadMonoScriptsFrom(string[])
+  nameWithType: AssetDatabaseExtensions.LoadMonoScriptsFrom(string[])
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.LoadMonoScriptsFrom(string[])
+  type: Method
+  source:
+    id: LoadMonoScriptsFrom
+    path: ''
+    startLine: 35313
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nReturns the list of MonoScript assets, which represents C# files stored in the project, from the given folders.\n"
+  example: []
+  syntax:
+    content: public static List<MonoScript> LoadMonoScriptsFrom(string[] folders)
+    parameters:
+    - id: folders
+      type: System.String[]
+      description: Folders path to search from
+    return:
+      type: Global.List{MonoScript}
+      description: ''
+    content.vb: Public Shared Function LoadMonoScriptsFrom(folders As String()) As List(Of MonoScript)
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.LoadMonoScriptsFrom*
+  nameWithType.vb: AssetDatabaseExtensions.LoadMonoScriptsFrom(String())
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.LoadMonoScriptsFrom(String())
+  name.vb: LoadMonoScriptsFrom(String())
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetGUIDs(System.String,Type)
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetGUIDs(System.String,Type)
+  id: GetAssetGUIDs(System.String,Type)
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAssetGUIDs(string, Type)
+  nameWithType: AssetDatabaseExtensions.GetAssetGUIDs(string, Type)
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetGUIDs(string, Type)
+  type: Method
+  source:
+    id: GetAssetGUIDs
+    path: ''
+    startLine: 35324
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nReturns all GUIDs of an asset by it&apos;s name and it&apos;s type.\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<string> GetAssetGUIDs(string assetName, Type assetType)
+    parameters:
+    - id: assetName
+      type: System.String
+      description: Name of the asset
+    - id: assetType
+      type: Global.Type
+      description: Type of the asset
+    return:
+      type: Global.IEnumerable{System.String}
+      description: ''
+    content.vb: Public Shared Function GetAssetGUIDs(assetName As String, assetType As Type) As IEnumerable(Of String)
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetGUIDs*
+  nameWithType.vb: AssetDatabaseExtensions.GetAssetGUIDs(String, Type)
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetGUIDs(String, Type)
+  name.vb: GetAssetGUIDs(String, Type)
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.CreateAssetIn(UnityEngine.Object,System.String,System.Boolean)
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.CreateAssetIn(UnityEngine.Object,System.String,System.Boolean)
+  id: CreateAssetIn(UnityEngine.Object,System.String,System.Boolean)
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateAssetIn(Object, string, bool)
+  nameWithType: AssetDatabaseExtensions.CreateAssetIn(UnityEngine.Object, string, bool)
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.CreateAssetIn(UnityEngine.Object, string, bool)
+  type: Method
+  source:
+    id: CreateAssetIn
+    path: ''
+    startLine: 35337
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nCreate an asset inside the given path, Debug.Log if it was successful or not.\n"
+  example: []
+  syntax:
+    content: public static bool CreateAssetIn(UnityEngine.Object asset, string path, bool debug = true)
+    parameters:
+    - id: asset
+      type: Global.UnityEngine.Object
+      description: The asset to create
+    - id: path
+      type: System.String
+      description: The relative path to create the asset
+    - id: debug
+      type: System.Boolean
+      description: Show in the console any issue preventing saving the asset
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function CreateAssetIn(asset As UnityEngine.Object, path As String, debug As Boolean = True) As Boolean
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.CreateAssetIn*
+  nameWithType.vb: AssetDatabaseExtensions.CreateAssetIn(UnityEngine.Object, String, Boolean)
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.CreateAssetIn(UnityEngine.Object, String, Boolean)
+  name.vb: CreateAssetIn(Object, String, Boolean)
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetNameInvalidCharacters(System.String)
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetNameInvalidCharacters(System.String)
+  id: GetAssetNameInvalidCharacters(System.String)
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAssetNameInvalidCharacters(string)
+  nameWithType: AssetDatabaseExtensions.GetAssetNameInvalidCharacters(string)
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetNameInvalidCharacters(string)
+  type: Method
+  source:
+    id: GetAssetNameInvalidCharacters
+    path: ''
+    startLine: 35358
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nReturn the collection of invalid character(s) from a string\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<char> GetAssetNameInvalidCharacters(string filename)
+    parameters:
+    - id: filename
+      type: System.String
+      description: ''
+    return:
+      type: Global.IEnumerable{System.Char}
+      description: ''
+    content.vb: Public Shared Function GetAssetNameInvalidCharacters(filename As String) As IEnumerable(Of Char)
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetNameInvalidCharacters*
+  nameWithType.vb: AssetDatabaseExtensions.GetAssetNameInvalidCharacters(String)
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetNameInvalidCharacters(String)
+  name.vb: GetAssetNameInvalidCharacters(String)
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExist(System.String,Type)
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExist(System.String,Type)
+  id: AssetExist(System.String,Type)
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: AssetExist(string, Type)
+  nameWithType: AssetDatabaseExtensions.AssetExist(string, Type)
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExist(string, Type)
+  type: Method
+  source:
+    id: AssetExist
+    path: ''
+    startLine: 35376
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nDetermine if an asset of a given type and name exist<br />\n"
+  example: []
+  syntax:
+    content: public static bool AssetExist(string name, Type assetType)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the asset, it can contains the extension (.asset)
+    - id: assetType
+      type: Global.Type
+      description: The type of the asset to search for
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function AssetExist(name As String, assetType As Type) As Boolean
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExist*
+  nameWithType.vb: AssetDatabaseExtensions.AssetExist(String, Type)
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExist(String, Type)
+  name.vb: AssetExist(String, Type)
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.CanAssetBeCreated(System.String,System.String,Type,System.Boolean)
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.CanAssetBeCreated(System.String,System.String,Type,System.Boolean)
+  id: CanAssetBeCreated(System.String,System.String,Type,System.Boolean)
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: CanAssetBeCreated(string, string, Type, bool)
+  nameWithType: AssetDatabaseExtensions.CanAssetBeCreated(string, string, Type, bool)
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.CanAssetBeCreated(string, string, Type, bool)
+  type: Method
+  source:
+    id: CanAssetBeCreated
+    path: ''
+    startLine: 35398
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nVerify if the asset name is not already taken or invalid, and if the path is not empty or null\n"
+  example: []
+  syntax:
+    content: public static bool CanAssetBeCreated(string path, string name, Type assetType, bool debug = true)
+    parameters:
+    - id: path
+      type: System.String
+      description: ''
+    - id: name
+      type: System.String
+      description: ''
+    - id: assetType
+      type: Global.Type
+    - id: debug
+      type: System.Boolean
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function CanAssetBeCreated(path As String, name As String, assetType As Type, debug As Boolean = True) As Boolean
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.CanAssetBeCreated*
+  nameWithType.vb: AssetDatabaseExtensions.CanAssetBeCreated(String, String, Type, Boolean)
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.CanAssetBeCreated(String, String, Type, Boolean)
+  name.vb: CanAssetBeCreated(String, String, Type, Boolean)
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidFilenameCharacters(System.String)
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidFilenameCharacters(System.String)
+  id: GetInvalidFilenameCharacters(System.String)
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetInvalidFilenameCharacters(string)
+  nameWithType: AssetDatabaseExtensions.GetInvalidFilenameCharacters(string)
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidFilenameCharacters(string)
+  type: Method
+  source:
+    id: GetInvalidFilenameCharacters
+    path: ''
+    startLine: 35454
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nReturn an IEnumerable of char which are invalid for a file name.\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<char> GetInvalidFilenameCharacters(string source)
+    parameters:
+    - id: source
+      type: System.String
+      description: ''
+    return:
+      type: Global.IEnumerable{System.Char}
+      description: ''
+    content.vb: Public Shared Function GetInvalidFilenameCharacters(source As String) As IEnumerable(Of Char)
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidFilenameCharacters*
+  nameWithType.vb: AssetDatabaseExtensions.GetInvalidFilenameCharacters(String)
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidFilenameCharacters(String)
+  name.vb: GetInvalidFilenameCharacters(String)
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidPathCharacters(System.String)
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidPathCharacters(System.String)
+  id: GetInvalidPathCharacters(System.String)
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetInvalidPathCharacters(string)
+  nameWithType: AssetDatabaseExtensions.GetInvalidPathCharacters(string)
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidPathCharacters(string)
+  type: Method
+  source:
+    id: GetInvalidPathCharacters
+    path: ''
+    startLine: 35464
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nReturn an IEnumerable of char which are invalid for a file name.\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<char> GetInvalidPathCharacters(string source)
+    parameters:
+    - id: source
+      type: System.String
+      description: ''
+    return:
+      type: Global.IEnumerable{System.Char}
+      description: ''
+    content.vb: Public Shared Function GetInvalidPathCharacters(source As String) As IEnumerable(Of Char)
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidPathCharacters*
+  nameWithType.vb: AssetDatabaseExtensions.GetInvalidPathCharacters(String)
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidPathCharacters(String)
+  name.vb: GetInvalidPathCharacters(String)
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.ToForwardSlashes(System.String)
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.ToForwardSlashes(System.String)
+  id: ToForwardSlashes(System.String)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToForwardSlashes(string)
+  nameWithType: AssetDatabaseExtensions.ToForwardSlashes(string)
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.ToForwardSlashes(string)
+  type: Method
+  source:
+    id: ToForwardSlashes
+    path: ''
+    startLine: 35474
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nConverts any backslashes in the path to forward slashes, supported Unity Editor platforms: Windows, Mac, Linux.\n"
+  example: []
+  syntax:
+    content: public static string ToForwardSlashes(this string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: The string with any backslashes replaced by forward slashes.
+    content.vb: Public Shared Function ToForwardSlashes(path As String) As String
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.ToForwardSlashes*
+  nameWithType.vb: AssetDatabaseExtensions.ToForwardSlashes(String)
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.ToForwardSlashes(String)
+  name.vb: ToForwardSlashes(String)
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetRelativePathWithExtension(System.String,System.String)
+  commentId: M:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetRelativePathWithExtension(System.String,System.String)
+  id: GetRelativePathWithExtension(System.String,System.String)
+  parent: TetraCreations.Core.Editor.AssetDatabaseExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetRelativePathWithExtension(string, string)
+  nameWithType: AssetDatabaseExtensions.GetRelativePathWithExtension(string, string)
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetRelativePathWithExtension(string, string)
+  type: Method
+  source:
+    id: GetRelativePathWithExtension
+    path: ''
+    startLine: 35486
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nCombine the name of the asset with its path to return a valid relative path ending by &apos;.asset&apos;<br />\nFor example : &quot;Assets/Game/Data/Sword.asset&quot;\n"
+  example: []
+  syntax:
+    content: public static string GetRelativePathWithExtension(string assetName, string path)
+    parameters:
+    - id: assetName
+      type: System.String
+      description: ''
+    - id: path
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function GetRelativePathWithExtension(assetName As String, path As String) As String
+  overload: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetRelativePathWithExtension*
+  nameWithType.vb: AssetDatabaseExtensions.GetRelativePathWithExtension(String, String)
+  fullName.vb: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetRelativePathWithExtension(String, String)
+  name.vb: GetRelativePathWithExtension(String, String)
+references:
+- uid: TetraCreations.Core.Editor
+  commentId: N:TetraCreations.Core.Editor
+  name: TetraCreations.Core.Editor
+  nameWithType: TetraCreations.Core.Editor
+  fullName: TetraCreations.Core.Editor
+  spec.csharp:
+  - uid: TetraCreations
+    name: TetraCreations
+  - name: .
+  - uid: TetraCreations.Core
+    name: Core
+  - name: .
+  - uid: TetraCreations.Core.Editor
+    name: Editor
+  spec.vb:
+  - uid: TetraCreations
+    name: TetraCreations
+  - name: .
+  - uid: TetraCreations.Core
+    name: Core
+  - name: .
+  - uid: TetraCreations.Core.Editor
+    name: Editor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAsset*
+  commentId: Overload:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAsset
+  name: GetAsset
+  nameWithType: AssetDatabaseExtensions.GetAsset
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAsset
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom*
+  commentId: Overload:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom
+  name: GetAssetFrom
+  nameWithType: AssetDatabaseExtensions.GetAssetFrom
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom
+- uid: System.String[]
+  isExternal: true
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Global.Func{{T},System.Boolean}
+  commentId: '!:Global.Func{``0,System.Boolean}'
+  definition: Global.Func`2
+  name: Func<T, bool>
+  nameWithType: Func<T, bool>
+  fullName: Func<T, bool>
+  nameWithType.vb: Func(Of T, Boolean)
+  fullName.vb: Func(Of T, Boolean)
+  name.vb: Func(Of T, Boolean)
+  spec.csharp:
+  - uid: Global.Func`2
+    name: Func
+    isExternal: true
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Global.Func`2
+    name: Func
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Global.Func`2
+  isExternal: true
+  name: Func<, >
+  nameWithType: Func<, >
+  fullName: Func<, >
+  nameWithType.vb: Func(Of , )
+  fullName.vb: Func(Of , )
+  name.vb: Func(Of , )
+  spec.csharp:
+  - uid: Global.Func`2
+    name: Func
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: ','
+  - name: " "
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: Global.Func`2
+    name: Func
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: ','
+  - name: " "
+  - name: ''
+  - name: )
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom*
+  commentId: Overload:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom
+  name: GetAssetsFrom
+  nameWithType: AssetDatabaseExtensions.GetAssetsFrom
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom
+- uid: Global.List{{T}}
+  commentId: '!:Global.List{``0}'
+  definition: Global.List`1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExistIn*
+  commentId: Overload:TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExistIn
+  name: AssetExistIn
+  nameWithType: AssetDatabaseExtensions.AssetExistIn
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExistIn
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.LoadMonoScriptsFrom*
+  commentId: Overload:TetraCreations.Core.Editor.AssetDatabaseExtensions.LoadMonoScriptsFrom
+  name: LoadMonoScriptsFrom
+  nameWithType: AssetDatabaseExtensions.LoadMonoScriptsFrom
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.LoadMonoScriptsFrom
+- uid: Global.List{MonoScript}
+  commentId: '!:Global.List{MonoScript}'
+  definition: Global.List`1
+  name: List<MonoScript>
+  nameWithType: List<MonoScript>
+  fullName: List<MonoScript>
+  nameWithType.vb: List(Of MonoScript)
+  fullName.vb: List(Of MonoScript)
+  name.vb: List(Of MonoScript)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.MonoScript
+    name: MonoScript
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.MonoScript
+    name: MonoScript
+    isExternal: true
+  - name: )
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetGUIDs*
+  commentId: Overload:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetGUIDs
+  name: GetAssetGUIDs
+  nameWithType: AssetDatabaseExtensions.GetAssetGUIDs
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetGUIDs
+- uid: Global.Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: Global.IEnumerable{System.String}
+  commentId: '!:Global.IEnumerable{System.String}'
+  definition: Global.IEnumerable`1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: Global.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Global.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Global.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: Global.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: Global.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.CreateAssetIn*
+  commentId: Overload:TetraCreations.Core.Editor.AssetDatabaseExtensions.CreateAssetIn
+  name: CreateAssetIn
+  nameWithType: AssetDatabaseExtensions.CreateAssetIn
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.CreateAssetIn
+- uid: Global.UnityEngine.Object
+  isExternal: true
+  name: Object
+  nameWithType: UnityEngine.Object
+  fullName: UnityEngine.Object
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetNameInvalidCharacters*
+  commentId: Overload:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetNameInvalidCharacters
+  name: GetAssetNameInvalidCharacters
+  nameWithType: AssetDatabaseExtensions.GetAssetNameInvalidCharacters
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetNameInvalidCharacters
+- uid: Global.IEnumerable{System.Char}
+  commentId: '!:Global.IEnumerable{System.Char}'
+  definition: Global.IEnumerable`1
+  name: IEnumerable<char>
+  nameWithType: IEnumerable<char>
+  fullName: IEnumerable<char>
+  nameWithType.vb: IEnumerable(Of Char)
+  fullName.vb: IEnumerable(Of Char)
+  name.vb: IEnumerable(Of Char)
+  spec.csharp:
+  - uid: Global.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Global.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+  - name: )
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExist*
+  commentId: Overload:TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExist
+  name: AssetExist
+  nameWithType: AssetDatabaseExtensions.AssetExist
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExist
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.CanAssetBeCreated*
+  commentId: Overload:TetraCreations.Core.Editor.AssetDatabaseExtensions.CanAssetBeCreated
+  name: CanAssetBeCreated
+  nameWithType: AssetDatabaseExtensions.CanAssetBeCreated
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.CanAssetBeCreated
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidFilenameCharacters*
+  commentId: Overload:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidFilenameCharacters
+  name: GetInvalidFilenameCharacters
+  nameWithType: AssetDatabaseExtensions.GetInvalidFilenameCharacters
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidFilenameCharacters
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidPathCharacters*
+  commentId: Overload:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidPathCharacters
+  name: GetInvalidPathCharacters
+  nameWithType: AssetDatabaseExtensions.GetInvalidPathCharacters
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidPathCharacters
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.ToForwardSlashes*
+  commentId: Overload:TetraCreations.Core.Editor.AssetDatabaseExtensions.ToForwardSlashes
+  name: ToForwardSlashes
+  nameWithType: AssetDatabaseExtensions.ToForwardSlashes
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.ToForwardSlashes
+- uid: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetRelativePathWithExtension*
+  commentId: Overload:TetraCreations.Core.Editor.AssetDatabaseExtensions.GetRelativePathWithExtension
+  name: GetRelativePathWithExtension
+  nameWithType: AssetDatabaseExtensions.GetRelativePathWithExtension
+  fullName: TetraCreations.Core.Editor.AssetDatabaseExtensions.GetRelativePathWithExtension

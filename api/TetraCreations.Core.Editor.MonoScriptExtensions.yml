@@ -1,0 +1,298 @@
+### YamlMime:ManagedReference
+items:
+- uid: TetraCreations.Core.Editor.MonoScriptExtensions
+  commentId: T:TetraCreations.Core.Editor.MonoScriptExtensions
+  id: MonoScriptExtensions
+  parent: TetraCreations.Core.Editor
+  children:
+  - TetraCreations.Core.Editor.MonoScriptExtensions.CreateInstance(MonoScript)
+  - TetraCreations.Core.Editor.MonoScriptExtensions.GetEnumFields(MonoScript,System.String,FieldInfo[]@)
+  - TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetEnumType(System.String,System.String,Type@)
+  - TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetFieldsInfo(System.String,Type,FieldInfo[]@)
+  langs:
+  - csharp
+  - vb
+  name: MonoScriptExtensions
+  nameWithType: MonoScriptExtensions
+  fullName: TetraCreations.Core.Editor.MonoScriptExtensions
+  type: Class
+  source:
+    id: MonoScriptExtensions
+    path: ''
+    startLine: 35685
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  syntax:
+    content: public static class MonoScriptExtensions
+    content.vb: Public Module MonoScriptExtensions
+  inheritance:
+  - System.Object
+- uid: TetraCreations.Core.Editor.MonoScriptExtensions.GetEnumFields(MonoScript,System.String,FieldInfo[]@)
+  commentId: M:TetraCreations.Core.Editor.MonoScriptExtensions.GetEnumFields(MonoScript,System.String,FieldInfo[]@)
+  id: GetEnumFields(MonoScript,System.String,FieldInfo[]@)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.Editor.MonoScriptExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetEnumFields(MonoScript, string, out FieldInfo[])
+  nameWithType: MonoScriptExtensions.GetEnumFields(MonoScript, string, out FieldInfo[])
+  fullName: TetraCreations.Core.Editor.MonoScriptExtensions.GetEnumFields(MonoScript, string, out FieldInfo[])
+  type: Method
+  source:
+    id: GetEnumFields
+    path: ''
+    startLine: 35698
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nTry to get the array of enum fields from a MonoScript, which needs to be an enum.\n"
+  example: []
+  syntax:
+    content: public static bool GetEnumFields(this MonoScript monoScript, string assemblyName, out FieldInfo[] fieldInfos)
+    parameters:
+    - id: monoScript
+      type: Global.MonoScript
+      description: ''
+    - id: assemblyName
+      type: System.String
+      description: ''
+    - id: fieldInfos
+      type: Global.FieldInfo[]
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function GetEnumFields(monoScript As MonoScript, assemblyName As String, fieldInfos As FieldInfo()) As Boolean
+  overload: TetraCreations.Core.Editor.MonoScriptExtensions.GetEnumFields*
+  nameWithType.vb: MonoScriptExtensions.GetEnumFields(MonoScript, String, FieldInfo())
+  fullName.vb: TetraCreations.Core.Editor.MonoScriptExtensions.GetEnumFields(MonoScript, String, FieldInfo())
+  name.vb: GetEnumFields(MonoScript, String, FieldInfo())
+- uid: TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetEnumType(System.String,System.String,Type@)
+  commentId: M:TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetEnumType(System.String,System.String,Type@)
+  id: TryToGetEnumType(System.String,System.String,Type@)
+  parent: TetraCreations.Core.Editor.MonoScriptExtensions
+  langs:
+  - csharp
+  - vb
+  name: TryToGetEnumType(string, string, out Type)
+  nameWithType: MonoScriptExtensions.TryToGetEnumType(string, string, out Type)
+  fullName: TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetEnumType(string, string, out Type)
+  type: Method
+  source:
+    id: TryToGetEnumType
+    path: ''
+    startLine: 35730
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nTry to find the Enum script based on it&apos;s name and the Assembly.<br />\nIf the script was not found, it will try to look into the default C-Sharp Assembly.<br />\nThen if the Type is still null, it means we can&apos;t find it.\n"
+  example: []
+  syntax:
+    content: public static bool TryToGetEnumType(string enumScriptName, string assemblyName, out Type enumType)
+    parameters:
+    - id: enumScriptName
+      type: System.String
+      description: ''
+    - id: assemblyName
+      type: System.String
+    - id: enumType
+      type: Global.Type
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function TryToGetEnumType(enumScriptName As String, assemblyName As String, enumType As Type) As Boolean
+  overload: TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetEnumType*
+  nameWithType.vb: MonoScriptExtensions.TryToGetEnumType(String, String, Type)
+  fullName.vb: TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetEnumType(String, String, Type)
+  name.vb: TryToGetEnumType(String, String, Type)
+- uid: TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetFieldsInfo(System.String,Type,FieldInfo[]@)
+  commentId: M:TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetFieldsInfo(System.String,Type,FieldInfo[]@)
+  id: TryToGetFieldsInfo(System.String,Type,FieldInfo[]@)
+  parent: TetraCreations.Core.Editor.MonoScriptExtensions
+  langs:
+  - csharp
+  - vb
+  name: TryToGetFieldsInfo(string, Type, out FieldInfo[])
+  nameWithType: MonoScriptExtensions.TryToGetFieldsInfo(string, Type, out FieldInfo[])
+  fullName: TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetFieldsInfo(string, Type, out FieldInfo[])
+  type: Method
+  source:
+    id: TryToGetFieldsInfo
+    path: ''
+    startLine: 35762
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nReturn bool if the array of FieldInfo is not empty.\n"
+  example: []
+  syntax:
+    content: public static bool TryToGetFieldsInfo(string enumScriptName, Type enumType, out FieldInfo[] fieldInfos)
+    parameters:
+    - id: enumScriptName
+      type: System.String
+      description: ''
+    - id: enumType
+      type: Global.Type
+      description: ''
+    - id: fieldInfos
+      type: Global.FieldInfo[]
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function TryToGetFieldsInfo(enumScriptName As String, enumType As Type, fieldInfos As FieldInfo()) As Boolean
+  overload: TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetFieldsInfo*
+  nameWithType.vb: MonoScriptExtensions.TryToGetFieldsInfo(String, Type, FieldInfo())
+  fullName.vb: TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetFieldsInfo(String, Type, FieldInfo())
+  name.vb: TryToGetFieldsInfo(String, Type, FieldInfo())
+- uid: TetraCreations.Core.Editor.MonoScriptExtensions.CreateInstance(MonoScript)
+  commentId: M:TetraCreations.Core.Editor.MonoScriptExtensions.CreateInstance(MonoScript)
+  id: CreateInstance(MonoScript)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.Editor.MonoScriptExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateInstance(MonoScript)
+  nameWithType: MonoScriptExtensions.CreateInstance(MonoScript)
+  fullName: TetraCreations.Core.Editor.MonoScriptExtensions.CreateInstance(MonoScript)
+  type: Method
+  source:
+    id: CreateInstance
+    path: ''
+    startLine: 35779
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Editor
+  summary: "\nCreate a new ScriptableObject instance based on the MonoScript\n"
+  example: []
+  syntax:
+    content: public static ScriptableObject CreateInstance(this MonoScript monoScript)
+    parameters:
+    - id: monoScript
+      type: Global.MonoScript
+      description: ''
+    return:
+      type: Global.ScriptableObject
+      description: ''
+    content.vb: Public Shared Function CreateInstance(monoScript As MonoScript) As ScriptableObject
+  overload: TetraCreations.Core.Editor.MonoScriptExtensions.CreateInstance*
+references:
+- uid: TetraCreations.Core.Editor
+  commentId: N:TetraCreations.Core.Editor
+  name: TetraCreations.Core.Editor
+  nameWithType: TetraCreations.Core.Editor
+  fullName: TetraCreations.Core.Editor
+  spec.csharp:
+  - uid: TetraCreations
+    name: TetraCreations
+  - name: .
+  - uid: TetraCreations.Core
+    name: Core
+  - name: .
+  - uid: TetraCreations.Core.Editor
+    name: Editor
+  spec.vb:
+  - uid: TetraCreations
+    name: TetraCreations
+  - name: .
+  - uid: TetraCreations.Core
+    name: Core
+  - name: .
+  - uid: TetraCreations.Core.Editor
+    name: Editor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TetraCreations.Core.Editor.MonoScriptExtensions.GetEnumFields*
+  commentId: Overload:TetraCreations.Core.Editor.MonoScriptExtensions.GetEnumFields
+  name: GetEnumFields
+  nameWithType: MonoScriptExtensions.GetEnumFields
+  fullName: TetraCreations.Core.Editor.MonoScriptExtensions.GetEnumFields
+- uid: Global.MonoScript
+  isExternal: true
+  name: MonoScript
+  nameWithType: MonoScript
+  fullName: MonoScript
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.FieldInfo[]
+  isExternal: true
+  name: FieldInfo[]
+  nameWithType: FieldInfo[]
+  fullName: FieldInfo[]
+  nameWithType.vb: FieldInfo()
+  fullName.vb: FieldInfo()
+  name.vb: FieldInfo()
+  spec.csharp:
+  - uid: Global.FieldInfo
+    name: FieldInfo
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.FieldInfo
+    name: FieldInfo
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetEnumType*
+  commentId: Overload:TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetEnumType
+  name: TryToGetEnumType
+  nameWithType: MonoScriptExtensions.TryToGetEnumType
+  fullName: TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetEnumType
+- uid: Global.Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetFieldsInfo*
+  commentId: Overload:TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetFieldsInfo
+  name: TryToGetFieldsInfo
+  nameWithType: MonoScriptExtensions.TryToGetFieldsInfo
+  fullName: TetraCreations.Core.Editor.MonoScriptExtensions.TryToGetFieldsInfo
+- uid: TetraCreations.Core.Editor.MonoScriptExtensions.CreateInstance*
+  commentId: Overload:TetraCreations.Core.Editor.MonoScriptExtensions.CreateInstance
+  name: CreateInstance
+  nameWithType: MonoScriptExtensions.CreateInstance
+  fullName: TetraCreations.Core.Editor.MonoScriptExtensions.CreateInstance
+- uid: Global.ScriptableObject
+  commentId: '!:Global.ScriptableObject'
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: ScriptableObject

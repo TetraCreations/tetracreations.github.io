@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: TetraCreations.Core.Utility
+  commentId: N:TetraCreations.Core.Utility
+  id: TetraCreations.Core.Utility
+  children:
+  - TetraCreations.Core.Utility.CountdownTimer
+  - TetraCreations.Core.Utility.FloatValueCondition
+  - TetraCreations.Core.Utility.FloatValueCondition.ConditionIsMet
+  - TetraCreations.Core.Utility.LayerMaskFilter
+  - TetraCreations.Core.Utility.Singleton
+  - TetraCreations.Core.Utility.Singleton`1
+  - TetraCreations.Core.Utility.Timer
+  - TetraCreations.Core.Utility.TimerManager
+  - TetraCreations.Core.Utility.Trigger2DCollider
+  - TetraCreations.Core.Utility.TriggerCollider
+  langs:
+  - csharp
+  - vb
+  name: TetraCreations.Core.Utility
+  nameWithType: TetraCreations.Core.Utility
+  fullName: TetraCreations.Core.Utility
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: TetraCreations.Core.Utility.CountdownTimer
+  commentId: T:TetraCreations.Core.Utility.CountdownTimer
+  parent: TetraCreations.Core.Utility
+  name: CountdownTimer
+  nameWithType: CountdownTimer
+  fullName: TetraCreations.Core.Utility.CountdownTimer
+- uid: TetraCreations.Core.Utility.FloatValueCondition
+  commentId: T:TetraCreations.Core.Utility.FloatValueCondition
+  name: FloatValueCondition
+  nameWithType: FloatValueCondition
+  fullName: TetraCreations.Core.Utility.FloatValueCondition
+- uid: TetraCreations.Core.Utility.FloatValueCondition.ConditionIsMet
+  commentId: T:TetraCreations.Core.Utility.FloatValueCondition.ConditionIsMet
+  parent: TetraCreations.Core.Utility
+  name: FloatValueCondition.ConditionIsMet
+  nameWithType: FloatValueCondition.ConditionIsMet
+  fullName: TetraCreations.Core.Utility.FloatValueCondition.ConditionIsMet
+  spec.csharp:
+  - uid: TetraCreations.Core.Utility.FloatValueCondition
+    name: FloatValueCondition
+  - name: .
+  - uid: TetraCreations.Core.Utility.FloatValueCondition.ConditionIsMet
+    name: ConditionIsMet
+  spec.vb:
+  - uid: TetraCreations.Core.Utility.FloatValueCondition
+    name: FloatValueCondition
+  - name: .
+  - uid: TetraCreations.Core.Utility.FloatValueCondition.ConditionIsMet
+    name: ConditionIsMet
+- uid: TetraCreations.Core.Utility.LayerMaskFilter
+  commentId: T:TetraCreations.Core.Utility.LayerMaskFilter
+  parent: TetraCreations.Core.Utility
+  name: LayerMaskFilter
+  nameWithType: LayerMaskFilter
+  fullName: TetraCreations.Core.Utility.LayerMaskFilter
+- uid: TetraCreations.Core.Utility.Singleton`1
+  commentId: T:TetraCreations.Core.Utility.Singleton`1
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: TetraCreations.Core.Utility.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: TetraCreations.Core.Utility.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: TetraCreations.Core.Utility.Singleton`1
+    name: Singleton
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TetraCreations.Core.Utility.Singleton`1
+    name: Singleton
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TetraCreations.Core.Utility.Singleton
+  commentId: T:TetraCreations.Core.Utility.Singleton
+  parent: TetraCreations.Core.Utility
+  name: Singleton
+  nameWithType: Singleton
+  fullName: TetraCreations.Core.Utility.Singleton
+- uid: TetraCreations.Core.Utility.Timer
+  commentId: T:TetraCreations.Core.Utility.Timer
+  parent: TetraCreations.Core.Utility
+  name: Timer
+  nameWithType: Timer
+  fullName: TetraCreations.Core.Utility.Timer
+- uid: TetraCreations.Core.Utility.TimerManager
+  commentId: T:TetraCreations.Core.Utility.TimerManager
+  name: TimerManager
+  nameWithType: TimerManager
+  fullName: TetraCreations.Core.Utility.TimerManager
+- uid: TetraCreations.Core.Utility.Trigger2DCollider
+  commentId: T:TetraCreations.Core.Utility.Trigger2DCollider
+  name: Trigger2DCollider
+  nameWithType: Trigger2DCollider
+  fullName: TetraCreations.Core.Utility.Trigger2DCollider
+- uid: TetraCreations.Core.Utility.TriggerCollider
+  commentId: T:TetraCreations.Core.Utility.TriggerCollider
+  name: TriggerCollider
+  nameWithType: TriggerCollider
+  fullName: TetraCreations.Core.Utility.TriggerCollider
+- uid: TetraCreations.Core.Utility
+  commentId: N:TetraCreations.Core.Utility
+  name: TetraCreations.Core.Utility
+  nameWithType: TetraCreations.Core.Utility
+  fullName: TetraCreations.Core.Utility
+  spec.csharp:
+  - uid: TetraCreations
+    name: TetraCreations
+  - name: .
+  - uid: TetraCreations.Core
+    name: Core
+  - name: .
+  - uid: TetraCreations.Core.Utility
+    name: Utility
+  spec.vb:
+  - uid: TetraCreations
+    name: TetraCreations
+  - name: .
+  - uid: TetraCreations.Core
+    name: Core
+  - name: .
+  - uid: TetraCreations.Core.Utility
+    name: Utility

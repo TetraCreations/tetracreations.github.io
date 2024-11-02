@@ -1,0 +1,13 @@
+apiRules:
+- include:
+    uidRegex: ^TetraCreations\.Core$
+    type: Namespace
+- include:
+    uidRegex: ^TetraCreations\.Core\.Utility
+    type: Namespace
+- include:
+    uidRegex: ^TetraCreations\.Core\.Editor
+    type: Namespace
+- exclude:
+    uidRegex: .* # Every other namespaces are ignored
+    type: Namespace

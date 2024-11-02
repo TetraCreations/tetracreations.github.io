@@ -1,0 +1,287 @@
+### YamlMime:ManagedReference
+items:
+- uid: TetraCreations.Core.Utility.Singleton`1
+  commentId: T:TetraCreations.Core.Utility.Singleton`1
+  id: Singleton`1
+  parent: TetraCreations.Core.Utility
+  children:
+  - TetraCreations.Core.Utility.Singleton`1._automaticInstanciation
+  - TetraCreations.Core.Utility.Singleton`1.Instance
+  - TetraCreations.Core.Utility.Singleton`1.IsAwake
+  - TetraCreations.Core.Utility.Singleton`1.OnAwake
+  - TetraCreations.Core.Utility.Singleton`1.OnAwakeEvent
+  langs:
+  - csharp
+  - vb
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: TetraCreations.Core.Utility.Singleton<T>
+  type: Class
+  source:
+    id: Singleton
+    path: ''
+    startLine: 39038
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Utility
+  syntax:
+    content: 'public abstract class Singleton<T> : Singleton where T : MonoBehaviour'
+    typeParameters:
+    - id: T
+    content.vb: Public MustInherit Class Singleton(Of T As MonoBehaviour) Inherits Singleton
+  inheritance:
+  - System.Object
+  - TetraCreations.Core.Utility.Singleton
+  derivedClasses:
+  - TetraCreations.Core.Utility.TimerManager
+  inheritedMembers:
+  - TetraCreations.Core.Utility.Singleton.Quitting
+  - TetraCreations.Core.Utility.Singleton.OnQuitting
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: TetraCreations.Core.Utility.Singleton(Of T)
+  name.vb: Singleton(Of T)
+- uid: TetraCreations.Core.Utility.Singleton`1._automaticInstanciation
+  commentId: F:TetraCreations.Core.Utility.Singleton`1._automaticInstanciation
+  id: _automaticInstanciation
+  parent: TetraCreations.Core.Utility.Singleton`1
+  langs:
+  - csharp
+  - vb
+  name: _automaticInstanciation
+  nameWithType: Singleton<T>._automaticInstanciation
+  fullName: TetraCreations.Core.Utility.Singleton<T>._automaticInstanciation
+  type: Field
+  source:
+    id: _automaticInstanciation
+    path: ''
+    startLine: 39045
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Utility
+  syntax:
+    content: public static bool _automaticInstanciation
+    return:
+      type: System.Boolean
+    content.vb: Public Shared _automaticInstanciation As Boolean
+  nameWithType.vb: Singleton(Of T)._automaticInstanciation
+  fullName.vb: TetraCreations.Core.Utility.Singleton(Of T)._automaticInstanciation
+- uid: TetraCreations.Core.Utility.Singleton`1.OnAwakeEvent
+  commentId: F:TetraCreations.Core.Utility.Singleton`1.OnAwakeEvent
+  id: OnAwakeEvent
+  parent: TetraCreations.Core.Utility.Singleton`1
+  langs:
+  - csharp
+  - vb
+  name: OnAwakeEvent
+  nameWithType: Singleton<T>.OnAwakeEvent
+  fullName: TetraCreations.Core.Utility.Singleton<T>.OnAwakeEvent
+  type: Field
+  source:
+    id: OnAwakeEvent
+    path: ''
+    startLine: 39057
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Utility
+  syntax:
+    content: public UnityEvent OnAwakeEvent
+    return:
+      type: Global.UnityEvent
+    content.vb: Public OnAwakeEvent As UnityEvent
+  nameWithType.vb: Singleton(Of T).OnAwakeEvent
+  fullName.vb: TetraCreations.Core.Utility.Singleton(Of T).OnAwakeEvent
+- uid: TetraCreations.Core.Utility.Singleton`1.Instance
+  commentId: P:TetraCreations.Core.Utility.Singleton`1.Instance
+  id: Instance
+  parent: TetraCreations.Core.Utility.Singleton`1
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: Singleton<T>.Instance
+  fullName: TetraCreations.Core.Utility.Singleton<T>.Instance
+  type: Property
+  source:
+    id: Instance
+    path: ''
+    startLine: 39061
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Utility
+  syntax:
+    content: public static T Instance { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Shared ReadOnly Property Instance As T
+  overload: TetraCreations.Core.Utility.Singleton`1.Instance*
+  nameWithType.vb: Singleton(Of T).Instance
+  fullName.vb: TetraCreations.Core.Utility.Singleton(Of T).Instance
+- uid: TetraCreations.Core.Utility.Singleton`1.IsAwake
+  commentId: P:TetraCreations.Core.Utility.Singleton`1.IsAwake
+  id: IsAwake
+  parent: TetraCreations.Core.Utility.Singleton`1
+  langs:
+  - csharp
+  - vb
+  name: IsAwake
+  nameWithType: Singleton<T>.IsAwake
+  fullName: TetraCreations.Core.Utility.Singleton<T>.IsAwake
+  type: Property
+  source:
+    id: IsAwake
+    path: ''
+    startLine: 39109
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Utility
+  syntax:
+    content: public bool IsAwake { get; protected set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsAwake As Boolean
+  overload: TetraCreations.Core.Utility.Singleton`1.IsAwake*
+  nameWithType.vb: Singleton(Of T).IsAwake
+  fullName.vb: TetraCreations.Core.Utility.Singleton(Of T).IsAwake
+- uid: TetraCreations.Core.Utility.Singleton`1.OnAwake
+  commentId: M:TetraCreations.Core.Utility.Singleton`1.OnAwake
+  id: OnAwake
+  parent: TetraCreations.Core.Utility.Singleton`1
+  langs:
+  - csharp
+  - vb
+  name: OnAwake()
+  nameWithType: Singleton<T>.OnAwake()
+  fullName: TetraCreations.Core.Utility.Singleton<T>.OnAwake()
+  type: Method
+  source:
+    id: OnAwake
+    path: ''
+    startLine: 39169
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core.Utility
+  summary: "\nOverride this, instead of overriding Awake() ! or if you use Awake() dont forget to call base.Awake();\n"
+  example: []
+  syntax:
+    content: protected virtual void OnAwake()
+    content.vb: Protected Overridable Sub OnAwake()
+  overload: TetraCreations.Core.Utility.Singleton`1.OnAwake*
+  nameWithType.vb: Singleton(Of T).OnAwake()
+  fullName.vb: TetraCreations.Core.Utility.Singleton(Of T).OnAwake()
+references:
+- uid: TetraCreations.Core.Utility
+  commentId: N:TetraCreations.Core.Utility
+  name: TetraCreations.Core.Utility
+  nameWithType: TetraCreations.Core.Utility
+  fullName: TetraCreations.Core.Utility
+  spec.csharp:
+  - uid: TetraCreations
+    name: TetraCreations
+  - name: .
+  - uid: TetraCreations.Core
+    name: Core
+  - name: .
+  - uid: TetraCreations.Core.Utility
+    name: Utility
+  spec.vb:
+  - uid: TetraCreations
+    name: TetraCreations
+  - name: .
+  - uid: TetraCreations.Core
+    name: Core
+  - name: .
+  - uid: TetraCreations.Core.Utility
+    name: Utility
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: TetraCreations.Core.Utility.Singleton
+  commentId: T:TetraCreations.Core.Utility.Singleton
+  parent: TetraCreations.Core.Utility
+  name: Singleton
+  nameWithType: Singleton
+  fullName: TetraCreations.Core.Utility.Singleton
+- uid: TetraCreations.Core.Utility.Singleton.Quitting
+  commentId: P:TetraCreations.Core.Utility.Singleton.Quitting
+  parent: TetraCreations.Core.Utility.Singleton
+  name: Quitting
+  nameWithType: Singleton.Quitting
+  fullName: TetraCreations.Core.Utility.Singleton.Quitting
+- uid: TetraCreations.Core.Utility.Singleton.OnQuitting
+  commentId: M:TetraCreations.Core.Utility.Singleton.OnQuitting
+  parent: TetraCreations.Core.Utility.Singleton
+  name: OnQuitting()
+  nameWithType: Singleton.OnQuitting()
+  fullName: TetraCreations.Core.Utility.Singleton.OnQuitting()
+  spec.csharp:
+  - uid: TetraCreations.Core.Utility.Singleton.OnQuitting
+    name: OnQuitting
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TetraCreations.Core.Utility.Singleton.OnQuitting
+    name: OnQuitting
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.UnityEvent
+  commentId: '!:Global.UnityEvent'
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEvent
+- uid: TetraCreations.Core.Utility.Singleton`1.Instance*
+  commentId: Overload:TetraCreations.Core.Utility.Singleton`1.Instance
+  name: Instance
+  nameWithType: Singleton<T>.Instance
+  fullName: TetraCreations.Core.Utility.Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+  fullName.vb: TetraCreations.Core.Utility.Singleton(Of T).Instance
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: TetraCreations.Core.Utility.Singleton`1.IsAwake*
+  commentId: Overload:TetraCreations.Core.Utility.Singleton`1.IsAwake
+  name: IsAwake
+  nameWithType: Singleton<T>.IsAwake
+  fullName: TetraCreations.Core.Utility.Singleton<T>.IsAwake
+  nameWithType.vb: Singleton(Of T).IsAwake
+  fullName.vb: TetraCreations.Core.Utility.Singleton(Of T).IsAwake
+- uid: TetraCreations.Core.Utility.Singleton`1.OnAwake*
+  commentId: Overload:TetraCreations.Core.Utility.Singleton`1.OnAwake
+  name: OnAwake
+  nameWithType: Singleton<T>.OnAwake
+  fullName: TetraCreations.Core.Utility.Singleton<T>.OnAwake
+  nameWithType.vb: Singleton(Of T).OnAwake
+  fullName.vb: TetraCreations.Core.Utility.Singleton(Of T).OnAwake

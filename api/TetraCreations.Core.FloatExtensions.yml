@@ -1,0 +1,560 @@
+### YamlMime:ManagedReference
+items:
+- uid: TetraCreations.Core.FloatExtensions
+  commentId: T:TetraCreations.Core.FloatExtensions
+  id: FloatExtensions
+  parent: TetraCreations.Core
+  children:
+  - TetraCreations.Core.FloatExtensions.Clamp(System.Single@,System.Single,System.Single)
+  - TetraCreations.Core.FloatExtensions.CountDigits(System.Single,System.Int32,System.Boolean)
+  - TetraCreations.Core.FloatExtensions.GetPercentage(System.Single,System.Single)
+  - TetraCreations.Core.FloatExtensions.IsApproximatelyEquals(System.Single,System.Single,System.Single)
+  - TetraCreations.Core.FloatExtensions.NormalizeEulerAngle(System.Single)
+  - TetraCreations.Core.FloatExtensions.ParseToInt(System.Single,TetraCreations.Core.RoundMethod)
+  - TetraCreations.Core.FloatExtensions.PercentageOf(System.Single,System.Int32)
+  - TetraCreations.Core.FloatExtensions.Round(System.Single,System.Int32,MidpointRounding)
+  - TetraCreations.Core.FloatExtensions.ToMultiplierPercentageBonus(System.Single,System.Int32,System.Boolean)
+  - TetraCreations.Core.FloatExtensions.ToStringPercentage(System.Single,System.String)
+  langs:
+  - csharp
+  - vb
+  name: FloatExtensions
+  nameWithType: FloatExtensions
+  fullName: TetraCreations.Core.FloatExtensions
+  type: Class
+  source:
+    id: FloatExtensions
+    path: ''
+    startLine: 36959
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static class FloatExtensions
+    content.vb: Public Module FloatExtensions
+  inheritance:
+  - System.Object
+- uid: TetraCreations.Core.FloatExtensions.Clamp(System.Single@,System.Single,System.Single)
+  commentId: M:TetraCreations.Core.FloatExtensions.Clamp(System.Single@,System.Single,System.Single)
+  id: Clamp(System.Single@,System.Single,System.Single)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.FloatExtensions
+  langs:
+  - csharp
+  - vb
+  name: Clamp(ref float, float, float)
+  nameWithType: FloatExtensions.Clamp(ref float, float, float)
+  fullName: TetraCreations.Core.FloatExtensions.Clamp(ref float, float, float)
+  type: Method
+  source:
+    id: Clamp
+    path: ''
+    startLine: 36967
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nClamp the float value by reference.\n"
+  example: []
+  syntax:
+    content: public static void Clamp(this ref float value, float minimum, float maximum)
+    parameters:
+    - id: value
+      type: System.Single
+      description: Value to clamp
+    - id: minimum
+      type: System.Single
+      description: Minimum value
+    - id: maximum
+      type: System.Single
+      description: Maximum value
+    content.vb: Public Shared Sub Clamp(value As Single, minimum As Single, maximum As Single)
+  overload: TetraCreations.Core.FloatExtensions.Clamp*
+  nameWithType.vb: FloatExtensions.Clamp(Single, Single, Single)
+  fullName.vb: TetraCreations.Core.FloatExtensions.Clamp(Single, Single, Single)
+  name.vb: Clamp(Single, Single, Single)
+- uid: TetraCreations.Core.FloatExtensions.GetPercentage(System.Single,System.Single)
+  commentId: M:TetraCreations.Core.FloatExtensions.GetPercentage(System.Single,System.Single)
+  id: GetPercentage(System.Single,System.Single)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.FloatExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPercentage(float, float)
+  nameWithType: FloatExtensions.GetPercentage(float, float)
+  fullName: TetraCreations.Core.FloatExtensions.GetPercentage(float, float)
+  type: Method
+  source:
+    id: GetPercentage
+    path: ''
+    startLine: 36978
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nGet the percentage of the value for example : 50.GetPercentage(20) = 50 * 0.2 = 10\n"
+  example: []
+  syntax:
+    content: public static float GetPercentage(this float value, float percentage)
+    parameters:
+    - id: value
+      type: System.Single
+      description: ''
+    - id: percentage
+      type: System.Single
+      description: ''
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Shared Function GetPercentage(value As Single, percentage As Single) As Single
+  overload: TetraCreations.Core.FloatExtensions.GetPercentage*
+  nameWithType.vb: FloatExtensions.GetPercentage(Single, Single)
+  fullName.vb: TetraCreations.Core.FloatExtensions.GetPercentage(Single, Single)
+  name.vb: GetPercentage(Single, Single)
+- uid: TetraCreations.Core.FloatExtensions.PercentageOf(System.Single,System.Int32)
+  commentId: M:TetraCreations.Core.FloatExtensions.PercentageOf(System.Single,System.Int32)
+  id: PercentageOf(System.Single,System.Int32)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.FloatExtensions
+  langs:
+  - csharp
+  - vb
+  name: PercentageOf(float, int)
+  nameWithType: FloatExtensions.PercentageOf(float, int)
+  fullName: TetraCreations.Core.FloatExtensions.PercentageOf(float, int)
+  type: Method
+  source:
+    id: PercentageOf
+    path: ''
+    startLine: 36989
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nReturns the percentage represented by a number depending on a total for exemple 50 in 125 is 40%.\n"
+  example: []
+  syntax:
+    content: public static float PercentageOf(this float portion, int total)
+    parameters:
+    - id: portion
+      type: System.Single
+      description: ''
+    - id: total
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Shared Function PercentageOf(portion As Single, total As Integer) As Single
+  overload: TetraCreations.Core.FloatExtensions.PercentageOf*
+  nameWithType.vb: FloatExtensions.PercentageOf(Single, Integer)
+  fullName.vb: TetraCreations.Core.FloatExtensions.PercentageOf(Single, Integer)
+  name.vb: PercentageOf(Single, Integer)
+- uid: TetraCreations.Core.FloatExtensions.ToStringPercentage(System.Single,System.String)
+  commentId: M:TetraCreations.Core.FloatExtensions.ToStringPercentage(System.Single,System.String)
+  id: ToStringPercentage(System.Single,System.String)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.FloatExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToStringPercentage(float, string)
+  nameWithType: FloatExtensions.ToStringPercentage(float, string)
+  fullName: TetraCreations.Core.FloatExtensions.ToStringPercentage(float, string)
+  type: Method
+  source:
+    id: ToStringPercentage
+    path: ''
+    startLine: 37008
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nConverts the float to string percentage\nExample 0.45f ToPercentage() will return 45%\n"
+  example: []
+  syntax:
+    content: public static string ToStringPercentage(this float value, string precision = "0")
+    parameters:
+    - id: value
+      type: System.Single
+      description: ''
+    - id: precision
+      type: System.String
+      description: Number of digit.
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function ToStringPercentage(value As Single, precision As String = "0") As String
+  overload: TetraCreations.Core.FloatExtensions.ToStringPercentage*
+  nameWithType.vb: FloatExtensions.ToStringPercentage(Single, String)
+  fullName.vb: TetraCreations.Core.FloatExtensions.ToStringPercentage(Single, String)
+  name.vb: ToStringPercentage(Single, String)
+- uid: TetraCreations.Core.FloatExtensions.ToMultiplierPercentageBonus(System.Single,System.Int32,System.Boolean)
+  commentId: M:TetraCreations.Core.FloatExtensions.ToMultiplierPercentageBonus(System.Single,System.Int32,System.Boolean)
+  id: ToMultiplierPercentageBonus(System.Single,System.Int32,System.Boolean)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.FloatExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToMultiplierPercentageBonus(float, int, bool)
+  nameWithType: FloatExtensions.ToMultiplierPercentageBonus(float, int, bool)
+  fullName: TetraCreations.Core.FloatExtensions.ToMultiplierPercentageBonus(float, int, bool)
+  type: Method
+  source:
+    id: ToMultiplierPercentageBonus
+    path: ''
+    startLine: 37021
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nReturns a string representing a multiplier bonus percentage, asssuming 1f is 0%. <br />\nSo any value above 1f for example 1.25f will return +25%. And any value below 1f, like 0.25f will return -75%.\n"
+  example: []
+  syntax:
+    content: public static string ToMultiplierPercentageBonus(this float value, int digit = 0, bool withPositiveSign = true)
+    parameters:
+    - id: value
+      type: System.Single
+      description: ''
+    - id: digit
+      type: System.Int32
+      description: Number of digit.
+    - id: withPositiveSign
+      type: System.Boolean
+      description: Add &quot;+&quot; sign in front of a positive percentage.
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function ToMultiplierPercentageBonus(value As Single, digit As Integer = 0, withPositiveSign As Boolean = True) As String
+  overload: TetraCreations.Core.FloatExtensions.ToMultiplierPercentageBonus*
+  nameWithType.vb: FloatExtensions.ToMultiplierPercentageBonus(Single, Integer, Boolean)
+  fullName.vb: TetraCreations.Core.FloatExtensions.ToMultiplierPercentageBonus(Single, Integer, Boolean)
+  name.vb: ToMultiplierPercentageBonus(Single, Integer, Boolean)
+- uid: TetraCreations.Core.FloatExtensions.IsApproximatelyEquals(System.Single,System.Single,System.Single)
+  commentId: M:TetraCreations.Core.FloatExtensions.IsApproximatelyEquals(System.Single,System.Single,System.Single)
+  id: IsApproximatelyEquals(System.Single,System.Single,System.Single)
+  parent: TetraCreations.Core.FloatExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsApproximatelyEquals(float, float, float)
+  nameWithType: FloatExtensions.IsApproximatelyEquals(float, float, float)
+  fullName: TetraCreations.Core.FloatExtensions.IsApproximatelyEquals(float, float, float)
+  type: Method
+  source:
+    id: IsApproximatelyEquals
+    path: ''
+    startLine: 37041
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nChecks if two floating numbers are close enough\n"
+  example: []
+  syntax:
+    content: public static bool IsApproximatelyEquals(float a, float b, float tolerance = 0.001)
+    parameters:
+    - id: a
+      type: System.Single
+      description: ''
+    - id: b
+      type: System.Single
+      description: ''
+    - id: tolerance
+      type: System.Single
+      description: How much difference we can have between the two floating value to consider them equals.
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsApproximatelyEquals(a As Single, b As Single, tolerance As Single = 0.001) As Boolean
+  overload: TetraCreations.Core.FloatExtensions.IsApproximatelyEquals*
+  nameWithType.vb: FloatExtensions.IsApproximatelyEquals(Single, Single, Single)
+  fullName.vb: TetraCreations.Core.FloatExtensions.IsApproximatelyEquals(Single, Single, Single)
+  name.vb: IsApproximatelyEquals(Single, Single, Single)
+- uid: TetraCreations.Core.FloatExtensions.NormalizeEulerAngle(System.Single)
+  commentId: M:TetraCreations.Core.FloatExtensions.NormalizeEulerAngle(System.Single)
+  id: NormalizeEulerAngle(System.Single)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.FloatExtensions
+  langs:
+  - csharp
+  - vb
+  name: NormalizeEulerAngle(float)
+  nameWithType: FloatExtensions.NormalizeEulerAngle(float)
+  fullName: TetraCreations.Core.FloatExtensions.NormalizeEulerAngle(float)
+  type: Method
+  source:
+    id: NormalizeEulerAngle
+    path: ''
+    startLine: 37056
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nNormalize euler angle value from 0 to 360.\n"
+  example: []
+  syntax:
+    content: public static float NormalizeEulerAngle(this float angle)
+    parameters:
+    - id: angle
+      type: System.Single
+      description: ''
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Shared Function NormalizeEulerAngle(angle As Single) As Single
+  overload: TetraCreations.Core.FloatExtensions.NormalizeEulerAngle*
+  nameWithType.vb: FloatExtensions.NormalizeEulerAngle(Single)
+  fullName.vb: TetraCreations.Core.FloatExtensions.NormalizeEulerAngle(Single)
+  name.vb: NormalizeEulerAngle(Single)
+- uid: TetraCreations.Core.FloatExtensions.Round(System.Single,System.Int32,MidpointRounding)
+  commentId: M:TetraCreations.Core.FloatExtensions.Round(System.Single,System.Int32,MidpointRounding)
+  id: Round(System.Single,System.Int32,MidpointRounding)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.FloatExtensions
+  langs:
+  - csharp
+  - vb
+  name: Round(float, int, MidpointRounding)
+  nameWithType: FloatExtensions.Round(float, int, MidpointRounding)
+  fullName: TetraCreations.Core.FloatExtensions.Round(float, int, MidpointRounding)
+  type: Method
+  source:
+    id: Round
+    path: ''
+    startLine: 37070
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nRound a floating number to the desired amount of digit.\n"
+  example: []
+  syntax:
+    content: public static float Round(this float value, int digitCount = 2, MidpointRounding midpointRounding = null)
+    parameters:
+    - id: value
+      type: System.Single
+      description: ''
+    - id: digitCount
+      type: System.Int32
+      description: ''
+    - id: midpointRounding
+      type: Global.MidpointRounding
+      description: ''
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Shared Function Round(value As Single, digitCount As Integer = 2, midpointRounding As MidpointRounding = Nothing) As Single
+  overload: TetraCreations.Core.FloatExtensions.Round*
+  nameWithType.vb: FloatExtensions.Round(Single, Integer, MidpointRounding)
+  fullName.vb: TetraCreations.Core.FloatExtensions.Round(Single, Integer, MidpointRounding)
+  name.vb: Round(Single, Integer, MidpointRounding)
+- uid: TetraCreations.Core.FloatExtensions.ParseToInt(System.Single,TetraCreations.Core.RoundMethod)
+  commentId: M:TetraCreations.Core.FloatExtensions.ParseToInt(System.Single,TetraCreations.Core.RoundMethod)
+  id: ParseToInt(System.Single,TetraCreations.Core.RoundMethod)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.FloatExtensions
+  langs:
+  - csharp
+  - vb
+  name: ParseToInt(float, RoundMethod)
+  nameWithType: FloatExtensions.ParseToInt(float, RoundMethod)
+  fullName: TetraCreations.Core.FloatExtensions.ParseToInt(float, TetraCreations.Core.RoundMethod)
+  type: Method
+  source:
+    id: ParseToInt
+    path: ''
+    startLine: 37081
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nConverts a floating number to an int using one of the desired method : Ceiling, Floor, Round\n"
+  example: []
+  syntax:
+    content: public static int ParseToInt(this float value, RoundMethod roundMethod = RoundMethod.Round)
+    parameters:
+    - id: value
+      type: System.Single
+      description: ''
+    - id: roundMethod
+      type: TetraCreations.Core.RoundMethod
+      description: ''
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Function ParseToInt(value As Single, roundMethod As RoundMethod = RoundMethod.Round) As Integer
+  overload: TetraCreations.Core.FloatExtensions.ParseToInt*
+  nameWithType.vb: FloatExtensions.ParseToInt(Single, RoundMethod)
+  fullName.vb: TetraCreations.Core.FloatExtensions.ParseToInt(Single, TetraCreations.Core.RoundMethod)
+  name.vb: ParseToInt(Single, RoundMethod)
+- uid: TetraCreations.Core.FloatExtensions.CountDigits(System.Single,System.Int32,System.Boolean)
+  commentId: M:TetraCreations.Core.FloatExtensions.CountDigits(System.Single,System.Int32,System.Boolean)
+  id: CountDigits(System.Single,System.Int32,System.Boolean)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.FloatExtensions
+  langs:
+  - csharp
+  - vb
+  name: CountDigits(float, int, bool)
+  nameWithType: FloatExtensions.CountDigits(float, int, bool)
+  fullName: TetraCreations.Core.FloatExtensions.CountDigits(float, int, bool)
+  type: Method
+  source:
+    id: CountDigits
+    path: ''
+    startLine: 37105
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nReturns the number of digit of a floating number regardless of the current CultureInfo.<br />\n"
+  example: []
+  syntax:
+    content: public static int CountDigits(this float value, int precisionLimit = 7, bool countTrailingZeroes = true)
+    parameters:
+    - id: value
+      type: System.Single
+      description: ''
+    - id: precisionLimit
+      type: System.Int32
+      description: ''
+    - id: countTrailingZeroes
+      type: System.Boolean
+      description: ''
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Function CountDigits(value As Single, precisionLimit As Integer = 7, countTrailingZeroes As Boolean = True) As Integer
+  overload: TetraCreations.Core.FloatExtensions.CountDigits*
+  nameWithType.vb: FloatExtensions.CountDigits(Single, Integer, Boolean)
+  fullName.vb: TetraCreations.Core.FloatExtensions.CountDigits(Single, Integer, Boolean)
+  name.vb: CountDigits(Single, Integer, Boolean)
+references:
+- uid: TetraCreations.Core
+  commentId: N:TetraCreations.Core
+  name: TetraCreations.Core
+  nameWithType: TetraCreations.Core
+  fullName: TetraCreations.Core
+  spec.csharp:
+  - uid: TetraCreations
+    name: TetraCreations
+  - name: .
+  - uid: TetraCreations.Core
+    name: Core
+  spec.vb:
+  - uid: TetraCreations
+    name: TetraCreations
+  - name: .
+  - uid: TetraCreations.Core
+    name: Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TetraCreations.Core.FloatExtensions.Clamp*
+  commentId: Overload:TetraCreations.Core.FloatExtensions.Clamp
+  name: Clamp
+  nameWithType: FloatExtensions.Clamp
+  fullName: TetraCreations.Core.FloatExtensions.Clamp
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: TetraCreations.Core.FloatExtensions.GetPercentage*
+  commentId: Overload:TetraCreations.Core.FloatExtensions.GetPercentage
+  name: GetPercentage
+  nameWithType: FloatExtensions.GetPercentage
+  fullName: TetraCreations.Core.FloatExtensions.GetPercentage
+- uid: TetraCreations.Core.FloatExtensions.PercentageOf*
+  commentId: Overload:TetraCreations.Core.FloatExtensions.PercentageOf
+  name: PercentageOf
+  nameWithType: FloatExtensions.PercentageOf
+  fullName: TetraCreations.Core.FloatExtensions.PercentageOf
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TetraCreations.Core.FloatExtensions.ToStringPercentage*
+  commentId: Overload:TetraCreations.Core.FloatExtensions.ToStringPercentage
+  name: ToStringPercentage
+  nameWithType: FloatExtensions.ToStringPercentage
+  fullName: TetraCreations.Core.FloatExtensions.ToStringPercentage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: TetraCreations.Core.FloatExtensions.ToMultiplierPercentageBonus*
+  commentId: Overload:TetraCreations.Core.FloatExtensions.ToMultiplierPercentageBonus
+  name: ToMultiplierPercentageBonus
+  nameWithType: FloatExtensions.ToMultiplierPercentageBonus
+  fullName: TetraCreations.Core.FloatExtensions.ToMultiplierPercentageBonus
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: TetraCreations.Core.FloatExtensions.IsApproximatelyEquals*
+  commentId: Overload:TetraCreations.Core.FloatExtensions.IsApproximatelyEquals
+  name: IsApproximatelyEquals
+  nameWithType: FloatExtensions.IsApproximatelyEquals
+  fullName: TetraCreations.Core.FloatExtensions.IsApproximatelyEquals
+- uid: TetraCreations.Core.FloatExtensions.NormalizeEulerAngle*
+  commentId: Overload:TetraCreations.Core.FloatExtensions.NormalizeEulerAngle
+  name: NormalizeEulerAngle
+  nameWithType: FloatExtensions.NormalizeEulerAngle
+  fullName: TetraCreations.Core.FloatExtensions.NormalizeEulerAngle
+- uid: TetraCreations.Core.FloatExtensions.Round*
+  commentId: Overload:TetraCreations.Core.FloatExtensions.Round
+  name: Round
+  nameWithType: FloatExtensions.Round
+  fullName: TetraCreations.Core.FloatExtensions.Round
+- uid: Global.MidpointRounding
+  commentId: '!:Global.MidpointRounding'
+  isExternal: true
+  name: MidpointRounding
+  nameWithType: MidpointRounding
+  fullName: MidpointRounding
+- uid: TetraCreations.Core.FloatExtensions.ParseToInt*
+  commentId: Overload:TetraCreations.Core.FloatExtensions.ParseToInt
+  name: ParseToInt
+  nameWithType: FloatExtensions.ParseToInt
+  fullName: TetraCreations.Core.FloatExtensions.ParseToInt
+- uid: TetraCreations.Core.RoundMethod
+  commentId: T:TetraCreations.Core.RoundMethod
+  parent: TetraCreations.Core
+  name: RoundMethod
+  nameWithType: RoundMethod
+  fullName: TetraCreations.Core.RoundMethod
+- uid: TetraCreations.Core.FloatExtensions.CountDigits*
+  commentId: Overload:TetraCreations.Core.FloatExtensions.CountDigits
+  name: CountDigits
+  nameWithType: FloatExtensions.CountDigits
+  fullName: TetraCreations.Core.FloatExtensions.CountDigits

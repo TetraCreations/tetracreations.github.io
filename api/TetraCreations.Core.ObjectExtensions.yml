@@ -1,0 +1,459 @@
+### YamlMime:ManagedReference
+items:
+- uid: TetraCreations.Core.ObjectExtensions
+  commentId: T:TetraCreations.Core.ObjectExtensions
+  id: ObjectExtensions
+  parent: TetraCreations.Core
+  children:
+  - TetraCreations.Core.ObjectExtensions.As``1(System.Object)
+  - TetraCreations.Core.ObjectExtensions.GetTypeAndName(UnityEngine.Object,System.String)
+  - TetraCreations.Core.ObjectExtensions.IsAssignableFrom(System.Object,Type)
+  - TetraCreations.Core.ObjectExtensions.IsAssignableFrom``1(System.Object)
+  - TetraCreations.Core.ObjectExtensions.IsIn``1(``0,``0[])
+  - TetraCreations.Core.ObjectExtensions.IsNotNull``1(``0)
+  - TetraCreations.Core.ObjectExtensions.IsNull``1(``0)
+  - TetraCreations.Core.ObjectExtensions.Null``1(``0)
+  langs:
+  - csharp
+  - vb
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: TetraCreations.Core.ObjectExtensions
+  type: Class
+  source:
+    id: ObjectExtensions
+    path: ''
+    startLine: 37404
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static class ObjectExtensions
+    content.vb: Public Module ObjectExtensions
+  inheritance:
+  - System.Object
+- uid: TetraCreations.Core.ObjectExtensions.IsIn``1(``0,``0[])
+  commentId: M:TetraCreations.Core.ObjectExtensions.IsIn``1(``0,``0[])
+  id: IsIn``1(``0,``0[])
+  isExtensionMethod: true
+  parent: TetraCreations.Core.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsIn<T>(T, params T[])
+  nameWithType: ObjectExtensions.IsIn<T>(T, params T[])
+  fullName: TetraCreations.Core.ObjectExtensions.IsIn<T>(T, params T[])
+  type: Method
+  source:
+    id: IsIn
+    path: ''
+    startLine: 37420
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static bool IsIn<T>(this T source, params T[] list)
+    parameters:
+    - id: source
+      type: '{T}'
+    - id: list
+      type: '{T}[]'
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsIn(Of T)(source As T, ParamArray list As T()) As Boolean
+  overload: TetraCreations.Core.ObjectExtensions.IsIn*
+  nameWithType.vb: ObjectExtensions.IsIn(Of T)(T, ParamArray T())
+  fullName.vb: TetraCreations.Core.ObjectExtensions.IsIn(Of T)(T, ParamArray T())
+  name.vb: IsIn(Of T)(T, ParamArray T())
+- uid: TetraCreations.Core.ObjectExtensions.As``1(System.Object)
+  commentId: M:TetraCreations.Core.ObjectExtensions.As``1(System.Object)
+  id: As``1(System.Object)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: As<T>(object)
+  nameWithType: ObjectExtensions.As<T>(object)
+  fullName: TetraCreations.Core.ObjectExtensions.As<T>(object)
+  type: Method
+  source:
+    id: As
+    path: ''
+    startLine: 37432
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nCasts anonymous type to the specified type.\n"
+  example: []
+  syntax:
+    content: 'public static T As<T>(this object source) where T : class'
+    parameters:
+    - id: source
+      type: System.Object
+      description: The object
+    typeParameters:
+    - id: T
+      description: Generic type parameter. The specified type.
+    return:
+      type: '{T}'
+      description: The object as the specified type.
+    content.vb: Public Shared Function [As](Of T As Class)(source As Object) As T
+  overload: TetraCreations.Core.ObjectExtensions.As*
+  nameWithType.vb: ObjectExtensions.As(Of T)(Object)
+  fullName.vb: TetraCreations.Core.ObjectExtensions.As(Of T)(Object)
+  name.vb: As(Of T)(Object)
+- uid: TetraCreations.Core.ObjectExtensions.IsAssignableFrom``1(System.Object)
+  commentId: M:TetraCreations.Core.ObjectExtensions.IsAssignableFrom``1(System.Object)
+  id: IsAssignableFrom``1(System.Object)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsAssignableFrom<T>(object)
+  nameWithType: ObjectExtensions.IsAssignableFrom<T>(object)
+  fullName: TetraCreations.Core.ObjectExtensions.IsAssignableFrom<T>(object)
+  type: Method
+  source:
+    id: IsAssignableFrom
+    path: ''
+    startLine: 37443
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nDetermines if an object is assignable from.\n"
+  example: []
+  syntax:
+    content: public static bool IsAssignableFrom<T>(this object source)
+    parameters:
+    - id: source
+      type: System.Object
+      description: The object
+    typeParameters:
+    - id: T
+      description: Generic type parameter.
+    return:
+      type: System.Boolean
+      description: true if assignable from, false if not.
+    content.vb: Public Shared Function IsAssignableFrom(Of T)(source As Object) As Boolean
+  overload: TetraCreations.Core.ObjectExtensions.IsAssignableFrom*
+  nameWithType.vb: ObjectExtensions.IsAssignableFrom(Of T)(Object)
+  fullName.vb: TetraCreations.Core.ObjectExtensions.IsAssignableFrom(Of T)(Object)
+  name.vb: IsAssignableFrom(Of T)(Object)
+- uid: TetraCreations.Core.ObjectExtensions.IsAssignableFrom(System.Object,Type)
+  commentId: M:TetraCreations.Core.ObjectExtensions.IsAssignableFrom(System.Object,Type)
+  id: IsAssignableFrom(System.Object,Type)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsAssignableFrom(object, Type)
+  nameWithType: ObjectExtensions.IsAssignableFrom(object, Type)
+  fullName: TetraCreations.Core.ObjectExtensions.IsAssignableFrom(object, Type)
+  type: Method
+  source:
+    id: IsAssignableFrom
+    path: ''
+    startLine: 37455
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nDetermines if an object is assignable from a targeted type.\n"
+  example: []
+  syntax:
+    content: public static bool IsAssignableFrom(this object source, Type targetType)
+    parameters:
+    - id: source
+      type: System.Object
+      description: The object
+    - id: targetType
+      type: Global.Type
+      description: Type of the target.
+    return:
+      type: System.Boolean
+      description: true if assignable from, false if not.
+    content.vb: Public Shared Function IsAssignableFrom(source As Object, targetType As Type) As Boolean
+  overload: TetraCreations.Core.ObjectExtensions.IsAssignableFrom*
+  nameWithType.vb: ObjectExtensions.IsAssignableFrom(Object, Type)
+  fullName.vb: TetraCreations.Core.ObjectExtensions.IsAssignableFrom(Object, Type)
+  name.vb: IsAssignableFrom(Object, Type)
+- uid: TetraCreations.Core.ObjectExtensions.Null``1(``0)
+  commentId: M:TetraCreations.Core.ObjectExtensions.Null``1(``0)
+  id: Null``1(``0)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: Null<T>(T)
+  nameWithType: ObjectExtensions.Null<T>(T)
+  fullName: TetraCreations.Core.ObjectExtensions.Null<T>(T)
+  type: Method
+  source:
+    id: "Null"
+    path: ''
+    startLine: 37467
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nReturns the object itself if it exists, null otherwise.\n"
+  example: []
+  syntax:
+    content: 'public static T Null<T>(this T self) where T : UnityEngine.Object'
+    parameters:
+    - id: self
+      type: '{T}'
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: '{T}'
+      description: ''
+    content.vb: Public Shared Function Null(Of T As UnityEngine.Object)(self As T) As T
+  overload: TetraCreations.Core.ObjectExtensions.Null*
+  nameWithType.vb: ObjectExtensions.Null(Of T)(T)
+  fullName.vb: TetraCreations.Core.ObjectExtensions.Null(Of T)(T)
+  name.vb: Null(Of T)(T)
+- uid: TetraCreations.Core.ObjectExtensions.IsNull``1(``0)
+  commentId: M:TetraCreations.Core.ObjectExtensions.IsNull``1(``0)
+  id: IsNull``1(``0)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsNull<T>(T)
+  nameWithType: ObjectExtensions.IsNull<T>(T)
+  fullName: TetraCreations.Core.ObjectExtensions.IsNull<T>(T)
+  type: Method
+  source:
+    id: IsNull
+    path: ''
+    startLine: 37475
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nReturns true if the object is null, false otherwise.\n"
+  example: []
+  syntax:
+    content: 'public static bool IsNull<T>(this T source) where T : class'
+    parameters:
+    - id: source
+      type: '{T}'
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsNull(Of T As Class)(source As T) As Boolean
+  overload: TetraCreations.Core.ObjectExtensions.IsNull*
+  nameWithType.vb: ObjectExtensions.IsNull(Of T)(T)
+  fullName.vb: TetraCreations.Core.ObjectExtensions.IsNull(Of T)(T)
+  name.vb: IsNull(Of T)(T)
+- uid: TetraCreations.Core.ObjectExtensions.IsNotNull``1(``0)
+  commentId: M:TetraCreations.Core.ObjectExtensions.IsNotNull``1(``0)
+  id: IsNotNull``1(``0)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsNotNull<T>(T)
+  nameWithType: ObjectExtensions.IsNotNull<T>(T)
+  fullName: TetraCreations.Core.ObjectExtensions.IsNotNull<T>(T)
+  type: Method
+  source:
+    id: IsNotNull
+    path: ''
+    startLine: 37486
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nReturns true if the object is not null, false otherwise.\n"
+  example: []
+  syntax:
+    content: 'public static bool IsNotNull<T>(this T source) where T : class'
+    parameters:
+    - id: source
+      type: '{T}'
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsNotNull(Of T As Class)(source As T) As Boolean
+  overload: TetraCreations.Core.ObjectExtensions.IsNotNull*
+  nameWithType.vb: ObjectExtensions.IsNotNull(Of T)(T)
+  fullName.vb: TetraCreations.Core.ObjectExtensions.IsNotNull(Of T)(T)
+  name.vb: IsNotNull(Of T)(T)
+- uid: TetraCreations.Core.ObjectExtensions.GetTypeAndName(UnityEngine.Object,System.String)
+  commentId: M:TetraCreations.Core.ObjectExtensions.GetTypeAndName(UnityEngine.Object,System.String)
+  id: GetTypeAndName(UnityEngine.Object,System.String)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetTypeAndName(Object, string)
+  nameWithType: ObjectExtensions.GetTypeAndName(UnityEngine.Object, string)
+  fullName: TetraCreations.Core.ObjectExtensions.GetTypeAndName(UnityEngine.Object, string)
+  type: Method
+  source:
+    id: GetTypeAndName
+    path: ''
+    startLine: 37497
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  summary: "\nReturns the type and the object name.\n"
+  example: []
+  syntax:
+    content: 'public static string GetTypeAndName(this UnityEngine.Object source, string separator = " : ")'
+    parameters:
+    - id: source
+      type: Global.UnityEngine.Object
+      description: ''
+    - id: separator
+      type: System.String
+    return:
+      type: System.String
+      description: ''
+    content.vb: 'Public Shared Function GetTypeAndName(source As UnityEngine.Object, separator As String = " : ") As String'
+  overload: TetraCreations.Core.ObjectExtensions.GetTypeAndName*
+  nameWithType.vb: ObjectExtensions.GetTypeAndName(UnityEngine.Object, String)
+  fullName.vb: TetraCreations.Core.ObjectExtensions.GetTypeAndName(UnityEngine.Object, String)
+  name.vb: GetTypeAndName(Object, String)
+references:
+- uid: TetraCreations.Core
+  commentId: N:TetraCreations.Core
+  name: TetraCreations.Core
+  nameWithType: TetraCreations.Core
+  fullName: TetraCreations.Core
+  spec.csharp:
+  - uid: TetraCreations
+    name: TetraCreations
+  - name: .
+  - uid: TetraCreations.Core
+    name: Core
+  spec.vb:
+  - uid: TetraCreations
+    name: TetraCreations
+  - name: .
+  - uid: TetraCreations.Core
+    name: Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TetraCreations.Core.ObjectExtensions.IsIn*
+  commentId: Overload:TetraCreations.Core.ObjectExtensions.IsIn
+  name: IsIn
+  nameWithType: ObjectExtensions.IsIn
+  fullName: TetraCreations.Core.ObjectExtensions.IsIn
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: TetraCreations.Core.ObjectExtensions.As*
+  commentId: Overload:TetraCreations.Core.ObjectExtensions.As
+  name: As
+  nameWithType: ObjectExtensions.As
+  fullName: TetraCreations.Core.ObjectExtensions.As
+- uid: TetraCreations.Core.ObjectExtensions.IsAssignableFrom*
+  commentId: Overload:TetraCreations.Core.ObjectExtensions.IsAssignableFrom
+  name: IsAssignableFrom
+  nameWithType: ObjectExtensions.IsAssignableFrom
+  fullName: TetraCreations.Core.ObjectExtensions.IsAssignableFrom
+- uid: Global.Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: TetraCreations.Core.ObjectExtensions.Null*
+  commentId: Overload:TetraCreations.Core.ObjectExtensions.Null
+  name: "Null"
+  nameWithType: ObjectExtensions.Null
+  fullName: TetraCreations.Core.ObjectExtensions.Null
+- uid: TetraCreations.Core.ObjectExtensions.IsNull*
+  commentId: Overload:TetraCreations.Core.ObjectExtensions.IsNull
+  name: IsNull
+  nameWithType: ObjectExtensions.IsNull
+  fullName: TetraCreations.Core.ObjectExtensions.IsNull
+- uid: TetraCreations.Core.ObjectExtensions.IsNotNull*
+  commentId: Overload:TetraCreations.Core.ObjectExtensions.IsNotNull
+  name: IsNotNull
+  nameWithType: ObjectExtensions.IsNotNull
+  fullName: TetraCreations.Core.ObjectExtensions.IsNotNull
+- uid: TetraCreations.Core.ObjectExtensions.GetTypeAndName*
+  commentId: Overload:TetraCreations.Core.ObjectExtensions.GetTypeAndName
+  name: GetTypeAndName
+  nameWithType: ObjectExtensions.GetTypeAndName
+  fullName: TetraCreations.Core.ObjectExtensions.GetTypeAndName
+- uid: Global.UnityEngine.Object
+  isExternal: true
+  name: Object
+  nameWithType: UnityEngine.Object
+  fullName: UnityEngine.Object
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

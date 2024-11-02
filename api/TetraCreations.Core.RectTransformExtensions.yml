@@ -1,0 +1,638 @@
+### YamlMime:ManagedReference
+items:
+- uid: TetraCreations.Core.RectTransformExtensions
+  commentId: T:TetraCreations.Core.RectTransformExtensions
+  id: RectTransformExtensions
+  parent: TetraCreations.Core
+  children:
+  - TetraCreations.Core.RectTransformExtensions.Bottom(RectTransform,System.Single)
+  - TetraCreations.Core.RectTransformExtensions.GetBottomOffset(RectTransform)
+  - TetraCreations.Core.RectTransformExtensions.GetHeight(RectTransform)
+  - TetraCreations.Core.RectTransformExtensions.GetLeftOffset(RectTransform)
+  - TetraCreations.Core.RectTransformExtensions.GetRightOffset(RectTransform)
+  - TetraCreations.Core.RectTransformExtensions.GetSize(RectTransform)
+  - TetraCreations.Core.RectTransformExtensions.GetTopOffset(RectTransform)
+  - TetraCreations.Core.RectTransformExtensions.GetWidth(RectTransform)
+  - TetraCreations.Core.RectTransformExtensions.Height(RectTransform,System.Single)
+  - TetraCreations.Core.RectTransformExtensions.Left(RectTransform,System.Single)
+  - TetraCreations.Core.RectTransformExtensions.Offset(RectTransform,System.Single,System.Single,System.Single,System.Single)
+  - TetraCreations.Core.RectTransformExtensions.Right(RectTransform,System.Single)
+  - TetraCreations.Core.RectTransformExtensions.Size(RectTransform,System.Single,System.Single)
+  - TetraCreations.Core.RectTransformExtensions.Top(RectTransform,System.Single)
+  - TetraCreations.Core.RectTransformExtensions.Width(RectTransform,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: RectTransformExtensions
+  nameWithType: RectTransformExtensions
+  fullName: TetraCreations.Core.RectTransformExtensions
+  type: Class
+  source:
+    id: RectTransformExtensions
+    path: ''
+    startLine: 37627
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static class RectTransformExtensions
+    content.vb: Public Module RectTransformExtensions
+  inheritance:
+  - System.Object
+- uid: TetraCreations.Core.RectTransformExtensions.Left(RectTransform,System.Single)
+  commentId: M:TetraCreations.Core.RectTransformExtensions.Left(RectTransform,System.Single)
+  id: Left(RectTransform,System.Single)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: Left(RectTransform, float)
+  nameWithType: RectTransformExtensions.Left(RectTransform, float)
+  fullName: TetraCreations.Core.RectTransformExtensions.Left(RectTransform, float)
+  type: Method
+  source:
+    id: Left
+    path: ''
+    startLine: 37629
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static RectTransform Left(this RectTransform rt, float x)
+    parameters:
+    - id: rt
+      type: Global.RectTransform
+    - id: x
+      type: System.Single
+    return:
+      type: Global.RectTransform
+    content.vb: Public Shared Function Left(rt As RectTransform, x As Single) As RectTransform
+  overload: TetraCreations.Core.RectTransformExtensions.Left*
+  nameWithType.vb: RectTransformExtensions.Left(RectTransform, Single)
+  fullName.vb: TetraCreations.Core.RectTransformExtensions.Left(RectTransform, Single)
+  name.vb: Left(RectTransform, Single)
+- uid: TetraCreations.Core.RectTransformExtensions.Right(RectTransform,System.Single)
+  commentId: M:TetraCreations.Core.RectTransformExtensions.Right(RectTransform,System.Single)
+  id: Right(RectTransform,System.Single)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: Right(RectTransform, float)
+  nameWithType: RectTransformExtensions.Right(RectTransform, float)
+  fullName: TetraCreations.Core.RectTransformExtensions.Right(RectTransform, float)
+  type: Method
+  source:
+    id: Right
+    path: ''
+    startLine: 37635
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static RectTransform Right(this RectTransform rt, float x)
+    parameters:
+    - id: rt
+      type: Global.RectTransform
+    - id: x
+      type: System.Single
+    return:
+      type: Global.RectTransform
+    content.vb: Public Shared Function Right(rt As RectTransform, x As Single) As RectTransform
+  overload: TetraCreations.Core.RectTransformExtensions.Right*
+  nameWithType.vb: RectTransformExtensions.Right(RectTransform, Single)
+  fullName.vb: TetraCreations.Core.RectTransformExtensions.Right(RectTransform, Single)
+  name.vb: Right(RectTransform, Single)
+- uid: TetraCreations.Core.RectTransformExtensions.Bottom(RectTransform,System.Single)
+  commentId: M:TetraCreations.Core.RectTransformExtensions.Bottom(RectTransform,System.Single)
+  id: Bottom(RectTransform,System.Single)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: Bottom(RectTransform, float)
+  nameWithType: RectTransformExtensions.Bottom(RectTransform, float)
+  fullName: TetraCreations.Core.RectTransformExtensions.Bottom(RectTransform, float)
+  type: Method
+  source:
+    id: Bottom
+    path: ''
+    startLine: 37641
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static RectTransform Bottom(this RectTransform rt, float y)
+    parameters:
+    - id: rt
+      type: Global.RectTransform
+    - id: y
+      type: System.Single
+    return:
+      type: Global.RectTransform
+    content.vb: Public Shared Function Bottom(rt As RectTransform, y As Single) As RectTransform
+  overload: TetraCreations.Core.RectTransformExtensions.Bottom*
+  nameWithType.vb: RectTransformExtensions.Bottom(RectTransform, Single)
+  fullName.vb: TetraCreations.Core.RectTransformExtensions.Bottom(RectTransform, Single)
+  name.vb: Bottom(RectTransform, Single)
+- uid: TetraCreations.Core.RectTransformExtensions.Top(RectTransform,System.Single)
+  commentId: M:TetraCreations.Core.RectTransformExtensions.Top(RectTransform,System.Single)
+  id: Top(RectTransform,System.Single)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: Top(RectTransform, float)
+  nameWithType: RectTransformExtensions.Top(RectTransform, float)
+  fullName: TetraCreations.Core.RectTransformExtensions.Top(RectTransform, float)
+  type: Method
+  source:
+    id: Top
+    path: ''
+    startLine: 37647
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static RectTransform Top(this RectTransform rt, float y)
+    parameters:
+    - id: rt
+      type: Global.RectTransform
+    - id: y
+      type: System.Single
+    return:
+      type: Global.RectTransform
+    content.vb: Public Shared Function Top(rt As RectTransform, y As Single) As RectTransform
+  overload: TetraCreations.Core.RectTransformExtensions.Top*
+  nameWithType.vb: RectTransformExtensions.Top(RectTransform, Single)
+  fullName.vb: TetraCreations.Core.RectTransformExtensions.Top(RectTransform, Single)
+  name.vb: Top(RectTransform, Single)
+- uid: TetraCreations.Core.RectTransformExtensions.Offset(RectTransform,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:TetraCreations.Core.RectTransformExtensions.Offset(RectTransform,System.Single,System.Single,System.Single,System.Single)
+  id: Offset(RectTransform,System.Single,System.Single,System.Single,System.Single)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: Offset(RectTransform, float, float, float, float)
+  nameWithType: RectTransformExtensions.Offset(RectTransform, float, float, float, float)
+  fullName: TetraCreations.Core.RectTransformExtensions.Offset(RectTransform, float, float, float, float)
+  type: Method
+  source:
+    id: Offset
+    path: ''
+    startLine: 37653
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static RectTransform Offset(this RectTransform rt, float left, float bottom, float right, float top)
+    parameters:
+    - id: rt
+      type: Global.RectTransform
+    - id: left
+      type: System.Single
+    - id: bottom
+      type: System.Single
+    - id: right
+      type: System.Single
+    - id: top
+      type: System.Single
+    return:
+      type: Global.RectTransform
+    content.vb: Public Shared Function Offset(rt As RectTransform, left As Single, bottom As Single, right As Single, top As Single) As RectTransform
+  overload: TetraCreations.Core.RectTransformExtensions.Offset*
+  nameWithType.vb: RectTransformExtensions.Offset(RectTransform, Single, Single, Single, Single)
+  fullName.vb: TetraCreations.Core.RectTransformExtensions.Offset(RectTransform, Single, Single, Single, Single)
+  name.vb: Offset(RectTransform, Single, Single, Single, Single)
+- uid: TetraCreations.Core.RectTransformExtensions.GetTopOffset(RectTransform)
+  commentId: M:TetraCreations.Core.RectTransformExtensions.GetTopOffset(RectTransform)
+  id: GetTopOffset(RectTransform)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetTopOffset(RectTransform)
+  nameWithType: RectTransformExtensions.GetTopOffset(RectTransform)
+  fullName: TetraCreations.Core.RectTransformExtensions.GetTopOffset(RectTransform)
+  type: Method
+  source:
+    id: GetTopOffset
+    path: ''
+    startLine: 37660
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static float GetTopOffset(this RectTransform rt)
+    parameters:
+    - id: rt
+      type: Global.RectTransform
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetTopOffset(rt As RectTransform) As Single
+  overload: TetraCreations.Core.RectTransformExtensions.GetTopOffset*
+- uid: TetraCreations.Core.RectTransformExtensions.GetBottomOffset(RectTransform)
+  commentId: M:TetraCreations.Core.RectTransformExtensions.GetBottomOffset(RectTransform)
+  id: GetBottomOffset(RectTransform)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetBottomOffset(RectTransform)
+  nameWithType: RectTransformExtensions.GetBottomOffset(RectTransform)
+  fullName: TetraCreations.Core.RectTransformExtensions.GetBottomOffset(RectTransform)
+  type: Method
+  source:
+    id: GetBottomOffset
+    path: ''
+    startLine: 37665
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static float GetBottomOffset(this RectTransform rt)
+    parameters:
+    - id: rt
+      type: Global.RectTransform
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetBottomOffset(rt As RectTransform) As Single
+  overload: TetraCreations.Core.RectTransformExtensions.GetBottomOffset*
+- uid: TetraCreations.Core.RectTransformExtensions.GetRightOffset(RectTransform)
+  commentId: M:TetraCreations.Core.RectTransformExtensions.GetRightOffset(RectTransform)
+  id: GetRightOffset(RectTransform)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetRightOffset(RectTransform)
+  nameWithType: RectTransformExtensions.GetRightOffset(RectTransform)
+  fullName: TetraCreations.Core.RectTransformExtensions.GetRightOffset(RectTransform)
+  type: Method
+  source:
+    id: GetRightOffset
+    path: ''
+    startLine: 37669
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static float GetRightOffset(this RectTransform rt)
+    parameters:
+    - id: rt
+      type: Global.RectTransform
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetRightOffset(rt As RectTransform) As Single
+  overload: TetraCreations.Core.RectTransformExtensions.GetRightOffset*
+- uid: TetraCreations.Core.RectTransformExtensions.GetLeftOffset(RectTransform)
+  commentId: M:TetraCreations.Core.RectTransformExtensions.GetLeftOffset(RectTransform)
+  id: GetLeftOffset(RectTransform)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetLeftOffset(RectTransform)
+  nameWithType: RectTransformExtensions.GetLeftOffset(RectTransform)
+  fullName: TetraCreations.Core.RectTransformExtensions.GetLeftOffset(RectTransform)
+  type: Method
+  source:
+    id: GetLeftOffset
+    path: ''
+    startLine: 37674
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static float GetLeftOffset(this RectTransform rt)
+    parameters:
+    - id: rt
+      type: Global.RectTransform
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetLeftOffset(rt As RectTransform) As Single
+  overload: TetraCreations.Core.RectTransformExtensions.GetLeftOffset*
+- uid: TetraCreations.Core.RectTransformExtensions.Width(RectTransform,System.Single)
+  commentId: M:TetraCreations.Core.RectTransformExtensions.Width(RectTransform,System.Single)
+  id: Width(RectTransform,System.Single)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: Width(RectTransform, float)
+  nameWithType: RectTransformExtensions.Width(RectTransform, float)
+  fullName: TetraCreations.Core.RectTransformExtensions.Width(RectTransform, float)
+  type: Method
+  source:
+    id: Width
+    path: ''
+    startLine: 37679
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static RectTransform Width(this RectTransform rt, float width)
+    parameters:
+    - id: rt
+      type: Global.RectTransform
+    - id: width
+      type: System.Single
+    return:
+      type: Global.RectTransform
+    content.vb: Public Shared Function Width(rt As RectTransform, width As Single) As RectTransform
+  overload: TetraCreations.Core.RectTransformExtensions.Width*
+  nameWithType.vb: RectTransformExtensions.Width(RectTransform, Single)
+  fullName.vb: TetraCreations.Core.RectTransformExtensions.Width(RectTransform, Single)
+  name.vb: Width(RectTransform, Single)
+- uid: TetraCreations.Core.RectTransformExtensions.Height(RectTransform,System.Single)
+  commentId: M:TetraCreations.Core.RectTransformExtensions.Height(RectTransform,System.Single)
+  id: Height(RectTransform,System.Single)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: Height(RectTransform, float)
+  nameWithType: RectTransformExtensions.Height(RectTransform, float)
+  fullName: TetraCreations.Core.RectTransformExtensions.Height(RectTransform, float)
+  type: Method
+  source:
+    id: Height
+    path: ''
+    startLine: 37685
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static RectTransform Height(this RectTransform rt, float height)
+    parameters:
+    - id: rt
+      type: Global.RectTransform
+    - id: height
+      type: System.Single
+    return:
+      type: Global.RectTransform
+    content.vb: Public Shared Function Height(rt As RectTransform, height As Single) As RectTransform
+  overload: TetraCreations.Core.RectTransformExtensions.Height*
+  nameWithType.vb: RectTransformExtensions.Height(RectTransform, Single)
+  fullName.vb: TetraCreations.Core.RectTransformExtensions.Height(RectTransform, Single)
+  name.vb: Height(RectTransform, Single)
+- uid: TetraCreations.Core.RectTransformExtensions.Size(RectTransform,System.Single,System.Single)
+  commentId: M:TetraCreations.Core.RectTransformExtensions.Size(RectTransform,System.Single,System.Single)
+  id: Size(RectTransform,System.Single,System.Single)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: Size(RectTransform, float, float)
+  nameWithType: RectTransformExtensions.Size(RectTransform, float, float)
+  fullName: TetraCreations.Core.RectTransformExtensions.Size(RectTransform, float, float)
+  type: Method
+  source:
+    id: Size
+    path: ''
+    startLine: 37691
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static RectTransform Size(this RectTransform rt, float width, float height)
+    parameters:
+    - id: rt
+      type: Global.RectTransform
+    - id: width
+      type: System.Single
+    - id: height
+      type: System.Single
+    return:
+      type: Global.RectTransform
+    content.vb: Public Shared Function Size(rt As RectTransform, width As Single, height As Single) As RectTransform
+  overload: TetraCreations.Core.RectTransformExtensions.Size*
+  nameWithType.vb: RectTransformExtensions.Size(RectTransform, Single, Single)
+  fullName.vb: TetraCreations.Core.RectTransformExtensions.Size(RectTransform, Single, Single)
+  name.vb: Size(RectTransform, Single, Single)
+- uid: TetraCreations.Core.RectTransformExtensions.GetWidth(RectTransform)
+  commentId: M:TetraCreations.Core.RectTransformExtensions.GetWidth(RectTransform)
+  id: GetWidth(RectTransform)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetWidth(RectTransform)
+  nameWithType: RectTransformExtensions.GetWidth(RectTransform)
+  fullName: TetraCreations.Core.RectTransformExtensions.GetWidth(RectTransform)
+  type: Method
+  source:
+    id: GetWidth
+    path: ''
+    startLine: 37697
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static float GetWidth(this RectTransform rt)
+    parameters:
+    - id: rt
+      type: Global.RectTransform
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetWidth(rt As RectTransform) As Single
+  overload: TetraCreations.Core.RectTransformExtensions.GetWidth*
+- uid: TetraCreations.Core.RectTransformExtensions.GetHeight(RectTransform)
+  commentId: M:TetraCreations.Core.RectTransformExtensions.GetHeight(RectTransform)
+  id: GetHeight(RectTransform)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetHeight(RectTransform)
+  nameWithType: RectTransformExtensions.GetHeight(RectTransform)
+  fullName: TetraCreations.Core.RectTransformExtensions.GetHeight(RectTransform)
+  type: Method
+  source:
+    id: GetHeight
+    path: ''
+    startLine: 37702
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static float GetHeight(this RectTransform rt)
+    parameters:
+    - id: rt
+      type: Global.RectTransform
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetHeight(rt As RectTransform) As Single
+  overload: TetraCreations.Core.RectTransformExtensions.GetHeight*
+- uid: TetraCreations.Core.RectTransformExtensions.GetSize(RectTransform)
+  commentId: M:TetraCreations.Core.RectTransformExtensions.GetSize(RectTransform)
+  id: GetSize(RectTransform)
+  isExtensionMethod: true
+  parent: TetraCreations.Core.RectTransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSize(RectTransform)
+  nameWithType: RectTransformExtensions.GetSize(RectTransform)
+  fullName: TetraCreations.Core.RectTransformExtensions.GetSize(RectTransform)
+  type: Method
+  source:
+    id: GetSize
+    path: ''
+    startLine: 37707
+  assemblies:
+  - cs.temp.dll
+  namespace: TetraCreations.Core
+  syntax:
+    content: public static Vector2 GetSize(this RectTransform rt)
+    parameters:
+    - id: rt
+      type: Global.RectTransform
+    return:
+      type: Global.Vector2
+    content.vb: Public Shared Function GetSize(rt As RectTransform) As Vector2
+  overload: TetraCreations.Core.RectTransformExtensions.GetSize*
+references:
+- uid: TetraCreations.Core
+  commentId: N:TetraCreations.Core
+  name: TetraCreations.Core
+  nameWithType: TetraCreations.Core
+  fullName: TetraCreations.Core
+  spec.csharp:
+  - uid: TetraCreations
+    name: TetraCreations
+  - name: .
+  - uid: TetraCreations.Core
+    name: Core
+  spec.vb:
+  - uid: TetraCreations
+    name: TetraCreations
+  - name: .
+  - uid: TetraCreations.Core
+    name: Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TetraCreations.Core.RectTransformExtensions.Left*
+  commentId: Overload:TetraCreations.Core.RectTransformExtensions.Left
+  name: Left
+  nameWithType: RectTransformExtensions.Left
+  fullName: TetraCreations.Core.RectTransformExtensions.Left
+- uid: Global.RectTransform
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: RectTransform
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: TetraCreations.Core.RectTransformExtensions.Right*
+  commentId: Overload:TetraCreations.Core.RectTransformExtensions.Right
+  name: Right
+  nameWithType: RectTransformExtensions.Right
+  fullName: TetraCreations.Core.RectTransformExtensions.Right
+- uid: TetraCreations.Core.RectTransformExtensions.Bottom*
+  commentId: Overload:TetraCreations.Core.RectTransformExtensions.Bottom
+  name: Bottom
+  nameWithType: RectTransformExtensions.Bottom
+  fullName: TetraCreations.Core.RectTransformExtensions.Bottom
+- uid: TetraCreations.Core.RectTransformExtensions.Top*
+  commentId: Overload:TetraCreations.Core.RectTransformExtensions.Top
+  name: Top
+  nameWithType: RectTransformExtensions.Top
+  fullName: TetraCreations.Core.RectTransformExtensions.Top
+- uid: TetraCreations.Core.RectTransformExtensions.Offset*
+  commentId: Overload:TetraCreations.Core.RectTransformExtensions.Offset
+  name: Offset
+  nameWithType: RectTransformExtensions.Offset
+  fullName: TetraCreations.Core.RectTransformExtensions.Offset
+- uid: TetraCreations.Core.RectTransformExtensions.GetTopOffset*
+  commentId: Overload:TetraCreations.Core.RectTransformExtensions.GetTopOffset
+  name: GetTopOffset
+  nameWithType: RectTransformExtensions.GetTopOffset
+  fullName: TetraCreations.Core.RectTransformExtensions.GetTopOffset
+- uid: TetraCreations.Core.RectTransformExtensions.GetBottomOffset*
+  commentId: Overload:TetraCreations.Core.RectTransformExtensions.GetBottomOffset
+  name: GetBottomOffset
+  nameWithType: RectTransformExtensions.GetBottomOffset
+  fullName: TetraCreations.Core.RectTransformExtensions.GetBottomOffset
+- uid: TetraCreations.Core.RectTransformExtensions.GetRightOffset*
+  commentId: Overload:TetraCreations.Core.RectTransformExtensions.GetRightOffset
+  name: GetRightOffset
+  nameWithType: RectTransformExtensions.GetRightOffset
+  fullName: TetraCreations.Core.RectTransformExtensions.GetRightOffset
+- uid: TetraCreations.Core.RectTransformExtensions.GetLeftOffset*
+  commentId: Overload:TetraCreations.Core.RectTransformExtensions.GetLeftOffset
+  name: GetLeftOffset
+  nameWithType: RectTransformExtensions.GetLeftOffset
+  fullName: TetraCreations.Core.RectTransformExtensions.GetLeftOffset
+- uid: TetraCreations.Core.RectTransformExtensions.Width*
+  commentId: Overload:TetraCreations.Core.RectTransformExtensions.Width
+  name: Width
+  nameWithType: RectTransformExtensions.Width
+  fullName: TetraCreations.Core.RectTransformExtensions.Width
+- uid: TetraCreations.Core.RectTransformExtensions.Height*
+  commentId: Overload:TetraCreations.Core.RectTransformExtensions.Height
+  name: Height
+  nameWithType: RectTransformExtensions.Height
+  fullName: TetraCreations.Core.RectTransformExtensions.Height
+- uid: TetraCreations.Core.RectTransformExtensions.Size*
+  commentId: Overload:TetraCreations.Core.RectTransformExtensions.Size
+  name: Size
+  nameWithType: RectTransformExtensions.Size
+  fullName: TetraCreations.Core.RectTransformExtensions.Size
+- uid: TetraCreations.Core.RectTransformExtensions.GetWidth*
+  commentId: Overload:TetraCreations.Core.RectTransformExtensions.GetWidth
+  name: GetWidth
+  nameWithType: RectTransformExtensions.GetWidth
+  fullName: TetraCreations.Core.RectTransformExtensions.GetWidth
+- uid: TetraCreations.Core.RectTransformExtensions.GetHeight*
+  commentId: Overload:TetraCreations.Core.RectTransformExtensions.GetHeight
+  name: GetHeight
+  nameWithType: RectTransformExtensions.GetHeight
+  fullName: TetraCreations.Core.RectTransformExtensions.GetHeight
+- uid: TetraCreations.Core.RectTransformExtensions.GetSize*
+  commentId: Overload:TetraCreations.Core.RectTransformExtensions.GetSize
+  name: GetSize
+  nameWithType: RectTransformExtensions.GetSize
+  fullName: TetraCreations.Core.RectTransformExtensions.GetSize
+- uid: Global.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Vector2
