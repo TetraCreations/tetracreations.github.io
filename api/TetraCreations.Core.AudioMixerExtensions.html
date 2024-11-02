@@ -1,0 +1,891 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AudioMixerExtensions
+ | Tetra Creations documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AudioMixerExtensions
+ | Tetra Creations documentation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TetraCreations.Core.AudioMixerExtensions">
+
+
+  <h1 id="TetraCreations_Core_AudioMixerExtensions" data-uid="TetraCreations.Core.AudioMixerExtensions" class="text-break">Class AudioMixerExtensions
+</h1>
+  <div class="markdown level0 summary"><p>Contains several methods to easily convert volume value from decibel to linear or percentage.
+By default the exposed volume parameter of an AudioMixer is in decibel hovewer when
+controlling the volume with a slider from the UI we have a linear value which needs to be converted.
+The convertion happens automatically when calling SetLinearVolume()</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">AudioMixerExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">TetraCreations</span>.<a class="xref" href="TetraCreations.Core.html">Core</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="TetraCreations_Core_AudioMixerExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AudioMixerExtensions</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_MaximumDecibelVolume" data-uid="TetraCreations.Core.AudioMixerExtensions.MaximumDecibelVolume">MaximumDecibelVolume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MaximumDecibelVolume = 20</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_MaximumLinearVolume" data-uid="TetraCreations.Core.AudioMixerExtensions.MaximumLinearVolume">MaximumLinearVolume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MaximumLinearVolume = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_MaximumPercentageVolume" data-uid="TetraCreations.Core.AudioMixerExtensions.MaximumPercentageVolume">MaximumPercentageVolume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MaximumPercentageVolume = 1000</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_MaximumSafeDecibelVolume" data-uid="TetraCreations.Core.AudioMixerExtensions.MaximumSafeDecibelVolume">MaximumSafeDecibelVolume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MaximumSafeDecibelVolume = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_MaximumSafeLinearVolume" data-uid="TetraCreations.Core.AudioMixerExtensions.MaximumSafeLinearVolume">MaximumSafeLinearVolume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MaximumSafeLinearVolume = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_MaximumSafePercentageVolume" data-uid="TetraCreations.Core.AudioMixerExtensions.MaximumSafePercentageVolume">MaximumSafePercentageVolume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MaximumSafePercentageVolume = 100</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_MinimumDecibelVolume" data-uid="TetraCreations.Core.AudioMixerExtensions.MinimumDecibelVolume">MinimumDecibelVolume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MinimumDecibelVolume = -80</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_MinimumLinearVolume" data-uid="TetraCreations.Core.AudioMixerExtensions.MinimumLinearVolume">MinimumLinearVolume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MinimumLinearVolume = 0.0001</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_MinimumPercentageVolume" data-uid="TetraCreations.Core.AudioMixerExtensions.MinimumPercentageVolume">MinimumPercentageVolume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MinimumPercentageVolume = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="TetraCreations_Core_AudioMixerExtensions_ClampDecibelVolume_" data-uid="TetraCreations.Core.AudioMixerExtensions.ClampDecibelVolume*"></a>
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_ClampDecibelVolume_System_Single_System_Single_System_Single_" data-uid="TetraCreations.Core.AudioMixerExtensions.ClampDecibelVolume(System.Single,System.Single,System.Single)">ClampDecibelVolume(float, float, float)</h4>
+  <div class="markdown level1 summary"><p>Clamp the decibel volume from -80f to 0f.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ClampDecibelVolume(float dB, float min = -80, float max = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">dB</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">min</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">max</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_AudioMixerExtensions_ClampLinearVolume_" data-uid="TetraCreations.Core.AudioMixerExtensions.ClampLinearVolume*"></a>
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_ClampLinearVolume_System_Single_System_Single_System_Single_" data-uid="TetraCreations.Core.AudioMixerExtensions.ClampLinearVolume(System.Single,System.Single,System.Single)">ClampLinearVolume(float, float, float)</h4>
+  <div class="markdown level1 summary"><p>Clamp the linear volume from 0.0001f to 1f.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ClampLinearVolume(float linear, float min = 0.0001, float max = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">linear</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">min</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">max</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_AudioMixerExtensions_ClampPercentageVolume_" data-uid="TetraCreations.Core.AudioMixerExtensions.ClampPercentageVolume*"></a>
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_ClampPercentageVolume_System_Single_System_Single_System_Single_" data-uid="TetraCreations.Core.AudioMixerExtensions.ClampPercentageVolume(System.Single,System.Single,System.Single)">ClampPercentageVolume(float, float, float)</h4>
+  <div class="markdown level1 summary"><p>Clamp the volume as percentage from 0% to 100%.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ClampPercentageVolume(float percentage, float min = 0, float max = 100)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">percentage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">min</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">max</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_AudioMixerExtensions_DecibelToString_" data-uid="TetraCreations.Core.AudioMixerExtensions.DecibelToString*"></a>
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_DecibelToString_System_Single_" data-uid="TetraCreations.Core.AudioMixerExtensions.DecibelToString(System.Single)">DecibelToString(float)</h4>
+  <div class="markdown level1 summary"><p>Returns the decibel value as a string using the format : &quot;+0.## dbB&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string DecibelToString(float dB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">dB</span></td>
+        <td><p>Value in decibel</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_AudioMixerExtensions_GetAudioMixerGroup_" data-uid="TetraCreations.Core.AudioMixerExtensions.GetAudioMixerGroup*"></a>
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_GetAudioMixerGroup_AudioMixer_System_String_System_String_" data-uid="TetraCreations.Core.AudioMixerExtensions.GetAudioMixerGroup(AudioMixer,System.String,System.String)">GetAudioMixerGroup(AudioMixer, string, string)</h4>
+  <div class="markdown level1 summary"><p>Returns an AudioMixerGroup if it's name contains the word passed as parameter.
+For example GetAudioMixerGroup(&quot;MusicVolumeParam&quot;) will find the group called &quot;Music&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AudioMixerGroup GetAudioMixerGroup(this AudioMixer audioMixer, string name, string mainGroupName = &quot;Master&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioMixer</span></td>
+        <td><span class="parametername">audioMixer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The group name we are looking for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">mainGroupName</span></td>
+        <td><p>The main group to search in, by default it's the &quot;Master&quot; group.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioMixerGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_AudioMixerExtensions_GetDecibelValueFromLinear_" data-uid="TetraCreations.Core.AudioMixerExtensions.GetDecibelValueFromLinear*"></a>
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_GetDecibelValueFromLinear_System_Single_System_Boolean_" data-uid="TetraCreations.Core.AudioMixerExtensions.GetDecibelValueFromLinear(System.Single,System.Boolean)">GetDecibelValueFromLinear(float, bool)</h4>
+  <div class="markdown level1 summary"><p>Returns the decibel value from a linear value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetDecibelValueFromLinear(float linearVolume, bool clamp = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">linearVolume</span></td>
+        <td><p>Volume as linear</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">clamp</span></td>
+        <td><p>Will prevent the value to exceed : -80f and 0f</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_AudioMixerExtensions_GetLinearValueFromDecibel_" data-uid="TetraCreations.Core.AudioMixerExtensions.GetLinearValueFromDecibel*"></a>
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_GetLinearValueFromDecibel_System_Single_System_Boolean_" data-uid="TetraCreations.Core.AudioMixerExtensions.GetLinearValueFromDecibel(System.Single,System.Boolean)">GetLinearValueFromDecibel(float, bool)</h4>
+  <div class="markdown level1 summary"><p>Returns the linear value from a decibel value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetLinearValueFromDecibel(float decibel, bool clamp = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">decibel</span></td>
+        <td><p>Volume in decibel</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">clamp</span></td>
+        <td><p>Prevent the returned value to exceed : 0.0001f to 1f</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_AudioMixerExtensions_GetLinearValueFromPercentage_" data-uid="TetraCreations.Core.AudioMixerExtensions.GetLinearValueFromPercentage*"></a>
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_GetLinearValueFromPercentage_System_Single_System_Boolean_" data-uid="TetraCreations.Core.AudioMixerExtensions.GetLinearValueFromPercentage(System.Single,System.Boolean)">GetLinearValueFromPercentage(float, bool)</h4>
+  <div class="markdown level1 summary"><p>Returns the linear value from a percentage value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetLinearValueFromPercentage(float percentage, bool clamp = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">percentage</span></td>
+        <td><p>Volume as a percentage</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">clamp</span></td>
+        <td><p>Prevent the returned value to exceed : 0.0001f to 1f</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_AudioMixerExtensions_GetLinearVolume_" data-uid="TetraCreations.Core.AudioMixerExtensions.GetLinearVolume*"></a>
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_GetLinearVolume_AudioMixer_System_String_System_Single__System_Boolean_" data-uid="TetraCreations.Core.AudioMixerExtensions.GetLinearVolume(AudioMixer,System.String,System.Single@,System.Boolean)">GetLinearVolume(AudioMixer, string, out float, bool)</h4>
+  <div class="markdown level1 summary"><p>Returns the linear value of an exposed parameter by it's name from an AudioMixer.
+We assume the parameter is a Volume.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetLinearVolume(this AudioMixer audioMixer, string parameterName, out float linearValue, bool clamp = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioMixer</span></td>
+        <td><span class="parametername">audioMixer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">parameterName</span></td>
+        <td><p>Name of the exposed parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">linearValue</span></td>
+        <td><p>The current linear value of the volume</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">clamp</span></td>
+        <td><p>If true the returned value cannot exceed 0f and 1f</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_AudioMixerExtensions_SetLinearVolume_" data-uid="TetraCreations.Core.AudioMixerExtensions.SetLinearVolume*"></a>
+  <h4 id="TetraCreations_Core_AudioMixerExtensions_SetLinearVolume_AudioMixer_System_String_System_Single_System_Boolean_" data-uid="TetraCreations.Core.AudioMixerExtensions.SetLinearVolume(AudioMixer,System.String,System.Single,System.Boolean)">SetLinearVolume(AudioMixer, string, float, bool)</h4>
+  <div class="markdown level1 summary"><p>Sets the value of an exposed parameter while automatically converting the linear value to decibel.<br>
+Do <strong>NOT</strong> call it in <strong>Awake()</strong> it doesn't work ! (audioMixer.SetFloat() will return true even if the value does not change).<br>
+<a href="https://forum.unity.com/threads/audiomixer-setfloat-doesnt-work-on-awake.323880/">https://forum.unity.com/threads/audiomixer-setfloat-doesnt-work-on-awake.323880/</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SetLinearVolume(this AudioMixer audioMixer, string parameterName, float value, bool clamp = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioMixer</span></td>
+        <td><span class="parametername">audioMixer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">parameterName</span></td>
+        <td><p>The name of the volume exposed parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The linear value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">clamp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Tetra Creations documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

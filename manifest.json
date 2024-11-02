@@ -1,0 +1,809 @@
+{
+  "sitemap": {
+    "fileOptions": {
+      "api/*": {
+        "baseUrl": "https://tetracreations.github.io/",
+        "changefreq": "daily"
+      }
+    },
+    "baseUrl": "https://tetracreations.github.io/",
+    "changefreq": "weekly"
+  },
+  "homepages": [],
+  "source_base_path": "X:/Unity/BitWizer/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.AudioMixerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.AudioMixerExtensions.html",
+          "hash": "thRz3GkB2lN5O2xQohDgCMFthh0ujtYyumRU1x6Fq94="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.BooleanExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.BooleanExtensions.html",
+          "hash": "3s1t40pVztVR5KvxlvZtOejtrmqlPn6zWlbvV/uL/1Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.CanvasGroupExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.CanvasGroupExtensions.html",
+          "hash": "1rgoo5DbDzOXhvRDUhqvhCjNPf1Noggu3YOLpImSSE0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.CollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.CollectionExtensions.html",
+          "hash": "W8BMyxqMfkjP6ZzV9mV0BMm0IBiNPGfeUKJ6a5jD4+w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Collider2DExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Collider2DExtensions.html",
+          "hash": "YVPfwBqWEn2kgU+I4gBLN0TVD8BF2F0GVG1X0f8klWw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.ColliderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.ColliderExtensions.html",
+          "hash": "Ntvpz6D7J3JWjaLcnYbT0SjBQvh4e1ncIc2CDDZQlhA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.ColorExtentions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.ColorExtentions.html",
+          "hash": "WO29M2cStXBgosvFCrTtAS6c1MLzXtkpCMc6n9svtdw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.ComparableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.ComparableExtensions.html",
+          "hash": "Yb6u//9zU5EnPxQAq/LqsWrP0YjZjeXCPILUxJphMN8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.ConditionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.ConditionType.html",
+          "hash": "CJhBvmlWkTaSi//mSwLQHWz/lTIrQ/tro/BXrFP5Ofs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.DebugLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.DebugLevel.html",
+          "hash": "rJe3BygPtZjQU6SODROglxH4J10ojr2sKaCuz/O5eVY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.DictionaryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.DictionaryExtensions.html",
+          "hash": "aMd0NvsC2whyAUAF2ATzhdqPkc/fq7hVk7ieSGKLbQ8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Editor.AssetDatabaseExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Editor.AssetDatabaseExtensions.html",
+          "hash": "DUtBZVQCcZuOrdaB5M0vsvJlARgwP/1qkjer6PGiUl4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Editor.AudioMixerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Editor.AudioMixerExtensions.html",
+          "hash": "XC5orD8DYyuJSE78f1zKfXWi6u3c9XyoPvnemmgCTWc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Editor.EditorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Editor.EditorExtensions.html",
+          "hash": "Eg1Kt375pgdfgM7fRxwT3Xz7z46q1sjKdQi7ymd31bc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Editor.MonoScriptExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Editor.MonoScriptExtensions.html",
+          "hash": "2M9sfxF/1caesv7lW/65gQrHCeyiNGI7ncSLpUjumxs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Editor.PathReferenceExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Editor.PathReferenceExtensions.html",
+          "hash": "2hE9yCTI1CJnZJiNi26GqE4IJevMTUy+Hd0VH+IgKVM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Editor.html",
+          "hash": "1d3FO/oYpSnu94vW/0/fn5Dsnb8SarwSVGnYi0S1ALk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.EnumerableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.EnumerableExtensions.html",
+          "hash": "WbveZcR7K5YbqYp5udo6pcLCBfV1k3AO+beJa1dH++c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.FieldInfoExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.FieldInfoExtensions.html",
+          "hash": "mrkdOEf8KL2Gycbg4vUskPaNKXBrgowpYXjzOCmL/VU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.FloatExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.FloatExtensions.html",
+          "hash": "IBXr2tTEZiB7D2KKNmVzR+9ATij954vGCc9w5FZI7dU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.GameObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.GameObjectExtensions.html",
+          "hash": "f9Gp57jd5Gpxe5g1RCloLLs2ddE2VRW/Oy2noiGLrao="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.ImageExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.ImageExtensions.html",
+          "hash": "VHcI6iwDxodykplFG8G6K8a1hlrh4cQPsuYwOV3s4Mk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.IntegerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.IntegerExtensions.html",
+          "hash": "ALZYMGJWObKqUsEThUcbolTJmSjUhrOoPdv8mlZMR9w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.LayerMaskExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.LayerMaskExtensions.html",
+          "hash": "4RRfsoT2Sp4S5Xb4bhNNbEpY5VNZhF71oGUwcn09p58="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.MatchInclusive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.MatchInclusive.html",
+          "hash": "3Rq6M3HFUlXMgNE+yuz9/95ji6SRk2CY1CIZjzuWtZ0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.ObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.ObjectExtensions.html",
+          "hash": "0A5kZSfs75c4uKDrTAQSv/HpXnkK4gkgrFL07Vcgp4Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.QuaternionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.QuaternionExtensions.html",
+          "hash": "MOSEkYuQIdama1sm4LZpfBAun4c6B2RrBOqSWrmr+Dg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.RandomExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.RandomExtensions.html",
+          "hash": "xDkUTWo4xujN5vJ9wIHguoVlKkzLz58KTj9V9bzbqbg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.RectTransformExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.RectTransformExtensions.html",
+          "hash": "La8CWeQTew8/83GUfB2OsLVYpcC1svvwew1a4b8D+QM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.RendererExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.RendererExtensions.html",
+          "hash": "GcD+SAZ8r6fXDegtgh8GTgK89twwwyjRSnhWGZHbeQM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.RoundMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.RoundMethod.html",
+          "hash": "BHBB6LB17x9zNxlk4Q1tV06b2ezFGCIaCc8yboB1m6E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.StringExtensions.html",
+          "hash": "XfCzXqt5i8R2Q7B+16cbeOVM//41hF89y2GiWXBrTqc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.TextureExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.TextureExtensions.html",
+          "hash": "6h4/u6L/aZwgLMt8uvvMCWjw3hCtYA0XfZxpWpICAig="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.TransformExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.TransformExtensions.html",
+          "hash": "iBzDvfw45Ylk5XYYnIaiBpS5JaZIsw8HDW+IBVZQlwk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.TypeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.TypeExtensions.html",
+          "hash": "uZxbLNfsBDxCNNaNRCIO2nFyactx8snhCDgJZnzS1lk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.TypeUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.TypeUtility.html",
+          "hash": "a3BlzJXrTU/wFDe1aee0/uOZtC9G4O63kXNrl0YyMPw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Utility.CountdownTimer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Utility.CountdownTimer.html",
+          "hash": "DeQQn/iXA37vNPb1Ioev5QoT9shVnV9hVA+r6F7zthY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Utility.FloatValueCondition.ConditionIsMet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Utility.FloatValueCondition.ConditionIsMet.html",
+          "hash": "NL6mG23R2i+sjZCjTmoZZnAsa8kAWZ3ByERPHO8tR+Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Utility.FloatValueCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Utility.FloatValueCondition.html",
+          "hash": "hW6AJRMvSTNNFhrviggh0EVB1FuCB0w98QMmAgPWPkQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Utility.LayerMaskFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Utility.LayerMaskFilter.html",
+          "hash": "SO62PmRv/hll6V52Gss5R11dDrhO2QJ+SLrDo6mKG4g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Utility.Singleton-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Utility.Singleton-1.html",
+          "hash": "gPdZZXrq16Td4eHL9KFSsylVLb3zBEX60/St+ODRVf0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Utility.Singleton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Utility.Singleton.html",
+          "hash": "nFj9gglvIc/QC+w2+r2lwdNfML0K7sQu/MN/+UoR4oQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Utility.Timer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Utility.Timer.html",
+          "hash": "bN1fRz8ueN7Tqm38PUdX9IWUxkV6Ec7bxZZmXIkPFaY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Utility.TimerManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Utility.TimerManager.html",
+          "hash": "Y4WqQTJz/EOqPjkXwvHHWs+eP8ZqrSQPAntajqSWNig="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Utility.Trigger2DCollider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Utility.Trigger2DCollider.html",
+          "hash": "XmXfTFVY2fj4OO9eQUutEoLoOhAxra3HrlgjkDvmQng="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Utility.TriggerCollider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Utility.TriggerCollider.html",
+          "hash": "In6U9F/8tuJpwgmX6BMXLWYSgij83jTLqhiKVbB56gw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Utility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Utility.html",
+          "hash": "bfxcT2pvL1Zr3c2EnkojpF0uYuu9hBiDIxpVfgCO9Kg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Vector2Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Vector2Extensions.html",
+          "hash": "xiro6U1UPP39LXsJlYYnzRlKZhUT4bnWQ0q8LGfCFEo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Vector3Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Vector3Extensions.html",
+          "hash": "SKa1Z9Gh415PkoY0cEy9VfCBZfzmJZDHOgM9wXqWIFQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.html",
+          "hash": "PP0YYlNYJe86PivR7qbqA1WGLjWSAc3rWu3QskETgrs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "t5HHX5FgosTF/wh4qjndX8FF7xu7558N7DdFNXMNqW8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html",
+          "hash": "v5+Ub27eMwFQW7Mrn1ZsGvUzogVHhy5OJoyY3822hNo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/AttackController.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/AttackController.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/FloatValueCondition.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/FloatValueCondition.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/SingletonDependency.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/SingletonDependency.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/TetraCore.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/TetraCore.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/TriggerCollider.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/TriggerCollider.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html",
+          "hash": "J62/QsjJPGPeXTqMBh4V/NzkndcJX99DdWG0jGsQfq8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html",
+          "hash": "dEg4vNJttsFNrPQ2PBDQzg4Rf1UMrrc7EXWNlSSB4W0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "qEzrLjHs235goEQwzeYVllMddyJynWeef94xmngv+6E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "UNBz31Y6DJ6XzuTgzmuolBJX3Inwp7YJ00ZiJX0VyqM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 50,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

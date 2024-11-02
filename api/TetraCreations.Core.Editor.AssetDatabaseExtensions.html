@@ -1,0 +1,1252 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AssetDatabaseExtensions
+ | Tetra Creations documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AssetDatabaseExtensions
+ | Tetra Creations documentation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions">
+
+
+  <h1 id="TetraCreations_Core_Editor_AssetDatabaseExtensions" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions" class="text-break">Class AssetDatabaseExtensions
+</h1>
+  <div class="markdown level0 summary"><p>Provides few generic static method to simplify getting a specific asset or a list of assets from one or multiple folders.<br>
+Relative folder path mean this one is valid : &quot;Assets/Game/Data/Sword.asset&quot;, but not this one : &quot;C:\Unity\MyProject\Assets\Game\Data\Sword.asset&quot;.<br>
+We can search using the asset name or a predicate function.<br>
+If an asset is not found, it returns null or an empty list depending on the method called.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">AssetDatabaseExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">TetraCreations</span>.<a class="xref" href="TetraCreations.Core.html">Core</a>.<a class="xref" href="TetraCreations.Core.Editor.html">Editor</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AssetDatabaseExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_AssetExist_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExist*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_AssetExist_System_String_Type_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExist(System.String,Type)">AssetExist(string, Type)</h4>
+  <div class="markdown level1 summary"><p>Determine if an asset of a given type and name exist<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AssetExist(string name, Type assetType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the asset, it can contains the extension (.asset)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">assetType</span></td>
+        <td><p>The type of the asset to search for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_AssetExistIn_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExistIn*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_AssetExistIn__1_System_String_System_String___" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.AssetExistIn``1(System.String,System.String[])">AssetExistIn&lt;T&gt;(string, string[])</h4>
+  <div class="markdown level1 summary"><p>Determine if an asset exist inside any given folders path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AssetExistIn&lt;T&gt;(string assetName, string[] folders) where T : UnityEngine.Object</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">assetName</span></td>
+        <td><p>The asset name to search</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td><span class="parametername">folders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Object type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_CanAssetBeCreated_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.CanAssetBeCreated*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_CanAssetBeCreated_System_String_System_String_Type_System_Boolean_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.CanAssetBeCreated(System.String,System.String,Type,System.Boolean)">CanAssetBeCreated(string, string, Type, bool)</h4>
+  <div class="markdown level1 summary"><p>Verify if the asset name is not already taken or invalid, and if the path is not empty or null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanAssetBeCreated(string path, string name, Type assetType, bool debug = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">assetType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">debug</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_CreateAssetIn_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.CreateAssetIn*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_CreateAssetIn_UnityEngine_Object_System_String_System_Boolean_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.CreateAssetIn(UnityEngine.Object,System.String,System.Boolean)">CreateAssetIn(Object, string, bool)</h4>
+  <div class="markdown level1 summary"><p>Create an asset inside the given path, Debug.Log if it was successful or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CreateAssetIn(UnityEngine.Object asset, string path, bool debug = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Object</span></td>
+        <td><span class="parametername">asset</span></td>
+        <td><p>The asset to create</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The relative path to create the asset</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">debug</span></td>
+        <td><p>Show in the console any issue preventing saving the asset</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAsset_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAsset*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAsset__1_System_String_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAsset``1(System.String)">GetAsset&lt;T&gt;(string)</h4>
+  <div class="markdown level1 summary"><p>Returns the first asset by it's name. It will search inside the whole AssetDatabase.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetAsset&lt;T&gt;(string assetName) where T : UnityEngine.Object</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">assetName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>null : Nothing found OR T : Any UnityEngine.Object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Object type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetFrom_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetFrom__1_System_String_Func___0_System_Boolean__" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom``1(System.String,Func{``0,System.Boolean})">GetAssetFrom&lt;T&gt;(string, Func&lt;T, bool&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns the first asset matching the predicate from the given folder path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetAssetFrom&lt;T&gt;(string folderPath, Func&lt;T, bool&gt; predicate) where T : UnityEngine.Object</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">folderPath</span></td>
+        <td><p>Relative folder path to search from</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func&lt;, &gt;</span>&lt;T, <span class="xref">bool</span>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetFrom_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetFrom__1_System_String_System_String_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom``1(System.String,System.String)">GetAssetFrom&lt;T&gt;(string, string)</h4>
+  <div class="markdown level1 summary"><p>Returns the first asset by it's name, from the given relative folder path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetAssetFrom&lt;T&gt;(string assetName, string folderPath) where T : UnityEngine.Object</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">assetName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">folderPath</span></td>
+        <td><p>Relative folder path to search from</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>null : Nothing found OR T : Any UnityEngine.Object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Object type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetFrom_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetFrom__1_System_String_System_String___" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom``1(System.String,System.String[])">GetAssetFrom&lt;T&gt;(string, string[])</h4>
+  <div class="markdown level1 summary"><p>Returns the first asset by it's name, from the given folders paths.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetAssetFrom&lt;T&gt;(string assetName, string[] foldersPath) where T : UnityEngine.Object</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">assetName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td><span class="parametername">foldersPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>null : Nothing found OR T : Any UnityEngine.Object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Object type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetFrom_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetFrom__1_System_String___Func___0_System_Boolean__" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetFrom``1(System.String[],Func{``0,System.Boolean})">GetAssetFrom&lt;T&gt;(string[], Func&lt;T, bool&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns the first asset matching the predicate from the given folders paths.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetAssetFrom&lt;T&gt;(string[] foldersPath, Func&lt;T, bool&gt; predicate) where T : UnityEngine.Object</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td><span class="parametername">foldersPath</span></td>
+        <td><p>Folders paths to search from</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func&lt;, &gt;</span>&lt;T, <span class="xref">bool</span>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetGUIDs_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetGUIDs*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetGUIDs_System_String_Type_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetGUIDs(System.String,Type)">GetAssetGUIDs(string, Type)</h4>
+  <div class="markdown level1 summary"><p>Returns all GUIDs of an asset by it's name and it's type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; GetAssetGUIDs(string assetName, Type assetType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">assetName</span></td>
+        <td><p>Name of the asset</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">assetType</span></td>
+        <td><p>Type of the asset</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable&lt;&gt;</span>&lt;<span class="xref">string</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetNameInvalidCharacters_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetNameInvalidCharacters*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetNameInvalidCharacters_System_String_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetNameInvalidCharacters(System.String)">GetAssetNameInvalidCharacters(string)</h4>
+  <div class="markdown level1 summary"><p>Return the collection of invalid character(s) from a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;char&gt; GetAssetNameInvalidCharacters(string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable&lt;&gt;</span>&lt;<span class="xref">char</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetsFrom_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetsFrom__1_System_String_Func___0_System_Boolean__" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom``1(System.String,Func{``0,System.Boolean})">GetAssetsFrom&lt;T&gt;(string, Func&lt;T, bool&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns the list of assets matching the predicate from the given folder path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;T&gt; GetAssetsFrom&lt;T&gt;(string folderPath, Func&lt;T, bool&gt; predicate) where T : UnityEngine.Object</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">folderPath</span></td>
+        <td><p>Folder path to search from</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func&lt;, &gt;</span>&lt;T, <span class="xref">bool</span>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List&lt;&gt;</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetsFrom_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetsFrom__1_System_String_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom``1(System.String)">GetAssetsFrom&lt;T&gt;(string)</h4>
+  <div class="markdown level1 summary"><p>Returns the list of assets from the given folder path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;T&gt; GetAssetsFrom&lt;T&gt;(string folderPath) where T : UnityEngine.Object</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">folderPath</span></td>
+        <td><p>Folder path to search from</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List&lt;&gt;</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the asset</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetsFrom_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetsFrom__1_System_String___Func___0_System_Boolean__" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom``1(System.String[],Func{``0,System.Boolean})">GetAssetsFrom&lt;T&gt;(string[], Func&lt;T, bool&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns the list of assets matching the predicate from the given folders path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;T&gt; GetAssetsFrom&lt;T&gt;(string[] foldersPath, Func&lt;T, bool&gt; predicate) where T : UnityEngine.Object</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td><span class="parametername">foldersPath</span></td>
+        <td><p>Folders path to search from</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func&lt;, &gt;</span>&lt;T, <span class="xref">bool</span>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List&lt;&gt;</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetsFrom_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetAssetsFrom__1_System_String___" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetAssetsFrom``1(System.String[])">GetAssetsFrom&lt;T&gt;(string[])</h4>
+  <div class="markdown level1 summary"><p>Returns the list of assets from the given folders path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;T&gt; GetAssetsFrom&lt;T&gt;(string[] foldersPath) where T : UnityEngine.Object</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td><span class="parametername">foldersPath</span></td>
+        <td><p>Folders paths to search from</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List&lt;&gt;</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the asset</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetInvalidFilenameCharacters_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidFilenameCharacters*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetInvalidFilenameCharacters_System_String_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidFilenameCharacters(System.String)">GetInvalidFilenameCharacters(string)</h4>
+  <div class="markdown level1 summary"><p>Return an IEnumerable of char which are invalid for a file name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;char&gt; GetInvalidFilenameCharacters(string source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable&lt;&gt;</span>&lt;<span class="xref">char</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetInvalidPathCharacters_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidPathCharacters*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetInvalidPathCharacters_System_String_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetInvalidPathCharacters(System.String)">GetInvalidPathCharacters(string)</h4>
+  <div class="markdown level1 summary"><p>Return an IEnumerable of char which are invalid for a file name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;char&gt; GetInvalidPathCharacters(string source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable&lt;&gt;</span>&lt;<span class="xref">char</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetRelativePathWithExtension_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetRelativePathWithExtension*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_GetRelativePathWithExtension_System_String_System_String_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.GetRelativePathWithExtension(System.String,System.String)">GetRelativePathWithExtension(string, string)</h4>
+  <div class="markdown level1 summary"><p>Combine the name of the asset with its path to return a valid relative path ending by '.asset'<br>
+For example : &quot;Assets/Game/Data/Sword.asset&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetRelativePathWithExtension(string assetName, string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">assetName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_LoadMonoScriptsFrom_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.LoadMonoScriptsFrom*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_LoadMonoScriptsFrom_System_String___" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.LoadMonoScriptsFrom(System.String[])">LoadMonoScriptsFrom(string[])</h4>
+  <div class="markdown level1 summary"><p>Returns the list of MonoScript assets, which represents C# files stored in the project, from the given folders.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;MonoScript&gt; LoadMonoScriptsFrom(string[] folders)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td><span class="parametername">folders</span></td>
+        <td><p>Folders path to search from</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List&lt;&gt;</span>&lt;<span class="xref">MonoScript</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_Editor_AssetDatabaseExtensions_ToForwardSlashes_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.ToForwardSlashes*"></a>
+  <h4 id="TetraCreations_Core_Editor_AssetDatabaseExtensions_ToForwardSlashes_System_String_" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions.ToForwardSlashes(System.String)">ToForwardSlashes(string)</h4>
+  <div class="markdown level1 summary"><p>Converts any backslashes in the path to forward slashes, supported Unity Editor platforms: Windows, Mac, Linux.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToForwardSlashes(this string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><p>The string with any backslashes replaced by forward slashes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Tetra Creations documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

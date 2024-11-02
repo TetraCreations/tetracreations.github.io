@@ -1,0 +1,485 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Getting Started | Tetra Creations documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Getting Started | Tetra Creations documentation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started">Getting Started</h1>
+
+<h2 id="runtime">Runtime</h2>
+<p>To access all the extension methods, import the library at the top of your script.</p>
+<pre><code class="lang-cs">using TetraCreations.Core;
+</code></pre>
+<p>To access all utility scripts :</p>
+<pre><code class="lang-cs">using TetraCreations.Core.Utility;
+</code></pre>
+<p>Which include :</p>
+<ul>
+<li>A generic Singleton pattern implementation.</li>
+<li>A <code>TimerManager</code> to create and run every timer in a single Update method.</li>
+<li>A simple <code>TriggerCollider</code> script to detect Rigidbodies entering/exiting a trigger collider.</li>
+<li>An example how to manage audio settings, using the <code>AudioManager</code> component to generate volume sliders at runtime.</li>
+<li><code>FloatValueCondition</code> to evaluate if a float value is Lower, Greater, Equals or Between other values to trigger methods from different scripts.</li>
+</ul>
+<h2 id="editor">Editor</h2>
+<pre><code class="lang-cs">using TetraCreations.Core.Editor;
+</code></pre>
+<p>Then you can access to :</p>
+<ul>
+<li>AssetDatabaseExtensions :
+<ul>
+<li>Get assets by their type inside one or multiple folders.</li>
+<li>Verify if an asset exist.</li>
+<li>Create asset at a specific path.</li>
+<li>Verify path and asset name before creation.</li>
+</ul>
+</li>
+<li>AudioMixerExtensions :
+<ul>
+<li>Get the list of exposed parameters</li>
+</ul>
+</li>
+<li>MonoScriptExtensions :
+<ul>
+<li>Create scriptable object instance using the reference of the MonoScript.</li>
+</ul>
+</li>
+<li>PathReferenceExtensions :
+<ul>
+<li>Extend <code>PathReference</code> from <code>TetraAttributes</code> to create/load/delete/count assets directly from the folder reference.</li>
+</ul>
+</li>
+</ul>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Remember that you need to move all your editor scripts to an Editor folder or to use <strong>#if UNITY_EDITOR / #endif</strong> otherwise your build will not compile !</p>
+</div>
+<hr>
+<h1 id="extensions-examples">Extensions examples</h1>
+<h2 id="1-audiomixer">1. AudioMixer</h2>
+<p>A recurring issue in Unity is managing the audio settings using an <code>AudioMixer</code> we can expose volume parameter. However its a floating number representing the sound level in decibel. To modify it using a slider from the UI, we have to convert the linear value to a decibel value. That's why I've got an audio mixer extension method that does the conversion automatically :</p>
+<pre><code class="lang-cs">AudioMixer.SetLinearVolume(&quot;MusicVolume&quot;, 0.8f);
+</code></pre>
+<p>The first parameter is the name of the Exposed Parameter from the <code>AudioMixer</code>.
+The second parameter is the linear volume value, here 0.8f is equals to -1.94 dB.
+The third parameter determine if we clamp the linear volume to not exceed the safe audio limit in decibel which is defined as -80 dB to +0 dB, it is set to true by default.</p>
+<p>See the <code>AudioManager</code> example scene for more details.</p>
+<hr>
+<h2 id="2-canvas-group">2. Canvas Group</h2>
+<p>There is plenty of extensions methods which makes the code easier to read and avoid repetition, another example is how to show or hide UI elements using <code>CanvasGroup</code>.</p>
+<pre><code class="lang-cs">/// &lt;summary&gt;
+/// Show a canvas group while blocking raycasts
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;canvasGroup&quot;&gt;&lt;/param&gt;
+public static void Show(this CanvasGroup canvasGroup)
+{
+    canvasGroup.alpha = 1;
+    canvasGroup.blocksRaycasts = true;
+}
+
+/// &lt;summary&gt;
+/// Hide a canvas group while disable blocking raycasts
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;canvasGroup&quot;&gt;&lt;/param&gt;
+public static void Hide(this CanvasGroup canvasGroup)
+{
+    canvasGroup.alpha = 0;
+    canvasGroup.blocksRaycasts = false;  
+}
+</code></pre>
+<p>This is something I do all the time in every project.<br>
+Its recommended instead the using <code>CanvasGroup</code> instead of enabling/disabling the entire gameObject which is generally more costly.</p>
+<hr>
+<h2 id="3-list">3. List</h2>
+<p>You can find few examples inside the package, a common one is list and collection extensions</p>
+<pre><code class="lang-cs">_numbers = new List&lt;int&gt;{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+// Shuffle all elements using Fisher-Yates algorithm which produces an unbiased permutation
+_numbers.Shuffle();
+
+// Debug.Log all elements
+Debug.Log(&quot;Numbers : &quot;);
+_numbers.Log();
+
+// Add an element if it's not already in the list
+_numbers.AddItNotContains(5);
+
+// Loop backwards
+Debug.Log(&quot;Reverse loop : &quot;);
+foreach(var number in _numbers.ReverseLoop())
+{
+    Debug.Log(number);
+}
+
+// Adding existing numbers
+_numbers.AddRange(new List&lt;int&gt; { 1,5,8 });
+
+// Determine if the list contains unique elements
+Debug.Log(&quot;Contains unique elements : &quot; + _numbers.HasUniqueElements());
+
+// Create a new list without the duplicates
+var withoutDuplicates = _numbers.RemoveDuplicates();
+
+Debug.Log(&quot;Wihout duplicates : &quot;);
+withoutDuplicates.Log();
+</code></pre>
+<hr>
+<h1 id="utilities-examples">Utilities examples</h1>
+<h2 id="1-generic-singleton-pattern">1. Generic Singleton Pattern</h2>
+<p>To change any <code>MonoBehaviour</code> script to a <code>Singleton</code> simply extend from Singleton&lt;T&gt; where T is the type of your script.</p>
+<p>For example I have a Singleton to manage all timers in my game</p>
+<pre><code class="lang-cs">public class TimerManager : Singleton&lt;TimerManager&gt;
+{
+  [Title(&quot;Active Timer&quot;)]
+  [SerializeField] [ReadOnly] private bool _hasTimers = false;
+  [SerializeField] [ReadOnly] private int _activeTimerCount = 0;
+  [SerializeField] [ReadOnly] private List&lt;CountdownTimer&gt; _activeTimers;
+
+  protected override void OnAwake()
+  {
+    base.OnAwake();
+
+    _activeTimers = new List&lt;CountdownTimer&gt;();
+  }
+}
+</code></pre>
+<p>The import thing to notice is the override of the <code>OnAwake()</code> method, by default all <code>MonoBehaviour</code> use <code>Awake()</code> when the scene start.</p>
+<p>However, the generic abstract class Singleton already call <code>Awake()</code> to initialize itself, it checks for duplicates instances in the current scene, then it calls a protected virtual method <code>OnAwake()</code> that you can override, if you call <code>Awake()</code> instead then the Singleton wont be
+initialized and it will not work.</p>
+<p>When using the Singleton pattern, one common issue is trying to call a method from the Singleton inside the Awake method of another Singleton,
+we don't know which one is initialized first. To avoid dealing with script execution order, we can the other script as a dependency inside the inspector.
+In the example screen below it will wait until <code>TimerManager</code> is initialized.</p>
+<p><img src="images/SingletonDependency.png" alt="Singleton dependency example"></p>
+<hr>
+<h2 id="2-assetdatabase">2. AssetDatabase</h2>
+<p>Inside Editors or Scriptable Object I often need to load assets, lets imagine that I have imported 200 Sprites in my project, and I want to create a scriptable object foreach one of them an directly assign the sprite on it.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Remember that you need to move all your editor scripts to an Editor folder or to use <strong>#if UNITY_EDITOR / #endif</strong> otherwise your build will not compile !</p>
+</div>
+<p>I can use the <code>AssetDataExtensions</code> to load every sprites from a specific folder:</p>
+<pre><code class="lang-cs">var spritesPath = &quot;Assets/Example/Sprites&quot;;
+var sprites = AssetDatabaseExtensions.GetAssetsFrom&lt;Sprite&gt;(new string[]{ spritesPath });
+
+foreach (var sprite in sprites)
+{
+    /// Do something with each sprite
+}
+</code></pre>
+<p>Using <code>PathReference</code> class from <code>TetraAttributes</code> makes it even easier :</p>
+<pre><code class="lang-cs">[SerializeField] private PathReference _audioClipFolder;
+
+void LoadAudioClip()
+{
+    // We could also use the GetAssets&lt;T&gt;() extension method directly from the PathReference, which does the same thing.
+    var audioClips = _audioClipFolder.GetAssets&lt;AudioClip&gt;();
+
+    foreach(var audioClip in audioClips)
+    {
+        /// Do something with each sprite
+    }
+}
+</code></pre>
+<p>Without extensions method the code to get assets is not generic and can be difficult to remember :</p>
+<pre><code class="lang-cs">var assets = AssetDatabase.FindAssets($&quot;t:sprite&quot;, new string[] { folderPath }.ToList()
+    .Select(AssetDatabase.GUIDToAssetPath)
+    .Select(AssetDatabase.LoadAssetAtPath&lt;Sprite&gt;)
+    .ToList());
+</code></pre>
+<p>Using a generic method accepting any <code>UnityEngine.Object</code> is extremely useful.</p>
+<p>We can also load an asset by its name, this however will search in the entire AssetDatase as we don't specify a folder.</p>
+<hr>
+<h2 id="3-trigger-collider">3. Trigger Collider</h2>
+<p>Lets start with something very simple and useful in any project, <code>TriggerCollider</code> is a component to detect colliders, depending on their layers. It is used to call methods from other scripts by invoking <code>OnDetectedColliderEnter</code> and <code>OnDetectedColliderExist</code> events.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Inactive GameObject in the scene are not detected.</p>
+</div>
+<p><img src="images/TriggerCollider.png" alt="Trigger Collider"></p>
+<p>In this example, I have setup a <code>GameObject</code> with a <code>Sphere Collider</code> set as a <code>Trigger</code>.
+When other GameObjects with <code>Rigidbody</code> enters it, a method is called using the event <code>OnDetectedColliderEnter</code> to change the local scale of the object use Scaling script. When exiting the <code>Trigger</code> the scale is reset back to 1f.</p>
+<p>You can use <code>Trigger2DCollider</code> for 2D projects, you can also create your own component using <code>TriggerCollider</code> as base class, then overriding the <code>Enter</code> and <code>Exit</code> methods if you need to add your own filtering system.</p>
+<p>I didn't made a <code>Tag</code> filtering system because I personally don't like string comparison.</p>
+<hr>
+<h2 id="4-float-value-condition">4. Float Value Condition</h2>
+<p>Calling multiple methods from different scripts when a float value reach a particular value is very common. For example we may play sound effect and turn the screen overlay to red when the player health drop below a certain percentage.</p>
+<p>This is done using the <code>FloatValueCondition</code> class, which evaluate if the condition is met when the health value change.</p>
+<p>Using events, components are decoupled and we can re-use <code>FloatValueCondition</code> is many scenario.</p>
+<p><img src="images/FloatValueCondition.png" alt="Trigger Collider"></p>
+<p><code>FloatValueConditionExample</code> will verify if the value is lower or equals than 0.3 which represent the percentage of health of the player.</p>
+<p><code>RaiseEventOnce</code> means that if the condition is already met and the player health drop again below 0.3f, we are not going to raise the event again, because the condition is still true.</p>
+<p>We set <code>ResetEventRaisedWhenNotMet</code> to true, so we the player health percentage goes above 0.3f, we want to raise the event if it drops again below 0.3f.</p>
+<p>By setting the <code>ConditonType</code> to <code>Equals</code>, we can specify the equality precision since we are using floating number for example we may consider 99.96 to be equals to 100.</p>
+<hr>
+<h2 id="5-timer-manager">5. Timer Manager</h2>
+<p>We often need to raise an event after some time is elapsed by using Coroutine with WaitForSeconds or by incrementing a timer in the Update method of a <code>MonoBehaviour</code>.</p>
+<p>This is why I created two simple class <code>Timer</code> and <code>CountdownTimer</code> responsible for this.
+They are plain C# classes, they depends on the <code>TimerManager</code> to be started and to update their time.</p>
+<p>Here is an example on how to prevent the player from spamming an attack with his character :</p>
+<p><img src="images/AttackController.png" alt="Attack controller component"></p>
+<pre><code class="lang-cs">
+[SerializeField] private Animator _animator;
+[SerializeField] private Button _attackButton;
+[SerializeField] private CountdownTimerUI _countdownTimerUI;
+[SerializeField] private float _attackRate;
+[SerializeField] private bool _autoAttack;
+
+private CountdownTimer _countdownTimer;
+
+public bool IsOnCooldown =&gt; _countdownTimer.IsRunning;
+
+public CountdownTimer CountdownTimer { get =&gt; _countdownTimer; protected set =&gt; _countdownTimer = value; }
+
+private void Start()
+{
+    _countdownTimer = new CountdownTimer(_attackRate, loop: _autoAttack);
+
+    _countdownTimerUI.Initialize(_countdownTimer);
+
+    // We have to manually click on the button to Start the timer
+    _countdownTimer.OnTimerStart += DisableAttackButton;
+    _countdownTimer.OnTimerStop += EnableAttackButton;
+}
+
+// This is called when clicking the 'Attack' button
+public void Attack()
+{
+    if (IsOnCooldown) { return; }
+
+    TimerManager.Instance.StartTimer(_countdownTimer);
+
+    _animator.SetTrigger(&quot;Attack&quot;);
+}
+
+private void AutoAttack()
+{
+    _animator.SetTrigger(&quot;Attack&quot;);
+}
+
+private void DisableAttackButton()
+{
+    _attackButton.interactable = false;
+}
+
+private void EnableAttackButton()
+{
+    _attackButton.interactable = true;
+}
+</code></pre>
+<p>When the <code>CountdownTimer</code> start we disable the attack button and enable it when the timer stops.</p>
+<p>We call <code>TimerManager.Instance.StartTimer</code> to add our countdown timer has an active timer,
+the <code>TimerManager</code> will update every single timer every frame, its more efficient than using one <code>MonoBehaviour</code> per timer.</p>
+<p>Here the countdown timer start with the initial time 2f (the attack rate) and stops automatically when its time reach 0.</p>
+<p>We can also set the <code>AutoAttack</code> to true so the timer will loop forever, the event <code>OnTimerLooped</code> will be raise and our character will perform the attack animation.</p>
+<p>We have to change the start method to use the AutoAttack system :</p>
+<pre><code class="lang-cs">private void Start()
+{
+    _countdownTimer = new CountdownTimer(_attackRate, loop: _autoAttack);
+
+    _countdownTimerUI.Initialize(_countdownTimer);
+
+    if (_autoAttack)
+    {
+        DisableAttackButton();
+
+        // Every time the count down timer is done it will reset and start again automatically
+        _countdownTimer.OnTimerLooped += AutoAttack;
+
+        // Perform the attack, start the count down timer
+        _attackButton.onClick.Invoke();
+        TimerManager.Instance.StartTimer(_countdownTimer);
+        return;
+    }
+
+    // We have to manually click on the button to Start the timer
+    _countdownTimer.OnTimerStart += DisableAttackButton;
+    _countdownTimer.OnTimerStop += EnableAttackButton;
+}
+</code></pre>
+<p>We don't need to use the Button, and we start the timer only once, it will stay inside the <code>TimerManager</code> and loop forever.</p>
+<p>Lets see how we update the UI to display the remaining time of the timer and to update the progress bar.</p>
+<pre><code class="lang-cs">[Header(&quot;Update Text/Progress Bar&quot;)]
+[SerializeField] private bool _enableTextUpdate = true;
+[SerializeField] private bool _changeTextInUpdateMethod = true;
+[SerializeField] private bool _enableProgressBarUpdate = true;
+
+[Header(&quot;References&quot;)]
+[SerializeField] private TextMeshProUGUI _timeInSeconds;
+[SerializeField] private Image _progressBarImage;
+
+[Header(&quot;Countdown Timer&quot;)]
+[SerializeField] private CountdownTimer _countdownTimer;
+
+public bool ChangeTextInUpdateMethod { get =&gt; _changeTextInUpdateMethod; set =&gt; _changeTextInUpdateMethod = value; }
+public bool EnableTextUpdate { get =&gt; _enableTextUpdate; set =&gt; _enableTextUpdate = value; }
+public bool EnableProgressBarUpdate { get =&gt; _enableProgressBarUpdate; set =&gt; _enableProgressBarUpdate = value; }
+
+public void Initialize(CountdownTimer countdownTimer)
+{
+    _countdownTimer = countdownTimer;
+
+    /* Normally we verify if the TextMeshProUGUI and Image are set */
+
+    if (_enableTextUpdate)
+    {
+        // We use the countdown timer event to update the text value every second instead of every frame
+        if (_changeTextInUpdateMethod == false)
+        {
+            // We don't need any decimal because we display the time in second
+            _countdownTimer.TimeFormat = &quot;F0&quot;;
+            _countdownTimer.OnSecondElapsed += UpdateText;
+        }
+
+        _timeInSeconds.text = _countdownTimer.TimeAsString;
+        _countdownTimer.OnTimerStop += UpdateText;
+    }
+
+    if (_enableProgressBarUpdate)
+    {
+        _countdownTimer.OnTimerStop += UpdateProgressBar;
+    }
+}
+
+/// &lt;summary&gt;
+/// Set the text value using the current Time left on the countdown timer.
+/// &lt;/summary&gt;
+public void UpdateText()
+{
+    if(EnableTextUpdate == false) { return; }
+
+    _timeInSeconds.text = _countdownTimer.TimeAsString;
+}
+
+/// &lt;summary&gt;
+/// Set the fill amount of the progress bar image using the current Progress on the countdown timer.
+/// &lt;/summary&gt;
+public void UpdateProgressBar()
+{
+    if(EnableProgressBarUpdate == false) { return; }
+
+    _progressBarImage.fillAmount = _countdownTimer.Progress;
+}
+
+private void Update()
+{
+    if (_changeTextInUpdateMethod)
+    {
+        UpdateText();
+    }
+
+    UpdateProgressBar();
+}
+</code></pre>
+<p>Here we can either update the text to display the time left in the update method, however this runs every frame. Instead we can set <code>_changeTextInUpdateMethod</code> to false, to use the <code>OnSecondElapsed</code> event to update it every second.</p>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TetraCreations/tetracreations.github.io/blob/gh-pages/docs/getting-started.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Tetra Creations documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
