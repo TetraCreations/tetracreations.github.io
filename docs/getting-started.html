@@ -253,10 +253,11 @@ void LoadAudioClip()
 }
 </code></pre>
 <p>Without the extension method the code to get assets is not generic and can be difficult to remember :</p>
-<pre><code class="lang-cs">var assets = AssetDatabase.FindAssets($&quot;t:sprite&quot;, new string[] { folderPath }.ToList()
+<pre><code class="lang-cs">var path = &quot;Assets/Game/Sprites&quot;;
+var assets = AssetDatabase.FindAssets($&quot;t:sprite&quot;, new string[] { path }).ToList()
     .Select(AssetDatabase.GUIDToAssetPath)
     .Select(AssetDatabase.LoadAssetAtPath&lt;Sprite&gt;)
-    .ToList());
+    .ToList();
 </code></pre>
 <p>Using a generic method accepting any <code>UnityEngine.Object</code> is extremely useful.</p>
 <p>We can also load an asset by its name, this however will search in the entire AssetDatase as we don't specify a folder.</p>
