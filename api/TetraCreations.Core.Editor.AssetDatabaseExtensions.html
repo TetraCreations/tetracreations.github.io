@@ -82,8 +82,9 @@
 
   <h1 id="TetraCreations_Core_Editor_AssetDatabaseExtensions" data-uid="TetraCreations.Core.Editor.AssetDatabaseExtensions" class="text-break">Class AssetDatabaseExtensions
 </h1>
-  <div class="markdown level0 summary"><p>Provides few generic static method to simplify getting a specific asset or a list of assets from one or multiple folders.<br>
-Relative folder path mean this one is valid : &quot;Assets/Game/Data/Sword.asset&quot;, but not this one : &quot;C:\Unity\MyProject\Assets\Game\Data\Sword.asset&quot;.<br>
+  <div class="markdown level0 summary"><p>Provides some generic static methods to simplify getting a specific asset or list of assets from one or more folders.<br>
+In the AssetData aboslute path are invalid like this one for example : &quot;C:\Unity\MyProject\Assets\Game\Data\Sword.asset&quot;,
+this is correct however &quot;Assets/Game/Data/Sword.asset&quot;<br>
 We can search using the asset name or a predicate function.<br>
 If an asset is not found, it returns null or an empty list depending on the method called.</p>
 </div>
@@ -1178,7 +1179,7 @@ For example : &quot;Assets/Game/Data/Sword.asset&quot;</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ToForwardSlashes(this string path)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string ToForwardSlashes(string path)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1208,7 +1209,7 @@ For example : &quot;Assets/Game/Data/Sword.asset&quot;</p>
     <tbody>
       <tr>
         <td><span class="xref">string</span></td>
-        <td><p>The string with any backslashes replaced by forward slashes.</p>
+        <td><p>New string with forward slashes.</p>
 </td>
       </tr>
     </tbody>

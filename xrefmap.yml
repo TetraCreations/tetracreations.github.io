@@ -227,44 +227,6 @@ references:
   isSpec: "True"
   fullName: TetraCreations.Core.AudioMixerExtensions.SetLinearVolume
   nameWithType: AudioMixerExtensions.SetLinearVolume
-- uid: TetraCreations.Core.BooleanExtensions
-  name: BooleanExtensions
-  href: api/TetraCreations.Core.BooleanExtensions.html
-  commentId: T:TetraCreations.Core.BooleanExtensions
-  fullName: TetraCreations.Core.BooleanExtensions
-  nameWithType: BooleanExtensions
-- uid: TetraCreations.Core.BooleanExtensions.IsNotNull*
-  name: IsNotNull
-  href: api/TetraCreations.Core.BooleanExtensions.html#TetraCreations_Core_BooleanExtensions_IsNotNull_
-  commentId: Overload:TetraCreations.Core.BooleanExtensions.IsNotNull
-  isSpec: "True"
-  fullName: TetraCreations.Core.BooleanExtensions.IsNotNull
-  nameWithType: BooleanExtensions.IsNotNull
-- uid: TetraCreations.Core.BooleanExtensions.IsNotNull``1(System.Boolean@,``0)
-  name: IsNotNull<T>(ref bool, T)
-  href: api/TetraCreations.Core.BooleanExtensions.html#TetraCreations_Core_BooleanExtensions_IsNotNull__1_System_Boolean____0_
-  commentId: M:TetraCreations.Core.BooleanExtensions.IsNotNull``1(System.Boolean@,``0)
-  name.vb: IsNotNull(Of T)(Boolean, T)
-  fullName: TetraCreations.Core.BooleanExtensions.IsNotNull<T>(ref bool, T)
-  fullName.vb: TetraCreations.Core.BooleanExtensions.IsNotNull(Of T)(Boolean, T)
-  nameWithType: BooleanExtensions.IsNotNull<T>(ref bool, T)
-  nameWithType.vb: BooleanExtensions.IsNotNull(Of T)(Boolean, T)
-- uid: TetraCreations.Core.BooleanExtensions.IsNull*
-  name: IsNull
-  href: api/TetraCreations.Core.BooleanExtensions.html#TetraCreations_Core_BooleanExtensions_IsNull_
-  commentId: Overload:TetraCreations.Core.BooleanExtensions.IsNull
-  isSpec: "True"
-  fullName: TetraCreations.Core.BooleanExtensions.IsNull
-  nameWithType: BooleanExtensions.IsNull
-- uid: TetraCreations.Core.BooleanExtensions.IsNull``1(System.Boolean@,``0)
-  name: IsNull<T>(ref bool, T)
-  href: api/TetraCreations.Core.BooleanExtensions.html#TetraCreations_Core_BooleanExtensions_IsNull__1_System_Boolean____0_
-  commentId: M:TetraCreations.Core.BooleanExtensions.IsNull``1(System.Boolean@,``0)
-  name.vb: IsNull(Of T)(Boolean, T)
-  fullName: TetraCreations.Core.BooleanExtensions.IsNull<T>(ref bool, T)
-  fullName.vb: TetraCreations.Core.BooleanExtensions.IsNull(Of T)(Boolean, T)
-  nameWithType: BooleanExtensions.IsNull<T>(ref bool, T)
-  nameWithType.vb: BooleanExtensions.IsNull(Of T)(Boolean, T)
 - uid: TetraCreations.Core.CanvasGroupExtensions
   name: CanvasGroupExtensions
   href: api/TetraCreations.Core.CanvasGroupExtensions.html
@@ -2499,19 +2461,6 @@ references:
   isSpec: "True"
   fullName: TetraCreations.Core.RectTransformExtensions.GetRightOffset
   nameWithType: RectTransformExtensions.GetRightOffset
-- uid: TetraCreations.Core.RectTransformExtensions.GetSize(RectTransform)
-  name: GetSize(RectTransform)
-  href: api/TetraCreations.Core.RectTransformExtensions.html#TetraCreations_Core_RectTransformExtensions_GetSize_RectTransform_
-  commentId: M:TetraCreations.Core.RectTransformExtensions.GetSize(RectTransform)
-  fullName: TetraCreations.Core.RectTransformExtensions.GetSize(RectTransform)
-  nameWithType: RectTransformExtensions.GetSize(RectTransform)
-- uid: TetraCreations.Core.RectTransformExtensions.GetSize*
-  name: GetSize
-  href: api/TetraCreations.Core.RectTransformExtensions.html#TetraCreations_Core_RectTransformExtensions_GetSize_
-  commentId: Overload:TetraCreations.Core.RectTransformExtensions.GetSize
-  isSpec: "True"
-  fullName: TetraCreations.Core.RectTransformExtensions.GetSize
-  nameWithType: RectTransformExtensions.GetSize
 - uid: TetraCreations.Core.RectTransformExtensions.GetTopOffset(RectTransform)
   name: GetTopOffset(RectTransform)
   href: api/TetraCreations.Core.RectTransformExtensions.html#TetraCreations_Core_RectTransformExtensions_GetTopOffset_RectTransform_
