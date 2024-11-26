@@ -2008,38 +2008,38 @@ references:
   commentId: T:TetraCreations.Core.ImageExtensions
   fullName: TetraCreations.Core.ImageExtensions
   nameWithType: ImageExtensions
-- uid: TetraCreations.Core.ImageExtensions.Alpha(Image,System.Single)
-  name: Alpha(Image, float)
-  href: api/TetraCreations.Core.ImageExtensions.html#TetraCreations_Core_ImageExtensions_Alpha_Image_System_Single_
-  commentId: M:TetraCreations.Core.ImageExtensions.Alpha(Image,System.Single)
-  name.vb: Alpha(Image, Single)
-  fullName: TetraCreations.Core.ImageExtensions.Alpha(Image, float)
-  fullName.vb: TetraCreations.Core.ImageExtensions.Alpha(Image, Single)
-  nameWithType: ImageExtensions.Alpha(Image, float)
-  nameWithType.vb: ImageExtensions.Alpha(Image, Single)
-- uid: TetraCreations.Core.ImageExtensions.Alpha*
-  name: Alpha
-  href: api/TetraCreations.Core.ImageExtensions.html#TetraCreations_Core_ImageExtensions_Alpha_
-  commentId: Overload:TetraCreations.Core.ImageExtensions.Alpha
+- uid: TetraCreations.Core.ImageExtensions.SetColor(Image,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})
+  name: SetColor(Image, float?, float?, float?, float?)
+  href: api/TetraCreations.Core.ImageExtensions.html#TetraCreations_Core_ImageExtensions_SetColor_Image_System_Nullable_System_Single__System_Nullable_System_Single__System_Nullable_System_Single__System_Nullable_System_Single__
+  commentId: M:TetraCreations.Core.ImageExtensions.SetColor(Image,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})
+  name.vb: SetColor(Image, Single?, Single?, Single?, Single?)
+  fullName: TetraCreations.Core.ImageExtensions.SetColor(Image, float?, float?, float?, float?)
+  fullName.vb: TetraCreations.Core.ImageExtensions.SetColor(Image, Single?, Single?, Single?, Single?)
+  nameWithType: ImageExtensions.SetColor(Image, float?, float?, float?, float?)
+  nameWithType.vb: ImageExtensions.SetColor(Image, Single?, Single?, Single?, Single?)
+- uid: TetraCreations.Core.ImageExtensions.SetColor*
+  name: SetColor
+  href: api/TetraCreations.Core.ImageExtensions.html#TetraCreations_Core_ImageExtensions_SetColor_
+  commentId: Overload:TetraCreations.Core.ImageExtensions.SetColor
   isSpec: "True"
-  fullName: TetraCreations.Core.ImageExtensions.Alpha
-  nameWithType: ImageExtensions.Alpha
-- uid: TetraCreations.Core.ImageExtensions.Color(Image,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})
-  name: Color(Image, float?, float?, float?, float?)
-  href: api/TetraCreations.Core.ImageExtensions.html#TetraCreations_Core_ImageExtensions_Color_Image_System_Nullable_System_Single__System_Nullable_System_Single__System_Nullable_System_Single__System_Nullable_System_Single__
-  commentId: M:TetraCreations.Core.ImageExtensions.Color(Image,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})
-  name.vb: Color(Image, Single?, Single?, Single?, Single?)
-  fullName: TetraCreations.Core.ImageExtensions.Color(Image, float?, float?, float?, float?)
-  fullName.vb: TetraCreations.Core.ImageExtensions.Color(Image, Single?, Single?, Single?, Single?)
-  nameWithType: ImageExtensions.Color(Image, float?, float?, float?, float?)
-  nameWithType.vb: ImageExtensions.Color(Image, Single?, Single?, Single?, Single?)
-- uid: TetraCreations.Core.ImageExtensions.Color*
-  name: Color
-  href: api/TetraCreations.Core.ImageExtensions.html#TetraCreations_Core_ImageExtensions_Color_
-  commentId: Overload:TetraCreations.Core.ImageExtensions.Color
+  fullName: TetraCreations.Core.ImageExtensions.SetColor
+  nameWithType: ImageExtensions.SetColor
+- uid: TetraCreations.Core.ImageExtensions.SetColorAlpha(Image,System.Single)
+  name: SetColorAlpha(Image, float)
+  href: api/TetraCreations.Core.ImageExtensions.html#TetraCreations_Core_ImageExtensions_SetColorAlpha_Image_System_Single_
+  commentId: M:TetraCreations.Core.ImageExtensions.SetColorAlpha(Image,System.Single)
+  name.vb: SetColorAlpha(Image, Single)
+  fullName: TetraCreations.Core.ImageExtensions.SetColorAlpha(Image, float)
+  fullName.vb: TetraCreations.Core.ImageExtensions.SetColorAlpha(Image, Single)
+  nameWithType: ImageExtensions.SetColorAlpha(Image, float)
+  nameWithType.vb: ImageExtensions.SetColorAlpha(Image, Single)
+- uid: TetraCreations.Core.ImageExtensions.SetColorAlpha*
+  name: SetColorAlpha
+  href: api/TetraCreations.Core.ImageExtensions.html#TetraCreations_Core_ImageExtensions_SetColorAlpha_
+  commentId: Overload:TetraCreations.Core.ImageExtensions.SetColorAlpha
   isSpec: "True"
-  fullName: TetraCreations.Core.ImageExtensions.Color
-  nameWithType: ImageExtensions.Color
+  fullName: TetraCreations.Core.ImageExtensions.SetColorAlpha
+  nameWithType: ImageExtensions.SetColorAlpha
 - uid: TetraCreations.Core.IntegerExtensions
   name: IntegerExtensions
   href: api/TetraCreations.Core.IntegerExtensions.html
@@ -3263,32 +3263,6 @@ references:
   isSpec: "True"
   fullName: TetraCreations.Core.TransformExtensions.ResetLocalRotation
   nameWithType: TransformExtensions.ResetLocalRotation
-- uid: TetraCreations.Core.TransformExtensions.ResetPosition(Transform)
-  name: ResetPosition(Transform)
-  href: api/TetraCreations.Core.TransformExtensions.html#TetraCreations_Core_TransformExtensions_ResetPosition_Transform_
-  commentId: M:TetraCreations.Core.TransformExtensions.ResetPosition(Transform)
-  fullName: TetraCreations.Core.TransformExtensions.ResetPosition(Transform)
-  nameWithType: TransformExtensions.ResetPosition(Transform)
-- uid: TetraCreations.Core.TransformExtensions.ResetPosition*
-  name: ResetPosition
-  href: api/TetraCreations.Core.TransformExtensions.html#TetraCreations_Core_TransformExtensions_ResetPosition_
-  commentId: Overload:TetraCreations.Core.TransformExtensions.ResetPosition
-  isSpec: "True"
-  fullName: TetraCreations.Core.TransformExtensions.ResetPosition
-  nameWithType: TransformExtensions.ResetPosition
-- uid: TetraCreations.Core.TransformExtensions.ResetScale(Transform)
-  name: ResetScale(Transform)
-  href: api/TetraCreations.Core.TransformExtensions.html#TetraCreations_Core_TransformExtensions_ResetScale_Transform_
-  commentId: M:TetraCreations.Core.TransformExtensions.ResetScale(Transform)
-  fullName: TetraCreations.Core.TransformExtensions.ResetScale(Transform)
-  nameWithType: TransformExtensions.ResetScale(Transform)
-- uid: TetraCreations.Core.TransformExtensions.ResetScale*
-  name: ResetScale
-  href: api/TetraCreations.Core.TransformExtensions.html#TetraCreations_Core_TransformExtensions_ResetScale_
-  commentId: Overload:TetraCreations.Core.TransformExtensions.ResetScale
-  isSpec: "True"
-  fullName: TetraCreations.Core.TransformExtensions.ResetScale
-  nameWithType: TransformExtensions.ResetScale
 - uid: TetraCreations.Core.TransformExtensions.SetPosition(Transform,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})
   name: SetPosition(Transform, float?, float?, float?)
   href: api/TetraCreations.Core.TransformExtensions.html#TetraCreations_Core_TransformExtensions_SetPosition_Transform_System_Nullable_System_Single__System_Nullable_System_Single__System_Nullable_System_Single__
@@ -3305,6 +3279,19 @@ references:
   isSpec: "True"
   fullName: TetraCreations.Core.TransformExtensions.SetPosition
   nameWithType: TransformExtensions.SetPosition
+- uid: TetraCreations.Core.TransformExtensions.SetPositionToZero(Transform)
+  name: SetPositionToZero(Transform)
+  href: api/TetraCreations.Core.TransformExtensions.html#TetraCreations_Core_TransformExtensions_SetPositionToZero_Transform_
+  commentId: M:TetraCreations.Core.TransformExtensions.SetPositionToZero(Transform)
+  fullName: TetraCreations.Core.TransformExtensions.SetPositionToZero(Transform)
+  nameWithType: TransformExtensions.SetPositionToZero(Transform)
+- uid: TetraCreations.Core.TransformExtensions.SetPositionToZero*
+  name: SetPositionToZero
+  href: api/TetraCreations.Core.TransformExtensions.html#TetraCreations_Core_TransformExtensions_SetPositionToZero_
+  commentId: Overload:TetraCreations.Core.TransformExtensions.SetPositionToZero
+  isSpec: "True"
+  fullName: TetraCreations.Core.TransformExtensions.SetPositionToZero
+  nameWithType: TransformExtensions.SetPositionToZero
 - uid: TetraCreations.Core.TransformExtensions.SetRotation(Transform,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})
   name: SetRotation(Transform, float?, float?, float?)
   href: api/TetraCreations.Core.TransformExtensions.html#TetraCreations_Core_TransformExtensions_SetRotation_Transform_System_Nullable_System_Single__System_Nullable_System_Single__System_Nullable_System_Single__
@@ -3353,6 +3340,19 @@ references:
   isSpec: "True"
   fullName: TetraCreations.Core.TransformExtensions.SetScaleAllAxes
   nameWithType: TransformExtensions.SetScaleAllAxes
+- uid: TetraCreations.Core.TransformExtensions.SetScaleToOne(Transform)
+  name: SetScaleToOne(Transform)
+  href: api/TetraCreations.Core.TransformExtensions.html#TetraCreations_Core_TransformExtensions_SetScaleToOne_Transform_
+  commentId: M:TetraCreations.Core.TransformExtensions.SetScaleToOne(Transform)
+  fullName: TetraCreations.Core.TransformExtensions.SetScaleToOne(Transform)
+  nameWithType: TransformExtensions.SetScaleToOne(Transform)
+- uid: TetraCreations.Core.TransformExtensions.SetScaleToOne*
+  name: SetScaleToOne
+  href: api/TetraCreations.Core.TransformExtensions.html#TetraCreations_Core_TransformExtensions_SetScaleToOne_
+  commentId: Overload:TetraCreations.Core.TransformExtensions.SetScaleToOne
+  isSpec: "True"
+  fullName: TetraCreations.Core.TransformExtensions.SetScaleToOne
+  nameWithType: TransformExtensions.SetScaleToOne
 - uid: TetraCreations.Core.TypeExtensions
   name: TypeExtensions
   href: api/TetraCreations.Core.TypeExtensions.html

@@ -99,48 +99,14 @@
 </h3>
 
 
-  <a id="TetraCreations_Core_ImageExtensions_Alpha_" data-uid="TetraCreations.Core.ImageExtensions.Alpha*"></a>
-  <h4 id="TetraCreations_Core_ImageExtensions_Alpha_Image_System_Single_" data-uid="TetraCreations.Core.ImageExtensions.Alpha(Image,System.Single)">Alpha(Image, float)</h4>
-  <div class="markdown level1 summary"><p>Changes the transparency of the image color<br>
-0f is transparent, 1f is opaque</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Alpha(this Image image, float transparency)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Image</span></td>
-        <td><span class="parametername">image</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">float</span></td>
-        <td><span class="parametername">transparency</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <a id="TetraCreations_Core_ImageExtensions_Color_" data-uid="TetraCreations.Core.ImageExtensions.Color*"></a>
-  <h4 id="TetraCreations_Core_ImageExtensions_Color_Image_System_Nullable_System_Single__System_Nullable_System_Single__System_Nullable_System_Single__System_Nullable_System_Single__" data-uid="TetraCreations.Core.ImageExtensions.Color(Image,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})">Color(Image, float?, float?, float?, float?)</h4>
+  <a id="TetraCreations_Core_ImageExtensions_SetColor_" data-uid="TetraCreations.Core.ImageExtensions.SetColor*"></a>
+  <h4 id="TetraCreations_Core_ImageExtensions_SetColor_Image_System_Nullable_System_Single__System_Nullable_System_Single__System_Nullable_System_Single__System_Nullable_System_Single__" data-uid="TetraCreations.Core.ImageExtensions.SetColor(Image,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})">SetColor(Image, float?, float?, float?, float?)</h4>
   <div class="markdown level1 summary"><p>Changes the RGBA elements of the image color<br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Color(this Image image, float? r = null, float? g = null, float? b = null, float? a = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetColor(this Image image, float? r = null, float? g = null, float? b = null, float? a = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -175,6 +141,40 @@
       <tr>
         <td><span class="xref">float</span>?</td>
         <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_Core_ImageExtensions_SetColorAlpha_" data-uid="TetraCreations.Core.ImageExtensions.SetColorAlpha*"></a>
+  <h4 id="TetraCreations_Core_ImageExtensions_SetColorAlpha_Image_System_Single_" data-uid="TetraCreations.Core.ImageExtensions.SetColorAlpha(Image,System.Single)">SetColorAlpha(Image, float)</h4>
+  <div class="markdown level1 summary"><p>Changes the transparency of the image color<br>
+0f is transparent, 1f is opaque</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetColorAlpha(this Image image, float transparency)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Image</span></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">transparency</span></td>
         <td></td>
       </tr>
     </tbody>
