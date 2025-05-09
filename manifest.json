@@ -88,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TetraCreations.Core.ColorExtentions.html",
-          "hash": "WO29M2cStXBgosvFCrTtAS6c1MLzXtkpCMc6n9svtdw="
+          "hash": "LU5zMwfX5uEzo8pXkz7I9Crs4BnM+ux4FTtNnzFWnAA="
         }
       },
       "is_incremental": false,
@@ -180,6 +180,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Editor.GradientExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Editor.GradientExtensions.html",
+          "hash": "CVtaQt2Cj+YFuqVKrBFGZUHtn5jhAh2g2TYFwxjZeUs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TetraCreations.Core.Editor.MonoScriptExtensions.yml",
       "output": {
         ".html": {
@@ -204,11 +216,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Editor.UIToolkitHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Editor.UIToolkitHelper.html",
+          "hash": "d2O66ocfJAwvWf1y+MraDeyPgpZmEPM+OHlGLIV+vkw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TetraCreations.Core.Editor.yml",
       "output": {
         ".html": {
           "relative_path": "api/TetraCreations.Core.Editor.html",
-          "hash": "ZEA5VU2vf8K2BsqXfYDDQ/65K1asI+ian8KZIDDgL9k="
+          "hash": "/JrDtODP07t1tuPxz9iNzRfjk6AY7gSR8NT1LKD1wdo="
         }
       },
       "is_incremental": false,
@@ -388,7 +412,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TetraCreations.Core.StringExtensions.html",
-          "hash": "XfCzXqt5i8R2Q7B+16cbeOVM//41hF89y2GiWXBrTqc="
+          "hash": "bUD3td7cid3DOt7aGzG2v5WmhN3NkfKeKDMMDtqn7sY="
         }
       },
       "is_incremental": false,
@@ -437,6 +461,18 @@
         ".html": {
           "relative_path": "api/TetraCreations.Core.TypeUtility.html",
           "hash": "a3BlzJXrTU/wFDe1aee0/uOZtC9G4O63kXNrl0YyMPw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TetraCreations.Core.Utility.Billboard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TetraCreations.Core.Utility.Billboard.html",
+          "hash": "P9p8GXvriK+JxHFK3y9TU8v9nn3mETWXf82Rn2gO8+8="
         }
       },
       "is_incremental": false,
@@ -568,7 +604,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TetraCreations.Core.Utility.html",
-          "hash": "bfxcT2pvL1Zr3c2EnkojpF0uYuu9hBiDIxpVfgCO9Kg="
+          "hash": "MYdkqsGN5gdTZVw8fOSIkmDf2d5B23QE2fA4W6TrMK8="
         }
       },
       "is_incremental": false,
@@ -616,7 +652,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "LlK2eqPe9AbjlwF2BvSgf624U1HfVOlw1aXigB/vj4o="
+          "hash": "LaeMUG0SvuNJxfI8lB4IUvEpxct02Qvg5Q8DaoUNAUo="
         }
       },
       "is_incremental": false,
@@ -714,12 +750,23 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/SingletonDependency.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/SingletonDependency.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "8XFQPx3pK1hwe5176UhYdTXxyFB9aRb72lY1vjCYsOc="
+          "hash": "UbuxPQUzpwEAEeoVPusgewxSSw1HgU4JbBWzW+h940c="
         }
       },
       "is_incremental": false,
@@ -758,7 +805,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 49,
+          "total_file_count": 52,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

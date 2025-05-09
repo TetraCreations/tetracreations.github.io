@@ -661,6 +661,22 @@ references:
   commentId: T:TetraCreations.Core.ColorExtentions
   fullName: TetraCreations.Core.ColorExtentions
   nameWithType: ColorExtentions
+- uid: TetraCreations.Core.ColorExtentions.ColorizedString(Color,System.String)
+  name: ColorizedString(Color, string)
+  href: api/TetraCreations.Core.ColorExtentions.html#TetraCreations_Core_ColorExtentions_ColorizedString_Color_System_String_
+  commentId: M:TetraCreations.Core.ColorExtentions.ColorizedString(Color,System.String)
+  name.vb: ColorizedString(Color, String)
+  fullName: TetraCreations.Core.ColorExtentions.ColorizedString(Color, string)
+  fullName.vb: TetraCreations.Core.ColorExtentions.ColorizedString(Color, String)
+  nameWithType: ColorExtentions.ColorizedString(Color, string)
+  nameWithType.vb: ColorExtentions.ColorizedString(Color, String)
+- uid: TetraCreations.Core.ColorExtentions.ColorizedString*
+  name: ColorizedString
+  href: api/TetraCreations.Core.ColorExtentions.html#TetraCreations_Core_ColorExtentions_ColorizedString_
+  commentId: Overload:TetraCreations.Core.ColorExtentions.ColorizedString
+  isSpec: "True"
+  fullName: TetraCreations.Core.ColorExtentions.ColorizedString
+  nameWithType: ColorExtentions.ColorizedString
 - uid: TetraCreations.Core.ColorExtentions.GetBrighterColor(Color,System.Single)
   name: GetBrighterColor(Color, float)
   href: api/TetraCreations.Core.ColorExtentions.html#TetraCreations_Core_ColorExtentions_GetBrighterColor_Color_System_Single_
@@ -1371,6 +1387,25 @@ references:
   isSpec: "True"
   fullName: TetraCreations.Core.Editor.EditorExtensions.VerifyMissingUnityEventImplementation
   nameWithType: EditorExtensions.VerifyMissingUnityEventImplementation
+- uid: TetraCreations.Core.Editor.GradientExtensions
+  name: GradientExtensions
+  href: api/TetraCreations.Core.Editor.GradientExtensions.html
+  commentId: T:TetraCreations.Core.Editor.GradientExtensions
+  fullName: TetraCreations.Core.Editor.GradientExtensions
+  nameWithType: GradientExtensions
+- uid: TetraCreations.Core.Editor.GradientExtensions.GetGradientPropertyInfo(SerializedProperty)
+  name: GetGradientPropertyInfo(SerializedProperty)
+  href: api/TetraCreations.Core.Editor.GradientExtensions.html#TetraCreations_Core_Editor_GradientExtensions_GetGradientPropertyInfo_SerializedProperty_
+  commentId: M:TetraCreations.Core.Editor.GradientExtensions.GetGradientPropertyInfo(SerializedProperty)
+  fullName: TetraCreations.Core.Editor.GradientExtensions.GetGradientPropertyInfo(SerializedProperty)
+  nameWithType: GradientExtensions.GetGradientPropertyInfo(SerializedProperty)
+- uid: TetraCreations.Core.Editor.GradientExtensions.GetGradientPropertyInfo*
+  name: GetGradientPropertyInfo
+  href: api/TetraCreations.Core.Editor.GradientExtensions.html#TetraCreations_Core_Editor_GradientExtensions_GetGradientPropertyInfo_
+  commentId: Overload:TetraCreations.Core.Editor.GradientExtensions.GetGradientPropertyInfo
+  isSpec: "True"
+  fullName: TetraCreations.Core.Editor.GradientExtensions.GetGradientPropertyInfo
+  nameWithType: GradientExtensions.GetGradientPropertyInfo
 - uid: TetraCreations.Core.Editor.MonoScriptExtensions
   name: MonoScriptExtensions
   href: api/TetraCreations.Core.Editor.MonoScriptExtensions.html
@@ -1549,6 +1584,73 @@ references:
   fullName.vb: TetraCreations.Core.Editor.PathReferenceExtensions.GetAssetsCount(Of T)(PathReference)
   nameWithType: PathReferenceExtensions.GetAssetsCount<T>(PathReference)
   nameWithType.vb: PathReferenceExtensions.GetAssetsCount(Of T)(PathReference)
+- uid: TetraCreations.Core.Editor.UIToolkitHelper
+  name: UIToolkitHelper
+  href: api/TetraCreations.Core.Editor.UIToolkitHelper.html
+  commentId: T:TetraCreations.Core.Editor.UIToolkitHelper
+  fullName: TetraCreations.Core.Editor.UIToolkitHelper
+  nameWithType: UIToolkitHelper
+- uid: TetraCreations.Core.Editor.UIToolkitHelper.AddScriptObjectField*
+  name: AddScriptObjectField
+  href: api/TetraCreations.Core.Editor.UIToolkitHelper.html#TetraCreations_Core_Editor_UIToolkitHelper_AddScriptObjectField_
+  commentId: Overload:TetraCreations.Core.Editor.UIToolkitHelper.AddScriptObjectField
+  isSpec: "True"
+  fullName: TetraCreations.Core.Editor.UIToolkitHelper.AddScriptObjectField
+  nameWithType: UIToolkitHelper.AddScriptObjectField
+- uid: TetraCreations.Core.Editor.UIToolkitHelper.AddScriptObjectField``1(VisualElement)
+  name: AddScriptObjectField<T>(VisualElement)
+  href: api/TetraCreations.Core.Editor.UIToolkitHelper.html#TetraCreations_Core_Editor_UIToolkitHelper_AddScriptObjectField__1_VisualElement_
+  commentId: M:TetraCreations.Core.Editor.UIToolkitHelper.AddScriptObjectField``1(VisualElement)
+  name.vb: AddScriptObjectField(Of T)(VisualElement)
+  fullName: TetraCreations.Core.Editor.UIToolkitHelper.AddScriptObjectField<T>(VisualElement)
+  fullName.vb: TetraCreations.Core.Editor.UIToolkitHelper.AddScriptObjectField(Of T)(VisualElement)
+  nameWithType: UIToolkitHelper.AddScriptObjectField<T>(VisualElement)
+  nameWithType.vb: UIToolkitHelper.AddScriptObjectField(Of T)(VisualElement)
+- uid: TetraCreations.Core.Editor.UIToolkitHelper.GetPropertyName(System.String,System.Boolean,System.String)
+  name: GetPropertyName(string, bool, string)
+  href: api/TetraCreations.Core.Editor.UIToolkitHelper.html#TetraCreations_Core_Editor_UIToolkitHelper_GetPropertyName_System_String_System_Boolean_System_String_
+  commentId: M:TetraCreations.Core.Editor.UIToolkitHelper.GetPropertyName(System.String,System.Boolean,System.String)
+  name.vb: GetPropertyName(String, Boolean, String)
+  fullName: TetraCreations.Core.Editor.UIToolkitHelper.GetPropertyName(string, bool, string)
+  fullName.vb: TetraCreations.Core.Editor.UIToolkitHelper.GetPropertyName(String, Boolean, String)
+  nameWithType: UIToolkitHelper.GetPropertyName(string, bool, string)
+  nameWithType.vb: UIToolkitHelper.GetPropertyName(String, Boolean, String)
+- uid: TetraCreations.Core.Editor.UIToolkitHelper.GetPropertyName*
+  name: GetPropertyName
+  href: api/TetraCreations.Core.Editor.UIToolkitHelper.html#TetraCreations_Core_Editor_UIToolkitHelper_GetPropertyName_
+  commentId: Overload:TetraCreations.Core.Editor.UIToolkitHelper.GetPropertyName
+  isSpec: "True"
+  fullName: TetraCreations.Core.Editor.UIToolkitHelper.GetPropertyName
+  nameWithType: UIToolkitHelper.GetPropertyName
+- uid: TetraCreations.Core.Editor.UIToolkitHelper.SetObjectFieldsType*
+  name: SetObjectFieldsType
+  href: api/TetraCreations.Core.Editor.UIToolkitHelper.html#TetraCreations_Core_Editor_UIToolkitHelper_SetObjectFieldsType_
+  commentId: Overload:TetraCreations.Core.Editor.UIToolkitHelper.SetObjectFieldsType
+  isSpec: "True"
+  fullName: TetraCreations.Core.Editor.UIToolkitHelper.SetObjectFieldsType
+  nameWithType: UIToolkitHelper.SetObjectFieldsType
+- uid: TetraCreations.Core.Editor.UIToolkitHelper.SetObjectFieldsType``1(VisualElement,System.String)
+  name: SetObjectFieldsType<T>(VisualElement, string)
+  href: api/TetraCreations.Core.Editor.UIToolkitHelper.html#TetraCreations_Core_Editor_UIToolkitHelper_SetObjectFieldsType__1_VisualElement_System_String_
+  commentId: M:TetraCreations.Core.Editor.UIToolkitHelper.SetObjectFieldsType``1(VisualElement,System.String)
+  name.vb: SetObjectFieldsType(Of T)(VisualElement, String)
+  fullName: TetraCreations.Core.Editor.UIToolkitHelper.SetObjectFieldsType<T>(VisualElement, string)
+  fullName.vb: TetraCreations.Core.Editor.UIToolkitHelper.SetObjectFieldsType(Of T)(VisualElement, String)
+  nameWithType: UIToolkitHelper.SetObjectFieldsType<T>(VisualElement, string)
+  nameWithType.vb: UIToolkitHelper.SetObjectFieldsType(Of T)(VisualElement, String)
+- uid: TetraCreations.Core.Editor.UIToolkitHelper.SetReadOnlyFields(VisualElement)
+  name: SetReadOnlyFields(VisualElement)
+  href: api/TetraCreations.Core.Editor.UIToolkitHelper.html#TetraCreations_Core_Editor_UIToolkitHelper_SetReadOnlyFields_VisualElement_
+  commentId: M:TetraCreations.Core.Editor.UIToolkitHelper.SetReadOnlyFields(VisualElement)
+  fullName: TetraCreations.Core.Editor.UIToolkitHelper.SetReadOnlyFields(VisualElement)
+  nameWithType: UIToolkitHelper.SetReadOnlyFields(VisualElement)
+- uid: TetraCreations.Core.Editor.UIToolkitHelper.SetReadOnlyFields*
+  name: SetReadOnlyFields
+  href: api/TetraCreations.Core.Editor.UIToolkitHelper.html#TetraCreations_Core_Editor_UIToolkitHelper_SetReadOnlyFields_
+  commentId: Overload:TetraCreations.Core.Editor.UIToolkitHelper.SetReadOnlyFields
+  isSpec: "True"
+  fullName: TetraCreations.Core.Editor.UIToolkitHelper.SetReadOnlyFields
+  nameWithType: UIToolkitHelper.SetReadOnlyFields
 - uid: TetraCreations.Core.EnumerableExtensions
   name: EnumerableExtensions
   href: api/TetraCreations.Core.EnumerableExtensions.html
@@ -2801,6 +2903,22 @@ references:
   isSpec: "True"
   fullName: TetraCreations.Core.StringExtensions.GetInvalidPathCharacters
   nameWithType: StringExtensions.GetInvalidPathCharacters
+- uid: TetraCreations.Core.StringExtensions.GetPascalCaseWords(System.String)
+  name: GetPascalCaseWords(string)
+  href: api/TetraCreations.Core.StringExtensions.html#TetraCreations_Core_StringExtensions_GetPascalCaseWords_System_String_
+  commentId: M:TetraCreations.Core.StringExtensions.GetPascalCaseWords(System.String)
+  name.vb: GetPascalCaseWords(String)
+  fullName: TetraCreations.Core.StringExtensions.GetPascalCaseWords(string)
+  fullName.vb: TetraCreations.Core.StringExtensions.GetPascalCaseWords(String)
+  nameWithType: StringExtensions.GetPascalCaseWords(string)
+  nameWithType.vb: StringExtensions.GetPascalCaseWords(String)
+- uid: TetraCreations.Core.StringExtensions.GetPascalCaseWords*
+  name: GetPascalCaseWords
+  href: api/TetraCreations.Core.StringExtensions.html#TetraCreations_Core_StringExtensions_GetPascalCaseWords_
+  commentId: Overload:TetraCreations.Core.StringExtensions.GetPascalCaseWords
+  isSpec: "True"
+  fullName: TetraCreations.Core.StringExtensions.GetPascalCaseWords
+  nameWithType: StringExtensions.GetPascalCaseWords
 - uid: TetraCreations.Core.StringExtensions.HasAnyInvalidChars(System.String)
   name: HasAnyInvalidChars(string)
   href: api/TetraCreations.Core.StringExtensions.html#TetraCreations_Core_StringExtensions_HasAnyInvalidChars_System_String_
@@ -2913,6 +3031,38 @@ references:
   isSpec: "True"
   fullName: TetraCreations.Core.StringExtensions.RemoveSpaces
   nameWithType: StringExtensions.RemoveSpaces
+- uid: TetraCreations.Core.StringExtensions.SeparatePascalCaseWordsBy(System.String,System.String)
+  name: SeparatePascalCaseWordsBy(string, string)
+  href: api/TetraCreations.Core.StringExtensions.html#TetraCreations_Core_StringExtensions_SeparatePascalCaseWordsBy_System_String_System_String_
+  commentId: M:TetraCreations.Core.StringExtensions.SeparatePascalCaseWordsBy(System.String,System.String)
+  name.vb: SeparatePascalCaseWordsBy(String, String)
+  fullName: TetraCreations.Core.StringExtensions.SeparatePascalCaseWordsBy(string, string)
+  fullName.vb: TetraCreations.Core.StringExtensions.SeparatePascalCaseWordsBy(String, String)
+  nameWithType: StringExtensions.SeparatePascalCaseWordsBy(string, string)
+  nameWithType.vb: StringExtensions.SeparatePascalCaseWordsBy(String, String)
+- uid: TetraCreations.Core.StringExtensions.SeparatePascalCaseWordsBy*
+  name: SeparatePascalCaseWordsBy
+  href: api/TetraCreations.Core.StringExtensions.html#TetraCreations_Core_StringExtensions_SeparatePascalCaseWordsBy_
+  commentId: Overload:TetraCreations.Core.StringExtensions.SeparatePascalCaseWordsBy
+  isSpec: "True"
+  fullName: TetraCreations.Core.StringExtensions.SeparatePascalCaseWordsBy
+  nameWithType: StringExtensions.SeparatePascalCaseWordsBy
+- uid: TetraCreations.Core.StringExtensions.ToCamelCase(System.String)
+  name: ToCamelCase(string)
+  href: api/TetraCreations.Core.StringExtensions.html#TetraCreations_Core_StringExtensions_ToCamelCase_System_String_
+  commentId: M:TetraCreations.Core.StringExtensions.ToCamelCase(System.String)
+  name.vb: ToCamelCase(String)
+  fullName: TetraCreations.Core.StringExtensions.ToCamelCase(string)
+  fullName.vb: TetraCreations.Core.StringExtensions.ToCamelCase(String)
+  nameWithType: StringExtensions.ToCamelCase(string)
+  nameWithType.vb: StringExtensions.ToCamelCase(String)
+- uid: TetraCreations.Core.StringExtensions.ToCamelCase*
+  name: ToCamelCase
+  href: api/TetraCreations.Core.StringExtensions.html#TetraCreations_Core_StringExtensions_ToCamelCase_
+  commentId: Overload:TetraCreations.Core.StringExtensions.ToCamelCase
+  isSpec: "True"
+  fullName: TetraCreations.Core.StringExtensions.ToCamelCase
+  nameWithType: StringExtensions.ToCamelCase
 - uid: TetraCreations.Core.StringExtensions.ToIntOrNull(System.String)
   name: ToIntOrNull(string)
   href: api/TetraCreations.Core.StringExtensions.html#TetraCreations_Core_StringExtensions_ToIntOrNull_System_String_
@@ -3558,6 +3708,12 @@ references:
   commentId: N:TetraCreations.Core.Utility
   fullName: TetraCreations.Core.Utility
   nameWithType: TetraCreations.Core.Utility
+- uid: TetraCreations.Core.Utility.Billboard
+  name: Billboard
+  href: api/TetraCreations.Core.Utility.Billboard.html
+  commentId: T:TetraCreations.Core.Utility.Billboard
+  fullName: TetraCreations.Core.Utility.Billboard
+  nameWithType: Billboard
 - uid: TetraCreations.Core.Utility.CountdownTimer
   name: CountdownTimer
   href: api/TetraCreations.Core.Utility.CountdownTimer.html
