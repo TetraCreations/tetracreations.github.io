@@ -1,0 +1,1433 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ValueRegeneration&lt;T&gt;
+ | Tetra Creations documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ValueRegeneration&lt;T&gt;
+ | Tetra Creations documentation ">
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1">
+
+
+  <h1 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1" class="text-break">Class ValueRegeneration&lt;T&gt;
+</h1>
+  <div class="markdown level0 summary"><p>Regenerate the Value of a ValueManager every tick.<br>
+We can choose to cumulate multiple regneration type : Flat, Percentage, Percentage of Missing value.<br>
+Like the ValueManager this class doesn't know about the ProgressBar or Resource.<br>
+We use a generic type to add a layer of abstraction by given the possibility to override the ValueManager.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">ValueRegeneration&lt;T&gt;</span></div>
+      <div class="level2"><a class="xref" href="TetraCreations.ProgressBarSystem.ResourceRegeneration.html">ResourceRegeneration</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">TetraCreations</span>.<a class="xref" href="TetraCreations.ProgressBarSystem.html">ProgressBarSystem</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ValueRegeneration&lt;T&gt; : MonoBehaviour where T : ValueManager</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Any type that inherits from ValueManager.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1__active" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1._active">_active</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _active</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1__calculatedValue" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1._calculatedValue">_calculatedValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _calculatedValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1__canRegenerateAtMinimumValue" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1._canRegenerateAtMinimumValue">_canRegenerateAtMinimumValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _canRegenerateAtMinimumValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1__delayInSeconds" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1._delayInSeconds">_delayInSeconds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _delayInSeconds</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1__delayTimer" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1._delayTimer">_delayTimer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _delayTimer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1__flatValue" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1._flatValue">_flatValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _flatValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1__initialized" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1._initialized">_initialized</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _initialized</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1__minimumMissingPercentageValue" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1._minimumMissingPercentageValue">_minimumMissingPercentageValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _minimumMissingPercentageValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1__missingPercentageValue" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1._missingPercentageValue">_missingPercentageValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _missingPercentageValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1__percentageValue" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1._percentageValue">_percentageValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _percentageValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1__regenerationCondition" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1._regenerationCondition">_regenerationCondition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected FloatValueCondition _regenerationCondition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FloatValueCondition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1__state" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1._state">_state</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RegenerationState _state</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.RegenerationState.html">RegenerationState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1__tickRate" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1._tickRate">_tickRate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _tickRate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1__tickRateTimer" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1._tickRateTimer">_tickRateTimer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _tickRateTimer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1__value" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1._value">_value</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _value</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1__valueManager" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1._valueManager">_valueManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected T _valueManager</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_AddFlatRegeneration" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.AddFlatRegeneration">AddFlatRegeneration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddFlatRegeneration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_AddMissingPercentageRegeneration" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.AddMissingPercentageRegeneration">AddMissingPercentageRegeneration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddMissingPercentageRegeneration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_AddPercentageRegeneration" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.AddPercentageRegeneration">AddPercentageRegeneration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddPercentageRegeneration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_InitializedEvent" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.InitializedEvent">InitializedEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;ValueRegenerationInitializedEventArgs&gt; InitializedEvent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler&lt;TEventArgs&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ValueRegenerationInitializedEventArgs.html">ValueRegenerationInitializedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_RegenerationActivationChangedEvent" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.RegenerationActivationChangedEvent">RegenerationActivationChangedEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;RegenerationActivationEventArgs&gt; RegenerationActivationChangedEvent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler&lt;TEventArgs&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.RegenerationActivationEventArgs.html">RegenerationActivationEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_RegenerationStateChangedEvent" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.RegenerationStateChangedEvent">RegenerationStateChangedEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;RegenerationStateEventArgs&gt; RegenerationStateChangedEvent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler&lt;TEventArgs&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.RegenerationStateEventArgs.html">RegenerationStateEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_RegenerationValuesChangedEvent" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.RegenerationValuesChangedEvent">RegenerationValuesChangedEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;RegenerationValuesEventArgs&gt; RegenerationValuesChangedEvent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler&lt;TEventArgs&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs.html">RegenerationValuesEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_RestartOnValueDecreased" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.RestartOnValueDecreased">RestartOnValueDecreased</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RestartOnValueDecreased</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Active_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Active*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Active" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Active">Active</h4>
+  <div class="markdown level1 summary"><p>Activate / Disactivate the regeneration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Active { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_CalculatedValue_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.CalculatedValue*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_CalculatedValue" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.CalculatedValue">CalculatedValue</h4>
+  <div class="markdown level1 summary"><p>The amount that we could regenerate with the current settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalculatedValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_CanRegenerateAtMinimumValue_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.CanRegenerateAtMinimumValue*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_CanRegenerateAtMinimumValue" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.CanRegenerateAtMinimumValue">CanRegenerateAtMinimumValue</h4>
+  <div class="markdown level1 summary"><p>Allow the regeneration process to start even if the progress bar is at it's minimum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanRegenerateAtMinimumValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Condition_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Condition*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Condition" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Condition">Condition</h4>
+  <div class="markdown level1 summary"><p>The condition to be met to regenerate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FloatValueCondition Condition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FloatValueCondition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_DelayInSeconds_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.DelayInSeconds*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_DelayInSeconds" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.DelayInSeconds">DelayInSeconds</h4>
+  <div class="markdown level1 summary"><p>The delay in seconds before regenerating.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DelayInSeconds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_FlatValue_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.FlatValue*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_FlatValue" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.FlatValue">FlatValue</h4>
+  <div class="markdown level1 summary"><p>The flat amount to add every tick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FlatValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Initialized_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Initialized*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Initialized" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Initialized">Initialized</h4>
+  <div class="markdown level1 summary"><p>Determines if the Regeneration is listening to the ValueManager events to update it's state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Initialized { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_IsRegenerating_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.IsRegenerating*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_IsRegenerating" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.IsRegenerating">IsRegenerating</h4>
+  <div class="markdown level1 summary"><p>Returns if it's currently regenerating.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRegenerating { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_MinimumMissingPercentageValue_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.MinimumMissingPercentageValue*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_MinimumMissingPercentageValue" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.MinimumMissingPercentageValue">MinimumMissingPercentageValue</h4>
+  <div class="markdown level1 summary"><p>The minimum amount to add to the Value Manager when using the MissingAmountPercentagePerTick.<br>
+If we are missing a small amount and use a small percentage per tick the regeneration would too much time. (If not combined with Flat / Percentage)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinimumMissingPercentageValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_MissingPercentageValue_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.MissingPercentageValue*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_MissingPercentageValue" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.MissingPercentageValue">MissingPercentageValue</h4>
+  <div class="markdown level1 summary"><p>The percentage of the missing value to add every tick.<br>
+Reminder : MissingValue =&gt; _maximum - _value;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MissingPercentageValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_PercentageValue_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.PercentageValue*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_PercentageValue" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.PercentageValue">PercentageValue</h4>
+  <div class="markdown level1 summary"><p>The percentage of the maximum value to add every tick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PercentageValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_RegenerationState_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.RegenerationState*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_RegenerationState" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.RegenerationState">RegenerationState</h4>
+  <div class="markdown level1 summary"><p>RegenerationState : Started / Regenerating / Stopped</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RegenerationState RegenerationState { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.RegenerationState.html">RegenerationState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_TickRate_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.TickRate*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_TickRate" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.TickRate">TickRate</h4>
+  <div class="markdown level1 summary"><p>The time between each regeneration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TickRate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Value_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Value*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Value" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Value">Value</h4>
+  <div class="markdown level1 summary"><p>The current amount added every tick to the value. It's 0f if we do not regenerate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_ValueManager_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.ValueManager*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_ValueManager" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.ValueManager">ValueManager</h4>
+  <div class="markdown level1 summary"><p>Reference to the Value Manager to apply the regeneration on it.<br>
+Can be overrided in subclass to pass any type that inherits from ValueManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract T ValueManager { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_AddListeners_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.AddListeners*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_AddListeners" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.AddListeners">AddListeners()</h4>
+  <div class="markdown level1 summary"><p>Listens to ValueStateChangedEvent and ValueChangedEvent of the ValueManager <br>
+to update the regeneration state and to re-calculate the value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AddListeners()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_AutomaticallyStops_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.AutomaticallyStops*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_AutomaticallyStops" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.AutomaticallyStops">AutomaticallyStops()</h4>
+  <div class="markdown level1 summary"><p>Evaluate the regeneration conditions to stop it automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AutomaticallyStops()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_CalculateRegeneratedAmount_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.CalculateRegeneratedAmount*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_CalculateRegeneratedAmount" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.CalculateRegeneratedAmount">CalculateRegeneratedAmount()</h4>
+  <div class="markdown level1 summary"><p>Calculate the final amount to regenerate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float CalculateRegeneratedAmount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_CanRegenerate_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.CanRegenerate*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_CanRegenerate" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.CanRegenerate">CanRegenerate()</h4>
+  <div class="markdown level1 summary"><p>Determines whether the regeneration process can start.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CanRegenerate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_GetMissingAmountByPercentage_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.GetMissingAmountByPercentage*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_GetMissingAmountByPercentage" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.GetMissingAmountByPercentage">GetMissingAmountByPercentage()</h4>
+  <div class="markdown level1 summary"><p>Returns the percentage of the missing value. <br>
+For example with 120 / 200 HP we are missing 80 HP.<br>
+AddMissingPercentageRegeneration allows to regenerate a percentage of the 80 HP, like 10% would return 8f.<br>
+The MinimumMissingPercentageValue is there to prevent extremely low amount of regenerating for example 1% of 0.5 HP would result in 0.05f.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float GetMissingAmountByPercentage()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Initialize_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Initialize*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Initialize__0_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Initialize(`0)">Initialize(T)</h4>
+  <div class="markdown level1 summary"><p>Add listeners to ValueChangedEvent and ValueStateChangedEvent from the ValueManager so
+we can recalculate the regenerating amount and update the state of the regeneration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize(T valueManager = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">valueManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_ListenToValueManagerEvents_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.ListenToValueManagerEvents*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_ListenToValueManagerEvents" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.ListenToValueManagerEvents">ListenToValueManagerEvents()</h4>
+  <div class="markdown level1 summary"><p>Add listeners to ValueChangedEvent and ValueStateChangedEvent from the ValueManager so
+we can recalculate the regenerating amount and update the state of the regeneration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ListenToValueManagerEvents()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_OnInitialized_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.OnInitialized*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_OnInitialized" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.OnInitialized">OnInitialized()</h4>
+  <div class="markdown level1 summary"><p>Raise the InitializedEvent, we don't pass any data for the moment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnInitialized()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_OnValueChanged_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.OnValueChanged*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_OnValueChanged_System_Object_TetraCreations_ProgressBarSystem_ValueChangedEventArgs_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.OnValueChanged(System.Object,TetraCreations.ProgressBarSystem.ValueChangedEventArgs)">OnValueChanged(object, ValueChangedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>When the value of the ValueManger changed we need re-evaluate if we can still regenerate. <br>
+It also re-calculate the regenrating amount because it can be based on the missing amount of the percentage of the maximum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnValueChanged(object sender, ValueChangedEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ValueChangedEventArgs.html">ValueChangedEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Regenerate_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Regenerate*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Regenerate" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Regenerate">Regenerate()</h4>
+  <div class="markdown level1 summary"><p>Increment the delayTimer until it reaches the DelayInSeconds value.<br>
+Then we start the _tickRateTimer to regenerate the value every TickRate.<br>
+This will stop automatically if the ValueManager.Value reaches the Maximum or the Minimum value (Depending on CanRegenerateAtMinimumValue).<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Regenerate()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_RemoveListeners_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.RemoveListeners*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_RemoveListeners" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.RemoveListeners">RemoveListeners()</h4>
+  <div class="markdown level1 summary"><p>Stops listening to ValueStateChangedEvent and ValueChangedEvent of the ValueManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RemoveListeners()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_ResetTimers_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.ResetTimers*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_ResetTimers" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.ResetTimers">ResetTimers()</h4>
+  <div class="markdown level1 summary"><p>Set the delay and tick rate timers to 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ResetTimers()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Restart_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Restart*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Restart" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Restart">Restart()</h4>
+  <div class="markdown level1 summary"><p>Reset the regeneration process if possible by reseting all timers and updating the RegenerationgState to Started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Restart()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_StartRegeneration_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.StartRegeneration*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_StartRegeneration" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.StartRegeneration">StartRegeneration()</h4>
+  <div class="markdown level1 summary"><p>If not stopped the regneration process will be started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartRegeneration()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Stop_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Stop*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Stop" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Stop">Stop()</h4>
+  <div class="markdown level1 summary"><p>Stop the regeneration process and reset the timers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_UpdateRegenerationAmount_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.UpdateRegenerationAmount*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_UpdateRegenerationAmount" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.UpdateRegenerationAmount">UpdateRegenerationAmount()</h4>
+  <div class="markdown level1 summary"><p>Whenever the maximum value of the ValueManager or the tick rate changes, the 'RegeneratedAmount' must be recalculated.<br>
+OnRegenerationValuesChanged even will be invoked passing the current regenerating amount and the new tick rate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateRegenerationAmount()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_UpdateRegenerationState_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.UpdateRegenerationState*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_UpdateRegenerationState_System_Object_TetraCreations_ProgressBarSystem_ValueStateEventArgs_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.UpdateRegenerationState(System.Object,TetraCreations.ProgressBarSystem.ValueStateEventArgs)">UpdateRegenerationState(object, ValueStateEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Stop or Start the regeneration process depending on the state of the value : AtMinimum, AtMaximum, InBetween.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateRegenerationState(object sender, ValueStateEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ValueStateEventArgs.html">ValueStateEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Tetra Creations documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

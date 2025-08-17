@@ -1,0 +1,2249 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ProgressBar
+ | Tetra Creations documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ProgressBar
+ | Tetra Creations documentation ">
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TetraCreations.ProgressBarSystem.ProgressBar">
+
+
+  <h1 id="TetraCreations_ProgressBarSystem_ProgressBar" data-uid="TetraCreations.ProgressBarSystem.ProgressBar" class="text-break">Class ProgressBar
+</h1>
+  <div class="markdown level0 summary"><p>The progress bar inherits from the ValueManager to modify the minimum, current and maximum values during runtime.<br>
+The visual appearance and functionality are divided into different simple C# classes :</p>
+<ul>
+<li>ProgressBarText : Updates the text of the current value and maximum value of the progress bar.</li>
+<li>Indicator : Maintains the position of a Sprite at the current value of the progress bar.</li>
+<li>Borders : Add borders to each corner of the progress bar : Top, Bottom, Left, Right.</li>
+<li>ProgressBarRegeneration : Updates the text of the current regeneration applied to the progress bar.</li>
+<li>AnimationsManager : Controls the shaking and pulsing animations.</li>
+</ul>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html">ValueManager</a></div>
+    <div class="level2"><span class="xref">ProgressBar</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="TetraCreations.ProgressBarSystem.IColorChanger.html">IColorChanger</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__initialValue">ValueManager._initialValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__initialMaximum">ValueManager._initialMaximum</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__initialMinimum">ValueManager._initialMinimum</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__precisionTolerance">ValueManager._precisionTolerance</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__allowValueIncrease">ValueManager._allowValueIncrease</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__allowValueDecrease">ValueManager._allowValueDecrease</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__minimum">ValueManager._minimum</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__maximum">ValueManager._maximum</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__value">ValueManager._value</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__initialized">ValueManager._initialized</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__valueState">ValueManager._valueState</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__initialAllowValueIncrease">ValueManager._initialAllowValueIncrease</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__initialAllowValueDecrease">ValueManager._initialAllowValueDecrease</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_InitializedEvent">ValueManager.InitializedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_ValueChangedEvent">ValueManager.ValueChangedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_ValueStateChangedEvent">ValueManager.ValueStateChangedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_MaximumValueReachedEvent">ValueManager.MaximumValueReachedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_MinimumValueReachedEvent">ValueManager.MinimumValueReachedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_ValuesRestoredEvent">ValueManager.ValuesRestoredEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Initialized">ValueManager.Initialized</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_ValueState">ValueManager.ValueState</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_PrecisionTolerance">ValueManager.PrecisionTolerance</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_AllowValueIncrease">ValueManager.AllowValueIncrease</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_AllowValueDecrease">ValueManager.AllowValueDecrease</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_AllowChanges">ValueManager.AllowChanges</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Minimum">ValueManager.Minimum</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Maximum">ValueManager.Maximum</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Value">ValueManager.Value</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Percentage">ValueManager.Percentage</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_MissingValue">ValueManager.MissingValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_MissingValuePercentage">ValueManager.MissingValuePercentage</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_CurrentState">ValueManager.CurrentState</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_AtMaximum">ValueManager.AtMaximum</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_AtMinimum">ValueManager.AtMinimum</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_LastValueChange">ValueManager.LastValueChange</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_LastMaximumValueChange">ValueManager.LastMaximumValueChange</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_LastMinimumValueChange">ValueManager.LastMinimumValueChange</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_LastOverflowAmount">ValueManager.LastOverflowAmount</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_MaximumAmountWithinLimits">ValueManager.MaximumAmountWithinLimits</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_CanDecrease">ValueManager.CanDecrease()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_CanIncrease">ValueManager.CanIncrease()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Initialize">ValueManager.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Increase_System_Single_">ValueManager.Increase(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Decrease_System_Single_">ValueManager.Decrease(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_IncreaseMaximum_System_Single_">ValueManager.IncreaseMaximum(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_DecreaseMaximum_System_Single_">ValueManager.DecreaseMaximum(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_IncreaseMinimum_System_Single_">ValueManager.IncreaseMinimum(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_DecreaseMinimum_System_Single_">ValueManager.DecreaseMinimum(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetToMinimum">ValueManager.SetToMinimum()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetToMaximum">ValueManager.SetToMaximum()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetByPercentage_System_Single_">ValueManager.SetByPercentage(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_GetLastChangeOf_TetraCreations_ProgressBarSystem_ValueType_">ValueManager.GetLastChangeOf(ValueType)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_RestoreValues">ValueManager.RestoreValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetInitialValues_System_Single_System_Single_System_Single_System_Boolean_">ValueManager.SetInitialValues(float, float, float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_AreEqual_System_Single_System_Single_">ValueManager.AreEqual(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_ToString">ValueManager.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_InitializeValues">ValueManager.InitializeValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetValue_System_Single_">ValueManager.SetValue(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetMinimum_System_Single_">ValueManager.SetMinimum(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetMaximum_System_Single_">ValueManager.SetMaximum(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_UpdateValueState_System_Single_">ValueManager.UpdateValueState(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_UpdateLastOverflow_System_Single_">ValueManager.UpdateLastOverflow(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_OnValuesRestored">ValueManager.OnValuesRestored()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">TetraCreations</span>.<a class="xref" href="TetraCreations.ProgressBarSystem.html">ProgressBarSystem</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="TetraCreations_ProgressBarSystem_ProgressBar_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ProgressBar : ValueManager, IColorChanger</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__activeCondition" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._activeCondition">_activeCondition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ProgessBarCondition _activeCondition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ProgessBarCondition.html">ProgessBarCondition</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__animations" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._animations">_animations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AnimationsManager _animations</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.AnimationsManager.html">AnimationsManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__backgroundColor" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._backgroundColor">_backgroundColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Color _backgroundColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__backgroundImage" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._backgroundImage">_backgroundImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Image _backgroundImage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__backgroundInitialColor" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._backgroundInitialColor">_backgroundInitialColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Color _backgroundInitialColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__backgroundRectTransform" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._backgroundRectTransform">_backgroundRectTransform</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RectTransform _backgroundRectTransform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__backgroundSprite" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._backgroundSprite">_backgroundSprite</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Sprite _backgroundSprite</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sprite</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__borders" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._borders">_borders</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Borders _borders</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.Borders.html">Borders</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__bordersInitialColor" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._bordersInitialColor">_bordersInitialColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Color _bordersInitialColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__canvasGroup" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._canvasGroup">_canvasGroup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CanvasGroup _canvasGroup</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CanvasGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__conditions" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._conditions">_conditions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;ProgessBarCondition&gt; _conditions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List&lt;&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ProgessBarCondition.html">ProgessBarCondition</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__decreaseSegmentImage" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._decreaseSegmentImage">_decreaseSegmentImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Image _decreaseSegmentImage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__decreaseSegmentInitialColor" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._decreaseSegmentInitialColor">_decreaseSegmentInitialColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Color _decreaseSegmentInitialColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__fillSegmentCurrentColor" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._fillSegmentCurrentColor">_fillSegmentCurrentColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Color _fillSegmentCurrentColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__fillSegmentImage" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._fillSegmentImage">_fillSegmentImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Image _fillSegmentImage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__fillSegmentInitialColor" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._fillSegmentInitialColor">_fillSegmentInitialColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Color _fillSegmentInitialColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__icon" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._icon">_icon</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Sprite _icon</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sprite</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__iconColor" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._iconColor">_iconColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Color _iconColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__iconImage" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._iconImage">_iconImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Image _iconImage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__increaseSegmentImage" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._increaseSegmentImage">_increaseSegmentImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Image _increaseSegmentImage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__increaseSegmentInitialColor" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._increaseSegmentInitialColor">_increaseSegmentInitialColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Color _increaseSegmentInitialColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__indicator" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._indicator">_indicator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Indicator _indicator</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.Indicator.html">Indicator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__indicatorInitialColor" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._indicatorInitialColor">_indicatorInitialColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Color _indicatorInitialColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__progressBarText" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._progressBarText">_progressBarText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ProgressBarText _progressBarText</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBarText.html">ProgressBarText</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__rectTransform" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._rectTransform">_rectTransform</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RectTransform _rectTransform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__regeneration" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._regeneration">_regeneration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ProgressBarRegeneration _regeneration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBarRegeneration.html">ProgressBarRegeneration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__resource" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._resource">_resource</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Resource _resource</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.Resource.html">Resource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__runtimeConditions" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._runtimeConditions">_runtimeConditions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;ProgessBarCondition&gt; _runtimeConditions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List&lt;&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ProgessBarCondition.html">ProgessBarCondition</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar__segmentController" data-uid="TetraCreations.ProgressBarSystem.ProgressBar._segmentController">_segmentController</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SegmentController _segmentController</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.SegmentController.html">SegmentController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_ActiveCondition_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.ActiveCondition*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_ActiveCondition" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.ActiveCondition">ActiveCondition</h4>
+  <div class="markdown level1 summary"><p>Currently active condition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgessBarCondition ActiveCondition { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ProgessBarCondition.html">ProgessBarCondition</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_Animations_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Animations*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_Animations" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Animations">Animations</h4>
+  <div class="markdown level1 summary"><p>Controls the Shake and Pulsing Effect animations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationsManager Animations { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.AnimationsManager.html">AnimationsManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_BackgroundColor_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.BackgroundColor*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_BackgroundColor" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.BackgroundColor">BackgroundColor</h4>
+  <div class="markdown level1 summary"><p>Current color of the backgound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color BackgroundColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_BackgroundRectTransform_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.BackgroundRectTransform*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_BackgroundRectTransform" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.BackgroundRectTransform">BackgroundRectTransform</h4>
+  <div class="markdown level1 summary"><p>Reference of the Progress Bar background RectTransform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform BackgroundRectTransform { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_Borders_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Borders*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_Borders" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Borders">Borders</h4>
+  <div class="markdown level1 summary"><p>Controls the Width of the Background and all the Segments image to show a Border.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Borders Borders { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.Borders.html">Borders</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_CanvasGroup_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.CanvasGroup*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_CanvasGroup" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.CanvasGroup">CanvasGroup</h4>
+  <div class="markdown level1 summary"><p>Used to Show/Hide the Progress Bar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CanvasGroup CanvasGroup { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CanvasGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_ColorChangedEvent_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.ColorChangedEvent*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_ColorChangedEvent" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.ColorChangedEvent">ColorChangedEvent</h4>
+  <div class="markdown level1 summary"><p>When the color of the FillSegment changes, other scripts such as PulseImageEffect must update their cached value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;ColorChangedEventArgs&gt; ColorChangedEvent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler&lt;TEventArgs&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ColorChangedEventArgs.html">ColorChangedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_Conditions_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Conditions*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_Conditions" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Conditions">Conditions</h4>
+  <div class="markdown level1 summary"><p>List of all the possible conditions that can be met at runtime, theses scriptable objects are instantiated during initialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ProgessBarCondition&gt; Conditions { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List&lt;&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ProgessBarCondition.html">ProgessBarCondition</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_CurrentColor_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.CurrentColor*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_CurrentColor" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.CurrentColor">CurrentColor</h4>
+  <div class="markdown level1 summary"><p>The Color of the Fill Segment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color CurrentColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_DecreaseSegmentColor_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.DecreaseSegmentColor*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_DecreaseSegmentColor" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.DecreaseSegmentColor">DecreaseSegmentColor</h4>
+  <div class="markdown level1 summary"><p>Current color of the Decrease Segment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color DecreaseSegmentColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_FillSegmentColor_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.FillSegmentColor*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_FillSegmentColor" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.FillSegmentColor">FillSegmentColor</h4>
+  <div class="markdown level1 summary"><p>Current color of the Fill Segment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color FillSegmentColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_HasActiveCondition_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.HasActiveCondition*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_HasActiveCondition" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.HasActiveCondition">HasActiveCondition</h4>
+  <div class="markdown level1 summary"><p>Determines if their is a condition being applied to the Progress bar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasActiveCondition { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_Icon_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Icon*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_Icon" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Icon">Icon</h4>
+  <div class="markdown level1 summary"><p>Get / Set the Icon Sprite.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sprite Icon { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sprite</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_IconColor_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.IconColor*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_IconColor" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.IconColor">IconColor</h4>
+  <div class="markdown level1 summary"><p>Current color of the Icon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color IconColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_IconImage_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.IconImage*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_IconImage" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.IconImage">IconImage</h4>
+  <div class="markdown level1 summary"><p>Get the Icon Image Component</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image IconImage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_IncreaseSegmentColor_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.IncreaseSegmentColor*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_IncreaseSegmentColor" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.IncreaseSegmentColor">IncreaseSegmentColor</h4>
+  <div class="markdown level1 summary"><p>Current color of the Increase Segment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color IncreaseSegmentColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_Indicator_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Indicator*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_Indicator" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Indicator">Indicator</h4>
+  <div class="markdown level1 summary"><p>Small icon indicating the current value position on the Progress Bar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Indicator Indicator { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.Indicator.html">Indicator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_IndicatorColor_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.IndicatorColor*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_IndicatorColor" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.IndicatorColor">IndicatorColor</h4>
+  <div class="markdown level1 summary"><p>Current color of the Indicator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color IndicatorColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_IsVisible_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.IsVisible*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_IsVisible" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.IsVisible">IsVisible</h4>
+  <div class="markdown level1 summary"><p>Determines if the Progress Bar is currently visible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_RectTransform_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.RectTransform*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_RectTransform" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.RectTransform">RectTransform</h4>
+  <div class="markdown level1 summary"><p>Reference of the Progress Bar RectTransform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform RectTransform { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_Regeneration_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Regeneration*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_Regeneration" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Regeneration">Regeneration</h4>
+  <div class="markdown level1 summary"><p>Updates the regeneration text values of the Progress Bar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgressBarRegeneration Regeneration { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBarRegeneration.html">ProgressBarRegeneration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_Resource_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Resource*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_Resource" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Resource">Resource</h4>
+  <div class="markdown level1 summary"><p>Used to know what the Progress Bar represent : Health, Armor, Mana, Experience etc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Resource Resource { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.Resource.html">Resource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_RuntimeConditions_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.RuntimeConditions*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_RuntimeConditions" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.RuntimeConditions">RuntimeConditions</h4>
+  <div class="markdown level1 summary"><p>Read Only list of _runtimeConditions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;ProgessBarCondition&gt; RuntimeConditions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList&lt;&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ProgessBarCondition.html">ProgessBarCondition</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_SegmentController_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.SegmentController*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_SegmentController" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.SegmentController">SegmentController</h4>
+  <div class="markdown level1 summary"><p>Controls the fill amount of each segments : Main, Increase, Decrease.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SegmentController SegmentController { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.SegmentController.html">SegmentController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_Text_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Text*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_Text" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Text">Text</h4>
+  <div class="markdown level1 summary"><p>Manage all the text values to display.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgressBarText Text { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBarText.html">ProgressBarText</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_VisibleIcon_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.VisibleIcon*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_VisibleIcon" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.VisibleIcon">VisibleIcon</h4>
+  <div class="markdown level1 summary"><p>Enable / Disable the Image component of the Icon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool VisibleIcon { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_AnyConditionMet_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.AnyConditionMet*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_AnyConditionMet" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.AnyConditionMet">AnyConditionMet()</h4>
+  <div class="markdown level1 summary"><p>Loop through all ProgressBarConditions to check whether or not they have been met.<br>
+Only one condition can be active, so the order of the conditions matters.<br>
+The most important condition should be the first in the list.<br>
+When a condition is applied it keeps all the colors in cache, to undo the changes if it is removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AnyConditionMet()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_Hide_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Hide*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_Hide" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Hide">Hide()</h4>
+  <div class="markdown level1 summary"><p>Hide the health bar using the CanvasGroup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Hide()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_Initialize_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Initialize*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_Initialize_System_Single_System_Single_System_Single_TetraCreations_ProgressBarSystem_Resource_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Initialize(System.Single,System.Single,System.Single,TetraCreations.ProgressBarSystem.Resource)">Initialize(float, float, float, Resource)</h4>
+  <div class="markdown level1 summary"><p>Initialize the bar with default values, add listeners to events and update the text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Initialize(float currentValue, float maximumValue, float minimumValue = 0, Resource resource = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">currentValue</span></td>
+        <td><p>The starting value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">maximumValue</span></td>
+        <td><p>Maximum value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">minimumValue</span></td>
+        <td><p>Minimum value, default 0f.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.Resource.html">Resource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>What type of resource the ProgressBar represent</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_InitializeClasses_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.InitializeClasses*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_InitializeClasses" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.InitializeClasses">InitializeClasses()</h4>
+  <div class="markdown level1 summary"><p>Initialize all other classes using the ProgressBar instance.<br>
+Set the SegmentController as listener of the ValueChangedEvent to update the fill amount of each segments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeClasses()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_IsValid_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.IsValid*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_IsValid" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.IsValid">IsValid()</h4>
+  <div class="markdown level1 summary"><p>Determines if some references are missing which prevents the Progress Bar from initializing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsValid()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_OnActiveConditionChanged_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.OnActiveConditionChanged*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_OnActiveConditionChanged" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.OnActiveConditionChanged">OnActiveConditionChanged()</h4>
+  <div class="markdown level1 summary"><p>Raise the ActiveConditionChangedEvent and pass the ActiveCondition inside ActiveConditionChangedEventArgs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnActiveConditionChanged()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_OnFillSegmentColorChanged_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.OnFillSegmentColorChanged*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_OnFillSegmentColorChanged" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.OnFillSegmentColorChanged">OnFillSegmentColorChanged()</h4>
+  <div class="markdown level1 summary"><p>Raise the ColorChangedEvent and pass the FillSegmentColor inside ColorChangedEventArgs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnFillSegmentColorChanged()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_OnInitialized_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.OnInitialized*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_OnInitialized" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.OnInitialized">OnInitialized()</h4>
+  <div class="markdown level1 summary"><p>Raise InitializedEvent from ValueManager then rasie the ProgressBarInitializedEvent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInitialized()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_OnInitialized">ValueManager.OnInitialized()</a></div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_OnValueChanged_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.OnValueChanged*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_OnValueChanged_System_Single_TetraCreations_ProgressBarSystem_ValueType_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.OnValueChanged(System.Single,TetraCreations.ProgressBarSystem.ValueType)">OnValueChanged(float, ValueType)</h4>
+  <div class="markdown level1 summary"><p>Calls base.OnValueChanged to raise ValueChangedEvent; checks if any condition is met.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnValueChanged(float newValue, ValueType valueType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ValueType.html">ValueType</a></td>
+        <td><span class="parametername">valueType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_OnValueChanged_System_Single_TetraCreations_ProgressBarSystem_ValueType_">ValueManager.OnValueChanged(float, ValueType)</a></div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_RemoveEventsListeners_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.RemoveEventsListeners*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_RemoveEventsListeners" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.RemoveEventsListeners">RemoveEventsListeners()</h4>
+  <div class="markdown level1 summary"><p>Remove all listeners from every events, in case we need to destroy the object for example.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RemoveEventsListeners()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_RemoveEventsListeners">ValueManager.RemoveEventsListeners()</a></div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_ResetToInitialColors_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.ResetToInitialColors*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_ResetToInitialColors" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.ResetToInitialColors">ResetToInitialColors()</h4>
+  <div class="markdown level1 summary"><p>Set the Segments, Indicator, Borders and Background colors to their initial values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ResetToInitialColors()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_ResetToInitialValues_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.ResetToInitialValues*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_ResetToInitialValues_System_Boolean_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.ResetToInitialValues(System.Boolean)">ResetToInitialValues(bool)</h4>
+  <div class="markdown level1 summary"><p>Reset the current and maximum value to their intial values (When ProgressBar Initialize was called)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ResetToInitialValues(bool withAnimations = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">withAnimations</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_SetBackground_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.SetBackground*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_SetBackground_Sprite_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.SetBackground(Sprite)">SetBackground(Sprite)</h4>
+  <div class="markdown level1 summary"><p>Set the background sprite for all segments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetBackground(Sprite sprite)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sprite</span></td>
+        <td><span class="parametername">sprite</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_SetInitialColors_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.SetInitialColors*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_SetInitialColors" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.SetInitialColors">SetInitialColors()</h4>
+  <div class="markdown level1 summary"><p>Override all initial colors with current colors of all the Progress Bar elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetInitialColors()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_SetPercentageTo_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.SetPercentageTo*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_SetPercentageTo_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.SetPercentageTo(System.Single)">SetPercentageTo(float)</h4>
+  <div class="markdown level1 summary"><p>Set the percentage to instantly update image fill amount.<br>
+So it doesn't show any increase/decrease amount using the shrinking animation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetPercentageTo(float percentage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">percentage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_SetTextFormat_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.SetTextFormat*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_SetTextFormat_TetraCreations_ProgressBarSystem_TextFormat_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.SetTextFormat(TetraCreations.ProgressBarSystem.TextFormat)">SetTextFormat(TextFormat)</h4>
+  <div class="markdown level1 summary"><p>Set if we display the current value only, the current value and the maximum value or simply the percentage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetTextFormat(TextFormat textFormat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.TextFormat.html">TextFormat</a></td>
+        <td><span class="parametername">textFormat</span></td>
+        <td><p>The new text format</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_SetValues_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.SetValues*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_SetValues_System_Object_TetraCreations_ProgressBarSystem_ValueChangedEventArgs_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.SetValues(System.Object,TetraCreations.ProgressBarSystem.ValueChangedEventArgs)">SetValues(object, ValueChangedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Change the maximum or the current value when ValueChangedEvent is raised from the ValueManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetValues(object sender, ValueChangedEventArgs valueChangedEventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ValueChangedEventArgs.html">ValueChangedEventArgs</a></td>
+        <td><span class="parametername">valueChangedEventArgs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_SetValues_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.SetValues*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_SetValues_System_Single_System_Single_System_Boolean_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.SetValues(System.Single,System.Single,System.Boolean)">SetValues(float, float, bool)</h4>
+  <div class="markdown level1 summary"><p>Modify the current and the maximum value after the initialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SetValues(float current, float maximum, bool overrideInitialValues = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">current</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">maximum</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">overrideInitialValues</span></td>
+        <td><p>If the initial values are set again</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_Shake_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Shake*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_Shake" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Shake">Shake()</h4>
+  <div class="markdown level1 summary"><p>Shake the ProgressBar Transform</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Shake()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_Show_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Show*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_Show" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.Show">Show()</h4>
+  <div class="markdown level1 summary"><p>Show the health bar using the CanvasGroup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_StartPulseAnimation_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.StartPulseAnimation*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_StartPulseAnimation" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.StartPulseAnimation">StartPulseAnimation()</h4>
+  <div class="markdown level1 summary"><p>Start the Fill Image pulsing effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartPulseAnimation()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ProgressBar_StopPulseAnimation_" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.StopPulseAnimation*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_StopPulseAnimation" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.StopPulseAnimation">StopPulseAnimation()</h4>
+  <div class="markdown level1 summary"><p>Stop the Fill Image pulsing effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopPulseAnimation()</code></pre>
+  </div>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_ActiveConditionChangedEvent" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.ActiveConditionChangedEvent">ActiveConditionChangedEvent</h4>
+  <div class="markdown level1 summary"><p>Raised when a new ProgessBarCondition has been met, so we apply new visuals changes or animations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ActiveConditionChangedEventArgs&gt; ActiveConditionChangedEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler&lt;TEventArgs&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ActiveConditionChangedEventArgs.html">ActiveConditionChangedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ProgressBar_ProgressBarInitializedEvent" data-uid="TetraCreations.ProgressBarSystem.ProgressBar.ProgressBarInitializedEvent">ProgressBarInitializedEvent</h4>
+  <div class="markdown level1 summary"><p>Raised in Initialize() method when the ProgressBar is ready to be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ProgressBarInitializedEventArgs&gt; ProgressBarInitializedEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler&lt;TEventArgs&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBarInitializedEventArgs.html">ProgressBarInitializedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.IColorChanger.html">IColorChanger</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Tetra Creations documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

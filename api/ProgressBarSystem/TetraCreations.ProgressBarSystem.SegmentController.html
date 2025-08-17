@@ -1,0 +1,860 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class SegmentController
+ | Tetra Creations documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class SegmentController
+ | Tetra Creations documentation ">
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TetraCreations.ProgressBarSystem.SegmentController">
+
+
+  <h1 id="TetraCreations_ProgressBarSystem_SegmentController" data-uid="TetraCreations.ProgressBarSystem.SegmentController" class="text-break">Class SegmentController
+</h1>
+  <div class="markdown level0 summary"><p>Synchronizes the progression of three different segments by changing the fill amount of their corresponding Image.<br>
+Also manages the coroutines of the sub-segment shrink animation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">SegmentController</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">TetraCreations</span>.<a class="xref" href="TetraCreations.ProgressBarSystem.html">ProgressBarSystem</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="TetraCreations_ProgressBarSystem_SegmentController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SegmentController : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_DecreaseFillAmount_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.DecreaseFillAmount*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_DecreaseFillAmount" data-uid="TetraCreations.ProgressBarSystem.SegmentController.DecreaseFillAmount">DecreaseFillAmount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DecreaseFillAmount { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_DecreaseSegment_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.DecreaseSegment*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_DecreaseSegment" data-uid="TetraCreations.ProgressBarSystem.SegmentController.DecreaseSegment">DecreaseSegment</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BarSegment DecreaseSegment { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.BarSegment.html">BarSegment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_FillSegment_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.FillSegment*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_FillSegment" data-uid="TetraCreations.ProgressBarSystem.SegmentController.FillSegment">FillSegment</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FillSegment FillSegment { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.FillSegment.html">FillSegment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_IncreaseFillAmount_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.IncreaseFillAmount*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_IncreaseFillAmount" data-uid="TetraCreations.ProgressBarSystem.SegmentController.IncreaseFillAmount">IncreaseFillAmount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float IncreaseFillAmount { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_IncreaseSegment_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.IncreaseSegment*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_IncreaseSegment" data-uid="TetraCreations.ProgressBarSystem.SegmentController.IncreaseSegment">IncreaseSegment</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BarSegment IncreaseSegment { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.BarSegment.html">BarSegment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_LastIncreaseFillAmount_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.LastIncreaseFillAmount*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_LastIncreaseFillAmount" data-uid="TetraCreations.ProgressBarSystem.SegmentController.LastIncreaseFillAmount">LastIncreaseFillAmount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LastIncreaseFillAmount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_MainFillAmount_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.MainFillAmount*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_MainFillAmount" data-uid="TetraCreations.ProgressBarSystem.SegmentController.MainFillAmount">MainFillAmount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MainFillAmount { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_ShrinkDelay_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.ShrinkDelay*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_ShrinkDelay" data-uid="TetraCreations.ProgressBarSystem.SegmentController.ShrinkDelay">ShrinkDelay</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ShrinkDelay { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_ShrinkSpeed_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.ShrinkSpeed*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_ShrinkSpeed" data-uid="TetraCreations.ProgressBarSystem.SegmentController.ShrinkSpeed">ShrinkSpeed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ShrinkSpeed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_UseAnimationWhenLimitAreChanged_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.UseAnimationWhenLimitAreChanged*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_UseAnimationWhenLimitAreChanged" data-uid="TetraCreations.ProgressBarSystem.SegmentController.UseAnimationWhenLimitAreChanged">UseAnimationWhenLimitAreChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseAnimationWhenLimitAreChanged { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_UseLerpToSmooth_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.UseLerpToSmooth*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_UseLerpToSmooth" data-uid="TetraCreations.ProgressBarSystem.SegmentController.UseLerpToSmooth">UseLerpToSmooth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseLerpToSmooth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_GetActiveSegment_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.GetActiveSegment*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_GetActiveSegment" data-uid="TetraCreations.ProgressBarSystem.SegmentController.GetActiveSegment">GetActiveSegment()</h4>
+  <div class="markdown level1 summary"><p>Returns the active segment, the one that is currently visible above the fill segment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BarSegment GetActiveSegment()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.BarSegment.html">BarSegment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_GetSegmentFillAmount_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.GetSegmentFillAmount*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_GetSegmentFillAmount_TetraCreations_ProgressBarSystem_SegmentType_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.GetSegmentFillAmount(TetraCreations.ProgressBarSystem.SegmentType)">GetSegmentFillAmount(SegmentType)</h4>
+  <div class="markdown level1 summary"><p>Returns the FillAmount of a Segement's image</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetSegmentFillAmount(SegmentType segmentType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.SegmentType.html">SegmentType</a></td>
+        <td><span class="parametername">segmentType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_IncrementFillSegmentAmount_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.IncrementFillSegmentAmount*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_IncrementFillSegmentAmount" data-uid="TetraCreations.ProgressBarSystem.SegmentController.IncrementFillSegmentAmount">IncrementFillSegmentAmount()</h4>
+  <div class="markdown level1 summary"><p>Increments the current image fill amount until it reachs the same amount of the increasing fill amount after a delay</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerator IncrementFillSegmentAmount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_Initialize_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.Initialize*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_Initialize_System_Single_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.Initialize(System.Single)">Initialize(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize(float fillAmount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">fillAmount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_InstantlyUpdateDecreasingFilledAmount_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.InstantlyUpdateDecreasingFilledAmount*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_InstantlyUpdateDecreasingFilledAmount_System_Single_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.InstantlyUpdateDecreasingFilledAmount(System.Single)">InstantlyUpdateDecreasingFilledAmount(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InstantlyUpdateDecreasingFilledAmount(float percentage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">percentage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_InstantlyUpdateFillAmount_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.InstantlyUpdateFillAmount*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_InstantlyUpdateFillAmount_System_Single_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.InstantlyUpdateFillAmount(System.Single)">InstantlyUpdateFillAmount(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InstantlyUpdateFillAmount(float percentage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">percentage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_InstantlyUpdateIncreasingFilledAmount_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.InstantlyUpdateIncreasingFilledAmount*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_InstantlyUpdateIncreasingFilledAmount_System_Single_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.InstantlyUpdateIncreasingFilledAmount(System.Single)">InstantlyUpdateIncreasingFilledAmount(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InstantlyUpdateIncreasingFilledAmount(float percentage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">percentage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_IsValid_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.IsValid*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_IsValid" data-uid="TetraCreations.ProgressBarSystem.SegmentController.IsValid">IsValid()</h4>
+  <div class="markdown level1 summary"><p>Returns false if at least one Segement is not valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsValid()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_OnActiveSegmentChanged_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.OnActiveSegmentChanged*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_OnActiveSegmentChanged" data-uid="TetraCreations.ProgressBarSystem.SegmentController.OnActiveSegmentChanged">OnActiveSegmentChanged()</h4>
+  <div class="markdown level1 summary"><p>Raise the ActiveSegmentChangedEvent, we pass the new active segment in SegmentEventArgs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnActiveSegmentChanged()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_SetBackground_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.SetBackground*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_SetBackground_Sprite_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.SetBackground(Sprite)">SetBackground(Sprite)</h4>
+  <div class="markdown level1 summary"><p>Set the background for all segements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBackground(Sprite sprite)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sprite</span></td>
+        <td><span class="parametername">sprite</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_SetSegmentFillAmount_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.SetSegmentFillAmount*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_SetSegmentFillAmount_System_Single_TetraCreations_ProgressBarSystem_SegmentType_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.SetSegmentFillAmount(System.Single,TetraCreations.ProgressBarSystem.SegmentType)">SetSegmentFillAmount(float, SegmentType)</h4>
+  <div class="markdown level1 summary"><p>Sets the FillAmount of the a Segment's image</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSegmentFillAmount(float amount, SegmentType segmentType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.SegmentType.html">SegmentType</a></td>
+        <td><span class="parametername">segmentType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_ShrinkDecreasingSegment_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.ShrinkDecreasingSegment*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_ShrinkDecreasingSegment" data-uid="TetraCreations.ProgressBarSystem.SegmentController.ShrinkDecreasingSegment">ShrinkDecreasingSegment()</h4>
+  <div class="markdown level1 summary"><p>Shrinks the Decreasing image fill amount until it reachs the same amount of the current image fill amount after a delay</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerator ShrinkDecreasingSegment()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_UpdateDecreasingFilledAmount_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.UpdateDecreasingFilledAmount*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_UpdateDecreasingFilledAmount_System_Single_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.UpdateDecreasingFilledAmount(System.Single)">UpdateDecreasingFilledAmount(float)</h4>
+  <div class="markdown level1 summary"><p>If the decrease segment is enable we interupt the increase amount coroutine,
+to start the decrease amount coroutine to show how much the Progress Bar lost.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UpdateDecreasingFilledAmount(float percentage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">percentage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_UpdateFilledAmount_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.UpdateFilledAmount*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_UpdateFilledAmount_System_Object_TetraCreations_ProgressBarSystem_ValueChangedEventArgs_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.UpdateFilledAmount(System.Object,TetraCreations.ProgressBarSystem.ValueChangedEventArgs)">UpdateFilledAmount(object, ValueChangedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Every time the ProgressBar percentage changes we update the increasing or decreasing segment with the animation.
+Unless the progress bar changed because</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UpdateFilledAmount(object sender, ValueChangedEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ValueChangedEventArgs.html">ValueChangedEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_SegmentController_UpdateIncreasingFilledAmount_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.UpdateIncreasingFilledAmount*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_UpdateIncreasingFilledAmount_System_Single_" data-uid="TetraCreations.ProgressBarSystem.SegmentController.UpdateIncreasingFilledAmount(System.Single)">UpdateIncreasingFilledAmount(float)</h4>
+  <div class="markdown level1 summary"><p>If the increase segment is enable we interupt the decrease amount coroutine,
+to start the increase amount coroutine to show how much the Progress Bar gained.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UpdateIncreasingFilledAmount(float percentage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">percentage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_SegmentController_ActiveSegmentChangedEvent" data-uid="TetraCreations.ProgressBarSystem.SegmentController.ActiveSegmentChangedEvent">ActiveSegmentChangedEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SegmentEventArgs&gt; ActiveSegmentChangedEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler&lt;TEventArgs&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.SegmentEventArgs.html">SegmentEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Tetra Creations documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

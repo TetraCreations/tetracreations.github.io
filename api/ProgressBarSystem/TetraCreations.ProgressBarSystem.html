@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Namespace TetraCreations.ProgressBarSystem
+ | Tetra Creations documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Namespace TetraCreations.ProgressBarSystem
+ | Tetra Creations documentation ">
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TetraCreations.ProgressBarSystem">
+
+  <h1 id="TetraCreations_ProgressBarSystem" data-uid="TetraCreations.ProgressBarSystem" class="text-break">Namespace TetraCreations.ProgressBarSystem
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+</h3>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ActiveConditionChangedEventArgs.html">ActiveConditionChangedEventArgs</a></h4>
+      <section><p>Raised when the progress bar active condition has changed.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.AnimationsManager.html">AnimationsManager</a></h4>
+      <section><p>Regroup the Shake and PulseImage effects in the same class.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.BarSegment.html">BarSegment</a></h4>
+      <section><p>Represent a portion of the ProgressBar using an Image.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.Borders.html">Borders</a></h4>
+      <section><p>Controls multiple Rect Transform Offset to display a Border around the ProgressBar, <br>
+simply set the size to 0 if you don't want to use it.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ColorChangedEventArgs.html">ColorChangedEventArgs</a></h4>
+      <section><p>Pass the new Color when it changed.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.FillSegment.html">FillSegment</a></h4>
+      <section><p>Represent the main area of the ProgressBar to be filled.<br>
+It contains a list of BarSegment which are the increasing / decreasing segments.<br>
+When modifying the fill method or fill origin, the value of the child segments is automatically updated.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.Indicator.html">Indicator</a></h4>
+      <section><p>Uses an Image component with a Sprite and follows the current value of the progress bar.<br>
+We can use a 2D mask to prevent the RectTransform, and therefore the image, from extending beyond the progress bar.<br>
+We can also choose any color for the image, but I recommend setting UseSegmentColor to true and then modifying the ColorBrightnessMultiplier.<br>
+This way, the image can be slightly brighter (positive multiplier) or darker (negative multiplier) than the colour of the currently active segment.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.InitialResourceValue.html">InitialResourceValue</a></h4>
+      <section><p>Resource value used to initialize the ResourceManager of Unit at runtime.<br>
+See UnitData.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.MaximumValueReachedEventArgs.html">MaximumValueReachedEventArgs</a></h4>
+      <section><p>Raised when the progress bar value is equals to the maximum value.<br>
+We pass the overflowing amount, for example if a character needs 100 experience points to level up once : <br>
+If he gains 1,000 experience points, we want to calculate how many levels he will gain thanks to the additional 900 experience points.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.MinimumValueReachedEventArgs.html">MinimumValueReachedEventArgs</a></h4>
+      <section><p>Raised when the progress bar value is equals to the minimum value.<br>
+We pass the overflowing amount, for example if a character has 100 armor : <br>
+If he takes 200 damage points we can apply the additional 100 damage points to another protection.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.PerformanceManager.html">PerformanceManager</a></h4>
+      <section><p>This script will update the Progress Bars parent position to follow their 'Owner' transform in one update call inside one canvas.<br>
+It also rotate all visible Progress Bars to face the camera. (Billboard)<br>
+And finally it will Hide/Show Progress Bars if their 'Owner' is not visible by the Camera. (Culling)</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ProgessBarCondition.html">ProgessBarCondition</a></h4>
+      <section><p>Changes the visual appearance of the progress bar or starts the pulsing animation effect when the progress bar value reaches a certain percentage.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBar.html">ProgressBar</a></h4>
+      <section><p>The progress bar inherits from the ValueManager to modify the minimum, current and maximum values during runtime.<br>
+The visual appearance and functionality are divided into different simple C# classes :</p>
+<ul>
+<li>ProgressBarText : Updates the text of the current value and maximum value of the progress bar.</li>
+<li>Indicator : Maintains the position of a Sprite at the current value of the progress bar.</li>
+<li>Borders : Add borders to each corner of the progress bar : Top, Bottom, Left, Right.</li>
+<li>ProgressBarRegeneration : Updates the text of the current regeneration applied to the progress bar.</li>
+<li>AnimationsManager : Controls the shaking and pulsing animations.</li>
+</ul>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBarChangedEventArgs.html">ProgressBarChangedEventArgs</a></h4>
+      <section><p>Raised when setting a new ProgressBar in the ResourceManager.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBarInitializedEventArgs.html">ProgressBarInitializedEventArgs</a></h4>
+      <section><p>When the progress bar is initialized, no data for the moment.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBarRegeneration.html">ProgressBarRegeneration</a></h4>
+      <section><p>Update the regeneration text values of the Progress Bar, the amount, the tickrate, the float format etc.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBarRegenerationInitializedEventArgs.html">ProgressBarRegenerationInitializedEventArgs</a></h4>
+      <section><p>Passed when the ProgressBarRegeneration is initialized.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBarText.html">ProgressBarText</a></h4>
+      <section><p>Converts the floating point values to the desired format to display them on the progress bar.<br>
+By default we show the current and maximum value, but we can choose to show the percentage or the only the current value.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.RegenerationActivationEventArgs.html">RegenerationActivationEventArgs</a></h4>
+      <section><p>Pass if the ResourceRegeneration is Enable/Disable.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.RegenerationStateEventArgs.html">RegenerationStateEventArgs</a></h4>
+      <section><p>Pass the RegenerationState in the RegenerationStateChangedEvent</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs.html">RegenerationValuesEventArgs</a></h4>
+      <section><p>Send the new regenerated amount per tick and the tick rate.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.Resource.html">Resource</a></h4>
+      <section><p>Represent a type of 'Resource' like Health, Mana, Stamina, Hunger, Oxygen etc.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ResourceManager.html">ResourceManager</a></h4>
+      <section><p>Manages a Resource value and eventually updates a Progress Bar automatically.<br></p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ResourceRegeneration.html">ResourceRegeneration</a></h4>
+      <section><p>Regenerate a the ValueManager.Value over time.<br>
+It also synchronize the regeneration with the ProgressBar.Regeneration class.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ResourcesController.html">ResourcesController</a></h4>
+      <section><p>Keep track of all the ResourceManager and ResourceRegeneration for each Resource for a GameObject.<br>
+It will Update every ResourceRegeneration timers automatically.<br>
+We can also add new ResourceManager or new ResourceRegeneration at runtime, initialize them with Values from UniData InitialResourcesValue for example.<br></p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.SegmentController.html">SegmentController</a></h4>
+      <section><p>Synchronizes the progression of three different segments by changing the fill amount of their corresponding Image.<br>
+Also manages the coroutines of the sub-segment shrink animation.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.SegmentEventArgs.html">SegmentEventArgs</a></h4>
+      <section><p>Pass a BarSegment using standard C# event</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ValueChangedEventArgs.html">ValueChangedEventArgs</a></h4>
+      <section><p>Contains the new value, the difference with the previous value, the value type that changed (Value, Minimum, Maximum).<br>
+And the new percentage, so we don't have to recalculate it.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html">ValueManager</a></h4>
+      <section><p>It maintains a value between the minimum and maximum values.<br>
+Each value can be modified using this class.<br>
+It gives a layer of abstraction as this class doesn't know about ProgressBar or Resource.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ValueManagerInitializedEventArgs.html">ValueManagerInitializedEventArgs</a></h4>
+      <section><p>When the value manager is initialized, no data for the moment.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ValueRegeneration-1.html">ValueRegeneration&lt;T&gt;</a></h4>
+      <section><p>Regenerate the Value of a ValueManager every tick.<br>
+We can choose to cumulate multiple regneration type : Flat, Percentage, Percentage of Missing value.<br>
+Like the ValueManager this class doesn't know about the ProgressBar or Resource.<br>
+We use a generic type to add a layer of abstraction by given the possibility to override the ValueManager.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ValueRegenerationInitializedEventArgs.html">ValueRegenerationInitializedEventArgs</a></h4>
+      <section><p>When the ValueRegeneration is listening to the ValueManager events to update it's state.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ValuesRestoredEventArgs.html">ValuesRestoredEventArgs</a></h4>
+      <section><p>When the values in the value manager have been restored to their original values.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ValueStateEventArgs.html">ValueStateEventArgs</a></h4>
+      <section><p>Pass the ValueState in the ValueStateChangedEvent</p>
+</section>
+    <h3 id="structs">Structs
+</h3>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBarRuntimeData.html">ProgressBarRuntimeData</a></h4>
+      <section><p>Used by the PerformanceManager update the position of all the ProgressBar to follow their 'owner' position plus an offset.<br>
+It also store the Enemy/Unit collider to know if it's visible by the Camera.<br></p>
+</section>
+    <h3 id="interfaces">Interfaces
+</h3>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.IColorChanger.html">IColorChanger</a></h4>
+      <section></section>
+    <h3 id="enums">Enums
+</h3>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.BorderType.html">BorderType</a></h4>
+      <section><p>Represents each border of the progress bar : Top, Bottom, Left, Right.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.RegenerationDisplay.html">RegenerationDisplay</a></h4>
+      <section><p>Choose when you want to display the regeneration values on the ProgressBar : <br></p>
+<ul>
+<li>Hidden<br></li>
+<li>AlwaysVisible<br></li>
+<li>VisibleWhenRegenerating</li>
+</ul>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.RegenerationState.html">RegenerationState</a></h4>
+      <section><p>Determines the state of the regeneration process : <br></p>
+<ul>
+<li>Stopped<br></li>
+<li>Started : Wait for the delay timer to be over.<br></li>
+<li>Regenerating : The delay timer and the tick rate timer are over. This will loop until we can no longer regenerate.<br></li>
+</ul>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.SegmentType.html">SegmentType</a></h4>
+      <section><p>ProgressBar is splitted into three segments : Main, Increase, Decrease.<br>
+Main : The main filling area.<br>
+Increase : Represent the last added value.<br>
+Decrease : Represent the last remove value.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.TextFormat.html">TextFormat</a></h4>
+      <section><p>Determines the display format of the progress bar values.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ValueChangeType.html">ValueChangeType</a></h4>
+      <section><p>Determines the type of change made to a value : None, Increase or Decrease.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ValueState.html">ValueState</a></h4>
+      <section><p>Determines the state of a value with limits : either minimum, maximum, or between the two.</p>
+</section>
+      <h4><a class="xref" href="TetraCreations.ProgressBarSystem.ValueType.html">ValueType</a></h4>
+      <section><p>Determines the type of value(s) that has (have) changed.</p>
+</section>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Tetra Creations documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

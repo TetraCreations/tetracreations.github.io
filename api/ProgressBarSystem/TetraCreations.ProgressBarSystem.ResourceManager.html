@@ -1,0 +1,615 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ResourceManager
+ | Tetra Creations documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ResourceManager
+ | Tetra Creations documentation ">
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TetraCreations.ProgressBarSystem.ResourceManager">
+
+
+  <h1 id="TetraCreations_ProgressBarSystem_ResourceManager" data-uid="TetraCreations.ProgressBarSystem.ResourceManager" class="text-break">Class ResourceManager
+</h1>
+  <div class="markdown level0 summary"><p>Manages a Resource value and eventually updates a Progress Bar automatically.<br></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html">ValueManager</a></div>
+    <div class="level2"><span class="xref">ResourceManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__initialValue">ValueManager._initialValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__initialMaximum">ValueManager._initialMaximum</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__initialMinimum">ValueManager._initialMinimum</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__precisionTolerance">ValueManager._precisionTolerance</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__allowValueIncrease">ValueManager._allowValueIncrease</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__allowValueDecrease">ValueManager._allowValueDecrease</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__minimum">ValueManager._minimum</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__maximum">ValueManager._maximum</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__value">ValueManager._value</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__initialized">ValueManager._initialized</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__valueState">ValueManager._valueState</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__initialAllowValueIncrease">ValueManager._initialAllowValueIncrease</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager__initialAllowValueDecrease">ValueManager._initialAllowValueDecrease</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_InitializedEvent">ValueManager.InitializedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_ValueChangedEvent">ValueManager.ValueChangedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_ValueStateChangedEvent">ValueManager.ValueStateChangedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_MaximumValueReachedEvent">ValueManager.MaximumValueReachedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_MinimumValueReachedEvent">ValueManager.MinimumValueReachedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_ValuesRestoredEvent">ValueManager.ValuesRestoredEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Initialized">ValueManager.Initialized</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_ValueState">ValueManager.ValueState</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_PrecisionTolerance">ValueManager.PrecisionTolerance</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_AllowValueIncrease">ValueManager.AllowValueIncrease</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_AllowValueDecrease">ValueManager.AllowValueDecrease</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_AllowChanges">ValueManager.AllowChanges</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Minimum">ValueManager.Minimum</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Maximum">ValueManager.Maximum</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Value">ValueManager.Value</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Percentage">ValueManager.Percentage</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_MissingValue">ValueManager.MissingValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_MissingValuePercentage">ValueManager.MissingValuePercentage</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_CurrentState">ValueManager.CurrentState</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_AtMaximum">ValueManager.AtMaximum</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_AtMinimum">ValueManager.AtMinimum</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_LastValueChange">ValueManager.LastValueChange</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_LastMaximumValueChange">ValueManager.LastMaximumValueChange</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_LastMinimumValueChange">ValueManager.LastMinimumValueChange</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_LastOverflowAmount">ValueManager.LastOverflowAmount</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_MaximumAmountWithinLimits">ValueManager.MaximumAmountWithinLimits</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_CanDecrease">ValueManager.CanDecrease()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_CanIncrease">ValueManager.CanIncrease()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Increase_System_Single_">ValueManager.Increase(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Decrease_System_Single_">ValueManager.Decrease(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_IncreaseMaximum_System_Single_">ValueManager.IncreaseMaximum(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_DecreaseMaximum_System_Single_">ValueManager.DecreaseMaximum(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_IncreaseMinimum_System_Single_">ValueManager.IncreaseMinimum(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_DecreaseMinimum_System_Single_">ValueManager.DecreaseMinimum(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetToMinimum">ValueManager.SetToMinimum()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetToMaximum">ValueManager.SetToMaximum()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetByPercentage_System_Single_">ValueManager.SetByPercentage(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_GetLastChangeOf_TetraCreations_ProgressBarSystem_ValueType_">ValueManager.GetLastChangeOf(ValueType)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_RestoreValues">ValueManager.RestoreValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetInitialValues_System_Single_System_Single_System_Single_System_Boolean_">ValueManager.SetInitialValues(float, float, float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_RemoveEventsListeners">ValueManager.RemoveEventsListeners()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_AreEqual_System_Single_System_Single_">ValueManager.AreEqual(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_ToString">ValueManager.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_InitializeValues">ValueManager.InitializeValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetValue_System_Single_">ValueManager.SetValue(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetMinimum_System_Single_">ValueManager.SetMinimum(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetMaximum_System_Single_">ValueManager.SetMaximum(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_UpdateValueState_System_Single_">ValueManager.UpdateValueState(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_UpdateLastOverflow_System_Single_">ValueManager.UpdateLastOverflow(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_OnValueChanged_System_Single_TetraCreations_ProgressBarSystem_ValueType_">ValueManager.OnValueChanged(float, ValueType)</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_OnValuesRestored">ValueManager.OnValuesRestored()</a>
+    </div>
+    <div>
+      <a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_OnInitialized">ValueManager.OnInitialized()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">TetraCreations</span>.<a class="xref" href="TetraCreations.ProgressBarSystem.html">ProgressBarSystem</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="TetraCreations_ProgressBarSystem_ResourceManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ResourceManager : ValueManager</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourceManager_HasProgressBar_" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.HasProgressBar*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourceManager_HasProgressBar" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.HasProgressBar">HasProgressBar</h4>
+  <div class="markdown level1 summary"><p>Determines if the manager has a reference to a ProgressBar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasProgressBar { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourceManager_HasRegeneration_" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.HasRegeneration*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourceManager_HasRegeneration" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.HasRegeneration">HasRegeneration</h4>
+  <div class="markdown level1 summary"><p>Determines if the manager has a reference to a ResourceRegeneration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasRegeneration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourceManager_ProgressBar_" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.ProgressBar*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourceManager_ProgressBar" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.ProgressBar">ProgressBar</h4>
+  <div class="markdown level1 summary"><p>Returns the ProgressBar synchronized with this ResourceManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgressBar ProgressBar { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBar.html">ProgressBar</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourceManager_Regeneration_" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.Regeneration*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourceManager_Regeneration" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.Regeneration">Regeneration</h4>
+  <div class="markdown level1 summary"><p>Set/Get the ResourceRegeneration component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourceRegeneration Regeneration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ResourceRegeneration.html">ResourceRegeneration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourceManager_Resource_" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.Resource*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourceManager_Resource" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.Resource">Resource</h4>
+  <div class="markdown level1 summary"><p>Get / Set the current Resource being managed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Resource Resource { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.Resource.html">Resource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourceManager_Initialize_" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.Initialize*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourceManager_Initialize" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>Sets the initial values, initializes the ProgressBar, add ValueChangedEvent listener to update it.<br>
+Initializes the ResourceRegeneration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Initialize()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Initialize">ValueManager.Initialize()</a></div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourceManager_InitializeProgressBar_" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.InitializeProgressBar*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourceManager_InitializeProgressBar" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.InitializeProgressBar">InitializeProgressBar()</h4>
+  <div class="markdown level1 summary"><p>Initialize the ProgressBar Component with the initial values and the Resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeProgressBar()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourceManager_InitializeRegeneration_" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.InitializeRegeneration*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourceManager_InitializeRegeneration" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.InitializeRegeneration">InitializeRegeneration()</h4>
+  <div class="markdown level1 summary"><p>Initialize the Regeneration Component if it has the same Resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeRegeneration()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourceManager_OnProgressBarChanged_" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.OnProgressBarChanged*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourceManager_OnProgressBarChanged" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.OnProgressBarChanged">OnProgressBarChanged()</h4>
+  <div class="markdown level1 summary"><p>Raise ProgressBarChangedEvent and pass the ProgressBar as parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnProgressBarChanged()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourceManager_SetProgressBar_" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.SetProgressBar*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourceManager_SetProgressBar_TetraCreations_ProgressBarSystem_ProgressBar_" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.SetProgressBar(TetraCreations.ProgressBarSystem.ProgressBar)">SetProgressBar(ProgressBar)</h4>
+  <div class="markdown level1 summary"><p>Replace the current Progress Bar with another one.<br>
+This will call UnsetProgressBar() to remove listeners from the current ProgressBar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetProgressBar(ProgressBar progressBar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBar.html">ProgressBar</a></td>
+        <td><span class="parametername">progressBar</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourceManager_SetRegenerationProgressBar_" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.SetRegenerationProgressBar*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourceManager_SetRegenerationProgressBar" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.SetRegenerationProgressBar">SetRegenerationProgressBar()</h4>
+  <div class="markdown level1 summary"><p>When the ProgressBar has changed we need to set it in the ResourceRegeneration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetRegenerationProgressBar()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourceManager_SetResourceDefaultValues_" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.SetResourceDefaultValues*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourceManager_SetResourceDefaultValues" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.SetResourceDefaultValues">SetResourceDefaultValues()</h4>
+  <div class="markdown level1 summary"><p>Sets PrecisionTolerance, AllowValueIncrease, AllowValueDecrease from the Resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetResourceDefaultValues()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourceManager_SetResourceForReferences_" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.SetResourceForReferences*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourceManager_SetResourceForReferences" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.SetResourceForReferences">SetResourceForReferences()</h4>
+  <div class="markdown level1 summary"><p>Sets the Resource inisde the ProgressBar and the ResourceRegeneration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetResourceForReferences()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourceManager_UnsetProgressBar_" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.UnsetProgressBar*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourceManager_UnsetProgressBar" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.UnsetProgressBar">UnsetProgressBar()</h4>
+  <div class="markdown level1 summary"><p>Remove all events listeners of the ProgressBar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UnsetProgressBar()</code></pre>
+  </div>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ResourceManager_ProgressBarChangedEvent" data-uid="TetraCreations.ProgressBarSystem.ResourceManager.ProgressBarChangedEvent">ProgressBarChangedEvent</h4>
+  <div class="markdown level1 summary"><p>Raised when setting a new ProgressBar</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ProgressBarChangedEventArgs&gt; ProgressBarChangedEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler&lt;TEventArgs&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBarChangedEventArgs.html">ProgressBarChangedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Tetra Creations documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

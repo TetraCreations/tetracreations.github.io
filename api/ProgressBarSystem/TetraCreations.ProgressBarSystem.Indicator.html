@@ -1,0 +1,633 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Indicator
+ | Tetra Creations documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Indicator
+ | Tetra Creations documentation ">
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TetraCreations.ProgressBarSystem.Indicator">
+
+
+  <h1 id="TetraCreations_ProgressBarSystem_Indicator" data-uid="TetraCreations.ProgressBarSystem.Indicator" class="text-break">Class Indicator
+</h1>
+  <div class="markdown level0 summary"><p>Uses an Image component with a Sprite and follows the current value of the progress bar.<br>
+We can use a 2D mask to prevent the RectTransform, and therefore the image, from extending beyond the progress bar.<br>
+We can also choose any color for the image, but I recommend setting UseSegmentColor to true and then modifying the ColorBrightnessMultiplier.<br>
+This way, the image can be slightly brighter (positive multiplier) or darker (negative multiplier) than the colour of the currently active segment.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">Indicator</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">TetraCreations</span>.<a class="xref" href="TetraCreations.ProgressBarSystem.html">ProgressBarSystem</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="TetraCreations_ProgressBarSystem_Indicator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class Indicator</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_ColorBrightnessMultiplier" data-uid="TetraCreations.ProgressBarSystem.Indicator.ColorBrightnessMultiplier">ColorBrightnessMultiplier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ColorBrightnessMultiplier</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_Enable" data-uid="TetraCreations.ProgressBarSystem.Indicator.Enable">Enable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Enable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_OriginHorizontal" data-uid="TetraCreations.ProgressBarSystem.Indicator.OriginHorizontal">OriginHorizontal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OriginHorizontal OriginHorizontal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OriginHorizontal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_OriginVertical" data-uid="TetraCreations.ProgressBarSystem.Indicator.OriginVertical">OriginVertical</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OriginVertical OriginVertical</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OriginVertical</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_Use2DMask" data-uid="TetraCreations.ProgressBarSystem.Indicator.Use2DMask">Use2DMask</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Use2DMask</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_UseSegmentColor" data-uid="TetraCreations.ProgressBarSystem.Indicator.UseSegmentColor">UseSegmentColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseSegmentColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="TetraCreations_ProgressBarSystem_Indicator_Color_" data-uid="TetraCreations.ProgressBarSystem.Indicator.Color*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_Color" data-uid="TetraCreations.ProgressBarSystem.Indicator.Color">Color</h4>
+  <div class="markdown level1 summary"><p>Get / Set the indicator color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color Color { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_Indicator_Initialized_" data-uid="TetraCreations.ProgressBarSystem.Indicator.Initialized*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_Initialized" data-uid="TetraCreations.ProgressBarSystem.Indicator.Initialized">Initialized</h4>
+  <div class="markdown level1 summary"><p>Determines if the indicator is ready to be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Initialized { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_Indicator_Size_" data-uid="TetraCreations.ProgressBarSystem.Indicator.Size*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_Size" data-uid="TetraCreations.ProgressBarSystem.Indicator.Size">Size</h4>
+  <div class="markdown level1 summary"><p>Get / Set the indicator rect transform size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Size { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="TetraCreations_ProgressBarSystem_Indicator_Hide_" data-uid="TetraCreations.ProgressBarSystem.Indicator.Hide*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_Hide" data-uid="TetraCreations.ProgressBarSystem.Indicator.Hide">Hide()</h4>
+  <div class="markdown level1 summary"><p>Hide the indicator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Hide()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_Indicator_Initialize_" data-uid="TetraCreations.ProgressBarSystem.Indicator.Initialize*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_Initialize_TetraCreations_ProgressBarSystem_ProgressBar_" data-uid="TetraCreations.ProgressBarSystem.Indicator.Initialize(TetraCreations.ProgressBarSystem.ProgressBar)">Initialize(ProgressBar)</h4>
+  <div class="markdown level1 summary"><p>Initial setup, we get the rectTransform of the ProgressBar and the FillSegment to calculate the indicator position when the fill amount change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(ProgressBar progressBar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBar.html">ProgressBar</a></td>
+        <td><span class="parametername">progressBar</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_Indicator_Initialize2DMask_" data-uid="TetraCreations.ProgressBarSystem.Indicator.Initialize2DMask*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_Initialize2DMask" data-uid="TetraCreations.ProgressBarSystem.Indicator.Initialize2DMask">Initialize2DMask()</h4>
+  <div class="markdown level1 summary"><p>Get the RectMask2D component and Enabled it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Initialize2DMask()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_Indicator_OnActiveSegmentChanged_" data-uid="TetraCreations.ProgressBarSystem.Indicator.OnActiveSegmentChanged*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_OnActiveSegmentChanged_System_Object_TetraCreations_ProgressBarSystem_SegmentEventArgs_" data-uid="TetraCreations.ProgressBarSystem.Indicator.OnActiveSegmentChanged(System.Object,TetraCreations.ProgressBarSystem.SegmentEventArgs)">OnActiveSegmentChanged(object, SegmentEventArgs)</h4>
+  <div class="markdown level1 summary"><p>When the active segment change we may use it's color to change the indicator's color to a brighter or darker tone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnActiveSegmentChanged(object sender, SegmentEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.SegmentEventArgs.html">SegmentEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_Indicator_OnProgressBarValueChanged_" data-uid="TetraCreations.ProgressBarSystem.Indicator.OnProgressBarValueChanged*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_OnProgressBarValueChanged_System_Object_TetraCreations_ProgressBarSystem_ValueChangedEventArgs_" data-uid="TetraCreations.ProgressBarSystem.Indicator.OnProgressBarValueChanged(System.Object,TetraCreations.ProgressBarSystem.ValueChangedEventArgs)">OnProgressBarValueChanged(object, ValueChangedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Change the indicator position and visibility when progress bar values changed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnProgressBarValueChanged(object sender, ValueChangedEventArgs args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ValueChangedEventArgs.html">ValueChangedEventArgs</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_Indicator_SetFillMethodAndOrigin_" data-uid="TetraCreations.ProgressBarSystem.Indicator.SetFillMethodAndOrigin*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_SetFillMethodAndOrigin_TetraCreations_ProgressBarSystem_ProgressBar_" data-uid="TetraCreations.ProgressBarSystem.Indicator.SetFillMethodAndOrigin(TetraCreations.ProgressBarSystem.ProgressBar)">SetFillMethodAndOrigin(ProgressBar)</h4>
+  <div class="markdown level1 summary"><p>Set the fill method and origin of the indicator based on the ProgressBar values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool SetFillMethodAndOrigin(ProgressBar progressBar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBar.html">ProgressBar</a></td>
+        <td><span class="parametername">progressBar</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_Indicator_SetPosition_" data-uid="TetraCreations.ProgressBarSystem.Indicator.SetPosition*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_SetPosition_System_Single_" data-uid="TetraCreations.ProgressBarSystem.Indicator.SetPosition(System.Single)">SetPosition(float)</h4>
+  <div class="markdown level1 summary"><p>Move the indicator horizontally on the right end of the filled area segment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetPosition(float percentage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">percentage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_Indicator_SetSegmentColor_" data-uid="TetraCreations.ProgressBarSystem.Indicator.SetSegmentColor*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_SetSegmentColor_Color_" data-uid="TetraCreations.ProgressBarSystem.Indicator.SetSegmentColor(Color)">SetSegmentColor(Color)</h4>
+  <div class="markdown level1 summary"><p>Set the indicator color to a brighter or darker using the segment color so we can see the indicator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetSegmentColor(Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>Segment color</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_Indicator_SetSize_" data-uid="TetraCreations.ProgressBarSystem.Indicator.SetSize*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_SetSize" data-uid="TetraCreations.ProgressBarSystem.Indicator.SetSize">SetSize()</h4>
+  <div class="markdown level1 summary"><p>Set the size of the Indicator's RectTransform according to the chosen fill method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetSize()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_Indicator_Show_" data-uid="TetraCreations.ProgressBarSystem.Indicator.Show*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_Show" data-uid="TetraCreations.ProgressBarSystem.Indicator.Show">Show()</h4>
+  <div class="markdown level1 summary"><p>Show the indicator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_Indicator_ToggleIndicatorVisibility_" data-uid="TetraCreations.ProgressBarSystem.Indicator.ToggleIndicatorVisibility*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_Indicator_ToggleIndicatorVisibility_System_Single_" data-uid="TetraCreations.ProgressBarSystem.Indicator.ToggleIndicatorVisibility(System.Single)">ToggleIndicatorVisibility(float)</h4>
+  <div class="markdown level1 summary"><p>Show the indicator if the progress bar amount is above 0.01f, otherwise hide it</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ToggleIndicatorVisibility(float progressBarPercentage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">progressBarPercentage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Tetra Creations documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -2,12 +2,11 @@
   "sitemap": {
     "fileOptions": {
       "api/*": {
-        "baseUrl": "https://tetracreations.github.io/",
-        "changefreq": "daily"
+        "changefreq": "monthly"
       }
     },
     "baseUrl": "https://tetracreations.github.io/",
-    "changefreq": "weekly"
+    "changefreq": "monthly"
   },
   "homepages": [],
   "source_base_path": "X:/Unity/BitWizer/Documentation",
@@ -24,11 +23,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.AudioMixerExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.AudioMixerExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.AudioMixerExtensions.html",
-          "hash": "gB5SJGhZxSBtywMIVRbRYWnwpZjNy17IyYTUgji1r/0="
+          "relative_path": "api/Core/TetraCreations.Core.AudioMixerExtensions.html",
+          "hash": "2HUbKMknVbsONgA1/8VecXlQqcI/XNYdF6u0Kn7nYFE="
         }
       },
       "is_incremental": false,
@@ -36,11 +35,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.CanvasGroupExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.CanvasGroupExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.CanvasGroupExtensions.html",
-          "hash": "1rgoo5DbDzOXhvRDUhqvhCjNPf1Noggu3YOLpImSSE0="
+          "relative_path": "api/Core/TetraCreations.Core.CanvasGroupExtensions.html",
+          "hash": "lkb33sVxqrI1Qv725hk3M2DbBUOluhSIytZgzjMs/I4="
         }
       },
       "is_incremental": false,
@@ -48,11 +47,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.CollectionExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.CollectionExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.CollectionExtensions.html",
-          "hash": "W8BMyxqMfkjP6ZzV9mV0BMm0IBiNPGfeUKJ6a5jD4+w="
+          "relative_path": "api/Core/TetraCreations.Core.CollectionExtensions.html",
+          "hash": "do00md1WStLjl3uPwZuJXLh7ExZsLaRoCvs02iEo350="
         }
       },
       "is_incremental": false,
@@ -60,11 +59,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Collider2DExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Collider2DExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Collider2DExtensions.html",
-          "hash": "YVPfwBqWEn2kgU+I4gBLN0TVD8BF2F0GVG1X0f8klWw="
+          "relative_path": "api/Core/TetraCreations.Core.Collider2DExtensions.html",
+          "hash": "jo+80YYeHihj0dJRTnyUUXYxA0guTfgwxiU7o4DNtRw="
         }
       },
       "is_incremental": false,
@@ -72,11 +71,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.ColliderExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.ColliderExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.ColliderExtensions.html",
-          "hash": "Ntvpz6D7J3JWjaLcnYbT0SjBQvh4e1ncIc2CDDZQlhA="
+          "relative_path": "api/Core/TetraCreations.Core.ColliderExtensions.html",
+          "hash": "QOzgKCrQfvZpkY5JsRNRsI2IIEZBjALzVHRc5ZjYF/0="
         }
       },
       "is_incremental": false,
@@ -84,11 +83,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.ColorExtentions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.ColorExtentions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.ColorExtentions.html",
-          "hash": "LU5zMwfX5uEzo8pXkz7I9Crs4BnM+ux4FTtNnzFWnAA="
+          "relative_path": "api/Core/TetraCreations.Core.ColorExtentions.html",
+          "hash": "txkeBAofwIqVpmPB1tpiLBj50gqRGrE9AeWahRxOkXE="
         }
       },
       "is_incremental": false,
@@ -96,11 +95,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.ComparableExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.ComparableExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.ComparableExtensions.html",
-          "hash": "Yb6u//9zU5EnPxQAq/LqsWrP0YjZjeXCPILUxJphMN8="
+          "relative_path": "api/Core/TetraCreations.Core.ComparableExtensions.html",
+          "hash": "1flIIFOQ5S/kY8o21I+Xx0pKijNVu+ndNMAY/hy1OSY="
         }
       },
       "is_incremental": false,
@@ -108,11 +107,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.ConditionType.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.ConditionType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.ConditionType.html",
-          "hash": "CJhBvmlWkTaSi//mSwLQHWz/lTIrQ/tro/BXrFP5Ofs="
+          "relative_path": "api/Core/TetraCreations.Core.ConditionType.html",
+          "hash": "6VTQ9eE955lZtAULsjvZ5/aGC3mM0QrkLsuSvMJvJH4="
         }
       },
       "is_incremental": false,
@@ -120,11 +119,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.DebugLevel.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.DebugLevel.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.DebugLevel.html",
-          "hash": "rJe3BygPtZjQU6SODROglxH4J10ojr2sKaCuz/O5eVY="
+          "relative_path": "api/Core/TetraCreations.Core.DebugLevel.html",
+          "hash": "+21xlA9Xrq0YzSS9fDEpk5UE+xk2hW5r3BiqUTXwDEk="
         }
       },
       "is_incremental": false,
@@ -132,11 +131,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.DictionaryExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.DictionaryExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.DictionaryExtensions.html",
-          "hash": "aMd0NvsC2whyAUAF2ATzhdqPkc/fq7hVk7ieSGKLbQ8="
+          "relative_path": "api/Core/TetraCreations.Core.DictionaryExtensions.html",
+          "hash": "u7Zuj2/DbbWL7T7R6RzXy5QG8tnW1IqsZ22VD0TVNP8="
         }
       },
       "is_incremental": false,
@@ -144,11 +143,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Editor.AssetDatabaseExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Editor.AssetDatabaseExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Editor.AssetDatabaseExtensions.html",
-          "hash": "yoIJLJOZUP1PhhGcCaGExQ5Fhw2j8UqDvT2+GwCEiD8="
+          "relative_path": "api/Core/TetraCreations.Core.Editor.AssetDatabaseExtensions.html",
+          "hash": "N66dkvtTzWxCI4Ko5hDtuB5ujY+kYrU2OAgH3lgy/gM="
         }
       },
       "is_incremental": false,
@@ -156,11 +155,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Editor.AudioMixerExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Editor.AudioMixerExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Editor.AudioMixerExtensions.html",
-          "hash": "XC5orD8DYyuJSE78f1zKfXWi6u3c9XyoPvnemmgCTWc="
+          "relative_path": "api/Core/TetraCreations.Core.Editor.AudioMixerExtensions.html",
+          "hash": "QWqSA13BK3J+KmUrW0yt4bAfGWSqkEIgOKjgiDPs6Mo="
         }
       },
       "is_incremental": false,
@@ -168,11 +167,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Editor.EditorExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Editor.EditorExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Editor.EditorExtensions.html",
-          "hash": "Eg1Kt375pgdfgM7fRxwT3Xz7z46q1sjKdQi7ymd31bc="
+          "relative_path": "api/Core/TetraCreations.Core.Editor.EditorExtensions.html",
+          "hash": "GZ9IKKWX+eVBrpgnYwZIeyoz+Vu5yuyd3UuIaKIxey4="
         }
       },
       "is_incremental": false,
@@ -180,11 +179,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Editor.GradientExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Editor.GradientExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Editor.GradientExtensions.html",
-          "hash": "CVtaQt2Cj+YFuqVKrBFGZUHtn5jhAh2g2TYFwxjZeUs="
+          "relative_path": "api/Core/TetraCreations.Core.Editor.GradientExtensions.html",
+          "hash": "KA9coVrbPyPt0ywgEK5f3+1rf2+dp/6S5w5kX+37RwI="
         }
       },
       "is_incremental": false,
@@ -192,11 +191,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Editor.MonoScriptExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Editor.MonoScriptExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Editor.MonoScriptExtensions.html",
-          "hash": "2M9sfxF/1caesv7lW/65gQrHCeyiNGI7ncSLpUjumxs="
+          "relative_path": "api/Core/TetraCreations.Core.Editor.MonoScriptExtensions.html",
+          "hash": "OQ2vZCaSor35X9XxM9Yga1/G70NNdKFkBEHmRxxcA4w="
         }
       },
       "is_incremental": false,
@@ -204,11 +203,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Editor.PathReferenceExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Editor.PathReferenceExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Editor.PathReferenceExtensions.html",
-          "hash": "2hE9yCTI1CJnZJiNi26GqE4IJevMTUy+Hd0VH+IgKVM="
+          "relative_path": "api/Core/TetraCreations.Core.Editor.PathReferenceExtensions.html",
+          "hash": "RbmwhpDL0k2moaUc0GDY7wxWHJsuhiCypljKcRb8/vw="
         }
       },
       "is_incremental": false,
@@ -216,11 +215,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Editor.UIToolkitHelper.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Editor.UIToolkitHelper.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Editor.UIToolkitHelper.html",
-          "hash": "d2O66ocfJAwvWf1y+MraDeyPgpZmEPM+OHlGLIV+vkw="
+          "relative_path": "api/Core/TetraCreations.Core.Editor.UIToolkitHelper.html",
+          "hash": "WxKMrTkL2TapHeWH6RN/XOpVsGJNMBN/0YD6IwZ+Ie0="
         }
       },
       "is_incremental": false,
@@ -228,11 +227,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Editor.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Editor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Editor.html",
-          "hash": "/JrDtODP07t1tuPxz9iNzRfjk6AY7gSR8NT1LKD1wdo="
+          "relative_path": "api/Core/TetraCreations.Core.Editor.html",
+          "hash": "CoRLgUdkkaxB8IveUlpZ62fCfXPOyGvKIlSuwav1PBE="
         }
       },
       "is_incremental": false,
@@ -240,11 +239,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.EnumerableExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.EnumerableExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.EnumerableExtensions.html",
-          "hash": "WbveZcR7K5YbqYp5udo6pcLCBfV1k3AO+beJa1dH++c="
+          "relative_path": "api/Core/TetraCreations.Core.EnumerableExtensions.html",
+          "hash": "qkZ/mgzZG47YzDP+XdJZ5Y/CKxXPscguZNxIoUnkyEI="
         }
       },
       "is_incremental": false,
@@ -252,11 +251,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.FieldInfoExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.FieldInfoExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.FieldInfoExtensions.html",
-          "hash": "mrkdOEf8KL2Gycbg4vUskPaNKXBrgowpYXjzOCmL/VU="
+          "relative_path": "api/Core/TetraCreations.Core.FieldInfoExtensions.html",
+          "hash": "HgMlXSeKZFMCAfnQRqe9zOuWWL66Xr4C92c0uKaITK4="
         }
       },
       "is_incremental": false,
@@ -264,11 +263,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.FloatExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.FloatExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.FloatExtensions.html",
-          "hash": "IBXr2tTEZiB7D2KKNmVzR+9ATij954vGCc9w5FZI7dU="
+          "relative_path": "api/Core/TetraCreations.Core.FloatExtensions.html",
+          "hash": "fQpm7wMz9/TWexVndSjz66KGQcRAgTeuAh11KjOTxwA="
         }
       },
       "is_incremental": false,
@@ -276,11 +275,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.GameObjectExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.GameObjectExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.GameObjectExtensions.html",
-          "hash": "f9Gp57jd5Gpxe5g1RCloLLs2ddE2VRW/Oy2noiGLrao="
+          "relative_path": "api/Core/TetraCreations.Core.GameObjectExtensions.html",
+          "hash": "VH2ZL3FoOaVa+m5ZWNDsKHhhoEiEs/S+Oh0NPM+W1TE="
         }
       },
       "is_incremental": false,
@@ -288,11 +287,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.ImageExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.ImageExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.ImageExtensions.html",
-          "hash": "GHFMWjM3C5i7f2mb0Z5P0Atc53BqQNkkwEPzihG0+Ig="
+          "relative_path": "api/Core/TetraCreations.Core.ImageExtensions.html",
+          "hash": "4SNYgPE+P5MAdM/MC4b8lNbgF11vGyqvYc4dccCalBs="
         }
       },
       "is_incremental": false,
@@ -300,11 +299,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.IntegerExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.IntegerExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.IntegerExtensions.html",
-          "hash": "ALZYMGJWObKqUsEThUcbolTJmSjUhrOoPdv8mlZMR9w="
+          "relative_path": "api/Core/TetraCreations.Core.IntegerExtensions.html",
+          "hash": "H0G1sTKsSWtlw8Jirzmje2/c8cNJ0Qro/j+Vq2UaJP4="
         }
       },
       "is_incremental": false,
@@ -312,11 +311,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.LayerMaskExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.LayerMaskExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.LayerMaskExtensions.html",
-          "hash": "4RRfsoT2Sp4S5Xb4bhNNbEpY5VNZhF71oGUwcn09p58="
+          "relative_path": "api/Core/TetraCreations.Core.LayerMaskExtensions.html",
+          "hash": "dFXOrdLN0S5BXzIBU6igjVkVwbr8rHEqVtkQ0iXIA00="
         }
       },
       "is_incremental": false,
@@ -324,11 +323,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.MatchInclusive.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.MatchInclusive.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.MatchInclusive.html",
-          "hash": "3Rq6M3HFUlXMgNE+yuz9/95ji6SRk2CY1CIZjzuWtZ0="
+          "relative_path": "api/Core/TetraCreations.Core.MatchInclusive.html",
+          "hash": "kSdHAffh42XhhP0loGCaPRviiedJZM1fXSoRL0jYd5A="
         }
       },
       "is_incremental": false,
@@ -336,11 +335,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.ObjectExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.ObjectExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.ObjectExtensions.html",
-          "hash": "0A5kZSfs75c4uKDrTAQSv/HpXnkK4gkgrFL07Vcgp4Y="
+          "relative_path": "api/Core/TetraCreations.Core.ObjectExtensions.html",
+          "hash": "YyiI5uZ3iKEggs5ejBPyBx3hnGf2wwAh4NpzC5r2K8g="
         }
       },
       "is_incremental": false,
@@ -348,11 +347,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.QuaternionExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.QuaternionExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.QuaternionExtensions.html",
-          "hash": "MOSEkYuQIdama1sm4LZpfBAun4c6B2RrBOqSWrmr+Dg="
+          "relative_path": "api/Core/TetraCreations.Core.QuaternionExtensions.html",
+          "hash": "ZZGyS5rkjhZkTwS7IfFYPXw287VgrBDXLUk1EKFvibU="
         }
       },
       "is_incremental": false,
@@ -360,11 +359,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.RandomExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.RandomExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.RandomExtensions.html",
-          "hash": "xDkUTWo4xujN5vJ9wIHguoVlKkzLz58KTj9V9bzbqbg="
+          "relative_path": "api/Core/TetraCreations.Core.RandomExtensions.html",
+          "hash": "UAb25T5eGF9Epzt0SyuIWyIMGd/esnJqWQMndP2Z6Xk="
         }
       },
       "is_incremental": false,
@@ -372,11 +371,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.RectTransformExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.RectTransformExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.RectTransformExtensions.html",
-          "hash": "0grBwTzWHPhpG2vocWvvC1JjOVlGnv2d3LAXyFk5/xc="
+          "relative_path": "api/Core/TetraCreations.Core.RectTransformExtensions.html",
+          "hash": "RpwKWulzZwOVnmoyfkHTUC4hl1VGSc3haZeEVrB+xKI="
         }
       },
       "is_incremental": false,
@@ -384,11 +383,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.RendererExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.RendererExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.RendererExtensions.html",
-          "hash": "GcD+SAZ8r6fXDegtgh8GTgK89twwwyjRSnhWGZHbeQM="
+          "relative_path": "api/Core/TetraCreations.Core.RendererExtensions.html",
+          "hash": "UOn5OH+Y0WW3tnQmEKs39yZoTW9sxu/xXZSu144XQmA="
         }
       },
       "is_incremental": false,
@@ -396,11 +395,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.RoundMethod.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.RoundMethod.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.RoundMethod.html",
-          "hash": "BHBB6LB17x9zNxlk4Q1tV06b2ezFGCIaCc8yboB1m6E="
+          "relative_path": "api/Core/TetraCreations.Core.RoundMethod.html",
+          "hash": "gWDAum96LJvMG5fb/KknqYkbeqa7dBWDWzmL31eLZ5U="
         }
       },
       "is_incremental": false,
@@ -408,11 +407,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.StringExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.StringExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.StringExtensions.html",
-          "hash": "bUD3td7cid3DOt7aGzG2v5WmhN3NkfKeKDMMDtqn7sY="
+          "relative_path": "api/Core/TetraCreations.Core.StringExtensions.html",
+          "hash": "VxEcWJ87wZHATeYuWVJCsOxpW5Ww7isAoBxFaqD9Jao="
         }
       },
       "is_incremental": false,
@@ -420,11 +419,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.TextureExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.TextureExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.TextureExtensions.html",
-          "hash": "6h4/u6L/aZwgLMt8uvvMCWjw3hCtYA0XfZxpWpICAig="
+          "relative_path": "api/Core/TetraCreations.Core.TextureExtensions.html",
+          "hash": "+1EwZzgeqa1ZtSHDl2Yh3WH5KCC8xPtQyt2dei8NWvc="
         }
       },
       "is_incremental": false,
@@ -432,11 +431,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.TransformExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.TransformExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.TransformExtensions.html",
-          "hash": "5yyk/5LfKJY9FFK73mmBH2m43hJ1UiwAwawBu6940hA="
+          "relative_path": "api/Core/TetraCreations.Core.TransformExtensions.html",
+          "hash": "UwShJwGcidlccb2nsQArhJAg8pTsaOfMaNqlGohHLSI="
         }
       },
       "is_incremental": false,
@@ -444,11 +443,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.TypeExtensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.TypeExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.TypeExtensions.html",
-          "hash": "uZxbLNfsBDxCNNaNRCIO2nFyactx8snhCDgJZnzS1lk="
+          "relative_path": "api/Core/TetraCreations.Core.TypeExtensions.html",
+          "hash": "4fFoOIJ56Ok2S/2OeISC/zxrfLUO/A6U2E/+bs9gObA="
         }
       },
       "is_incremental": false,
@@ -456,11 +455,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.TypeUtility.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.TypeUtility.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.TypeUtility.html",
-          "hash": "a3BlzJXrTU/wFDe1aee0/uOZtC9G4O63kXNrl0YyMPw="
+          "relative_path": "api/Core/TetraCreations.Core.TypeUtility.html",
+          "hash": "TDQm0wTbOyRRbK0Nh81JpEJuflx3Q7OgX6Th0ALhQs4="
         }
       },
       "is_incremental": false,
@@ -468,11 +467,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Utility.Billboard.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Utility.Billboard.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Utility.Billboard.html",
-          "hash": "P9p8GXvriK+JxHFK3y9TU8v9nn3mETWXf82Rn2gO8+8="
+          "relative_path": "api/Core/TetraCreations.Core.Utility.Billboard.html",
+          "hash": "NrJeWxXk7xkG6N6bXJTDt+dkZty43xbwH967E4tYHqU="
         }
       },
       "is_incremental": false,
@@ -480,11 +479,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Utility.CountdownTimer.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Utility.CountdownTimer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Utility.CountdownTimer.html",
-          "hash": "DeQQn/iXA37vNPb1Ioev5QoT9shVnV9hVA+r6F7zthY="
+          "relative_path": "api/Core/TetraCreations.Core.Utility.CountdownTimer.html",
+          "hash": "IYJZpoujxhTu0fGPQpLTmGQDeYNWK18iR+iH2xb5pso="
         }
       },
       "is_incremental": false,
@@ -492,11 +491,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Utility.FloatValueCondition.ConditionIsMet.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Utility.FloatValueCondition.ConditionIsMet.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Utility.FloatValueCondition.ConditionIsMet.html",
-          "hash": "NL6mG23R2i+sjZCjTmoZZnAsa8kAWZ3ByERPHO8tR+Q="
+          "relative_path": "api/Core/TetraCreations.Core.Utility.FloatValueCondition.ConditionIsMet.html",
+          "hash": "PYtzyH+0Sipcs2+PJUB8HEvza2Xgb+4mkqgXrzTWEe8="
         }
       },
       "is_incremental": false,
@@ -504,11 +503,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Utility.FloatValueCondition.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Utility.FloatValueCondition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Utility.FloatValueCondition.html",
-          "hash": "hW6AJRMvSTNNFhrviggh0EVB1FuCB0w98QMmAgPWPkQ="
+          "relative_path": "api/Core/TetraCreations.Core.Utility.FloatValueCondition.html",
+          "hash": "JZr6XZ+hp6pNDoxdiY4tNz4LECIuKPAn7pb4v8h4guc="
         }
       },
       "is_incremental": false,
@@ -516,11 +515,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Utility.LayerMaskFilter.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Utility.LayerMaskFilter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Utility.LayerMaskFilter.html",
-          "hash": "SO62PmRv/hll6V52Gss5R11dDrhO2QJ+SLrDo6mKG4g="
+          "relative_path": "api/Core/TetraCreations.Core.Utility.LayerMaskFilter.html",
+          "hash": "o1YeJOvV3d270sx9sXHH7KO+gyqgnG6grC20bsBxndY="
         }
       },
       "is_incremental": false,
@@ -528,11 +527,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Utility.Singleton-1.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Utility.Singleton-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Utility.Singleton-1.html",
-          "hash": "gPdZZXrq16Td4eHL9KFSsylVLb3zBEX60/St+ODRVf0="
+          "relative_path": "api/Core/TetraCreations.Core.Utility.Singleton-1.html",
+          "hash": "HaO49R+E/zubwoEpvonOYRn7s8PBSDyGHWydbkkz5ZM="
         }
       },
       "is_incremental": false,
@@ -540,11 +539,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Utility.Singleton.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Utility.Singleton.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Utility.Singleton.html",
-          "hash": "nFj9gglvIc/QC+w2+r2lwdNfML0K7sQu/MN/+UoR4oQ="
+          "relative_path": "api/Core/TetraCreations.Core.Utility.Singleton.html",
+          "hash": "kSflpkBheIhTt0m1GSPMDvhtffvmKD7HBOKTXHO9+4c="
         }
       },
       "is_incremental": false,
@@ -552,11 +551,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Utility.Timer.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Utility.Timer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Utility.Timer.html",
-          "hash": "bN1fRz8ueN7Tqm38PUdX9IWUxkV6Ec7bxZZmXIkPFaY="
+          "relative_path": "api/Core/TetraCreations.Core.Utility.Timer.html",
+          "hash": "uQumkhVKYl0V2qtJsATpuc8rdYu5HxP7+H4G3sghybE="
         }
       },
       "is_incremental": false,
@@ -564,11 +563,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Utility.TimerManager.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Utility.TimerManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Utility.TimerManager.html",
-          "hash": "Y4WqQTJz/EOqPjkXwvHHWs+eP8ZqrSQPAntajqSWNig="
+          "relative_path": "api/Core/TetraCreations.Core.Utility.TimerManager.html",
+          "hash": "Mu1HenQWgV2ZpYtVs/SUdBr4haN7+flVrjOqbELX8B8="
         }
       },
       "is_incremental": false,
@@ -576,11 +575,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Utility.Trigger2DCollider.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Utility.Trigger2DCollider.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Utility.Trigger2DCollider.html",
-          "hash": "XmXfTFVY2fj4OO9eQUutEoLoOhAxra3HrlgjkDvmQng="
+          "relative_path": "api/Core/TetraCreations.Core.Utility.Trigger2DCollider.html",
+          "hash": "S56fQJHjVCPn5luwspBN+OwPen6LhjaCFc3A32uiUKI="
         }
       },
       "is_incremental": false,
@@ -588,11 +587,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Utility.TriggerCollider.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Utility.TriggerCollider.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Utility.TriggerCollider.html",
-          "hash": "In6U9F/8tuJpwgmX6BMXLWYSgij83jTLqhiKVbB56gw="
+          "relative_path": "api/Core/TetraCreations.Core.Utility.TriggerCollider.html",
+          "hash": "g/L8QmQLRCWaJdG4UsU+WHCG94P7ksikJ9zj9+gkY58="
         }
       },
       "is_incremental": false,
@@ -600,11 +599,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Utility.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Utility.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Utility.html",
-          "hash": "MYdkqsGN5gdTZVw8fOSIkmDf2d5B23QE2fA4W6TrMK8="
+          "relative_path": "api/Core/TetraCreations.Core.Utility.html",
+          "hash": "Ynydmc61nlzu3la3fLyccJ0UsSHdm2m4HklH1WJZPcE="
         }
       },
       "is_incremental": false,
@@ -612,11 +611,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Vector2Extensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Vector2Extensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Vector2Extensions.html",
-          "hash": "xiro6U1UPP39LXsJlYYnzRlKZhUT4bnWQ0q8LGfCFEo="
+          "relative_path": "api/Core/TetraCreations.Core.Vector2Extensions.html",
+          "hash": "lwcSuwVWG6lssd54zyaP1eATnzARKYWhecQ/XIGqucQ="
         }
       },
       "is_incremental": false,
@@ -624,11 +623,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.Vector3Extensions.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.Vector3Extensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.Vector3Extensions.html",
-          "hash": "SKa1Z9Gh415PkoY0cEy9VfCBZfzmJZDHOgM9wXqWIFQ="
+          "relative_path": "api/Core/TetraCreations.Core.Vector3Extensions.html",
+          "hash": "M3ruCH/5f2xEsagLnnjUYgA2Y9ZeW8aWorz3ocdIhis="
         }
       },
       "is_incremental": false,
@@ -636,11 +635,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TetraCreations.Core.yml",
+      "source_relative_path": "api/Core/TetraCreations.Core.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TetraCreations.Core.html",
-          "hash": "gXX0kUneAUxDNtZBrT4lpuY6M5WLeV429MBp65AsO8k="
+          "relative_path": "api/Core/TetraCreations.Core.html",
+          "hash": "9tx8c//5S6AfiwwIlZe6gL4hbM6R+E8nCW+t6DNwFZk="
         }
       },
       "is_incremental": false,
@@ -648,11 +647,983 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "api/toc.yml",
+      "source_relative_path": "api/Core/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "api/toc.html",
+          "relative_path": "api/Core/toc.html",
           "hash": "LaeMUG0SvuNJxfI8lB4IUvEpxct02Qvg5Q8DaoUNAUo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ActiveConditionChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ActiveConditionChangedEventArgs.html",
+          "hash": "1JHc/mTn14s6A1mUKbLrDz0F4ti7yQWKTJn8AC3Q2EE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.AnimationsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.AnimationsManager.html",
+          "hash": "T47lCzMC9KzHgZ2d44VfZQhoDmi4oU2QnmtqoXTlfqo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.DisablingType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.DisablingType.html",
+          "hash": "LeLQJk2kbh67ZSLdq97FpZL7RU6dP/qkQXp70ioeGOM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.DrawIfAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.DrawIfAttribute.html",
+          "hash": "2RWJ5AqcxeOBXbX5YHNF+AZ2vLFeqiq0T2Q7gtQMvC0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.Editor.DrawIfPropertyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.Editor.DrawIfPropertyDrawer.html",
+          "hash": "D6xeLMqctOmoAd9wpmCl/lVYVOXjK57vVgvKLE5XSjs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.Editor.ReadOnlyPropertyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.Editor.ReadOnlyPropertyDrawer.html",
+          "hash": "lZPjladgkY8CfAF0GsfFKPN/auo9cUd9Rr/rUKNsBc0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.Editor.html",
+          "hash": "19B3sBPCfF5W+Rz/+pQaYoXDeftP4hQtJ6oMG27JcBo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.ReadOnlyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.ReadOnlyAttribute.html",
+          "hash": "hLdM5gvTvOJmhiYMewPEQp+creTD7XP9MK7fPcjmtaU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.html",
+          "hash": "hrBIKN0VRrBEyUUx5ORDtQ7C3DGBvKjKL/jQx4kRwl4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.BarSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.BarSegment.html",
+          "hash": "tsiaWVpnvtJVb2TAUL6ao5iOyvfwS7rlP58AJ9UgqrE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.BorderType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.BorderType.html",
+          "hash": "hJrJvmDWicPpiQemhBThJ+OjfTXrYFJkgNPMo+G5fwg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Borders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Borders.html",
+          "hash": "HtotAG+CSacP+hkH90OASuLqF+gCQI9aKP/BR9Zvabg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ColorChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ColorChangedEventArgs.html",
+          "hash": "Gs33/VzKl95W+5X8x8TAdLNf0HNRBDAFXIscEjngnPM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.BaseEditor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.BaseEditor-1.html",
+          "hash": "jKqfIuQ7hv19pWUWWgAy+A/LzzubCAeOXqU+cmFLBy8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ProgressBarEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ProgressBarEditor.html",
+          "hash": "LULFrkhWJHwvnyyfRHSgTNFC0tOKI3bSu6aJDQ82roc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ProgressBarPropertyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ProgressBarPropertyDrawer.html",
+          "hash": "M/KXslJ5B4mGLAzUCOZ+AT4JaJ4Chv+c0n/JxVkD+c0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourceManagerEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourceManagerEditor.html",
+          "hash": "0XQW0fMLpZpkhzizoD+uuqpRtW2gwwA7E76dY5FW8d0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourceRegenerationEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourceRegenerationEditor.html",
+          "hash": "2px1UZ3Iii6g1jbn/rczLG9E5D+qjjp320mFBRO3Vj0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourceRegenerationPropertyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourceRegenerationPropertyDrawer.html",
+          "hash": "QWY+jT1SsdxCqHvsURAeVK7RXAsIuOjuvDXie9z5ecI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourceValueManagerPropertyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourceValueManagerPropertyDrawer.html",
+          "hash": "7lqUfRCz0RhqUCDODqfUMWWpIzSKJUHgTP1TJffxMIQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourcesControllerEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourcesControllerEditor.html",
+          "hash": "VhcSPuXP62EMnFZUGMlZXMIWB3C6yG+IRQsWd1DTf4M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SegmentCallbackController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SegmentCallbackController.html",
+          "hash": "wTHCImCaTfprhm+aw3b1gVaZAbehwHZBFevzTKR5fxU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SegmentControllerEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SegmentControllerEditor.html",
+          "hash": "fJKcWnCnl0G5ec0Bu1f2PGA1d+VQ5xTPbCJ/tE28Bt0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SerializedBorders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SerializedBorders.html",
+          "hash": "bL+e2Kgs+SOxC5greJa8G4l/OZyDxXdnwkT7t+H06ak="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SerializedImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SerializedImage.html",
+          "hash": "Ugy5zwpJ6KaHtg7r27EIXu8ihv8MXIaf9k9IJ09HZiU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SerializedImageField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SerializedImageField.html",
+          "hash": "ELeHZOc+e2ZI2NTSd0L9EemmUwn75t+tANbO0l9AAuw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SerializedTextMeshProUGUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SerializedTextMeshProUGUI.html",
+          "hash": "DhM2XqYhXAAVNuU+3+prQHFqkHp92YzGFduf65Kma4A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.TabMenuController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.TabMenuController.html",
+          "hash": "E2XQpnJyj6e2M8AQZNAZo939Qz5mR8iqV97rF2o5FK0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.UIToolkitHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.UIToolkitHelper.html",
+          "hash": "EWWiDrDx2GCpQlPVeve3y+4sPiMY1APs174US/FBDj0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.html",
+          "hash": "F3xAgGwoaHHtd+f0UMqhYgEVOpsXaP8r+6HPHHKbdTQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.FillSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.FillSegment.html",
+          "hash": "JUNigyeikJIyBKWk+cUGKBXxyBTNgFX6szjMTHGrZPU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.IColorChanger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.IColorChanger.html",
+          "hash": "IpuwGFjyfCTW7mIMox3oMKTK7SfwEzrZ5o8RvhE4sfw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Indicator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Indicator.html",
+          "hash": "f2jYPJ4N4wgNTi22QVYYnLD1YD2DXdOrg+zqQJqLC+s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.InitialResourceValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.InitialResourceValue.html",
+          "hash": "FeVCM8E9gBQ7DU7hYMBcZZBBWuugug21oO80Jzx53sM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.MaximumValueReachedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.MaximumValueReachedEventArgs.html",
+          "hash": "TOeBwUi+i5XfAndcsBHJiHhNfSZ7TV0aqu6kipIlXxM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.MinimumValueReachedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.MinimumValueReachedEventArgs.html",
+          "hash": "bj0FivGLvVUncQcogbhHN32Gbpgls2tglI+QlkUWxUM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.PerformanceManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.PerformanceManager.html",
+          "hash": "/45rjDjW13xTUPR/rhqIM0TnZ5ixavI0i6XYJ59iWdo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgessBarCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgessBarCondition.html",
+          "hash": "TC9OXalaeZvfaHvAbk1RZh47dMjE7M/EFaDCZYA3DUQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBar.html",
+          "hash": "emV//6LGS8YUsaWP7xu3IZy2wMzD7d9kxi5BbSufSPM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarChangedEventArgs.html",
+          "hash": "IrcSYLsYaXHKM1z0M71yIrZTGX6MyrMrvJHhuD0MwWQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarInitializedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarInitializedEventArgs.html",
+          "hash": "ee9uOWwZhJhmPP/PveTm1OZH4I2TYUfGFtCtFu5FxPw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegeneration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegeneration.html",
+          "hash": "zyYtE1KTxG2XPCj2EK4r4SXHnmTYQi4ZDnrcNJxuesg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationInitializedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationInitializedEventArgs.html",
+          "hash": "QRtW/0KmlPtF4/AwYyAuRjkKzVxltceI1tplnZIoWE4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRuntimeData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRuntimeData.html",
+          "hash": "40+SjVC+PwT6gO3M3fPVmD3EGm/iH6r5CcX2+f08WbI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarText.html",
+          "hash": "k4q7AoIvKWPTcWLMMMoKW2+S1Y1YU3A35+8OurDmjbo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationActivationEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationActivationEventArgs.html",
+          "hash": "ekW2NzWEWY6fhyfDCW3hPzrGQelcd/dcArjelWeyztE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationDisplay.html",
+          "hash": "CmcjHTmVOeYyMJiJgMssHHRMeEwhb57mjymuM1WpqYo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationState.html",
+          "hash": "B7gy3J3EQXg51vMnw/8D/QOBXDChcjVZsLuAO7Ca3+s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationStateEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationStateEventArgs.html",
+          "hash": "OQ6f7jb5ScUeEuZYssg3NWvFF73kmLp20c1f0ZDlA9Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs.html",
+          "hash": "aXnP0kbV5HIX3gt529LhxxajweM9zZnVV00aSOdJIvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Resource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Resource.html",
+          "hash": "xLaOhNZ+0E/Je39T2Mn5aQ/Kb5wlM5o6xhh8hazfxh0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ResourceManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ResourceManager.html",
+          "hash": "pn8phayJCuuRL6xvWxeokV7Xn9pe6rML2ZIRgwQus8w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ResourceRegeneration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ResourceRegeneration.html",
+          "hash": "YXWYPhPa3JaA021rGWCTeLXdMpcpE4ykyd+E+uhO4qI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ResourcesController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ResourcesController.html",
+          "hash": "kMHbWxKG8HryDT6kNIRg/1gmeKZIHk/B5RYeEpeD6t4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.SegmentController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.SegmentController.html",
+          "hash": "BOZ6iRTsq/KM+GJVqjt1v3F8xXevMz/7NtRbIpkxyn0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.SegmentEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.SegmentEventArgs.html",
+          "hash": "rOnYZY1+l9ug808fMr2Q7SaQFsbznkG8r9Ea6PmQbZQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.SegmentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.SegmentType.html",
+          "hash": "pE48h/90r7CDq9c9JmnhGq5Z635IwvBm57VThVlbvxU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.TextFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.TextFormat.html",
+          "hash": "Wouq1NQTOtr4MjfXVigX7Q3v/Kl5IVSMwIe2j3udZiI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.CameraController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.CameraController.html",
+          "hash": "PrxMEpupwjItJ5HeOoKN4PmkqrCR5z4kzZSNLQNB7CA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.CountdownTimer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.CountdownTimer.html",
+          "hash": "hX+JfVVCnFi2DVDFQFIWfu3EWdUjy+KgeeotnoNSaHE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.FloatValueCondition.ConditionIsMet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.FloatValueCondition.ConditionIsMet.html",
+          "hash": "89qHK54mTH7SzHxnFOjPAJ09b/FPGqj9NPDXwZokfyU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.FloatValueCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.FloatValueCondition.html",
+          "hash": "XO5rdHIBc1+WNWsGD0fcTXp3ZMDHnGiSjRY0cI+Omys="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.NumericConditionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.NumericConditionType.html",
+          "hash": "4l8iTjiOl563QfOeZhpOKP4E+9KV5k3gd0nOwoqXBPo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.PulseImageEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.PulseImageEffect.html",
+          "hash": "+YLte1DUvLvyAqXDTFZ268EPonzzzpo5xR4ujtluEh8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.ShakeTransform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.ShakeTransform.html",
+          "hash": "3Y65m19dt/eZtT5WBfLB3auqZ0SnNfvUTFuLLqrQuTo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.Singleton-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.Singleton-1.html",
+          "hash": "b4Qxd3NorUPbs3diTZPFgHvPz2hj5X4rIGBorcwBfIo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.Singleton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.Singleton.html",
+          "hash": "OgbeBKsreoVVzR5D5ZumeNfT5hNhOa+sI8hX3ODxH+E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.Timer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.Timer.html",
+          "hash": "GtADZ2g3+0dhhQPNXdFj0VTI1Hu0eEe2l2V/GXi1/Bw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.html",
+          "hash": "En+jEfuwpC7hTwGkRmjXqDw2wyhFqfa6fU13nVcmcTU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueChangeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueChangeType.html",
+          "hash": "X7mttCQDm7OC0D03b5KekG3g3yULUi+E8iBV1CAb/SM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueChangedEventArgs.html",
+          "hash": "ZeWhOMVJjVjSHjEn7tCNBLb4lelYsi7l09q9D5uBsEs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html",
+          "hash": "NjMlIi9dXlbNpuOxrJcGQq0s2Jl9Iut6QA6Yi902i6s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManagerInitializedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManagerInitializedEventArgs.html",
+          "hash": "SUBmk/KbaCoxLXNsahQ7mMs65JzVzS+eObabFlBslmo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegeneration-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegeneration-1.html",
+          "hash": "YHpdFEs+WG6zK2mm7jeQiK9w3Mz+gTKNxGSGWxNOwk4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegenerationInitializedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegenerationInitializedEventArgs.html",
+          "hash": "+8XZRxoW5s6fuJB/wvmrlSRZW/HS0aDe7DHDq+93GqY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueState.html",
+          "hash": "GH/m3xgor/05UyKQjhUPb7sIaOSU+BP2AhNBYWFtne4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueStateEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueStateEventArgs.html",
+          "hash": "ZivuM3Y9s6fsNHNohKhq+u9Vt/Meh5w1VRAXISuQ9q8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueType.html",
+          "hash": "dgtqE+vMtgZxG/pL02zsNvXpue8YgfUxZ+r9NE97MxY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValuesRestoredEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValuesRestoredEventArgs.html",
+          "hash": "q9NEKGDjgVrfO0gQ1xS9Iu8XrWvc5mNWW/e4FLfaWy4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.html",
+          "hash": "+Hdj4C+C/bZfgVzusyRIIIS2MdeXp4eg3PjtHgENKdM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/ProgressBarSystem/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/toc.html",
+          "hash": "aCEbQNeu8VAYcXudclEUr7JZDQASaym5ZM82FGe+/oo="
         }
       },
       "is_incremental": false,
@@ -731,7 +1702,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/introduction.html",
-          "hash": "8R6z0FKkqUgSlNmwUgWD17r16JR68A8KNXyCbFR8xxA="
+          "hash": "6oauQatYoS7u9dXIQfYhJlGe6J6VpKGShCblSpXOqDk="
         }
       },
       "is_incremental": false,
@@ -751,10 +1722,65 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/CoreCoverImage.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/CoreCoverImage.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ProgressBarSystem.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ProgressBarSystem.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/SODE.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/SODE.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/SingletonDependency.png",
       "output": {
         "resource": {
           "relative_path": "images/SingletonDependency.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/TetraAttributesCard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/TetraAttributesCard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/TetraCreationsLogo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/TetraCreationsLogo.png"
         }
       },
       "is_incremental": false,
@@ -766,7 +1792,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "UbuxPQUzpwEAEeoVPusgewxSSw1HgU4JbBWzW+h940c="
+          "hash": "Yec8oFefVK3By+nxFbLnfBJrnwVo+D8S0saidpdpxPI="
         }
       },
       "is_incremental": false,
@@ -778,7 +1804,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "UNBz31Y6DJ6XzuTgzmuolBJX3Inwp7YJ00ZiJX0VyqM="
+          "hash": "JSWhGicgYJDSG0LDS06zn0t31folXqMsDSuhsjBmbq8="
         }
       },
       "is_incremental": false,
@@ -805,7 +1831,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 52,
+          "total_file_count": 132,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

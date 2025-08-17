@@ -1,0 +1,1933 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ValueManager
+ | Tetra Creations documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ValueManager
+ | Tetra Creations documentation ">
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TetraCreations.ProgressBarSystem.ValueManager">
+
+
+  <h1 id="TetraCreations_ProgressBarSystem_ValueManager" data-uid="TetraCreations.ProgressBarSystem.ValueManager" class="text-break">Class ValueManager
+</h1>
+  <div class="markdown level0 summary"><p>It maintains a value between the minimum and maximum values.<br>
+Each value can be modified using this class.<br>
+It gives a layer of abstraction as this class doesn't know about ProgressBar or Resource.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">ValueManager</span></div>
+      <div class="level2"><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBar.html">ProgressBar</a></div>
+      <div class="level2"><a class="xref" href="TetraCreations.ProgressBarSystem.ResourceManager.html">ResourceManager</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">TetraCreations</span>.<a class="xref" href="TetraCreations.ProgressBarSystem.html">ProgressBarSystem</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="TetraCreations_ProgressBarSystem_ValueManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ValueManager : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager__allowValueDecrease" data-uid="TetraCreations.ProgressBarSystem.ValueManager._allowValueDecrease">_allowValueDecrease</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _allowValueDecrease</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager__allowValueIncrease" data-uid="TetraCreations.ProgressBarSystem.ValueManager._allowValueIncrease">_allowValueIncrease</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _allowValueIncrease</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager__initialAllowValueDecrease" data-uid="TetraCreations.ProgressBarSystem.ValueManager._initialAllowValueDecrease">_initialAllowValueDecrease</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _initialAllowValueDecrease</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager__initialAllowValueIncrease" data-uid="TetraCreations.ProgressBarSystem.ValueManager._initialAllowValueIncrease">_initialAllowValueIncrease</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _initialAllowValueIncrease</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager__initialized" data-uid="TetraCreations.ProgressBarSystem.ValueManager._initialized">_initialized</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _initialized</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager__initialMaximum" data-uid="TetraCreations.ProgressBarSystem.ValueManager._initialMaximum">_initialMaximum</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _initialMaximum</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager__initialMinimum" data-uid="TetraCreations.ProgressBarSystem.ValueManager._initialMinimum">_initialMinimum</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _initialMinimum</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager__initialValue" data-uid="TetraCreations.ProgressBarSystem.ValueManager._initialValue">_initialValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _initialValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager__maximum" data-uid="TetraCreations.ProgressBarSystem.ValueManager._maximum">_maximum</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _maximum</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager__minimum" data-uid="TetraCreations.ProgressBarSystem.ValueManager._minimum">_minimum</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _minimum</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager__precisionTolerance" data-uid="TetraCreations.ProgressBarSystem.ValueManager._precisionTolerance">_precisionTolerance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _precisionTolerance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager__value" data-uid="TetraCreations.ProgressBarSystem.ValueManager._value">_value</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _value</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager__valueState" data-uid="TetraCreations.ProgressBarSystem.ValueManager._valueState">_valueState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ValueState _valueState</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ValueState.html">ValueState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_AllowChanges_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.AllowChanges*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_AllowChanges" data-uid="TetraCreations.ProgressBarSystem.ValueManager.AllowChanges">AllowChanges</h4>
+  <div class="markdown level1 summary"><p>Allows or prevents any modification to the value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowChanges { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_AllowValueDecrease_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.AllowValueDecrease*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_AllowValueDecrease" data-uid="TetraCreations.ProgressBarSystem.ValueManager.AllowValueDecrease">AllowValueDecrease</h4>
+  <div class="markdown level1 summary"><p>Allows or prevents any decrease in value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowValueDecrease { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_AllowValueIncrease_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.AllowValueIncrease*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_AllowValueIncrease" data-uid="TetraCreations.ProgressBarSystem.ValueManager.AllowValueIncrease">AllowValueIncrease</h4>
+  <div class="markdown level1 summary"><p>Allows or prevents any increase in value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowValueIncrease { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_AtMaximum_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.AtMaximum*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_AtMaximum" data-uid="TetraCreations.ProgressBarSystem.ValueManager.AtMaximum">AtMaximum</h4>
+  <div class="markdown level1 summary"><p>Determines whether the ValueState is AtMaximum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AtMaximum { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_AtMinimum_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.AtMinimum*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_AtMinimum" data-uid="TetraCreations.ProgressBarSystem.ValueManager.AtMinimum">AtMinimum</h4>
+  <div class="markdown level1 summary"><p>Determines whether the ValueState is AtMinimum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AtMinimum { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_CurrentState_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.CurrentState*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_CurrentState" data-uid="TetraCreations.ProgressBarSystem.ValueManager.CurrentState">CurrentState</h4>
+  <div class="markdown level1 summary"><p>The current state of the value : AtMinimum, AtMaximum or InBetween.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueState CurrentState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ValueState.html">ValueState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_Initialized_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.Initialized*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_Initialized" data-uid="TetraCreations.ProgressBarSystem.ValueManager.Initialized">Initialized</h4>
+  <div class="markdown level1 summary"><p>Determines if the ValueManager is initialized and ready to be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Initialized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_LastMaximumValueChange_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.LastMaximumValueChange*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_LastMaximumValueChange" data-uid="TetraCreations.ProgressBarSystem.ValueManager.LastMaximumValueChange">LastMaximumValueChange</h4>
+  <div class="markdown level1 summary"><p>Returns the last change made to the maximum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LastMaximumValueChange { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_LastMinimumValueChange_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.LastMinimumValueChange*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_LastMinimumValueChange" data-uid="TetraCreations.ProgressBarSystem.ValueManager.LastMinimumValueChange">LastMinimumValueChange</h4>
+  <div class="markdown level1 summary"><p>Returns the last change made to the minimum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LastMinimumValueChange { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_LastOverflowAmount_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.LastOverflowAmount*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_LastOverflowAmount" data-uid="TetraCreations.ProgressBarSystem.ValueManager.LastOverflowAmount">LastOverflowAmount</h4>
+  <div class="markdown level1 summary"><p>Returns the last overflow amount that couldn't be applied to the value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LastOverflowAmount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_LastValueChange_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.LastValueChange*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_LastValueChange" data-uid="TetraCreations.ProgressBarSystem.ValueManager.LastValueChange">LastValueChange</h4>
+  <div class="markdown level1 summary"><p>Returns the last change made to the value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LastValueChange { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_Maximum_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.Maximum*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_Maximum" data-uid="TetraCreations.ProgressBarSystem.ValueManager.Maximum">Maximum</h4>
+  <div class="markdown level1 summary"><p>The maximum value.
+Setter ensure that it's above Minimum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Maximum { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_MaximumAmountWithinLimits_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.MaximumAmountWithinLimits*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_MaximumAmountWithinLimits" data-uid="TetraCreations.ProgressBarSystem.ValueManager.MaximumAmountWithinLimits">MaximumAmountWithinLimits</h4>
+  <div class="markdown level1 summary"><p>The total amount between the limits, so it's the maximum value minus the minimum value.<br>
+Just because the minimum value can be different than zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaximumAmountWithinLimits { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_Minimum_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.Minimum*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_Minimum" data-uid="TetraCreations.ProgressBarSystem.ValueManager.Minimum">Minimum</h4>
+  <div class="markdown level1 summary"><p>The minimum value.
+Setter ensure that it's below the maximum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Minimum { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_MissingValue_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.MissingValue*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_MissingValue" data-uid="TetraCreations.ProgressBarSystem.ValueManager.MissingValue">MissingValue</h4>
+  <div class="markdown level1 summary"><p>Returns the difference between the maximum and the current value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MissingValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_MissingValuePercentage_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.MissingValuePercentage*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_MissingValuePercentage" data-uid="TetraCreations.ProgressBarSystem.ValueManager.MissingValuePercentage">MissingValuePercentage</h4>
+  <div class="markdown level1 summary"><p>Returns the percentage of missing value compared to the Maximum value.<br>
+It returns a float between 0f and 1f as it's a percentage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MissingValuePercentage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_Percentage_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.Percentage*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_Percentage" data-uid="TetraCreations.ProgressBarSystem.ValueManager.Percentage">Percentage</h4>
+  <div class="markdown level1 summary"><p>Returns the value as percentage.<br>
+For example 75/100 will return 0.75f.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Percentage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_PrecisionTolerance_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.PrecisionTolerance*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_PrecisionTolerance" data-uid="TetraCreations.ProgressBarSystem.ValueManager.PrecisionTolerance">PrecisionTolerance</h4>
+  <div class="markdown level1 summary"><p>Used to compare the current value with Minimum and Maximum values, we can't compare float's equality.<br>
+We could tolerate a value of 99.98 to be equals to 100 for exemple.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PrecisionTolerance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_Value_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.Value*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_Value" data-uid="TetraCreations.ProgressBarSystem.ValueManager.Value">Value</h4>
+  <div class="markdown level1 summary"><p>The current value.
+Setter ensure it's clamped between the minimum and maximum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Value { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_ValueState_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.ValueState*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_ValueState" data-uid="TetraCreations.ProgressBarSystem.ValueManager.ValueState">ValueState</h4>
+  <div class="markdown level1 summary"><p>The current state of the ProgressBar : At Minimum, At Maximum, In Between.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueState ValueState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ValueState.html">ValueState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_AreEqual_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.AreEqual*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_AreEqual_System_Single_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.AreEqual(System.Single,System.Single)">AreEqual(float, float)</h4>
+  <div class="markdown level1 summary"><p>Compare two float value to determines if they are equal using the PrecisionTolerance variable
+to allow minor difference that doesn't matter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AreEqual(float a, float b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_CanDecrease_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.CanDecrease*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_CanDecrease" data-uid="TetraCreations.ProgressBarSystem.ValueManager.CanDecrease">CanDecrease()</h4>
+  <div class="markdown level1 summary"><p>Determines if the value can decrease.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CanDecrease()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_CanIncrease_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.CanIncrease*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_CanIncrease" data-uid="TetraCreations.ProgressBarSystem.ValueManager.CanIncrease">CanIncrease()</h4>
+  <div class="markdown level1 summary"><p>Determines if the value can increase.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CanIncrease()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_Decrease_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.Decrease*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_Decrease_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.Decrease(System.Single)">Decrease(float)</h4>
+  <div class="markdown level1 summary"><p>Decrease the value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float Decrease(float amount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><p>The change made to the value, 0f if there is no change.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_DecreaseMaximum_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.DecreaseMaximum*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_DecreaseMaximum_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.DecreaseMaximum(System.Single)">DecreaseMaximum(float)</h4>
+  <div class="markdown level1 summary"><p>Decrease the maximum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float DecreaseMaximum(float amount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><p>The change made to the maximum value, 0f if there is no change.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_DecreaseMinimum_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.DecreaseMinimum*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_DecreaseMinimum_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.DecreaseMinimum(System.Single)">DecreaseMinimum(float)</h4>
+  <div class="markdown level1 summary"><p>Decrease the minimum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float DecreaseMinimum(float amount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><p>The change made to the minimum value, 0f if there is no change.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_GetLastChangeOf_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.GetLastChangeOf*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_GetLastChangeOf_TetraCreations_ProgressBarSystem_ValueType_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.GetLastChangeOf(TetraCreations.ProgressBarSystem.ValueType)">GetLastChangeOf(ValueType)</h4>
+  <div class="markdown level1 summary"><p>Return the last change made to a value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetLastChangeOf(ValueType valueType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ValueType.html">ValueType</a></td>
+        <td><span class="parametername">valueType</span></td>
+        <td><p>Which value we want to get the last change from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_Increase_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.Increase*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_Increase_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.Increase(System.Single)">Increase(float)</h4>
+  <div class="markdown level1 summary"><p>Increase the value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float Increase(float amount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount to add</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><p>The change made to the value, 0f if there is no change.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_IncreaseMaximum_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.IncreaseMaximum*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_IncreaseMaximum_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.IncreaseMaximum(System.Single)">IncreaseMaximum(float)</h4>
+  <div class="markdown level1 summary"><p>Increase the maximum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float IncreaseMaximum(float amount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount to add</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><p>The change made to the maximum value, 0f if there is no change.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_IncreaseMinimum_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.IncreaseMinimum*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_IncreaseMinimum_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.IncreaseMinimum(System.Single)">IncreaseMinimum(float)</h4>
+  <div class="markdown level1 summary"><p>Increase the minimum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float IncreaseMinimum(float amount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount to add</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><p>The change made to the minimum value, 0f if there is no change.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_Initialize_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.Initialize*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_Initialize" data-uid="TetraCreations.ProgressBarSystem.ValueManager.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>Set the values using the initial values and raised the InitializedEvent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_InitializeValues_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.InitializeValues*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_InitializeValues" data-uid="TetraCreations.ProgressBarSystem.ValueManager.InitializeValues">InitializeValues()</h4>
+  <div class="markdown level1 summary"><p>Set the Maximum, Minimum, and Value with the initial values to clamp them.<br>
+Keep the initial values in cache to reset the values at runtime if needed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeValues()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_OnInitialized_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.OnInitialized*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_OnInitialized" data-uid="TetraCreations.ProgressBarSystem.ValueManager.OnInitialized">OnInitialized()</h4>
+  <div class="markdown level1 summary"><p>Raise the InitializedEvent, we don't pass any data for the moment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnInitialized()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_OnValueChanged_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.OnValueChanged*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_OnValueChanged_System_Single_TetraCreations_ProgressBarSystem_ValueType_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.OnValueChanged(System.Single,TetraCreations.ProgressBarSystem.ValueType)">OnValueChanged(float, ValueType)</h4>
+  <div class="markdown level1 summary"><p>Raise the ValueChangedEvent and pass all the data we have : <br>
+The new value, minimum, maximum, percentage, the difference with the previous value and the type of value that changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnValueChanged(float newValue, ValueType valueType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ValueType.html">ValueType</a></td>
+        <td><span class="parametername">valueType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_OnValuesRestored_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.OnValuesRestored*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_OnValuesRestored" data-uid="TetraCreations.ProgressBarSystem.ValueManager.OnValuesRestored">OnValuesRestored()</h4>
+  <div class="markdown level1 summary"><p>Raise the ValuesRestoredEvent, pass the Value, Minimum, Maximum and Percentage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnValuesRestored()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_RemoveEventsListeners_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.RemoveEventsListeners*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_RemoveEventsListeners" data-uid="TetraCreations.ProgressBarSystem.ValueManager.RemoveEventsListeners">RemoveEventsListeners()</h4>
+  <div class="markdown level1 summary"><p>Remove all listeners from every events, in case we need to destroy the object for example.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveEventsListeners()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_RestoreValues_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.RestoreValues*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_RestoreValues" data-uid="TetraCreations.ProgressBarSystem.ValueManager.RestoreValues">RestoreValues()</h4>
+  <div class="markdown level1 summary"><p>Reset the minimum, current and maximum value to their intial values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RestoreValues()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_SetByPercentage_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetByPercentage*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_SetByPercentage_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetByPercentage(System.Single)">SetByPercentage(float)</h4>
+  <div class="markdown level1 summary"><p>Set the value by passing a percentage.<br>
+For example : 20/100 (20%) =&gt; SetByPercentage(0.8) =&gt; Value will be 80/100. (80%)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetByPercentage(float percentage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">percentage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_SetInitialValues_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetInitialValues*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_SetInitialValues_System_Single_System_Single_System_Single_System_Boolean_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetInitialValues(System.Single,System.Single,System.Single,System.Boolean)">SetInitialValues(float, float, float, bool)</h4>
+  <div class="markdown level1 summary"><p>Set the initial values : Mnimum, Maximum, Value.<br>
+And eventually initialize.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetInitialValues(float value = 100, float maximum = 100, float minimum = 0, bool initialize = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">maximum</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">minimum</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">initialize</span></td>
+        <td><p>Call Initialize() after setting the values, every values will be clamped.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_SetMaximum_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetMaximum*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_SetMaximum_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetMaximum(System.Single)">SetMaximum(float)</h4>
+  <div class="markdown level1 summary"><p>Check if there is any change.<br>
+Override the maximum with the clamped new maximum.<br>
+It will clamp the value.<br>
+Then it will raised ValueChangedEvent, and check if the ValueState changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetMaximum(float newMaximum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">newMaximum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_SetMinimum_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetMinimum*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_SetMinimum_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetMinimum(System.Single)">SetMinimum(float)</h4>
+  <div class="markdown level1 summary"><p>Check if there is any change.<br>
+Override the minimum with the clamped new minimum.<br>
+It will clamp the value.<br>
+Then it will raised ValueChangedEvent, and check if the ValueState changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetMinimum(float newMinimum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">newMinimum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_SetToMaximum_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetToMaximum*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_SetToMaximum" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetToMaximum">SetToMaximum()</h4>
+  <div class="markdown level1 summary"><p>Set the current value to the maximum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetToMaximum()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_SetToMinimum_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetToMinimum*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_SetToMinimum" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetToMinimum">SetToMinimum()</h4>
+  <div class="markdown level1 summary"><p>Set the current value to the minimum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetToMinimum()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_SetValue_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetValue*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_SetValue_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetValue(System.Single)">SetValue(float)</h4>
+  <div class="markdown level1 summary"><p>Clamp the newValue, check if there is any change.<br>
+Override the value with the clamped new value.<br>
+Then it will raised ValueChangedEvent, and check if the ValueState changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool SetValue(float newValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_ToString_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.ToString*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_ToString" data-uid="TetraCreations.ProgressBarSystem.ValueManager.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_UpdateLastOverflow_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.UpdateLastOverflow*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_UpdateLastOverflow_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.UpdateLastOverflow(System.Single)">UpdateLastOverflow(float)</h4>
+  <div class="markdown level1 summary"><p>Set the last overflow amount by removing real change made from the requested change.<br>
+The value is always positive, other script can get this value from MinimumValueReachedEvent or MaximumValueReachedEvent arguments.<br>
+Or with the LastOverflowAmount getter right after the value modification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateLastOverflow(float requestedChange)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">requestedChange</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_UpdateValueState_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.UpdateValueState*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_UpdateValueState_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.UpdateValueState(System.Single)">UpdateValueState(float)</h4>
+  <div class="markdown level1 summary"><p>Update the ValueState after any value change (Minimum, Maximum or Value).<br>
+Raise the ValueStateChangedEvent and MaximumValueReachedEventArgs / MinimumValueReachedEventArgs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateValueState(float requestedChange)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">requestedChange</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_InitializedEvent" data-uid="TetraCreations.ProgressBarSystem.ValueManager.InitializedEvent">InitializedEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ValueManagerInitializedEventArgs&gt; InitializedEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler&lt;TEventArgs&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ValueManagerInitializedEventArgs.html">ValueManagerInitializedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_MaximumValueReachedEvent" data-uid="TetraCreations.ProgressBarSystem.ValueManager.MaximumValueReachedEvent">MaximumValueReachedEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;MaximumValueReachedEventArgs&gt; MaximumValueReachedEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler&lt;TEventArgs&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.MaximumValueReachedEventArgs.html">MaximumValueReachedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_MinimumValueReachedEvent" data-uid="TetraCreations.ProgressBarSystem.ValueManager.MinimumValueReachedEvent">MinimumValueReachedEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;MinimumValueReachedEventArgs&gt; MinimumValueReachedEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler&lt;TEventArgs&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.MinimumValueReachedEventArgs.html">MinimumValueReachedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_ValueChangedEvent" data-uid="TetraCreations.ProgressBarSystem.ValueManager.ValueChangedEvent">ValueChangedEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ValueChangedEventArgs&gt; ValueChangedEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler&lt;TEventArgs&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ValueChangedEventArgs.html">ValueChangedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_ValuesRestoredEvent" data-uid="TetraCreations.ProgressBarSystem.ValueManager.ValuesRestoredEvent">ValuesRestoredEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ValuesRestoredEventArgs&gt; ValuesRestoredEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler&lt;TEventArgs&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ValuesRestoredEventArgs.html">ValuesRestoredEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_ValueStateChangedEvent" data-uid="TetraCreations.ProgressBarSystem.ValueManager.ValueStateChangedEvent">ValueStateChangedEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ValueStateEventArgs&gt; ValueStateChangedEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler&lt;TEventArgs&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ValueStateEventArgs.html">ValueStateEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Tetra Creations documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

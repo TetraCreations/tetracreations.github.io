@@ -1,0 +1,733 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ResourcesController
+ | Tetra Creations documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ResourcesController
+ | Tetra Creations documentation ">
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TetraCreations.ProgressBarSystem.ResourcesController">
+
+
+  <h1 id="TetraCreations_ProgressBarSystem_ResourcesController" data-uid="TetraCreations.ProgressBarSystem.ResourcesController" class="text-break">Class ResourcesController
+</h1>
+  <div class="markdown level0 summary"><p>Keep track of all the ResourceManager and ResourceRegeneration for each Resource for a GameObject.<br>
+It will Update every ResourceRegeneration timers automatically.<br>
+We can also add new ResourceManager or new ResourceRegeneration at runtime, initialize them with Values from UniData InitialResourcesValue for example.<br></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">ResourcesController</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">TetraCreations</span>.<a class="xref" href="TetraCreations.ProgressBarSystem.html">ProgressBarSystem</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="TetraCreations_ProgressBarSystem_ResourcesController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ResourcesController : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController__initialized" data-uid="TetraCreations.ProgressBarSystem.ResourcesController._initialized">_initialized</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _initialized</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController__progressBars" data-uid="TetraCreations.ProgressBarSystem.ResourcesController._progressBars">_progressBars</h4>
+  <div class="markdown level1 summary"><p>We can populate the list of ProgressBar to add them automatically at runtime to the corresponding ResourceManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;ProgressBar&gt; _progressBars</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List&lt;&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBar.html">ProgressBar</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController__regenerateResources" data-uid="TetraCreations.ProgressBarSystem.ResourcesController._regenerateResources">_regenerateResources</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _regenerateResources</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController__resourcesRegeneration" data-uid="TetraCreations.ProgressBarSystem.ResourcesController._resourcesRegeneration">_resourcesRegeneration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;ResourceRegeneration&gt; _resourcesRegeneration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List&lt;&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ResourceRegeneration.html">ResourceRegeneration</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController__resourceValueManagers" data-uid="TetraCreations.ProgressBarSystem.ResourcesController._resourceValueManagers">_resourceValueManagers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;ResourceManager&gt; _resourceValueManagers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List&lt;&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ResourceManager.html">ResourceManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourcesController_Initialized_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.Initialized*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController_Initialized" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.Initialized">Initialized</h4>
+  <div class="markdown level1 summary"><p>Determines if the script is initialized, it's done in the Awake method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Initialized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourcesController_ProgressBars_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.ProgressBars*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController_ProgressBars" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.ProgressBars">ProgressBars</h4>
+  <div class="markdown level1 summary"><p>ReadOnly list of the ProgressBar.<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;ProgressBar&gt; ProgressBars { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList&lt;&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBar.html">ProgressBar</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourcesController_RegenerateResources_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.RegenerateResources*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController_RegenerateResources" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.RegenerateResources">RegenerateResources</h4>
+  <div class="markdown level1 summary"><p>Determines if it calls the Regenerate method of all the ResourceRegeneration inside the Update method.<br>
+It should be true unless you want to make your own script to update every ResourceRegeneration<br>
+inside a single component for slightly better performance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegenerateResources { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourcesController_ResourceManagers_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.ResourceManagers*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController_ResourceManagers" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.ResourceManagers">ResourceManagers</h4>
+  <div class="markdown level1 summary"><p>ReadOnly list of the ResourceManager.<br>
+Call AddResourceManager method if you need to add ResourceManager at runtime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;ResourceManager&gt; ResourceManagers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList&lt;&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ResourceManager.html">ResourceManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourcesController_ResourcesRegeneration_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.ResourcesRegeneration*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController_ResourcesRegeneration" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.ResourcesRegeneration">ResourcesRegeneration</h4>
+  <div class="markdown level1 summary"><p>ReadOnly list of the ResourceRegeneration.<br>
+Call AddResourceRegeneration method if you need to add ResourceRegeneration at runtime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;ResourceRegeneration&gt; ResourcesRegeneration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList&lt;&gt;</span>&lt;<a class="xref" href="TetraCreations.ProgressBarSystem.ResourceRegeneration.html">ResourceRegeneration</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourcesController_AddResourceManager_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.AddResourceManager*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController_AddResourceManager_TetraCreations_ProgressBarSystem_ResourceManager_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.AddResourceManager(TetraCreations.ProgressBarSystem.ResourceManager)">AddResourceManager(ResourceManager)</h4>
+  <div class="markdown level1 summary"><p>Tries to add a ResourceManager if it doesn't exist already for the Resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddResourceManager(ResourceManager resourceManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ResourceManager.html">ResourceManager</a></td>
+        <td><span class="parametername">resourceManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourcesController_AddResourceRegeneration_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.AddResourceRegeneration*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController_AddResourceRegeneration_TetraCreations_ProgressBarSystem_ResourceRegeneration_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.AddResourceRegeneration(TetraCreations.ProgressBarSystem.ResourceRegeneration)">AddResourceRegeneration(ResourceRegeneration)</h4>
+  <div class="markdown level1 summary"><p>Tries to add a ResourceRegeneration if it doesn't exist already for the Resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddResourceRegeneration(ResourceRegeneration resourceRegeneration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ResourceRegeneration.html">ResourceRegeneration</a></td>
+        <td><span class="parametername">resourceRegeneration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourcesController_Awake_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.Awake*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController_Awake" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Awake()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourcesController_GetProgressBar_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.GetProgressBar*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController_GetProgressBar_TetraCreations_ProgressBarSystem_Resource_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.GetProgressBar(TetraCreations.ProgressBarSystem.Resource)">GetProgressBar(Resource)</h4>
+  <div class="markdown level1 summary"><p>Returns the ProgressBar corresponding to the Resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgressBar GetProgressBar(Resource resource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.Resource.html">Resource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ProgressBar.html">ProgressBar</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourcesController_GetResourceManager_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.GetResourceManager*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController_GetResourceManager_TetraCreations_ProgressBarSystem_Resource_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.GetResourceManager(TetraCreations.ProgressBarSystem.Resource)">GetResourceManager(Resource)</h4>
+  <div class="markdown level1 summary"><p>Returns the ResourceManager corresponding to the Resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourceManager GetResourceManager(Resource resource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.Resource.html">Resource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ResourceManager.html">ResourceManager</a></td>
+        <td><p>Null if the there is no ResourceValueManager associated to the Resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourcesController_GetResourceRegeneration_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.GetResourceRegeneration*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController_GetResourceRegeneration_TetraCreations_ProgressBarSystem_Resource_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.GetResourceRegeneration(TetraCreations.ProgressBarSystem.Resource)">GetResourceRegeneration(Resource)</h4>
+  <div class="markdown level1 summary"><p>Returns the ResourceRegeneration corresponding to the Resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourceRegeneration GetResourceRegeneration(Resource resource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.Resource.html">Resource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ResourceRegeneration.html">ResourceRegeneration</a></td>
+        <td><p>Null if the there is no ResourceRegeneration associated to the Resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourcesController_InitializeResourceManagers_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.InitializeResourceManagers*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController_InitializeResourceManagers" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.InitializeResourceManagers">InitializeResourceManagers()</h4>
+  <div class="markdown level1 summary"><p>Initialize every ResourceManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeResourceManagers()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourcesController_InitializeResourceRegenerations_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.InitializeResourceRegenerations*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController_InitializeResourceRegenerations" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.InitializeResourceRegenerations">InitializeResourceRegenerations()</h4>
+  <div class="markdown level1 summary"><p>Get the value manager for each ResourceRegeneration to initialize them.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeResourceRegenerations()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourcesController_ResourceManagerExist_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.ResourceManagerExist*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController_ResourceManagerExist_TetraCreations_ProgressBarSystem_Resource_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.ResourceManagerExist(TetraCreations.ProgressBarSystem.Resource)">ResourceManagerExist(Resource)</h4>
+  <div class="markdown level1 summary"><p>Determines if a ResourceManager already exist for a specific resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ResourceManagerExist(Resource resource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.Resource.html">Resource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ResourcesController_ResourceRegenerationExist_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.ResourceRegenerationExist*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ResourcesController_ResourceRegenerationExist_TetraCreations_ProgressBarSystem_Resource_" data-uid="TetraCreations.ProgressBarSystem.ResourcesController.ResourceRegenerationExist(TetraCreations.ProgressBarSystem.Resource)">ResourceRegenerationExist(Resource)</h4>
+  <div class="markdown level1 summary"><p>Determines if a ResourceManager already exist for a specific resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ResourceRegenerationExist(Resource resource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.Resource.html">Resource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Tetra Creations documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
