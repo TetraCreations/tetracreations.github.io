@@ -9110,22 +9110,6 @@ references:
   isSpec: "True"
   fullName: TetraCreations.ProgressBarSystem.ProgressBarRegeneration.UpdateTextValue
   nameWithType: ProgressBarRegeneration.UpdateTextValue
-- uid: TetraCreations.ProgressBarSystem.ProgressBarRegeneration.UpdateValues(System.Single,System.Single)
-  name: UpdateValues(float, float)
-  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegeneration.html#TetraCreations_ProgressBarSystem_ProgressBarRegeneration_UpdateValues_System_Single_System_Single_
-  commentId: M:TetraCreations.ProgressBarSystem.ProgressBarRegeneration.UpdateValues(System.Single,System.Single)
-  name.vb: UpdateValues(Single, Single)
-  fullName: TetraCreations.ProgressBarSystem.ProgressBarRegeneration.UpdateValues(float, float)
-  fullName.vb: TetraCreations.ProgressBarSystem.ProgressBarRegeneration.UpdateValues(Single, Single)
-  nameWithType: ProgressBarRegeneration.UpdateValues(float, float)
-  nameWithType.vb: ProgressBarRegeneration.UpdateValues(Single, Single)
-- uid: TetraCreations.ProgressBarSystem.ProgressBarRegeneration.UpdateValues*
-  name: UpdateValues
-  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegeneration.html#TetraCreations_ProgressBarSystem_ProgressBarRegeneration_UpdateValues_
-  commentId: Overload:TetraCreations.ProgressBarSystem.ProgressBarRegeneration.UpdateValues
-  isSpec: "True"
-  fullName: TetraCreations.ProgressBarSystem.ProgressBarRegeneration.UpdateValues
-  nameWithType: ProgressBarRegeneration.UpdateValues
 - uid: TetraCreations.ProgressBarSystem.ProgressBarRegeneration.UseSignAsPrefix
   name: UseSignAsPrefix
   href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegeneration.html#TetraCreations_ProgressBarSystem_ProgressBarRegeneration_UseSignAsPrefix
@@ -9745,6 +9729,19 @@ references:
   isSpec: "True"
   fullName: TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs.RegeneratedAmount
   nameWithType: RegenerationValuesEventArgs.RegeneratedAmount
+- uid: TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs.RegeneratedAmountPerSecond
+  name: RegeneratedAmountPerSecond
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs.html#TetraCreations_ProgressBarSystem_RegenerationValuesEventArgs_RegeneratedAmountPerSecond
+  commentId: P:TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs.RegeneratedAmountPerSecond
+  fullName: TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs.RegeneratedAmountPerSecond
+  nameWithType: RegenerationValuesEventArgs.RegeneratedAmountPerSecond
+- uid: TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs.RegeneratedAmountPerSecond*
+  name: RegeneratedAmountPerSecond
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs.html#TetraCreations_ProgressBarSystem_RegenerationValuesEventArgs_RegeneratedAmountPerSecond_
+  commentId: Overload:TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs.RegeneratedAmountPerSecond
+  isSpec: "True"
+  fullName: TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs.RegeneratedAmountPerSecond
+  nameWithType: RegenerationValuesEventArgs.RegeneratedAmountPerSecond
 - uid: TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs.TickRate
   name: TickRate
   href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs.html#TetraCreations_ProgressBarSystem_RegenerationValuesEventArgs_TickRate

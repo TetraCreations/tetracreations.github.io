@@ -766,7 +766,7 @@ This is called when changing Progress Bar to re-initialize the text.</p>
 
   <a id="TetraCreations_ProgressBarSystem_ProgressBarRegeneration_SetValues_" data-uid="TetraCreations.ProgressBarSystem.ProgressBarRegeneration.SetValues*"></a>
   <h4 id="TetraCreations_ProgressBarSystem_ProgressBarRegeneration_SetValues_System_Object_TetraCreations_ProgressBarSystem_RegenerationValuesEventArgs_" data-uid="TetraCreations.ProgressBarSystem.ProgressBarRegeneration.SetValues(System.Object,TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs)">SetValues(object, RegenerationValuesEventArgs)</h4>
-  <div class="markdown level1 summary"><p>Updates the text value of the regeneration.</p>
+  <div class="markdown level1 summary"><p>RegenerationValuesChangedEvent callback, it updates the text value of the regeneration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -856,40 +856,6 @@ This is called when changing Progress Bar to re-initialize the text.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void UpdateTextValue()</code></pre>
   </div>
-
-
-  <a id="TetraCreations_ProgressBarSystem_ProgressBarRegeneration_UpdateValues_" data-uid="TetraCreations.ProgressBarSystem.ProgressBarRegeneration.UpdateValues*"></a>
-  <h4 id="TetraCreations_ProgressBarSystem_ProgressBarRegeneration_UpdateValues_System_Single_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ProgressBarRegeneration.UpdateValues(System.Single,System.Single)">UpdateValues(float, float)</h4>
-  <div class="markdown level1 summary"><p>Set the current health regeneration every X seconds to TextMeshProUGUI Component</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void UpdateValues(float regenAmount, float tickRate = 0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">float</span></td>
-        <td><span class="parametername">regenAmount</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">float</span></td>
-        <td><span class="parametername">tickRate</span></td>
-        <td><p>Optional : The time interval between the regeneration</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="events">Events
 </h3>
 
