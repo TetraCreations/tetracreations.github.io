@@ -92,6 +92,7 @@ We use a generic type to add a layer of abstraction by given the possibility to 
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">object</span></div>
     <div class="level1"><span class="xref">ValueRegeneration&lt;T&gt;</span></div>
+      <div class="level2"><a class="xref" href="TetraCreations.ProgressBarSystem.Regeneration.html">Regeneration</a></div>
       <div class="level2"><a class="xref" href="TetraCreations.ProgressBarSystem.ResourceRegeneration.html">ResourceRegeneration</a></div>
   </div>
   <h6><strong>Namespace</strong>: <span class="xref">TetraCreations</span>.<a class="xref" href="TetraCreations.ProgressBarSystem.html">ProgressBarSystem</a></h6>
@@ -1105,14 +1106,40 @@ to update the regeneration state and to re-calculate the value.</p>
   </div>
 
 
-  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_AutomaticallyStops_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.AutomaticallyStops*"></a>
-  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_AutomaticallyStops" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.AutomaticallyStops">AutomaticallyStops()</h4>
-  <div class="markdown level1 summary"><p>Evaluate the regeneration conditions to stop it automatically.</p>
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_AnyRegenerationEnable_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.AnyRegenerationEnable*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_AnyRegenerationEnable" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.AnyRegenerationEnable">AnyRegenerationEnable()</h4>
+  <div class="markdown level1 summary"><p>Determines if we have any regeneration type enable : Flat / Percentage / MissingPercentage.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void AutomaticallyStops()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual bool AnyRegenerationEnable()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_AutomaticallyRestart_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.AutomaticallyRestart*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_AutomaticallyRestart" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.AutomaticallyRestart">AutomaticallyRestart()</h4>
+  <div class="markdown level1 summary"><p>Evaluate the regeneration conditions to stop or start it automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AutomaticallyRestart()</code></pre>
   </div>
 
 
@@ -1320,7 +1347,7 @@ This will stop automatically if the ValueManager.Value reaches the Maximum or th
 
   <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Restart_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Restart*"></a>
   <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_Restart" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.Restart">Restart()</h4>
-  <div class="markdown level1 summary"><p>Reset the regeneration process if possible by reseting all timers and updating the RegenerationgState to Started.</p>
+  <div class="markdown level1 summary"><p>Reset the regeneration process if possible by reseting all timers and setting the RegenerationgState to Started.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1331,7 +1358,7 @@ This will stop automatically if the ValueManager.Value reaches the Maximum or th
 
   <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_StartRegeneration_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.StartRegeneration*"></a>
   <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_StartRegeneration" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.StartRegeneration">StartRegeneration()</h4>
-  <div class="markdown level1 summary"><p>If not stopped the regneration process will be started.</p>
+  <div class="markdown level1 summary"><p>Starts the regneration process if it the state is stopped and it can regenerate.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>

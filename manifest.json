@@ -663,7 +663,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ActiveConditionChangedEventArgs.html",
-          "hash": "1JHc/mTn14s6A1mUKbLrDz0F4ti7yQWKTJn8AC3Q2EE="
+          "hash": "dgLnjH9b9kDP6jjQgCdACfuunW3847BjRSCNhZfXc6Q="
         }
       },
       "is_incremental": false,
@@ -819,7 +819,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.BaseEditor-1.html",
-          "hash": "jKqfIuQ7hv19pWUWWgAy+A/LzzubCAeOXqU+cmFLBy8="
+          "hash": "lhtrABjvqyrYJznMjOadpH/NETMi/nLZf3eqsEqVOKU="
         }
       },
       "is_incremental": false,
@@ -831,7 +831,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ProgressBarEditor.html",
-          "hash": "LULFrkhWJHwvnyyfRHSgTNFC0tOKI3bSu6aJDQ82roc="
+          "hash": "PLeYeIHgk2hIJFpPQEtB4b5WC6h1YB9VBQ1J0g2tg5o="
         }
       },
       "is_incremental": false,
@@ -851,11 +851,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.RegenerationEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.RegenerationEditor.html",
+          "hash": "4/r3b63wS/JG2iDwg2ODRqR3sYfb0Ke6EhA5BGTzUhk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourceManagerEditor.yml",
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourceManagerEditor.html",
-          "hash": "0XQW0fMLpZpkhzizoD+uuqpRtW2gwwA7E76dY5FW8d0="
+          "hash": "ysaL7fz62N9WXsXvBeh3kUyL3HlLo1+51V7KCRC5hAM="
         }
       },
       "is_incremental": false,
@@ -867,7 +879,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourceRegenerationEditor.html",
-          "hash": "2px1UZ3Iii6g1jbn/rczLG9E5D+qjjp320mFBRO3Vj0="
+          "hash": "fpj+VVVQYVLqPxDSEcRlkpbwO2jbYE4KRKEezwg6TNI="
         }
       },
       "is_incremental": false,
@@ -1011,7 +1023,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.html",
-          "hash": "F3xAgGwoaHHtd+f0UMqhYgEVOpsXaP8r+6HPHHKbdTQ="
+          "hash": "+8b+H4hd6wOtvzFUoM/9rnP+6w/6KXioBtLL0J+siIo="
         }
       },
       "is_incremental": false,
@@ -1103,23 +1115,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgessBarCondition.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgessBarCondition.html",
-          "hash": "TC9OXalaeZvfaHvAbk1RZh47dMjE7M/EFaDCZYA3DUQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBar.yml",
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBar.html",
-          "hash": "emV//6LGS8YUsaWP7xu3IZy2wMzD7d9kxi5BbSufSPM="
+          "hash": "5+u7HFlk4bBWa5HfI87btRut+klsq7UxkWXN/wDe/as="
         }
       },
       "is_incremental": false,
@@ -1139,6 +1139,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarCondition.html",
+          "hash": "D5sHbYfKOZtXT2CWg1r8LyVh0fofyCZA0vxUpfrTI6Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarInitializedEventArgs.yml",
       "output": {
         ".html": {
@@ -1151,11 +1163,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegeneration.yml",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationInitializedEventArgs.yml",
       "output": {
         ".html": {
-          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegeneration.html",
-          "hash": "w6QOr/IQKuhEtm5HWxEoSqHx3hyw2zoOgxiSwb7IPlM="
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationInitializedEventArgs.html",
+          "hash": "QRtW/0KmlPtF4/AwYyAuRjkKzVxltceI1tplnZIoWE4="
         }
       },
       "is_incremental": false,
@@ -1163,11 +1175,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationInitializedEventArgs.yml",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.yml",
       "output": {
         ".html": {
-          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationInitializedEventArgs.html",
-          "hash": "QRtW/0KmlPtF4/AwYyAuRjkKzVxltceI1tplnZIoWE4="
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.html",
+          "hash": "mtZ5FIXp18lCeYsLI7zhFHgM+6G/Dq3iIg7RqFagl7s="
         }
       },
       "is_incremental": false,
@@ -1192,6 +1204,18 @@
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarText.html",
           "hash": "k4q7AoIvKWPTcWLMMMoKW2+S1Y1YU3A35+8OurDmjbo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Regeneration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Regeneration.html",
+          "hash": "j91ZeRl7g/woVyN6nEVIhD2LRWcTRxAzOABZajvw514="
         }
       },
       "is_incremental": false,
@@ -1287,7 +1311,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ResourceRegeneration.html",
-          "hash": "YXWYPhPa3JaA021rGWCTeLXdMpcpE4ykyd+E+uhO4qI="
+          "hash": "HDGwvJEKwxHLwCqUmVDA7w5QnzDTTkDUCwXVdI2gBvo="
         }
       },
       "is_incremental": false,
@@ -1299,7 +1323,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ResourcesController.html",
-          "hash": "kMHbWxKG8HryDT6kNIRg/1gmeKZIHk/B5RYeEpeD6t4="
+          "hash": "qjGldRkssLe/1r7mQjbi4dILtd3p9gqcsXeIE4neN2c="
         }
       },
       "is_incremental": false,
@@ -1539,7 +1563,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegeneration-1.html",
-          "hash": "YHpdFEs+WG6zK2mm7jeQiK9w3Mz+gTKNxGSGWxNOwk4="
+          "hash": "JSS0+sUArYqWvamfmZILTkPyr1VxqhaW9MTd11VRO9M="
         }
       },
       "is_incremental": false,
@@ -1611,7 +1635,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.html",
-          "hash": "+Hdj4C+C/bZfgVzusyRIIIS2MdeXp4eg3PjtHgENKdM="
+          "hash": "uQT8tZvT9OBWhvQftCRXjt1n1fnV4xIM/Tx6dzoQXJM="
         }
       },
       "is_incremental": false,
@@ -1623,7 +1647,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/toc.html",
-          "hash": "aCEbQNeu8VAYcXudclEUr7JZDQASaym5ZM82FGe+/oo="
+          "hash": "pJQseYKV2BRB/by1v4z0od6sK1HWHeoHuJqoLDRTWvI="
         }
       },
       "is_incremental": false,
@@ -1814,25 +1838,23 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because config changed.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ConfigChanged"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 0
+          "skipped_file_count": 3
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 132,
-          "skipped_file_count": 0
+          "total_file_count": 134,
+          "skipped_file_count": 132
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
