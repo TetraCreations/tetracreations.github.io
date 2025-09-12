@@ -9086,6 +9086,32 @@ references:
   commentId: F:TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.Format
   fullName: TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.Format
   nameWithType: ProgressBarRegenerationText.Format
+- uid: TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.GetTickRateAsString
+  name: GetTickRateAsString()
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.html#TetraCreations_ProgressBarSystem_ProgressBarRegenerationText_GetTickRateAsString
+  commentId: M:TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.GetTickRateAsString
+  fullName: TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.GetTickRateAsString()
+  nameWithType: ProgressBarRegenerationText.GetTickRateAsString()
+- uid: TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.GetTickRateAsString*
+  name: GetTickRateAsString
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.html#TetraCreations_ProgressBarSystem_ProgressBarRegenerationText_GetTickRateAsString_
+  commentId: Overload:TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.GetTickRateAsString
+  isSpec: "True"
+  fullName: TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.GetTickRateAsString
+  nameWithType: ProgressBarRegenerationText.GetTickRateAsString
+- uid: TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.GetValueAsString
+  name: GetValueAsString()
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.html#TetraCreations_ProgressBarSystem_ProgressBarRegenerationText_GetValueAsString
+  commentId: M:TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.GetValueAsString
+  fullName: TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.GetValueAsString()
+  nameWithType: ProgressBarRegenerationText.GetValueAsString()
+- uid: TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.GetValueAsString*
+  name: GetValueAsString
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.html#TetraCreations_ProgressBarSystem_ProgressBarRegenerationText_GetValueAsString_
+  commentId: Overload:TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.GetValueAsString
+  isSpec: "True"
+  fullName: TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.GetValueAsString
+  nameWithType: ProgressBarRegenerationText.GetValueAsString
 - uid: TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.Hide
   name: Hide()
   href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.html#TetraCreations_ProgressBarSystem_ProgressBarRegenerationText_Hide
@@ -9224,19 +9250,6 @@ references:
   commentId: F:TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.TickrateFloatFormat
   fullName: TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.TickrateFloatFormat
   nameWithType: ProgressBarRegenerationText.TickrateFloatFormat
-- uid: TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.UpdateSign
-  name: UpdateSign()
-  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.html#TetraCreations_ProgressBarSystem_ProgressBarRegenerationText_UpdateSign
-  commentId: M:TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.UpdateSign
-  fullName: TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.UpdateSign()
-  nameWithType: ProgressBarRegenerationText.UpdateSign()
-- uid: TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.UpdateSign*
-  name: UpdateSign
-  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.html#TetraCreations_ProgressBarSystem_ProgressBarRegenerationText_UpdateSign_
-  commentId: Overload:TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.UpdateSign
-  isSpec: "True"
-  fullName: TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.UpdateSign
-  nameWithType: ProgressBarRegenerationText.UpdateSign
 - uid: TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.UpdateTextValue
   name: UpdateTextValue()
   href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.html#TetraCreations_ProgressBarSystem_ProgressBarRegenerationText_UpdateTextValue
@@ -12131,15 +12144,15 @@ references:
   commentId: T:TetraCreations.ProgressBarSystem.ValueChangedEventArgs
   fullName: TetraCreations.ProgressBarSystem.ValueChangedEventArgs
   nameWithType: ValueChangedEventArgs
-- uid: TetraCreations.ProgressBarSystem.ValueChangedEventArgs.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,TetraCreations.ProgressBarSystem.ValueType)
-  name: ValueChangedEventArgs(float, float, float, float, float, ValueType)
-  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueChangedEventArgs.html#TetraCreations_ProgressBarSystem_ValueChangedEventArgs__ctor_System_Single_System_Single_System_Single_System_Single_System_Single_TetraCreations_ProgressBarSystem_ValueType_
-  commentId: M:TetraCreations.ProgressBarSystem.ValueChangedEventArgs.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,TetraCreations.ProgressBarSystem.ValueType)
-  name.vb: New(Single, Single, Single, Single, Single, ValueType)
-  fullName: TetraCreations.ProgressBarSystem.ValueChangedEventArgs.ValueChangedEventArgs(float, float, float, float, float, TetraCreations.ProgressBarSystem.ValueType)
-  fullName.vb: TetraCreations.ProgressBarSystem.ValueChangedEventArgs.New(Single, Single, Single, Single, Single, TetraCreations.ProgressBarSystem.ValueType)
-  nameWithType: ValueChangedEventArgs.ValueChangedEventArgs(float, float, float, float, float, ValueType)
-  nameWithType.vb: ValueChangedEventArgs.New(Single, Single, Single, Single, Single, ValueType)
+- uid: TetraCreations.ProgressBarSystem.ValueChangedEventArgs.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,TetraCreations.ProgressBarSystem.ValueType,TetraCreations.ProgressBarSystem.ValueState)
+  name: ValueChangedEventArgs(float, float, float, float, float, ValueType, ValueState)
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueChangedEventArgs.html#TetraCreations_ProgressBarSystem_ValueChangedEventArgs__ctor_System_Single_System_Single_System_Single_System_Single_System_Single_TetraCreations_ProgressBarSystem_ValueType_TetraCreations_ProgressBarSystem_ValueState_
+  commentId: M:TetraCreations.ProgressBarSystem.ValueChangedEventArgs.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,TetraCreations.ProgressBarSystem.ValueType,TetraCreations.ProgressBarSystem.ValueState)
+  name.vb: New(Single, Single, Single, Single, Single, ValueType, ValueState)
+  fullName: TetraCreations.ProgressBarSystem.ValueChangedEventArgs.ValueChangedEventArgs(float, float, float, float, float, TetraCreations.ProgressBarSystem.ValueType, TetraCreations.ProgressBarSystem.ValueState)
+  fullName.vb: TetraCreations.ProgressBarSystem.ValueChangedEventArgs.New(Single, Single, Single, Single, Single, TetraCreations.ProgressBarSystem.ValueType, TetraCreations.ProgressBarSystem.ValueState)
+  nameWithType: ValueChangedEventArgs.ValueChangedEventArgs(float, float, float, float, float, ValueType, ValueState)
+  nameWithType.vb: ValueChangedEventArgs.New(Single, Single, Single, Single, Single, ValueType, ValueState)
 - uid: TetraCreations.ProgressBarSystem.ValueChangedEventArgs.#ctor*
   name: ValueChangedEventArgs
   href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueChangedEventArgs.html#TetraCreations_ProgressBarSystem_ValueChangedEventArgs__ctor_
@@ -12228,6 +12241,19 @@ references:
   isSpec: "True"
   fullName: TetraCreations.ProgressBarSystem.ValueChangedEventArgs.Percentage
   nameWithType: ValueChangedEventArgs.Percentage
+- uid: TetraCreations.ProgressBarSystem.ValueChangedEventArgs.ValueState
+  name: ValueState
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueChangedEventArgs.html#TetraCreations_ProgressBarSystem_ValueChangedEventArgs_ValueState
+  commentId: P:TetraCreations.ProgressBarSystem.ValueChangedEventArgs.ValueState
+  fullName: TetraCreations.ProgressBarSystem.ValueChangedEventArgs.ValueState
+  nameWithType: ValueChangedEventArgs.ValueState
+- uid: TetraCreations.ProgressBarSystem.ValueChangedEventArgs.ValueState*
+  name: ValueState
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueChangedEventArgs.html#TetraCreations_ProgressBarSystem_ValueChangedEventArgs_ValueState_
+  commentId: Overload:TetraCreations.ProgressBarSystem.ValueChangedEventArgs.ValueState
+  isSpec: "True"
+  fullName: TetraCreations.ProgressBarSystem.ValueChangedEventArgs.ValueState
+  nameWithType: ValueChangedEventArgs.ValueState
 - uid: TetraCreations.ProgressBarSystem.ValueChangedEventArgs.ValueType
   name: ValueType
   href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueChangedEventArgs.html#TetraCreations_ProgressBarSystem_ValueChangedEventArgs_ValueType
@@ -12517,6 +12543,22 @@ references:
   isSpec: "True"
   fullName: TetraCreations.ProgressBarSystem.ValueManager.DecreaseMinimum
   nameWithType: ValueManager.DecreaseMinimum
+- uid: TetraCreations.ProgressBarSystem.ValueManager.GetClampedValue(System.Single)
+  name: GetClampedValue(float)
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_GetClampedValue_System_Single_
+  commentId: M:TetraCreations.ProgressBarSystem.ValueManager.GetClampedValue(System.Single)
+  name.vb: GetClampedValue(Single)
+  fullName: TetraCreations.ProgressBarSystem.ValueManager.GetClampedValue(float)
+  fullName.vb: TetraCreations.ProgressBarSystem.ValueManager.GetClampedValue(Single)
+  nameWithType: ValueManager.GetClampedValue(float)
+  nameWithType.vb: ValueManager.GetClampedValue(Single)
+- uid: TetraCreations.ProgressBarSystem.ValueManager.GetClampedValue*
+  name: GetClampedValue
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_GetClampedValue_
+  commentId: Overload:TetraCreations.ProgressBarSystem.ValueManager.GetClampedValue
+  isSpec: "True"
+  fullName: TetraCreations.ProgressBarSystem.ValueManager.GetClampedValue
+  nameWithType: ValueManager.GetClampedValue
 - uid: TetraCreations.ProgressBarSystem.ValueManager.GetLastChangeOf(TetraCreations.ProgressBarSystem.ValueType)
   name: GetLastChangeOf(ValueType)
   href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_GetLastChangeOf_TetraCreations_ProgressBarSystem_ValueType_
@@ -12765,6 +12807,32 @@ references:
   isSpec: "True"
   fullName: TetraCreations.ProgressBarSystem.ValueManager.OnInitialized
   nameWithType: ValueManager.OnInitialized
+- uid: TetraCreations.ProgressBarSystem.ValueManager.OnMaximumValueReached
+  name: OnMaximumValueReached()
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_OnMaximumValueReached
+  commentId: M:TetraCreations.ProgressBarSystem.ValueManager.OnMaximumValueReached
+  fullName: TetraCreations.ProgressBarSystem.ValueManager.OnMaximumValueReached()
+  nameWithType: ValueManager.OnMaximumValueReached()
+- uid: TetraCreations.ProgressBarSystem.ValueManager.OnMaximumValueReached*
+  name: OnMaximumValueReached
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_OnMaximumValueReached_
+  commentId: Overload:TetraCreations.ProgressBarSystem.ValueManager.OnMaximumValueReached
+  isSpec: "True"
+  fullName: TetraCreations.ProgressBarSystem.ValueManager.OnMaximumValueReached
+  nameWithType: ValueManager.OnMaximumValueReached
+- uid: TetraCreations.ProgressBarSystem.ValueManager.OnMinimumValueReached
+  name: OnMinimumValueReached()
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_OnMinimumValueReached
+  commentId: M:TetraCreations.ProgressBarSystem.ValueManager.OnMinimumValueReached
+  fullName: TetraCreations.ProgressBarSystem.ValueManager.OnMinimumValueReached()
+  nameWithType: ValueManager.OnMinimumValueReached()
+- uid: TetraCreations.ProgressBarSystem.ValueManager.OnMinimumValueReached*
+  name: OnMinimumValueReached
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_OnMinimumValueReached_
+  commentId: Overload:TetraCreations.ProgressBarSystem.ValueManager.OnMinimumValueReached
+  isSpec: "True"
+  fullName: TetraCreations.ProgressBarSystem.ValueManager.OnMinimumValueReached
+  nameWithType: ValueManager.OnMinimumValueReached
 - uid: TetraCreations.ProgressBarSystem.ValueManager.OnValueChanged(System.Single,TetraCreations.ProgressBarSystem.ValueType)
   name: OnValueChanged(float, ValueType)
   href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_OnValueChanged_System_Single_TetraCreations_ProgressBarSystem_ValueType_
@@ -12794,6 +12862,19 @@ references:
   isSpec: "True"
   fullName: TetraCreations.ProgressBarSystem.ValueManager.OnValuesRestored
   nameWithType: ValueManager.OnValuesRestored
+- uid: TetraCreations.ProgressBarSystem.ValueManager.OnValueStateChanged
+  name: OnValueStateChanged()
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_OnValueStateChanged
+  commentId: M:TetraCreations.ProgressBarSystem.ValueManager.OnValueStateChanged
+  fullName: TetraCreations.ProgressBarSystem.ValueManager.OnValueStateChanged()
+  nameWithType: ValueManager.OnValueStateChanged()
+- uid: TetraCreations.ProgressBarSystem.ValueManager.OnValueStateChanged*
+  name: OnValueStateChanged
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_OnValueStateChanged_
+  commentId: Overload:TetraCreations.ProgressBarSystem.ValueManager.OnValueStateChanged
+  isSpec: "True"
+  fullName: TetraCreations.ProgressBarSystem.ValueManager.OnValueStateChanged
+  nameWithType: ValueManager.OnValueStateChanged
 - uid: TetraCreations.ProgressBarSystem.ValueManager.Percentage
   name: Percentage
   href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_Percentage
@@ -12820,6 +12901,19 @@ references:
   isSpec: "True"
   fullName: TetraCreations.ProgressBarSystem.ValueManager.PrecisionTolerance
   nameWithType: ValueManager.PrecisionTolerance
+- uid: TetraCreations.ProgressBarSystem.ValueManager.RaiseLimitReachedEvents
+  name: RaiseLimitReachedEvents()
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_RaiseLimitReachedEvents
+  commentId: M:TetraCreations.ProgressBarSystem.ValueManager.RaiseLimitReachedEvents
+  fullName: TetraCreations.ProgressBarSystem.ValueManager.RaiseLimitReachedEvents()
+  nameWithType: ValueManager.RaiseLimitReachedEvents()
+- uid: TetraCreations.ProgressBarSystem.ValueManager.RaiseLimitReachedEvents*
+  name: RaiseLimitReachedEvents
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_RaiseLimitReachedEvents_
+  commentId: Overload:TetraCreations.ProgressBarSystem.ValueManager.RaiseLimitReachedEvents
+  isSpec: "True"
+  fullName: TetraCreations.ProgressBarSystem.ValueManager.RaiseLimitReachedEvents
+  nameWithType: ValueManager.RaiseLimitReachedEvents
 - uid: TetraCreations.ProgressBarSystem.ValueManager.RemoveEventsListeners
   name: RemoveEventsListeners()
   href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_RemoveEventsListeners
@@ -12878,6 +12972,38 @@ references:
   isSpec: "True"
   fullName: TetraCreations.ProgressBarSystem.ValueManager.SetInitialValues
   nameWithType: ValueManager.SetInitialValues
+- uid: TetraCreations.ProgressBarSystem.ValueManager.SetLastChange(System.Single,TetraCreations.ProgressBarSystem.ValueType)
+  name: SetLastChange(float, ValueType)
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetLastChange_System_Single_TetraCreations_ProgressBarSystem_ValueType_
+  commentId: M:TetraCreations.ProgressBarSystem.ValueManager.SetLastChange(System.Single,TetraCreations.ProgressBarSystem.ValueType)
+  name.vb: SetLastChange(Single, ValueType)
+  fullName: TetraCreations.ProgressBarSystem.ValueManager.SetLastChange(float, TetraCreations.ProgressBarSystem.ValueType)
+  fullName.vb: TetraCreations.ProgressBarSystem.ValueManager.SetLastChange(Single, TetraCreations.ProgressBarSystem.ValueType)
+  nameWithType: ValueManager.SetLastChange(float, ValueType)
+  nameWithType.vb: ValueManager.SetLastChange(Single, ValueType)
+- uid: TetraCreations.ProgressBarSystem.ValueManager.SetLastChange*
+  name: SetLastChange
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetLastChange_
+  commentId: Overload:TetraCreations.ProgressBarSystem.ValueManager.SetLastChange
+  isSpec: "True"
+  fullName: TetraCreations.ProgressBarSystem.ValueManager.SetLastChange
+  nameWithType: ValueManager.SetLastChange
+- uid: TetraCreations.ProgressBarSystem.ValueManager.SetLastOverflow(System.Single)
+  name: SetLastOverflow(float)
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetLastOverflow_System_Single_
+  commentId: M:TetraCreations.ProgressBarSystem.ValueManager.SetLastOverflow(System.Single)
+  name.vb: SetLastOverflow(Single)
+  fullName: TetraCreations.ProgressBarSystem.ValueManager.SetLastOverflow(float)
+  fullName.vb: TetraCreations.ProgressBarSystem.ValueManager.SetLastOverflow(Single)
+  nameWithType: ValueManager.SetLastOverflow(float)
+  nameWithType.vb: ValueManager.SetLastOverflow(Single)
+- uid: TetraCreations.ProgressBarSystem.ValueManager.SetLastOverflow*
+  name: SetLastOverflow
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetLastOverflow_
+  commentId: Overload:TetraCreations.ProgressBarSystem.ValueManager.SetLastOverflow
+  isSpec: "True"
+  fullName: TetraCreations.ProgressBarSystem.ValueManager.SetLastOverflow
+  nameWithType: ValueManager.SetLastOverflow
 - uid: TetraCreations.ProgressBarSystem.ValueManager.SetMaximum(System.Single)
   name: SetMaximum(float)
   href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_SetMaximum_System_Single_
@@ -12965,31 +13091,12 @@ references:
   isSpec: "True"
   fullName: TetraCreations.ProgressBarSystem.ValueManager.ToString
   nameWithType: ValueManager.ToString
-- uid: TetraCreations.ProgressBarSystem.ValueManager.UpdateLastOverflow(System.Single)
-  name: UpdateLastOverflow(float)
-  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_UpdateLastOverflow_System_Single_
-  commentId: M:TetraCreations.ProgressBarSystem.ValueManager.UpdateLastOverflow(System.Single)
-  name.vb: UpdateLastOverflow(Single)
-  fullName: TetraCreations.ProgressBarSystem.ValueManager.UpdateLastOverflow(float)
-  fullName.vb: TetraCreations.ProgressBarSystem.ValueManager.UpdateLastOverflow(Single)
-  nameWithType: ValueManager.UpdateLastOverflow(float)
-  nameWithType.vb: ValueManager.UpdateLastOverflow(Single)
-- uid: TetraCreations.ProgressBarSystem.ValueManager.UpdateLastOverflow*
-  name: UpdateLastOverflow
-  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_UpdateLastOverflow_
-  commentId: Overload:TetraCreations.ProgressBarSystem.ValueManager.UpdateLastOverflow
-  isSpec: "True"
-  fullName: TetraCreations.ProgressBarSystem.ValueManager.UpdateLastOverflow
-  nameWithType: ValueManager.UpdateLastOverflow
-- uid: TetraCreations.ProgressBarSystem.ValueManager.UpdateValueState(System.Single)
-  name: UpdateValueState(float)
-  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_UpdateValueState_System_Single_
-  commentId: M:TetraCreations.ProgressBarSystem.ValueManager.UpdateValueState(System.Single)
-  name.vb: UpdateValueState(Single)
-  fullName: TetraCreations.ProgressBarSystem.ValueManager.UpdateValueState(float)
-  fullName.vb: TetraCreations.ProgressBarSystem.ValueManager.UpdateValueState(Single)
-  nameWithType: ValueManager.UpdateValueState(float)
-  nameWithType.vb: ValueManager.UpdateValueState(Single)
+- uid: TetraCreations.ProgressBarSystem.ValueManager.UpdateValueState
+  name: UpdateValueState()
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_UpdateValueState
+  commentId: M:TetraCreations.ProgressBarSystem.ValueManager.UpdateValueState
+  fullName: TetraCreations.ProgressBarSystem.ValueManager.UpdateValueState()
+  nameWithType: ValueManager.UpdateValueState()
 - uid: TetraCreations.ProgressBarSystem.ValueManager.UpdateValueState*
   name: UpdateValueState
   href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html#TetraCreations_ProgressBarSystem_ValueManager_UpdateValueState_
@@ -13278,23 +13385,6 @@ references:
   fullName.vb: TetraCreations.ProgressBarSystem.ValueRegeneration(Of T).AnyRegenerationEnable
   nameWithType: ValueRegeneration<T>.AnyRegenerationEnable
   nameWithType.vb: ValueRegeneration(Of T).AnyRegenerationEnable
-- uid: TetraCreations.ProgressBarSystem.ValueRegeneration`1.AutomaticallyRestart
-  name: AutomaticallyRestart()
-  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegeneration-1.html#TetraCreations_ProgressBarSystem_ValueRegeneration_1_AutomaticallyRestart
-  commentId: M:TetraCreations.ProgressBarSystem.ValueRegeneration`1.AutomaticallyRestart
-  fullName: TetraCreations.ProgressBarSystem.ValueRegeneration<T>.AutomaticallyRestart()
-  fullName.vb: TetraCreations.ProgressBarSystem.ValueRegeneration(Of T).AutomaticallyRestart()
-  nameWithType: ValueRegeneration<T>.AutomaticallyRestart()
-  nameWithType.vb: ValueRegeneration(Of T).AutomaticallyRestart()
-- uid: TetraCreations.ProgressBarSystem.ValueRegeneration`1.AutomaticallyRestart*
-  name: AutomaticallyRestart
-  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegeneration-1.html#TetraCreations_ProgressBarSystem_ValueRegeneration_1_AutomaticallyRestart_
-  commentId: Overload:TetraCreations.ProgressBarSystem.ValueRegeneration`1.AutomaticallyRestart
-  isSpec: "True"
-  fullName: TetraCreations.ProgressBarSystem.ValueRegeneration<T>.AutomaticallyRestart
-  fullName.vb: TetraCreations.ProgressBarSystem.ValueRegeneration(Of T).AutomaticallyRestart
-  nameWithType: ValueRegeneration<T>.AutomaticallyRestart
-  nameWithType.vb: ValueRegeneration(Of T).AutomaticallyRestart
 - uid: TetraCreations.ProgressBarSystem.ValueRegeneration`1.CalculatedValue
   name: CalculatedValue
   href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegeneration-1.html#TetraCreations_ProgressBarSystem_ValueRegeneration_1_CalculatedValue
@@ -13363,6 +13453,23 @@ references:
   fullName.vb: TetraCreations.ProgressBarSystem.ValueRegeneration(Of T).CanRegenerateAtMinimumValue
   nameWithType: ValueRegeneration<T>.CanRegenerateAtMinimumValue
   nameWithType.vb: ValueRegeneration(Of T).CanRegenerateAtMinimumValue
+- uid: TetraCreations.ProgressBarSystem.ValueRegeneration`1.CanRegenerateAtValueState(TetraCreations.ProgressBarSystem.ValueState)
+  name: CanRegenerateAtValueState(ValueState)
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegeneration-1.html#TetraCreations_ProgressBarSystem_ValueRegeneration_1_CanRegenerateAtValueState_TetraCreations_ProgressBarSystem_ValueState_
+  commentId: M:TetraCreations.ProgressBarSystem.ValueRegeneration`1.CanRegenerateAtValueState(TetraCreations.ProgressBarSystem.ValueState)
+  fullName: TetraCreations.ProgressBarSystem.ValueRegeneration<T>.CanRegenerateAtValueState(TetraCreations.ProgressBarSystem.ValueState)
+  fullName.vb: TetraCreations.ProgressBarSystem.ValueRegeneration(Of T).CanRegenerateAtValueState(TetraCreations.ProgressBarSystem.ValueState)
+  nameWithType: ValueRegeneration<T>.CanRegenerateAtValueState(ValueState)
+  nameWithType.vb: ValueRegeneration(Of T).CanRegenerateAtValueState(ValueState)
+- uid: TetraCreations.ProgressBarSystem.ValueRegeneration`1.CanRegenerateAtValueState*
+  name: CanRegenerateAtValueState
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegeneration-1.html#TetraCreations_ProgressBarSystem_ValueRegeneration_1_CanRegenerateAtValueState_
+  commentId: Overload:TetraCreations.ProgressBarSystem.ValueRegeneration`1.CanRegenerateAtValueState
+  isSpec: "True"
+  fullName: TetraCreations.ProgressBarSystem.ValueRegeneration<T>.CanRegenerateAtValueState
+  fullName.vb: TetraCreations.ProgressBarSystem.ValueRegeneration(Of T).CanRegenerateAtValueState
+  nameWithType: ValueRegeneration<T>.CanRegenerateAtValueState
+  nameWithType.vb: ValueRegeneration(Of T).CanRegenerateAtValueState
 - uid: TetraCreations.ProgressBarSystem.ValueRegeneration`1.Condition
   name: Condition
   href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegeneration-1.html#TetraCreations_ProgressBarSystem_ValueRegeneration_1_Condition
@@ -13380,6 +13487,23 @@ references:
   fullName.vb: TetraCreations.ProgressBarSystem.ValueRegeneration(Of T).Condition
   nameWithType: ValueRegeneration<T>.Condition
   nameWithType.vb: ValueRegeneration(Of T).Condition
+- uid: TetraCreations.ProgressBarSystem.ValueRegeneration`1.ConditionAllowRegeneration
+  name: ConditionAllowRegeneration()
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegeneration-1.html#TetraCreations_ProgressBarSystem_ValueRegeneration_1_ConditionAllowRegeneration
+  commentId: M:TetraCreations.ProgressBarSystem.ValueRegeneration`1.ConditionAllowRegeneration
+  fullName: TetraCreations.ProgressBarSystem.ValueRegeneration<T>.ConditionAllowRegeneration()
+  fullName.vb: TetraCreations.ProgressBarSystem.ValueRegeneration(Of T).ConditionAllowRegeneration()
+  nameWithType: ValueRegeneration<T>.ConditionAllowRegeneration()
+  nameWithType.vb: ValueRegeneration(Of T).ConditionAllowRegeneration()
+- uid: TetraCreations.ProgressBarSystem.ValueRegeneration`1.ConditionAllowRegeneration*
+  name: ConditionAllowRegeneration
+  href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegeneration-1.html#TetraCreations_ProgressBarSystem_ValueRegeneration_1_ConditionAllowRegeneration_
+  commentId: Overload:TetraCreations.ProgressBarSystem.ValueRegeneration`1.ConditionAllowRegeneration
+  isSpec: "True"
+  fullName: TetraCreations.ProgressBarSystem.ValueRegeneration<T>.ConditionAllowRegeneration
+  fullName.vb: TetraCreations.ProgressBarSystem.ValueRegeneration(Of T).ConditionAllowRegeneration
+  nameWithType: ValueRegeneration<T>.ConditionAllowRegeneration
+  nameWithType.vb: ValueRegeneration(Of T).ConditionAllowRegeneration
 - uid: TetraCreations.ProgressBarSystem.ValueRegeneration`1.DelayInSeconds
   name: DelayInSeconds
   href: api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegeneration-1.html#TetraCreations_ProgressBarSystem_ValueRegeneration_1_DelayInSeconds

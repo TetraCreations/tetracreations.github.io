@@ -2,823 +2,823 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.AudioMixerExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.CanvasGroupExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.CollectionExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Collider2DExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.ColliderExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.ColorExtentions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.ComparableExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.ConditionType.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.DebugLevel.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.DictionaryExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Editor.AssetDatabaseExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Editor.AudioMixerExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Editor.EditorExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Editor.GradientExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Editor.MonoScriptExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Editor.PathReferenceExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Editor.UIToolkitHelper.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Editor.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.EnumerableExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.FieldInfoExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.FloatExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.GameObjectExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.ImageExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.IntegerExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.LayerMaskExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.MatchInclusive.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.ObjectExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.QuaternionExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.RandomExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.RectTransformExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.RendererExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.RoundMethod.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.StringExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.TextureExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.TransformExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.TypeExtensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.TypeUtility.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Utility.Billboard.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Utility.CountdownTimer.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Utility.FloatValueCondition.ConditionIsMet.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Utility.FloatValueCondition.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Utility.LayerMaskFilter.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Utility.Singleton-1.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Utility.Singleton.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Utility.Timer.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Utility.TimerManager.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Utility.Trigger2DCollider.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Utility.TriggerCollider.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Utility.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Vector2Extensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.Vector3Extensions.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/Core/TetraCreations.Core.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ActiveConditionChangedEventArgs.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.AnimationsManager.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.DisablingType.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.DrawIfAttribute.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.Editor.DrawIfPropertyDrawer.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.Editor.ReadOnlyPropertyDrawer.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.Editor.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.ReadOnlyAttribute.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Attributes.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.BarSegment.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Borders.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.BorderType.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ColorChangedEventArgs.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.BaseEditor-1.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ProgressBarEditor.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ProgressBarPropertyDrawer.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.RegenerationEditor.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourceManagerEditor.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourceRegenerationEditor.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourceRegenerationPropertyDrawer.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourcesControllerEditor.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.ResourceValueManagerPropertyDrawer.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SegmentCallbackController.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SegmentControllerEditor.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SerializedBorders.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SerializedImage.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SerializedImageField.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.SerializedTextMeshProUGUI.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.TabMenuController.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.UIToolkitHelper.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Editor.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.FillSegment.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.IColorChanger.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Indicator.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.InitialResourceValue.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.MaximumValueReachedEventArgs.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.MinimumValueReachedEventArgs.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.PerformanceManager.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBar.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarChangedEventArgs.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarCondition.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarInitializedEventArgs.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationInitializedEventArgs.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRuntimeData.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarText.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Regeneration.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationActivationEventArgs.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationDisplay.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationState.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationStateEventArgs.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.RegenerationValuesEventArgs.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Resource.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ResourceManager.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ResourceRegeneration.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ResourcesController.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.SegmentController.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.SegmentEventArgs.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.SegmentType.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.TextFormat.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.CameraController.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.CountdownTimer.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.FloatValueCondition.ConditionIsMet.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.FloatValueCondition.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.NumericConditionType.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.PulseImageEffect.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.ShakeTransform.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.Singleton-1.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.Singleton.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.Timer.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Utility.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueChangedEventArgs.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueChangeType.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManagerInitializedEventArgs.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegeneration-1.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegenerationInitializedEventArgs.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValuesRestoredEventArgs.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueState.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueStateEventArgs.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueType.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/api/ProgressBarSystem/TetraCreations.ProgressBarSystem.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/docs/getting-started.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/docs/introduction.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tetracreations.github.io/index.html</loc>
-    <lastmod>2025-09-08T09:19:40+02:00</lastmod>
+    <lastmod>2025-09-12T01:20:48+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

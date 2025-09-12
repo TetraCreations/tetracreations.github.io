@@ -1183,6 +1183,51 @@ to allow minor difference that doesn't matter.</p>
   </table>
 
 
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_GetClampedValue_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.GetClampedValue*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_GetClampedValue_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.GetClampedValue(System.Single)">GetClampedValue(float)</h4>
+  <div class="markdown level1 summary"><p>Get the clamped value within the limits. <br>
+It uses the PrecisionTolerance to return the Minimum/Maximum if the value is close enough to them.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float GetClampedValue(float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value to Clamp</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
   <a id="TetraCreations_ProgressBarSystem_ValueManager_GetLastChangeOf_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.GetLastChangeOf*"></a>
   <h4 id="TetraCreations_ProgressBarSystem_ValueManager_GetLastChangeOf_TetraCreations_ProgressBarSystem_ValueType_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.GetLastChangeOf(TetraCreations.ProgressBarSystem.ValueType)">GetLastChangeOf(ValueType)</h4>
   <div class="markdown level1 summary"><p>Return the last change made to a value.</p>
@@ -1396,6 +1441,28 @@ Keep the initial values in cache to reset the values at runtime if needed.</p>
   </div>
 
 
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_OnMaximumValueReached_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.OnMaximumValueReached*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_OnMaximumValueReached" data-uid="TetraCreations.ProgressBarSystem.ValueManager.OnMaximumValueReached">OnMaximumValueReached()</h4>
+  <div class="markdown level1 summary"><p>Raise the MaximumValueReachedEvent and the pass the last overflow amount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnMaximumValueReached()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_OnMinimumValueReached_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.OnMinimumValueReached*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_OnMinimumValueReached" data-uid="TetraCreations.ProgressBarSystem.ValueManager.OnMinimumValueReached">OnMinimumValueReached()</h4>
+  <div class="markdown level1 summary"><p>Raise the MinimumValueReachedEvent and the pass the last overflow amount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnMinimumValueReached()</code></pre>
+  </div>
+
+
   <a id="TetraCreations_ProgressBarSystem_ValueManager_OnValueChanged_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.OnValueChanged*"></a>
   <h4 id="TetraCreations_ProgressBarSystem_ValueManager_OnValueChanged_System_Single_TetraCreations_ProgressBarSystem_ValueType_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.OnValueChanged(System.Single,TetraCreations.ProgressBarSystem.ValueType)">OnValueChanged(float, ValueType)</h4>
   <div class="markdown level1 summary"><p>Raise the ValueChangedEvent and pass all the data we have : <br>
@@ -1438,6 +1505,28 @@ The new value, minimum, maximum, percentage, the difference with the previous va
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnValuesRestored()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_OnValueStateChanged_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.OnValueStateChanged*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_OnValueStateChanged" data-uid="TetraCreations.ProgressBarSystem.ValueManager.OnValueStateChanged">OnValueStateChanged()</h4>
+  <div class="markdown level1 summary"><p>Raise the ValueStateChangedEvent and pass the new ValueState</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnValueStateChanged()</code></pre>
+  </div>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_RaiseLimitReachedEvents_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.RaiseLimitReachedEvents*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_RaiseLimitReachedEvents" data-uid="TetraCreations.ProgressBarSystem.ValueManager.RaiseLimitReachedEvents">RaiseLimitReachedEvents()</h4>
+  <div class="markdown level1 summary"><p>Raise MaximumValueReached or MinimumValueReached depending on the new state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseLimitReachedEvents()</code></pre>
   </div>
 
 
@@ -1537,6 +1626,69 @@ And eventually initialize.</p>
   </table>
 
 
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_SetLastChange_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetLastChange*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_SetLastChange_System_Single_TetraCreations_ProgressBarSystem_ValueType_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetLastChange(System.Single,TetraCreations.ProgressBarSystem.ValueType)">SetLastChange(float, ValueType)</h4>
+  <div class="markdown level1 summary"><p>Sets the last change made to a value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetLastChange(float previousValue, ValueType valueType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">previousValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ValueType.html">ValueType</a></td>
+        <td><span class="parametername">valueType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueManager_SetLastOverflow_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetLastOverflow*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_SetLastOverflow_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetLastOverflow(System.Single)">SetLastOverflow(float)</h4>
+  <div class="markdown level1 summary"><p>Set the last overflow amount by removing real change made from the requested change.<br>
+The value is always positive, other script can get this value from MinimumValueReachedEvent or MaximumValueReachedEvent arguments.<br>
+Or with the LastOverflowAmount getter right after the value modification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetLastOverflow(float requestedChange)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">requestedChange</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
   <a id="TetraCreations_ProgressBarSystem_ValueManager_SetMaximum_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetMaximum*"></a>
   <h4 id="TetraCreations_ProgressBarSystem_ValueManager_SetMaximum_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.SetMaximum(System.Single)">SetMaximum(float)</h4>
   <div class="markdown level1 summary"><p>Check if there is any change.<br>
@@ -1630,7 +1782,7 @@ Then it will raised ValueChangedEvent, and check if the ValueState changed.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual bool SetValue(float newValue)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void SetValue(float newValue)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1645,21 +1797,6 @@ Then it will raised ValueChangedEvent, and check if the ValueState changed.</p>
       <tr>
         <td><span class="xref">float</span></td>
         <td><span class="parametername">newValue</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">bool</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1691,63 +1828,15 @@ Then it will raised ValueChangedEvent, and check if the ValueState changed.</p>
   </table>
 
 
-  <a id="TetraCreations_ProgressBarSystem_ValueManager_UpdateLastOverflow_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.UpdateLastOverflow*"></a>
-  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_UpdateLastOverflow_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.UpdateLastOverflow(System.Single)">UpdateLastOverflow(float)</h4>
-  <div class="markdown level1 summary"><p>Set the last overflow amount by removing real change made from the requested change.<br>
-The value is always positive, other script can get this value from MinimumValueReachedEvent or MaximumValueReachedEvent arguments.<br>
-Or with the LastOverflowAmount getter right after the value modification.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void UpdateLastOverflow(float requestedChange)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">float</span></td>
-        <td><span class="parametername">requestedChange</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
   <a id="TetraCreations_ProgressBarSystem_ValueManager_UpdateValueState_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.UpdateValueState*"></a>
-  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_UpdateValueState_System_Single_" data-uid="TetraCreations.ProgressBarSystem.ValueManager.UpdateValueState(System.Single)">UpdateValueState(float)</h4>
-  <div class="markdown level1 summary"><p>Update the ValueState after any value change (Minimum, Maximum or Value).<br>
-Raise the ValueStateChangedEvent and MaximumValueReachedEventArgs / MinimumValueReachedEventArgs.</p>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueManager_UpdateValueState" data-uid="TetraCreations.ProgressBarSystem.ValueManager.UpdateValueState">UpdateValueState()</h4>
+  <div class="markdown level1 summary"><p>Determines if the ValueState has changed, if so it calls the OnValueStateChanged method.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void UpdateValueState(float requestedChange)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateValueState()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">float</span></td>
-        <td><span class="parametername">requestedChange</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="events">Events
 </h3>
 

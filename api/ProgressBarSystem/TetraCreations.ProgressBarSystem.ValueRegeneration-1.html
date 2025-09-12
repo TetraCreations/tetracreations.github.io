@@ -1132,17 +1132,6 @@ to update the regeneration state and to re-calculate the value.</p>
   </table>
 
 
-  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_AutomaticallyRestart_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.AutomaticallyRestart*"></a>
-  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_AutomaticallyRestart" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.AutomaticallyRestart">AutomaticallyRestart()</h4>
-  <div class="markdown level1 summary"><p>Evaluate the regeneration conditions to stop or start it automatically.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void AutomaticallyRestart()</code></pre>
-  </div>
-
-
   <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_CalculateRegeneratedAmount_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.CalculateRegeneratedAmount*"></a>
   <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_CalculateRegeneratedAmount" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.CalculateRegeneratedAmount">CalculateRegeneratedAmount()</h4>
   <div class="markdown level1 summary"><p>Calculate the final amount to regenerate.</p>
@@ -1177,6 +1166,75 @@ to update the regeneration state and to re-calculate the value.</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual bool CanRegenerate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_CanRegenerateAtValueState_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.CanRegenerateAtValueState*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_CanRegenerateAtValueState_TetraCreations_ProgressBarSystem_ValueState_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.CanRegenerateAtValueState(TetraCreations.ProgressBarSystem.ValueState)">CanRegenerateAtValueState(ValueState)</h4>
+  <div class="markdown level1 summary"><p>Determines if the Value can be regenerated at it's current State (AtMaximum/AtMinimum/InBetween).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool CanRegenerateAtValueState(ValueState valueState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ValueState.html">ValueState</a></td>
+        <td><span class="parametername">valueState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_ConditionAllowRegeneration_" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.ConditionAllowRegeneration*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueRegeneration_1_ConditionAllowRegeneration" data-uid="TetraCreations.ProgressBarSystem.ValueRegeneration`1.ConditionAllowRegeneration">ConditionAllowRegeneration()</h4>
+  <div class="markdown level1 summary"><p>If the condition is not active it returns true, otherwise returns if the condition is met.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool ConditionAllowRegeneration()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">

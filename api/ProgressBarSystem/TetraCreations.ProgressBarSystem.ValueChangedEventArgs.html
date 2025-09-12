@@ -104,14 +104,14 @@ public class ValueChangedEventArgs : EventArgs</code></pre>
 
 
   <a id="TetraCreations_ProgressBarSystem_ValueChangedEventArgs__ctor_" data-uid="TetraCreations.ProgressBarSystem.ValueChangedEventArgs.#ctor*"></a>
-  <h4 id="TetraCreations_ProgressBarSystem_ValueChangedEventArgs__ctor_System_Single_System_Single_System_Single_System_Single_System_Single_TetraCreations_ProgressBarSystem_ValueType_" data-uid="TetraCreations.ProgressBarSystem.ValueChangedEventArgs.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,TetraCreations.ProgressBarSystem.ValueType)">ValueChangedEventArgs(float, float, float, float, float, ValueType)</h4>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueChangedEventArgs__ctor_System_Single_System_Single_System_Single_System_Single_System_Single_TetraCreations_ProgressBarSystem_ValueType_TetraCreations_ProgressBarSystem_ValueState_" data-uid="TetraCreations.ProgressBarSystem.ValueChangedEventArgs.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,TetraCreations.ProgressBarSystem.ValueType,TetraCreations.ProgressBarSystem.ValueState)">ValueChangedEventArgs(float, float, float, float, float, ValueType, ValueState)</h4>
   <div class="markdown level1 summary"><p>Store all the progress bar values, and the value type that changed (Minimum, Current, Maximum).
 It also has the difference between the changed value and it's previous value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ValueChangedEventArgs(float currentValue, float miniumValue, float maximumValue, float percentage, float difference, ValueType valueType)</code></pre>
+    <pre><code class="lang-csharp hljs">public ValueChangedEventArgs(float currentValue, float miniumValue, float maximumValue, float percentage, float difference, ValueType valueType, ValueState valueState)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -158,6 +158,11 @@ It also has the difference between the changed value and it's previous value.</p
         <td><span class="parametername">valueType</span></td>
         <td><p>Which type of value changed</p>
 </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ValueState.html">ValueState</a></td>
+        <td><span class="parametername">valueState</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -315,6 +320,32 @@ It also has the difference between the changed value and it's previous value.</p
     <tbody>
       <tr>
         <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="TetraCreations_ProgressBarSystem_ValueChangedEventArgs_ValueState_" data-uid="TetraCreations.ProgressBarSystem.ValueChangedEventArgs.ValueState*"></a>
+  <h4 id="TetraCreations_ProgressBarSystem_ValueChangedEventArgs_ValueState" data-uid="TetraCreations.ProgressBarSystem.ValueChangedEventArgs.ValueState">ValueState</h4>
+  <div class="markdown level1 summary"><p>The State of the Current Value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueState ValueState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TetraCreations.ProgressBarSystem.ValueState.html">ValueState</a></td>
         <td></td>
       </tr>
     </tbody>

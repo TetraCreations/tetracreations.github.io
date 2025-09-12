@@ -1119,7 +1119,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBar.html",
-          "hash": "5+u7HFlk4bBWa5HfI87btRut+klsq7UxkWXN/wDe/as="
+          "hash": "7h5xhPO3lV32WGJy6yKkXYSJwTXLgPr0sR8vMfMwH8k="
         }
       },
       "is_incremental": false,
@@ -1179,7 +1179,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ProgressBarRegenerationText.html",
-          "hash": "mtZ5FIXp18lCeYsLI7zhFHgM+6G/Dq3iIg7RqFagl7s="
+          "hash": "KMLKB/2iBOH+JZTxWnP7e1yfl0XG8CZwJKEVVy1L04I="
         }
       },
       "is_incremental": false,
@@ -1215,7 +1215,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.Regeneration.html",
-          "hash": "j91ZeRl7g/woVyN6nEVIhD2LRWcTRxAzOABZajvw514="
+          "hash": "X3HBR+wqpGCGSFAl9s5CfE1CrPoqquz146kCUzMhicw="
         }
       },
       "is_incremental": false,
@@ -1299,7 +1299,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ResourceManager.html",
-          "hash": "pn8phayJCuuRL6xvWxeokV7Xn9pe6rML2ZIRgwQus8w="
+          "hash": "K6wNK651MSQzUd+9OwlqwKHmnYOcC3P+2wkg+kyZQb8="
         }
       },
       "is_incremental": false,
@@ -1311,7 +1311,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ResourceRegeneration.html",
-          "hash": "HDGwvJEKwxHLwCqUmVDA7w5QnzDTTkDUCwXVdI2gBvo="
+          "hash": "K1twVKkjoPaNj982bSU9MrcBI+s3iT8MLRa3V5/xEUg="
         }
       },
       "is_incremental": false,
@@ -1527,7 +1527,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueChangedEventArgs.html",
-          "hash": "ZeWhOMVJjVjSHjEn7tCNBLb4lelYsi7l09q9D5uBsEs="
+          "hash": "KT8eqJ6bN8Vlk/GWKdQ2BmYKPx36/ZvWX8GNQpSP+R0="
         }
       },
       "is_incremental": false,
@@ -1539,7 +1539,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueManager.html",
-          "hash": "NjMlIi9dXlbNpuOxrJcGQq0s2Jl9Iut6QA6Yi902i6s="
+          "hash": "ue7qqfeBArU3EJSojJ/+7TQdi4m0V2QRF3GpLVWEyYs="
         }
       },
       "is_incremental": false,
@@ -1563,7 +1563,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgressBarSystem/TetraCreations.ProgressBarSystem.ValueRegeneration-1.html",
-          "hash": "JSS0+sUArYqWvamfmZILTkPyr1VxqhaW9MTd11VRO9M="
+          "hash": "6Hx8MSyyrw+7+3zodYYdrZOE9OwuYqCBCmwS5gDOC98="
         }
       },
       "is_incremental": false,
@@ -1838,23 +1838,25 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because config changed.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ConfigChanged"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 3
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 134,
-          "skipped_file_count": 132
+          "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
